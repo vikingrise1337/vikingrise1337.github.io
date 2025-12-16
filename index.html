@@ -1,547 +1,263 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Viking Rise Update Notes</title>
-
-  <style>
-    @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@300;400;500;600&display=swap");
-
-    :root {
-      --bg: #07101f;
-      --panel: #162236;
-      --border: rgba(255, 255, 255, 0.08);
-      --border-strong: rgba(255, 255, 255, 0.12);
-      --text: rgba(255, 255, 255, 0.92);
-      --gold: #d2b15a;
-      --gold-2: #b9923f;
-      --shadow-soft: 0 10px 22px rgba(0, 0, 0, 0.35);
-      --r-xl: 18px;
-      --r-lg: 14px;
-      --container: 1220px;
-    }
-
-    * { box-sizing: border-box; }
-    html, body { height: 100%; }
-
-    body {
-      margin: 0;
-      font-family: "Inter", sans-serif;
-      color: var(--text);
-      background-color: var(--bg);
-      background-image:
-        radial-gradient(transparent 0 8px, rgba(255, 255, 255, 0.03) 8px 9px, transparent 9px 100%),
-        radial-gradient(transparent 0 60%, rgba(0, 0, 0, 0.35) 100%);
-      background-size: 40px 40px, 100% 100%;
-      background-position: 0 0, center;
-      background-attachment: fixed;
-    }
-
-    .container {
-      max-width: var(--container);
-      margin: 0 auto;
-      padding: 0 22px;
-    }
-
-    /* HERO */
-    .hero {
-      position: relative;
-      border-bottom: 2px solid rgba(210, 177, 90, 0.55);
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.45);
-      overflow: hidden;
-      background: linear-gradient(to bottom, rgba(7, 16, 31, 0.15), rgba(7, 16, 31, 0.88)), url("https://images.unsplash.com/photo-1482192505345-5655af888cc4?q=80&w=2400&auto=format&fit=crop");
-      background-size: cover;
-      background-position: center;
-      padding: 44px 0 18px;
-    }
-
-    .hero-inner { position: relative; z-index: 1; }
-
-    .badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      font-size: 12px;
-      padding: 6px 10px;
-      border-radius: 6px;
-      background: linear-gradient(to bottom, var(--gold), var(--gold-2));
-      color: #111;
-      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35);
-    }
-
-    .hero-title {
-      font-family: "Cinzel", serif;
-      font-weight: 700;
-      margin: 10px 0 6px;
-      font-size: clamp(34px, 4.2vw, 56px);
-      letter-spacing: 0.02em;
-      text-transform: uppercase;
-      color: rgba(255, 255, 255, 0.92);
-      text-shadow: 0 8px 22px rgba(0, 0, 0, 0.55);
-    }
-
-    .hero-subtitle {
-      margin: 0 0 16px;
-      font-size: 16px;
-      color: rgba(255, 255, 255, 0.72);
-    }
-
-    /* Wartungsbox */
-    .maintenance {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-      margin-top: 14px;
-      padding: 16px 16px;
-      border-radius: var(--r-lg);
-      border: 1px solid rgba(210, 177, 90, 0.65);
-      background: rgba(18, 29, 47, 0.88);
-      backdrop-filter: blur(8px);
-      box-shadow: var(--shadow-soft);
-    }
-
-    .maintenance-left { display: flex; align-items: center; gap: 14px; }
-
-    .m-icon {
-      width: 34px; height: 34px; border-radius: 999px; display: grid; place-items: center;
-      background: rgba(210, 177, 90, 0.15); border: 1px solid rgba(210, 177, 90, 0.45);
-      color: var(--gold); flex: 0 0 auto;
-    }
-
-    .m-title {
-      font-family: "Cinzel", serif; font-weight: 700; text-transform: uppercase;
-      font-size: 14px; margin: 0; color: rgba(255, 255, 255, 0.88);
-    }
-
-    .m-range { margin: 2px 0 0; font-size: 13px; color: rgba(255, 255, 255, 0.62); }
-
-    .maintenance-right {
-      flex: 0 0 auto; padding: 10px 14px; border-radius: 12px;
-      border: 1px solid var(--border-strong); background: rgba(12, 19, 32, 0.35);
-      text-align: right; min-width: 210px;
-    }
-
-    .m-local-label {
-      font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em;
-      color: rgba(255, 255, 255, 0.55); margin-bottom: 6px;
-    }
-
-    .m-local-time {
-      font-family: "Cinzel", serif; font-weight: 700; color: var(--gold);
-      font-size: 20px;
-    }
-
-    /* Controls */
-    .controls { margin-top: 18px; display: flex; justify-content: flex-start; }
-
-    .tabs {
-      display: inline-flex; padding: 6px; border-radius: 12px;
-      border: 1px solid var(--border-strong); background: rgba(18, 29, 47, 0.65);
-      gap: 6px;
-    }
-
-    .tab-btn {
-      appearance: none; border: 0; background: transparent;
-      color: rgba(255, 255, 255, 0.75); font-weight: 600; font-size: 14px;
-      padding: 10px 16px; border-radius: 10px; cursor: pointer;
-      transition: all 0.15s ease;
-    }
-
-    .tab-btn:hover { transform: translateY(-1px); background: rgba(255,255,255,0.05); }
-    .tab-btn.is-active {
-      background: linear-gradient(to bottom, var(--gold), var(--gold-2));
-      color: #111; box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-    }
-
-    /* Layout */
-    main { padding: 18px 0 46px; }
-
-    .grid {
-      margin-top: 18px; display: grid; grid-template-columns: 2fr 1fr;
-      gap: 22px; align-items: start;
-    }
-
-    @media (max-width: 980px) {
-      .grid { grid-template-columns: 1fr; }
-      .maintenance { flex-direction: column; align-items: flex-start; }
-      .maintenance-right { width: 100%; text-align: left; }
-    }
-
-    /* Panels */
-    .panel {
-      border-radius: var(--r-xl); border: 1px solid var(--border-strong);
-      background: rgba(18, 29, 47, 0.78); box-shadow: var(--shadow-soft); overflow: hidden;
-    }
-
-    .panel-header {
-      display: flex; align-items: center; gap: 10px; padding: 16px 18px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.06); background: rgba(9, 14, 24, 0.12);
-    }
-
-    .panel-title {
-      font-family: "Cinzel", serif; font-weight: 700; letter-spacing: 0.06em;
-      text-transform: uppercase; font-size: 16px; margin: 0; color: rgba(255, 255, 255, 0.88);
-    }
-
-    .panel-body { padding: 16px 18px 18px; }
-
-    /* Feature Cards (mit Hover Effekt) */
-    .feature-card {
-      border-radius: var(--r-xl);
-      border: 1px solid var(--border-strong);
-      background: rgba(18, 29, 47, 0.78);
-      box-shadow: var(--shadow-soft);
-      overflow: hidden;
-      margin-bottom: 18px;
-      /* Für den goldenen Rand beim Hover */
-      transition: border-color 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    /* Der Hover Effekt auf der Karte selbst */
-    .feature-card:hover {
-        border-color: var(--gold);
-        box-shadow: 0 0 20px rgba(210, 177, 90, 0.15);
-    }
-
-    .feature-hero {
-      position: relative;
-      height: 200px;
-      overflow: hidden; /* Wichtig, damit das gezoomte Bild nicht rausragt */
-      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-    }
-
-    /* Das Bild-Element für den Zoom */
-    .feature-hero-bg {
-        width: 100%;
-        height: 100%;
-        background-size: cover;
-        background-position: center;
-        transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    }
-
-    /* Zoom beim Hover über die Karte */
-    .feature-card:hover .feature-hero-bg {
-        transform: scale(1.08);
-    }
-
-    .feature-hero::after {
-      content: ""; position: absolute; inset: 0;
-      background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0, transparent 100%);
-      pointer-events: none;
-    }
-
-    .feature-title-row {
-      position: absolute; left: 18px; bottom: 16px; z-index: 1;
-      display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
-    }
-
-    .feature-title {
-      font-family: "Cinzel", serif; font-weight: 700; text-transform: uppercase;
-      font-size: 22px; margin: 0; color: rgba(255, 255, 255, 0.92);
-      text-shadow: 0 4px 10px rgba(0,0,0,0.8);
-    }
-
-    .tag {
-      font-weight: 700; font-size: 12px; padding: 4px 8px; border-radius: 4px;
-      color: #fff; letter-spacing: 0.02em; text-transform: uppercase;
-    }
-    .tag.red { background: #b91c1c; }
-    .tag.blue { background: #1d4ed8; }
-    .tag.green { background: #047857; }
-
-    .feature-body {
-      padding: 16px 18px 18px; color: rgba(255, 255, 255, 0.75);
-      font-size: 14.5px; line-height: 1.6;
-    }
-
-    .bullets { list-style: none; padding: 0; margin: 10px 0 0; display: grid; gap: 8px; }
-    .bullets li { display: flex; gap: 10px; align-items: flex-start; color: rgba(255, 255, 255, 0.72); }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viking Rise Update Notes</title>
     
-    .b-ico {
-      width: 20px; height: 20px; border-radius: 50%;
-      background: rgba(210, 177, 90, 0.15); border: 1px solid rgba(210, 177, 90, 0.4);
-      color: var(--gold); flex: 0 0 auto;
-      display: flex; justify-content: center; align-items: center;
-      font-size: 10px; font-weight: bold;
-    }
-
-    /* Right panels */
-    .section-icon {
-      width: 22px; height: 22px; display: grid; place-items: center;
-      border-radius: 999px; border: 1px solid var(--border-strong);
-      background: rgba(255, 255, 255, 0.04); flex: 0 0 auto;
-    }
-
-    .title-gold { color: var(--gold); }
-    .title-blue { color: #60a5fa; }
-    .title-green { color: #34d399; }
-
-    .news-list { display: grid; gap: 10px; }
-    .news-item {
-      border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.08);
-      background: rgba(255, 255, 255, 0.04); padding: 12px;
-    }
-    .news-item-title { font-weight: 700; color: #fff; margin: 0 0 4px; font-size: 14px; }
-    .news-item-desc { margin: 0; font-size: 13px; color: rgba(255, 255, 255, 0.6); }
-
-    /* Accordion */
-    .accordion { display: grid; gap: 10px; }
-    .acc-btn {
-      width: 100%; display: flex; align-items: center; justify-content: space-between;
-      padding: 14px; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.1);
-      background: rgba(255, 255, 255, 0.03); color: rgba(255, 255, 255, 0.9);
-      cursor: pointer; font-weight: 600; text-align: left;
-    }
-    .acc-btn:hover { background: rgba(255, 255, 255, 0.06); }
-    .chev { transition: transform 0.2s; }
-    .acc-btn[aria-expanded="true"] .chev { transform: rotate(180deg); }
-    .acc-panel { display: none; padding: 10px 14px; }
-    .acc-panel.is-open { display: block; }
-    .acc-panel ul { margin: 0; padding-left: 20px; color: rgba(255, 255, 255, 0.7); font-size: 14px; }
-
-    /* Fix list */
-    .fix-list { margin: 0; padding: 0; list-style: none; display: grid; gap: 8px; }
-    .fix-list li { display: flex; gap: 10px; color: rgba(255, 255, 255, 0.7); font-size: 14px; }
-    .dot {
-      width: 6px; height: 6px; border-radius: 50%; background: rgba(255, 255, 255, 0.5);
-      margin-top: 8px; flex-shrink: 0;
-    }
-
-    .is-hidden { display: none !important; }
-    footer { padding: 20px; text-align: center; color: rgba(255, 255, 255, 0.3); font-size: 12px; }
-  </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Roboto:wght@300;400;500&display=swap');
+        
+        body { font-family: 'Roboto', sans-serif; background-color: #0b101b; }
+        .viking-font { font-family: 'Cinzel', serif; }
+        
+        /* Zusätzliche Styles für Glas-Effekt */
+        .glass-panel {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(10px);
+        }
+        
+        .gold-text { color: #d4af37; }
+        .gold-border { border-color: #d4af37; }
+        
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0f172a; }
+        ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #d4af37; }
+    </style>
 </head>
 
-<body>
-  <header class="hero">
-    <div class="container hero-inner">
-      <span class="badge">Wartungsarbeiten</span>
-      <h1 class="hero-title">Viking Rise Update</h1>
-      <p class="hero-subtitle">Surtrs Flammen, Drachenzähmen-Kollaboration & Weihnachts-Events</p>
+<body class="min-h-screen pb-20 text-gray-200">
 
-      <div class="maintenance">
-        <div class="maintenance-left">
-          <div class="m-icon" aria-hidden="true">🕒</div>
-          <div>
-            <p class="m-title">Wartungszeitraum</p>
-            <p class="m-range">17. Dezember, 06:00 - 06:30 (UTC)</p>
-          </div>
+    <div class="relative w-full h-80 md:h-96 overflow-hidden border-b-4 border-[#d4af37]">
+        <img src="https://images.unsplash.com/photo-1535581652167-3d6b98c5b73d?q=80&w=2670&auto=format&fit=crop" alt="Viking Update Hero" class="absolute inset-0 w-full h-full object-cover opacity-60">
+        <div class="absolute inset-0 bg-gradient-to-t from-[#0b101b] via-transparent to-transparent"></div>
+        <div class="absolute bottom-0 left-0 p-6 md:p-12 w-full text-center md:text-left">
+            <span class="inline-block px-3 py-1 mb-2 text-xs font-bold tracking-wider text-black bg-[#d4af37] rounded uppercase">Wartungsarbeiten</span>
+            <h1 class="text-4xl md:text-6xl font-bold text-white drop-shadow-lg mb-2 viking-font">Viking Rise Update</h1>
+            <p class="text-lg md:text-xl text-gray-300 max-w-2xl drop-shadow-md">Surtrs Flammen, Drachenzähmen-Kollaboration & Weihnachts-Events</p>
+        </div>
+    </div>
+
+    <div class="container mx-auto px-4 -mt-10 relative z-10">
+        
+        <div class="glass-panel rounded-xl p-6 mb-8 border border-gray-700 flex flex-col md:flex-row items-center justify-between gap-4 shadow-xl">
+            <div class="flex items-center gap-4">
+                <span class="material-symbols-outlined text-4xl gold-text">schedule</span>
+                <div>
+                    <h2 class="text-lg font-bold text-white">Wartungszeitraum</h2>
+                    <p class="text-sm text-gray-400">17. Dezember, 06:00 - 06:30 (UTC)</p>
+                </div>
+            </div>
+            <div class="text-center md:text-right bg-black/30 p-3 rounded-lg border border-gray-700 w-full md:w-auto">
+                <p class="text-xs text-gray-400 uppercase tracking-widest mb-1">Deine Ortszeit</p>
+                <p id="local-time-display" class="text-xl font-mono text-[#d4af37] font-bold">--:--</p>
+            </div>
         </div>
 
-        <div class="maintenance-right">
-          <div class="m-local-label">Deine Ortszeit</div>
-          <div class="m-local-time">
-            17.12., 07:00 <span class="m-local-tz">(UTC+1)</span>
-          </div>
+        <div class="flex flex-col sm:flex-row justify-between items-center mb-6 gap-4">
+            <div class="flex gap-2 bg-[#1e293b] p-1 rounded-lg border border-gray-700">
+                <button id="btn-all" onclick="filterContent('all')" class="px-4 py-2 rounded-md text-sm font-bold transition-colors bg-[#d4af37] text-black">Alle</button>
+                <button id="btn-major" onclick="filterContent('major')" class="px-4 py-2 rounded-md text-sm font-bold transition-colors text-gray-400 hover:text-white hover:bg-white/10">Highlights</button>
+                <button id="btn-opt" onclick="filterContent('opt')" class="px-4 py-2 rounded-md text-sm font-bold transition-colors text-gray-400 hover:text-white hover:bg-white/10">Details</button>
+            </div>
         </div>
-      </div>
-    </div>
-  </header>
 
-  <main class="container">
-    <div class="controls">
-      <div class="tabs" role="tablist" aria-label="Filter">
-        <button class="tab-btn is-active" type="button" role="tab" aria-selected="true" data-tab="all">Alle</button>
-        <button class="tab-btn" type="button" role="tab" aria-selected="false" data-tab="highlights">Highlights</button>
-        <button class="tab-btn" type="button" role="tab" aria-selected="false" data-tab="details">Details</button>
-      </div>
-    </div>
-
-    <div class="grid">
-      <section data-scope="highlights">
-        
-        <article class="feature-card">
-          <div class="feature-hero">
-            <div class="feature-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1542224566-0d6d2d27a49d?q=80&w=2400&auto=format&fit=crop');"></div>
-            <div class="feature-title-row">
-              <h2 class="feature-title">Surtrs Flammen</h2>
-              <span class="tag red">KvK Saison</span>
-            </div>
-          </div>
-          <div class="feature-body">
-            <p>Die Kingdom Mayhem Conquest Saison beginnt! Flammen toben in Muspelheim. Wikinger, kämpft, um Surtrs Flammen zu löschen!</p>
-          </div>
-        </article>
-
-        <article class="feature-card">
-          <div class="feature-hero" style="height:220px;">
-             <div class="feature-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1577493340887-b7b9a3998466?q=80&w=2670&auto=format&fit=crop');"></div>
-            <div class="feature-title-row">
-              <h2 class="feature-title">Drachenzähmen leicht gemacht</h2>
-              <span class="tag blue">Kollaboration</span>
-            </div>
-          </div>
-          <div class="feature-body">
-            <p>Eine brandneue Zusammenarbeit hat begonnen! In Partnerschaft begeben wir uns gemeinsam auf eine Drachenzähmen-Reise!</p>
-            <ul class="bullets">
-              <li><span class="b-ico">▲</span> Erkunde eine neue Fantasiewelt.</li>
-              <li><span class="b-ico">⚔</span> Erlebe neue Abenteuer und Herausforderungen.</li>
-              <li><span class="b-ico">●</span> Erobere die Lüfte und schreibe deine eigene Legende!</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="feature-card">
-          <div class="feature-hero" style="height:200px;">
-             <div class="feature-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1516398891210-437f5d2012c6?q=80&w=2670&auto=format&fit=crop');"></div>
-            <div class="feature-title-row">
-              <h2 class="feature-title">Weihnachts-Event</h2>
-              <span class="tag green">Event</span>
-            </div>
-          </div>
-          <div class="feature-body">
-            <p>Wenn die Glocken läuten, beginnt das Kutschenrennen-Event. Bildet Teams und legt die Strecke gemeinsam zurück!</p>
-          </div>
-        </article>
-
-      </section>
-
-      <aside data-scope="details" style="display:grid; gap:18px;">
-        <section class="panel">
-          <div class="panel-header">
-            <span class="section-icon" style="border-color: rgba(210, 177, 90, 0.35); color: var(--gold);">○</span>
-            <h3 class="panel-title title-gold">Neu</h3>
-          </div>
-          <div class="panel-body">
-            <div class="news-list">
-              <div class="news-item">
-                <p class="news-item-title">Monatskarte [Lichtschatten-Reise]</p>
-                <p class="news-item-desc">Aktiviert sofort den [Stamm Auto-Assistenz] Vorteil beim Kauf.</p>
-              </div>
-              <div class="news-item">
-                <p class="news-item-title">Zweite Forschungswarteschlange</p>
-                <p class="news-item-desc">Freischaltbar durch das [Forschungsauftrag-Paket].</p>
-              </div>
-              <div class="news-item">
-                <p class="news-item-title">Inventar &amp; Chat</p>
-                <p class="news-item-desc">Mengenanzeige im Inventar und Entwurf-Speicherfunktion für den Chat.</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="panel">
-          <div class="panel-header">
-            <span class="section-icon" style="border-color: rgba(90, 162, 255, 0.30); color: rgba(90, 162, 255, 0.95);">☰</span>
-            <h3 class="panel-title title-blue">Optimierungen</h3>
-          </div>
-          <div class="panel-body">
-            <div class="accordion">
-              <div>
-                <button class="acc-btn" type="button" aria-expanded="false" data-acc="a1">
-                  Bluteid-Krieg (Blood Oath War)
-                  <span class="chev">▼</span>
-                </button>
-                <div class="acc-panel" id="a1">
-                  <ul>
-                    <li>Legionen im Midgard-Meisterschaftskampf von 3 auf 1 reduziert.</li>
-                    <li>Garnisonstruppen sammeln denselben Debuff wie zentrale Gebäude.</li>
-                  </ul>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            
+            <div id="major-updates-section" class="lg:col-span-2 space-y-8">
+                
+                <div class="glass-panel rounded-xl overflow-hidden shadow-lg border border-gray-700 group hover:border-[#d4af37] transition-all duration-300 filter-item major">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=2669&auto=format&fit=crop" alt="Surtrs Flammen" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#0b101b] to-transparent"></div>
+                        <h3 class="absolute bottom-4 left-4 text-2xl font-bold text-white drop-shadow-lg viking-font">Surtrs Flammen <span class="text-sm bg-red-600/80 px-2 py-0.5 rounded ml-2 align-middle font-sans text-white">KVK Saison</span></h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-300 leading-relaxed">
+                            Die Königreich-Chaos Eroberungssaison <strong>[Surtrs Flammen]</strong> steht kurz bevor! Die Feuer brüllen in Muspelheim und Surtrs Schwert droht, die neun Welten einzuäschern. Wikingerkrieger, ihr müsst kämpfen, um Surtrs Flammen zu löschen!
+                        </p>
+                    </div>
                 </div>
-              </div>
-              <div>
-                <button class="acc-btn" type="button" aria-expanded="false" data-acc="a2">
-                  UI &amp; System
-                  <span class="chev">▼</span>
-                </button>
-                <div class="acc-panel" id="a2">
-                  <ul>
-                    <li>Koordinate teilen: Teile Orte direkt im Chat.</li>
-                    <li>Beschleunigungs-Warteschlange neu organisiert.</li>
-                  </ul>
+
+                <div class="glass-panel rounded-xl overflow-hidden shadow-lg border border-gray-700 group hover:border-[#d4af37] transition-all duration-300 filter-item major">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1577493340887-b7b9a3998466?q=80&w=2670&auto=format&fit=crop" alt="Drachenzähmen Kollaboration" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#0b101b] to-transparent"></div>
+                        <h3 class="absolute bottom-4 left-4 text-2xl font-bold text-white drop-shadow-lg viking-font">Drachenzähmen <span class="text-sm bg-blue-600/80 px-2 py-0.5 rounded ml-2 align-middle font-sans text-white">Kollaboration</span></h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-300 leading-relaxed mb-4">
+                            Eine brandneue Zusammenarbeit hat begonnen! In Partnerschaft mit <strong>&lt;Drachenzähmen leicht gemacht&gt;</strong> begeben wir uns gemeinsam auf eine Reise!
+                        </p>
+                        <ul class="space-y-2 text-gray-400 text-sm">
+                            <li class="flex items-start gap-2"><span class="material-symbols-outlined text-[#d4af37] text-base">flight</span> Erkunde eine neue Fantasiewelt.</li>
+                            <li class="flex items-start gap-2"><span class="material-symbols-outlined text-[#d4af37] text-base">swords</span> Erlebe neue Abenteuer und Herausforderungen.</li>
+                            <li class="flex items-start gap-2"><span class="material-symbols-outlined text-[#d4af37] text-base">radio_button_unchecked</span> Erobere die Lüfte und schreibe deine eigene Legende!</li>
+                        </ul>
+                    </div>
                 </div>
-              </div>
+
+                <div class="glass-panel rounded-xl overflow-hidden shadow-lg border border-gray-700 group hover:border-[#d4af37] transition-all duration-300 filter-item major">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1543589077-47d81606c1bf?q=80&w=2670&auto=format&fit=crop" alt="Weihnachts Event" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#0b101b] to-transparent"></div>
+                        <h3 class="absolute bottom-4 left-4 text-2xl font-bold text-white drop-shadow-lg viking-font">Weihnachts-Event <span class="text-sm bg-green-600/80 px-2 py-0.5 rounded ml-2 align-middle font-sans text-white">Event</span></h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-300 leading-relaxed">
+                            Wenn die Glocken läuten, beginnt das <strong>Kutschenrennen-Event</strong>. Bildet Teams und legt die Strecke gemeinsam zurück! Der neu gestaltete Weihnachtsskin bringt Farbe in dein Abenteuer.
+                        </p>
+                    </div>
+                </div>
+
             </div>
-          </div>
-        </section>
 
-        <section class="panel">
-          <div class="panel-header">
-            <span class="section-icon" style="border-color: rgba(43, 212, 122, 0.28); color: rgba(43, 212, 122, 0.95);">⚙</span>
-            <h3 class="panel-title title-green">Fehlerbehebungen</h3>
-          </div>
-          <div class="panel-body">
-            <ul class="fix-list">
-              <li><span class="dot"></span> Mail-Aktualisierungsprobleme behoben.</li>
-              <li><span class="dot"></span> Anzeige des Drill-Grounds (PC) korrigiert.</li>
-              <li><span class="dot"></span> Anzeigefehler beim Schmiedefortschritt.</li>
-            </ul>
-          </div>
-        </section>
-      </aside>
+            <div id="details-section" class="lg:col-span-1 space-y-6">
+                
+                <div class="glass-panel p-5 rounded-xl border border-gray-700 filter-item opt">
+                    <h3 class="text-xl font-bold text-[#d4af37] mb-4 flex items-center gap-2 viking-font">
+                        <span class="material-symbols-outlined">radio_button_unchecked</span> Neu
+                    </h3>
+                    <ul class="space-y-3 text-sm text-gray-300">
+                        <li class="bg-white/5 p-2 rounded hover:bg-white/10 transition">
+                            <strong class="block text-white">Monatskarte [Lichtschatten-Reise]</strong>
+                            Aktiviert sofort den [Stamm Auto-Assistenz] Vorteil beim Kauf.
+                        </li>
+                        <li class="bg-white/5 p-2 rounded hover:bg-white/10 transition">
+                            <strong class="block text-white">Zweite Forschungswarteschlange</strong>
+                            Freischaltbar durch das [Forschungsauftrag-Paket].
+                        </li>
+                        <li class="bg-white/5 p-2 rounded hover:bg-white/10 transition">
+                            <strong class="block text-white">Schnell-Upgrade für Skills</strong>
+                            Optimierte Interaktion für Heldentalente und neues Feature für Skills.
+                        </li>
+                        <li class="bg-white/5 p-2 rounded hover:bg-white/10 transition">
+                            <strong class="block text-white">Stammesladen - Splittermarkt</strong>
+                            Tausche Heldensplitter oder Fähigkeitssplitter.
+                        </li>
+                        <li class="bg-white/5 p-2 rounded hover:bg-white/10 transition">
+                            <strong class="block text-white">Inventar & Chat</strong>
+                            Mengenanzeige im Inventar und Entwurf-Speicherfunktion für den Chat.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="glass-panel p-5 rounded-xl border border-gray-700 filter-item opt">
+                    <h3 class="text-xl font-bold text-blue-400 mb-4 flex items-center gap-2 viking-font">
+                        <span class="material-symbols-outlined">tune</span> Optimierungen
+                    </h3>
+                    
+                    <div class="space-y-2">
+                        <details class="group bg-black/20 rounded-lg open:bg-black/40 transition-colors">
+                            <summary class="cursor-pointer p-3 font-bold text-gray-200 flex justify-between items-center select-none">
+                                Bluteid-Krieg
+                                <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+                            </summary>
+                            <div class="p-3 pt-0 text-xs text-gray-400 space-y-2 border-t border-gray-700/50 mt-2">
+                                <p>• Legionen im Midgard-Meisterschaftskampf von 3 auf 1 reduziert.</p>
+                                <p>• Garnisonstruppen sammeln denselben Debuff wie zentrale Gebäude.</p>
+                                <p>• Ranglisten-Optimierung: Bei gleichen Punkten entscheiden die Gesamttötungspunkte.</p>
+                            </div>
+                        </details>
+
+                        <details class="group bg-black/20 rounded-lg open:bg-black/40 transition-colors">
+                            <summary class="cursor-pointer p-3 font-bold text-gray-200 flex justify-between items-center select-none">
+                                UI & System
+                                <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+                            </summary>
+                            <div class="p-3 pt-0 text-xs text-gray-400 space-y-2 border-t border-gray-700/50 mt-2">
+                                <p>• <strong>Koordinate teilen:</strong> Teile Orte direkt im Chat.</p>
+                                <p>• <strong>Beschleunigungs-Warteschlange:</strong> Neu organisiert.</p>
+                                <p>• <strong>Halle der Tapferkeit:</strong> Performance verbessert.</p>
+                                <p>• <strong>Spracheinstellungen:</strong> Unterteilt in System- und Übersetzung.</p>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="glass-panel p-5 rounded-xl border border-gray-700 filter-item opt">
+                    <h3 class="text-xl font-bold text-green-400 mb-4 flex items-center gap-2 viking-font">
+                        <span class="material-symbols-outlined">pest_control</span> Fehlerbehebungen
+                    </h3>
+                    <ul class="list-disc list-inside text-xs text-gray-400 space-y-1">
+                        <li>Mail-Aktualisierungsprobleme behoben.</li>
+                        <li>Anzeige des Drill-Grounds (PC) korrigiert.</li>
+                        <li>Heldentalente im Drill-Ground nun wirksam.</li>
+                        <li>Anzeigefehler beim Schmiedefortschritt.</li>
+                        <li>Avatar-Fehler beim Sammeln neutraler Truppen.</li>
+                        <li>Lag-Probleme im Magischen Kartenabenteuer behoben.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="text-center mt-12 mb-4 text-gray-600 text-xs">
+            Unofficial Patch Notes Page
+        </div>
+
     </div>
-  </main>
 
-  <footer class="container">
-    Viking Rise Unofficial Update Notes
-  </footer>
-
-  <script>
-    (function () {
-      // TAB LOGIC (Highlights vs Details vs Alle)
-      function setActiveTab(tab) {
-        var tabs = document.querySelectorAll(".tab-btn");
-        tabs.forEach(function (btn) {
-          var isActive = btn === tab;
-          btn.classList.toggle("is-active", isActive);
-          btn.setAttribute("aria-selected", isActive ? "true" : "false");
-        });
-
-        var scope = tab.getAttribute("data-tab");
-        var leftCol = document.querySelector('[data-scope="highlights"]');
-        var rightCol = document.querySelector('[data-scope="details"]');
-
-        // Logic:
-        // Alle -> Beide Spalten sichtbar
-        // Highlights -> Nur Linke Spalte sichtbar
-        // Details -> Nur Rechte Spalte sichtbar
+    <script>
+        // Automatische Zeitanpassung
+        const maintenanceUTC = new Date(); // Platzhalter für aktuelles Datum
+        maintenanceUTC.setUTCHours(6, 0, 0, 0); 
         
-        if (scope === "all") {
-            leftCol.classList.remove("is-hidden");
-            rightCol.classList.remove("is-hidden");
-            // Grid wieder auf 2 Spalten setzen (sofern Platz ist)
-            document.querySelector(".grid").style.gridTemplateColumns = "2fr 1fr";
-            document.querySelector(".grid").style.display = "grid";
-        } else if (scope === "highlights") {
-            leftCol.classList.remove("is-hidden");
-            rightCol.classList.add("is-hidden");
-            document.querySelector(".grid").style.display = "block"; // Volle Breite
-        } else if (scope === "details") {
-            leftCol.classList.add("is-hidden");
-            rightCol.classList.remove("is-hidden");
-            document.querySelector(".grid").style.display = "block"; // Volle Breite
+        const options = { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' };
+        const localTimeStr = maintenanceUTC.toLocaleDateString(navigator.language, options);
+        const offset = -maintenanceUTC.getTimezoneOffset() / 60;
+        const offsetStr = offset >= 0 ? `+${offset}` : offset;
+        
+        document.getElementById('local-time-display').innerHTML = `${localTimeStr} <span class="text-sm font-normal text-gray-500">(UTC${offsetStr})</span>`;
+
+        // Filter Funktion
+        function filterContent(type) {
+            const btns = ['all', 'major', 'opt'];
+            const leftCol = document.getElementById('major-updates-section');
+            const rightCol = document.getElementById('details-section');
+            const mainGrid = document.querySelector('.grid');
+
+            // Buttons aktualisieren
+            btns.forEach(btn => {
+                const el = document.getElementById(`btn-${btn}`);
+                if(btn === type) {
+                    el.classList.remove('text-gray-400', 'hover:text-white', 'hover:bg-white/10');
+                    el.classList.add('bg-[#d4af37]', 'text-black');
+                } else {
+                    el.classList.add('text-gray-400', 'hover:text-white', 'hover:bg-white/10');
+                    el.classList.remove('bg-[#d4af37]', 'text-black');
+                }
+            });
+
+            // Grid Logic
+            if (type === 'all') {
+                leftCol.style.display = 'block';
+                rightCol.style.display = 'block';
+                mainGrid.classList.add('lg:grid-cols-3');
+                mainGrid.classList.remove('grid-cols-1');
+                leftCol.className = 'lg:col-span-2 space-y-8';
+                rightCol.className = 'lg:col-span-1 space-y-6';
+            } else if (type === 'major') {
+                leftCol.style.display = 'block';
+                rightCol.style.display = 'none';
+                mainGrid.classList.remove('lg:grid-cols-3');
+                mainGrid.classList.add('grid-cols-1');
+                leftCol.className = 'space-y-8 mx-auto max-w-3xl';
+            } else if (type === 'opt') {
+                leftCol.style.display = 'none';
+                rightCol.style.display = 'block';
+                mainGrid.classList.remove('lg:grid-cols-3');
+                mainGrid.classList.add('grid-cols-1');
+                rightCol.className = 'space-y-6 mx-auto max-w-2xl';
+            }
         }
-      }
+    </script>
 
-      document.querySelectorAll(".tab-btn").forEach(function (btn) {
-        btn.addEventListener("click", function () {
-          setActiveTab(btn);
-        });
-      });
-
-      // ACCORDION LOGIC
-      function toggleAcc(btn) {
-        var targetId = btn.getAttribute("data-acc");
-        var panel = document.getElementById(targetId);
-        var expanded = btn.getAttribute("aria-expanded") === "true";
-
-        btn.setAttribute("aria-expanded", expanded ? "false" : "true");
-        if (panel) {
-          panel.classList.toggle("is-open", !expanded);
-        }
-      }
-
-      document.querySelectorAll(".acc-btn").forEach(function (btn) {
-        btn.addEventListener("click", function () {
-          toggleAcc(btn);
-        });
-      });
-    })();
-  </script>
 </body>
 </html>
