@@ -3,261 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viking Rise Update Notes</title>
-    
+    <title>Viking Rise Community Hub</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Roboto:wght@300;400;500&display=swap');
         
-        body { font-family: 'Roboto', sans-serif; background-color: #0b101b; }
+        body { font-family: 'Roboto', sans-serif; background-color: #050a14; color: #e2e8f0; }
         .viking-font { font-family: 'Cinzel', serif; }
         
-        /* Zusätzliche Styles für Glas-Effekt */
-        .glass-panel {
-            background: rgba(30, 41, 59, 0.7);
-            backdrop-filter: blur(10px);
+        /* Hintergrund Video/Bild Effekt */
+        .hero-bg {
+            background: linear-gradient(to bottom, rgba(5, 10, 20, 0.6), #050a14), 
+                        url('https://images.unsplash.com/photo-1514539079130-25950c84af65?q=80&w=2669&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
         }
-        
+
         .gold-text { color: #d4af37; }
         .gold-border { border-color: #d4af37; }
         
-        /* Custom Scrollbar */
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: #0f172a; }
-        ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
-        ::-webkit-scrollbar-thumb:hover { background: #d4af37; }
+        .btn-primary {
+            background: linear-gradient(45deg, #d4af37, #b4941f);
+            color: #000;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+        }
+        
+        .nav-link {
+            position: relative;
+            color: #94a3b8;
+            transition: color 0.3s;
+        }
+        .nav-link:hover { color: #d4af37; }
+        .nav-link::after {
+            content: ''; position: absolute; width: 0; height: 2px; bottom: -4px; left: 0;
+            background-color: #d4af37; transition: width 0.3s;
+        }
+        .nav-link:hover::after { width: 100%; }
     </style>
 </head>
+<body class="min-h-screen flex flex-col">
 
-<body class="min-h-screen pb-20 text-gray-200">
-
-    <div class="relative w-full h-80 md:h-96 overflow-hidden border-b-4 border-[#d4af37]">
-        <img src="https://images.unsplash.com/photo-1535581652167-3d6b98c5b73d?q=80&w=2670&auto=format&fit=crop" alt="Viking Update Hero" class="absolute inset-0 w-full h-full object-cover opacity-60">
-        <div class="absolute inset-0 bg-gradient-to-t from-[#0b101b] via-transparent to-transparent"></div>
-        <div class="absolute bottom-0 left-0 p-6 md:p-12 w-full text-center md:text-left">
-            <span class="inline-block px-3 py-1 mb-2 text-xs font-bold tracking-wider text-black bg-[#d4af37] rounded uppercase">Wartungsarbeiten</span>
-            <h1 class="text-4xl md:text-6xl font-bold text-white drop-shadow-lg mb-2 viking-font">Viking Rise Update</h1>
-            <p class="text-lg md:text-xl text-gray-300 max-w-2xl drop-shadow-md">Surtrs Flammen, Drachenzähmen-Kollaboration & Weihnachts-Events</p>
-        </div>
-    </div>
-
-    <div class="container mx-auto px-4 -mt-10 relative z-10">
-        
-        <div class="glass-panel rounded-xl p-6 mb-8 border border-gray-700 flex flex-col md:flex-row items-center justify-between gap-4 shadow-xl">
-            <div class="flex items-center gap-4">
-                <span class="material-symbols-outlined text-4xl gold-text">schedule</span>
-                <div>
-                    <h2 class="text-lg font-bold text-white">Wartungszeitraum</h2>
-                    <p class="text-sm text-gray-400">17. Dezember, 06:00 - 06:30 (UTC)</p>
-                </div>
+    <nav class="absolute top-0 w-full z-50 border-b border-white/10 bg-black/20 backdrop-blur-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <span class="text-2xl">🛡️</span>
+                <span class="viking-font text-xl font-bold text-white tracking-widest">Viking<span class="gold-text">Hub</span></span>
             </div>
-            <div class="text-center md:text-right bg-black/30 p-3 rounded-lg border border-gray-700 w-full md:w-auto">
-                <p class="text-xs text-gray-400 uppercase tracking-widest mb-1">Deine Ortszeit</p>
-                <p id="local-time-display" class="text-xl font-mono text-[#d4af37] font-bold">--:--</p>
+            <div class="hidden md:flex gap-8 font-medium">
+                <a href="index.html" class="text-white nav-link">Home</a>
+                <a href="updates.html" class="nav-link">Patch Notes</a>
+                <a href="#" class="nav-link cursor-not-allowed opacity-50">Guides (Bald)</a>
+                <a href="#" class="nav-link cursor-not-allowed opacity-50">Stamm</a>
             </div>
+            <a href="updates.html" class="md:hidden text-white">
+                <span class="material-symbols-outlined">menu</span>
+            </a>
         </div>
+    </nav>
 
-        <div class="flex flex-col sm:flex-row justify-between items-center mb-6 gap-4">
-            <div class="flex gap-2 bg-[#1e293b] p-1 rounded-lg border border-gray-700">
-                <button id="btn-all" onclick="filterContent('all')" class="px-4 py-2 rounded-md text-sm font-bold transition-colors bg-[#d4af37] text-black">Alle</button>
-                <button id="btn-major" onclick="filterContent('major')" class="px-4 py-2 rounded-md text-sm font-bold transition-colors text-gray-400 hover:text-white hover:bg-white/10">Highlights</button>
-                <button id="btn-opt" onclick="filterContent('opt')" class="px-4 py-2 rounded-md text-sm font-bold transition-colors text-gray-400 hover:text-white hover:bg-white/10">Details</button>
-            </div>
-        </div>
-
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+    <main class="flex-grow flex items-center justify-center hero-bg relative min-h-[80vh]">
+        <div class="container mx-auto px-6 text-center relative z-10 pt-20">
             
-            <div id="major-updates-section" class="lg:col-span-2 space-y-8">
-                
-                <div class="glass-panel rounded-xl overflow-hidden shadow-lg border border-gray-700 group hover:border-[#d4af37] transition-all duration-300 filter-item major">
-                    <div class="relative h-64 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=2669&auto=format&fit=crop" alt="Surtrs Flammen" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                        <div class="absolute inset-0 bg-gradient-to-t from-[#0b101b] to-transparent"></div>
-                        <h3 class="absolute bottom-4 left-4 text-2xl font-bold text-white drop-shadow-lg viking-font">Surtrs Flammen <span class="text-sm bg-red-600/80 px-2 py-0.5 rounded ml-2 align-middle font-sans text-white">KVK Saison</span></h3>
-                    </div>
-                    <div class="p-6">
-                        <p class="text-gray-300 leading-relaxed">
-                            Die Königreich-Chaos Eroberungssaison <strong>[Surtrs Flammen]</strong> steht kurz bevor! Die Feuer brüllen in Muspelheim und Surtrs Schwert droht, die neun Welten einzuäschern. Wikingerkrieger, ihr müsst kämpfen, um Surtrs Flammen zu löschen!
-                        </p>
-                    </div>
-                </div>
-
-                <div class="glass-panel rounded-xl overflow-hidden shadow-lg border border-gray-700 group hover:border-[#d4af37] transition-all duration-300 filter-item major">
-                    <div class="relative h-64 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1577493340887-b7b9a3998466?q=80&w=2670&auto=format&fit=crop" alt="Drachenzähmen Kollaboration" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                        <div class="absolute inset-0 bg-gradient-to-t from-[#0b101b] to-transparent"></div>
-                        <h3 class="absolute bottom-4 left-4 text-2xl font-bold text-white drop-shadow-lg viking-font">Drachenzähmen <span class="text-sm bg-blue-600/80 px-2 py-0.5 rounded ml-2 align-middle font-sans text-white">Kollaboration</span></h3>
-                    </div>
-                    <div class="p-6">
-                        <p class="text-gray-300 leading-relaxed mb-4">
-                            Eine brandneue Zusammenarbeit hat begonnen! In Partnerschaft mit <strong>&lt;Drachenzähmen leicht gemacht&gt;</strong> begeben wir uns gemeinsam auf eine Reise!
-                        </p>
-                        <ul class="space-y-2 text-gray-400 text-sm">
-                            <li class="flex items-start gap-2"><span class="material-symbols-outlined text-[#d4af37] text-base">flight</span> Erkunde eine neue Fantasiewelt.</li>
-                            <li class="flex items-start gap-2"><span class="material-symbols-outlined text-[#d4af37] text-base">swords</span> Erlebe neue Abenteuer und Herausforderungen.</li>
-                            <li class="flex items-start gap-2"><span class="material-symbols-outlined text-[#d4af37] text-base">radio_button_unchecked</span> Erobere die Lüfte und schreibe deine eigene Legende!</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="glass-panel rounded-xl overflow-hidden shadow-lg border border-gray-700 group hover:border-[#d4af37] transition-all duration-300 filter-item major">
-                    <div class="relative h-64 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1543589077-47d81606c1bf?q=80&w=2670&auto=format&fit=crop" alt="Weihnachts Event" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                        <div class="absolute inset-0 bg-gradient-to-t from-[#0b101b] to-transparent"></div>
-                        <h3 class="absolute bottom-4 left-4 text-2xl font-bold text-white drop-shadow-lg viking-font">Weihnachts-Event <span class="text-sm bg-green-600/80 px-2 py-0.5 rounded ml-2 align-middle font-sans text-white">Event</span></h3>
-                    </div>
-                    <div class="p-6">
-                        <p class="text-gray-300 leading-relaxed">
-                            Wenn die Glocken läuten, beginnt das <strong>Kutschenrennen-Event</strong>. Bildet Teams und legt die Strecke gemeinsam zurück! Der neu gestaltete Weihnachtsskin bringt Farbe in dein Abenteuer.
-                        </p>
-                    </div>
-                </div>
-
+            <div class="inline-block border border-[#d4af37]/50 bg-[#d4af37]/10 px-4 py-1 rounded-full mb-6 backdrop-blur-sm">
+                <span class="text-[#d4af37] text-xs font-bold tracking-[0.2em] uppercase">Unofficial Community Hub</span>
             </div>
 
-            <div id="details-section" class="lg:col-span-1 space-y-6">
-                
-                <div class="glass-panel p-5 rounded-xl border border-gray-700 filter-item opt">
-                    <h3 class="text-xl font-bold text-[#d4af37] mb-4 flex items-center gap-2 viking-font">
-                        <span class="material-symbols-outlined">radio_button_unchecked</span> Neu
-                    </h3>
-                    <ul class="space-y-3 text-sm text-gray-300">
-                        <li class="bg-white/5 p-2 rounded hover:bg-white/10 transition">
-                            <strong class="block text-white">Monatskarte [Lichtschatten-Reise]</strong>
-                            Aktiviert sofort den [Stamm Auto-Assistenz] Vorteil beim Kauf.
-                        </li>
-                        <li class="bg-white/5 p-2 rounded hover:bg-white/10 transition">
-                            <strong class="block text-white">Zweite Forschungswarteschlange</strong>
-                            Freischaltbar durch das [Forschungsauftrag-Paket].
-                        </li>
-                        <li class="bg-white/5 p-2 rounded hover:bg-white/10 transition">
-                            <strong class="block text-white">Schnell-Upgrade für Skills</strong>
-                            Optimierte Interaktion für Heldentalente und neues Feature für Skills.
-                        </li>
-                        <li class="bg-white/5 p-2 rounded hover:bg-white/10 transition">
-                            <strong class="block text-white">Stammesladen - Splittermarkt</strong>
-                            Tausche Heldensplitter oder Fähigkeitssplitter.
-                        </li>
-                        <li class="bg-white/5 p-2 rounded hover:bg-white/10 transition">
-                            <strong class="block text-white">Inventar & Chat</strong>
-                            Mengenanzeige im Inventar und Entwurf-Speicherfunktion für den Chat.
-                        </li>
-                    </ul>
-                </div>
+            <h1 class="viking-font text-5xl md:text-7xl font-bold text-white mb-6 drop-shadow-2xl">
+                Erobere <br/> <span class="gold-text">Midgard</span>
+            </h1>
+            
+            <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-10 leading-relaxed drop-shadow-lg">
+                Bleib immer auf dem neuesten Stand. Hier findest du die aktuellen Patch Notes, Strategien und Neuigkeiten zu Viking Rise.
+            </p>
 
-                <div class="glass-panel p-5 rounded-xl border border-gray-700 filter-item opt">
-                    <h3 class="text-xl font-bold text-blue-400 mb-4 flex items-center gap-2 viking-font">
-                        <span class="material-symbols-outlined">tune</span> Optimierungen
-                    </h3>
-                    
-                    <div class="space-y-2">
-                        <details class="group bg-black/20 rounded-lg open:bg-black/40 transition-colors">
-                            <summary class="cursor-pointer p-3 font-bold text-gray-200 flex justify-between items-center select-none">
-                                Bluteid-Krieg
-                                <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
-                            </summary>
-                            <div class="p-3 pt-0 text-xs text-gray-400 space-y-2 border-t border-gray-700/50 mt-2">
-                                <p>• Legionen im Midgard-Meisterschaftskampf von 3 auf 1 reduziert.</p>
-                                <p>• Garnisonstruppen sammeln denselben Debuff wie zentrale Gebäude.</p>
-                                <p>• Ranglisten-Optimierung: Bei gleichen Punkten entscheiden die Gesamttötungspunkte.</p>
-                            </div>
-                        </details>
-
-                        <details class="group bg-black/20 rounded-lg open:bg-black/40 transition-colors">
-                            <summary class="cursor-pointer p-3 font-bold text-gray-200 flex justify-between items-center select-none">
-                                UI & System
-                                <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
-                            </summary>
-                            <div class="p-3 pt-0 text-xs text-gray-400 space-y-2 border-t border-gray-700/50 mt-2">
-                                <p>• <strong>Koordinate teilen:</strong> Teile Orte direkt im Chat.</p>
-                                <p>• <strong>Beschleunigungs-Warteschlange:</strong> Neu organisiert.</p>
-                                <p>• <strong>Halle der Tapferkeit:</strong> Performance verbessert.</p>
-                                <p>• <strong>Spracheinstellungen:</strong> Unterteilt in System- und Übersetzung.</p>
-                            </div>
-                        </details>
-                    </div>
-                </div>
-
-                <div class="glass-panel p-5 rounded-xl border border-gray-700 filter-item opt">
-                    <h3 class="text-xl font-bold text-green-400 mb-4 flex items-center gap-2 viking-font">
-                        <span class="material-symbols-outlined">pest_control</span> Fehlerbehebungen
-                    </h3>
-                    <ul class="list-disc list-inside text-xs text-gray-400 space-y-1">
-                        <li>Mail-Aktualisierungsprobleme behoben.</li>
-                        <li>Anzeige des Drill-Grounds (PC) korrigiert.</li>
-                        <li>Heldentalente im Drill-Ground nun wirksam.</li>
-                        <li>Anzeigefehler beim Schmiedefortschritt.</li>
-                        <li>Avatar-Fehler beim Sammeln neutraler Truppen.</li>
-                        <li>Lag-Probleme im Magischen Kartenabenteuer behoben.</li>
-                    </ul>
-                </div>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="updates.html" class="btn-primary px-8 py-4 rounded text-sm uppercase tracking-widest flex items-center justify-center gap-2">
+                    <span class="material-symbols-outlined">newspaper</span>
+                    Zu den Patch Notes
+                </a>
+                <button class="px-8 py-4 rounded border border-white/30 hover:bg-white/10 text-white text-sm uppercase tracking-widest transition-all font-bold backdrop-blur-sm">
+                    Discord Beitreten
+                </button>
             </div>
 
         </div>
+    </main>
 
-        <div class="text-center mt-12 mb-4 text-gray-600 text-xs">
-            Unofficial Patch Notes Page
+    <section class="bg-[#0b101b] py-20 border-t border-white/5">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <div class="group bg-[#111827] border border-white/5 p-8 rounded-2xl hover:border-[#d4af37]/50 transition-all hover:-translate-y-2">
+                    <div class="w-12 h-12 bg-[#d4af37]/10 rounded-lg flex items-center justify-center mb-6 text-[#d4af37]">
+                        <span class="material-symbols-outlined text-3xl">update</span>
+                    </div>
+                    <h3 class="viking-font text-xl text-white mb-3">Aktuelle Updates</h3>
+                    <p class="text-gray-400 text-sm mb-4">Lies alles über "Surtrs Flammen", die Drachen-Kollaboration und Bugfixes.</p>
+                    <a href="updates.html" class="text-[#d4af37] text-sm font-bold flex items-center gap-1 group-hover:gap-2 transition-all">
+                        Jetzt lesen <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </a>
+                </div>
+
+                <div class="group bg-[#111827] border border-white/5 p-8 rounded-2xl hover:border-blue-500/50 transition-all hover:-translate-y-2 relative overflow-hidden">
+                    <div class="absolute top-3 right-3 bg-blue-500/20 text-blue-400 text-[10px] font-bold px-2 py-1 rounded uppercase">Coming Soon</div>
+                    <div class="w-12 h-12 bg-blue-500/10 rounded-lg flex items-center justify-center mb-6 text-blue-400">
+                        <span class="material-symbols-outlined text-3xl">school</span>
+                    </div>
+                    <h3 class="viking-font text-xl text-white mb-3">Guides & Strategie</h3>
+                    <p class="text-gray-400 text-sm">Die besten Tipps für KVK, Helden-Builds und Ressourcen-Management.</p>
+                </div>
+
+                <div class="group bg-[#111827] border border-white/5 p-8 rounded-2xl hover:border-green-500/50 transition-all hover:-translate-y-2 relative overflow-hidden">
+                    <div class="absolute top-3 right-3 bg-green-500/20 text-green-400 text-[10px] font-bold px-2 py-1 rounded uppercase">Coming Soon</div>
+                    <div class="w-12 h-12 bg-green-500/10 rounded-lg flex items-center justify-center mb-6 text-green-400">
+                        <span class="material-symbols-outlined text-3xl">groups</span>
+                    </div>
+                    <h3 class="viking-font text-xl text-white mb-3">Stamm finden</h3>
+                    <p class="text-gray-400 text-sm">Finde aktive deutsche Stämme oder rekrutiere neue Mitglieder für deinen Clan.</p>
+                </div>
+
+            </div>
         </div>
+    </section>
 
-    </div>
-
-    <script>
-        // Automatische Zeitanpassung
-        const maintenanceUTC = new Date(); // Platzhalter für aktuelles Datum
-        maintenanceUTC.setUTCHours(6, 0, 0, 0); 
-        
-        const options = { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' };
-        const localTimeStr = maintenanceUTC.toLocaleDateString(navigator.language, options);
-        const offset = -maintenanceUTC.getTimezoneOffset() / 60;
-        const offsetStr = offset >= 0 ? `+${offset}` : offset;
-        
-        document.getElementById('local-time-display').innerHTML = `${localTimeStr} <span class="text-sm font-normal text-gray-500">(UTC${offsetStr})</span>`;
-
-        // Filter Funktion
-        function filterContent(type) {
-            const btns = ['all', 'major', 'opt'];
-            const leftCol = document.getElementById('major-updates-section');
-            const rightCol = document.getElementById('details-section');
-            const mainGrid = document.querySelector('.grid');
-
-            // Buttons aktualisieren
-            btns.forEach(btn => {
-                const el = document.getElementById(`btn-${btn}`);
-                if(btn === type) {
-                    el.classList.remove('text-gray-400', 'hover:text-white', 'hover:bg-white/10');
-                    el.classList.add('bg-[#d4af37]', 'text-black');
-                } else {
-                    el.classList.add('text-gray-400', 'hover:text-white', 'hover:bg-white/10');
-                    el.classList.remove('bg-[#d4af37]', 'text-black');
-                }
-            });
-
-            // Grid Logic
-            if (type === 'all') {
-                leftCol.style.display = 'block';
-                rightCol.style.display = 'block';
-                mainGrid.classList.add('lg:grid-cols-3');
-                mainGrid.classList.remove('grid-cols-1');
-                leftCol.className = 'lg:col-span-2 space-y-8';
-                rightCol.className = 'lg:col-span-1 space-y-6';
-            } else if (type === 'major') {
-                leftCol.style.display = 'block';
-                rightCol.style.display = 'none';
-                mainGrid.classList.remove('lg:grid-cols-3');
-                mainGrid.classList.add('grid-cols-1');
-                leftCol.className = 'space-y-8 mx-auto max-w-3xl';
-            } else if (type === 'opt') {
-                leftCol.style.display = 'none';
-                rightCol.style.display = 'block';
-                mainGrid.classList.remove('lg:grid-cols-3');
-                mainGrid.classList.add('grid-cols-1');
-                rightCol.className = 'space-y-6 mx-auto max-w-2xl';
-            }
-        }
-    </script>
+    <footer class="bg-[#050a14] py-8 text-center border-t border-white/5 text-gray-600 text-xs">
+        <p>&copy; 2025 Viking Rise Fan Page. Not affiliated with IGG.</p>
+    </footer>
 
 </body>
 </html>
