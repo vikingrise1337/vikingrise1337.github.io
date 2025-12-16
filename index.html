@@ -9,17 +9,18 @@
 
         :root {
             --bg-dark: #0b101b;
-            --card-bg: #111827;
-            --card-border: #1f2937;
-            --accent-gold: #fbbf24;
-            --accent-blue: #60a5fa;
-            --text-main: #f3f4f6;
-            --text-muted: #9ca3af;
+            --card-bg: #131b2b;
+            --card-border: #2a3a5a;
+            --accent-gold: #c0a060;
+            --accent-blue: #4a70a5;
+            --text-main: #f0f2f5;
+            --text-muted: #a0a8b8;
             --success-green: #10b981;
         }
 
         body {
             background-color: var(--bg-dark);
+            background-image: linear-gradient(rgba(11, 16, 27, 0.9), rgba(11, 16, 27, 0.95)), url('https://www.transparenttextures.com/patterns/viking.png');
             color: var(--text-main);
             font-family: 'Roboto', sans-serif;
             margin: 0;
@@ -29,11 +30,12 @@
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(to bottom, rgba(11, 16, 27, 0.3), var(--bg-dark)), url('https://images.unsplash.com/photo-1519074069444-1ba4fff66d16?q=80&w=2574&auto=format&fit=crop'); /* Platzhalterbild */
+            background: linear-gradient(to bottom, rgba(11, 16, 27, 0.5), var(--bg-dark)), url('https://images.unsplash.com/photo-1547539424-768756a2c355?q=80&w=2070&auto=format&fit=crop'); 
             background-size: cover;
             background-position: center;
-            padding: 60px 20px 20px 20px;
-            border-bottom: 2px solid var(--accent-gold);
+            padding: 60px 20px 30px 20px;
+            border-bottom: 3px solid var(--accent-gold);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
         }
 
         .container {
@@ -43,50 +45,55 @@
 
         .badge {
             background-color: var(--accent-gold);
-            color: #000;
+            color: #1a1a1a;
             padding: 4px 8px;
             font-weight: bold;
             font-size: 0.8rem;
             text-transform: uppercase;
-            border-radius: 4px;
+            border-radius: 2px;
             display: inline-block;
             margin-bottom: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
         }
 
         h1 {
             font-family: 'Cinzel', serif;
-            font-size: 3rem;
+            font-size: 3.5rem;
             margin: 0 0 10px 0;
             text-transform: uppercase;
-            letter-spacing: 2px;
+            letter-spacing: 3px;
+            color: var(--accent-gold);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
         }
 
         .subtitle {
             color: var(--text-muted);
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             margin-bottom: 30px;
+            font-weight: 300;
         }
 
         /* Maintenance Box */
         .maintenance-box {
-            background-color: rgba(17, 24, 39, 0.9);
-            border: 1px solid var(--accent-gold);
-            border-radius: 8px;
-            padding: 20px;
+            background: linear-gradient(145deg, rgba(19, 27, 43, 0.9), rgba(11, 16, 27, 0.95));
+            border: 2px solid var(--accent-gold);
+            border-radius: 4px;
+            padding: 25px;
             display: flex;
             align-items: center;
             justify-content: space-between;
             margin-bottom: 40px;
+            box-shadow: inset 0 0 10px rgba(0,0,0,0.3);
         }
 
         .m-info {
             display: flex;
             align-items: center;
-            gap: 15px;
+            gap: 20px;
         }
 
         .clock-icon {
-            font-size: 1.5rem;
+            font-size: 2rem;
             color: var(--accent-gold);
         }
 
@@ -97,60 +104,52 @@
         .m-time-highlight {
             color: var(--accent-gold);
             font-weight: bold;
-            font-size: 1.2rem;
+            font-size: 1.4rem;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
         }
 
         /* Controls */
         .controls {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start;
             align-items: center;
-            margin-bottom: 20px;
-            flex-wrap: wrap;
-            gap: 10px;
+            margin-bottom: 25px;
         }
 
         .btn-group {
             display: flex;
             gap: 10px;
-            background: #1f2937;
+            background: #1a2538;
             padding: 5px;
-            border-radius: 8px;
+            border-radius: 4px;
+            border: 1px solid var(--card-border);
         }
 
         .btn {
             background: transparent;
             border: none;
             color: var(--text-muted);
-            padding: 8px 16px;
+            padding: 10px 20px;
             cursor: pointer;
-            border-radius: 6px;
+            border-radius: 4px;
             font-weight: 500;
             transition: all 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         .btn.active {
-            background-color: var(--accent-gold);
-            color: #000;
-        }
-
-        .btn-discord {
-            background-color: var(--success-green);
-            color: white;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .btn-discord:hover {
-            background-color: #059669;
+            background: linear-gradient(to bottom, var(--accent-gold), #a08040);
+            color: #1a1a1a;
+            font-weight: bold;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
         }
 
         /* Grid Layout */
         .content-grid {
             display: grid;
             grid-template-columns: 2fr 1fr;
-            gap: 20px;
+            gap: 25px;
             padding-bottom: 50px;
         }
 
@@ -163,154 +162,157 @@
         /* Cards */
         .card {
             background-color: var(--card-bg);
-            border: 1px solid var(--card-border);
-            border-radius: 12px;
+            border: 2px solid var(--card-border);
+            border-radius: 8px;
             overflow: hidden;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+            margin-bottom: 25px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+            transition: all 0.3s ease; /* Generelle Transition für normale Karten */
+        }
+        
+        /* Hover für normale Karten (nicht Bilder) */
+        .card:not(.img-card):hover {
+             border-color: var(--accent-blue);
+             box-shadow: 0 8px 16px rgba(0,0,0,0.6);
         }
 
         .card-header {
             padding: 15px 20px;
-            border-bottom: 1px solid var(--card-border);
+            border-bottom: 2px solid var(--card-border);
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 12px;
+            background: rgba(0,0,0,0.2);
         }
 
         .card-title {
             font-family: 'Cinzel', serif;
-            font-size: 1.2rem;
-            color: var(--accent-blue);
+            font-size: 1.3rem;
+            color: var(--accent-gold);
             text-transform: uppercase;
             margin: 0;
+            letter-spacing: 1px;
         }
 
         .card-body {
-            padding: 20px;
+            padding: 25px;
         }
 
-        /* Image Card Styles */
+        /* === NEUE HOVER EFFEKTE START === */
+
+        /* Image Card Styles - Basis */
         .img-card {
             position: relative;
-            height: 250px;
-            background-size: cover;
-            background-position: center;
+            height: 280px;
             display: flex;
             align-items: flex-end;
+            /* Standard Rahmenfarbe (Blau) */
+            border: 2px solid var(--card-border);
+            /* WICHTIG: Verhindert, dass das gezoomte Bild aus der Box herausragt */
+            overflow: hidden;
+            /* Weicher Übergang für die Rahmenfarbe */
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+            cursor: default; /* Zeigt, dass es kein Link ist */
         }
 
+        /* Das Pseudo-Element ::before hält nun das Bild */
+        .img-card::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            /* Trick: Es "erbt" das Hintergrundbild, das im HTML inline definiert ist */
+            background-image: inherit;
+            background-size: cover;
+            background-position: center;
+            z-index: 0; /* Liegt HINTER dem Text */
+            /* Sehr weicher Übergang für den Zoom */
+            transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        /* Overlay Text Container */
         .img-overlay {
-            background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+            background: linear-gradient(to top, rgba(0,0,0,0.95), rgba(0,0,0,0.4));
             width: 100%;
-            padding: 20px;
-        }
-        
-        .event-tag {
-            background-color: #dc2626; /* Red for KVK */
-            color: white;
-            font-size: 0.7rem;
-            padding: 2px 6px;
-            border-radius: 3px;
-            margin-left: 10px;
-            vertical-align: middle;
-            font-family: 'Roboto', sans-serif;
+            padding: 25px;
+            position: relative;
+            z-index: 1; /* Liegt ÜBER dem Bild */
         }
 
-        .collab-tag {
-            background-color: #3b82f6; /* Blue for Collab */
+        /* HOVER AKTIONEN */
+        /* 1. Wenn man über die Karte fährt, wird der Rahmen gelb */
+        .img-card:hover {
+            border-color: var(--accent-gold);
+            box-shadow: 0 10px 20px rgba(251, 191, 36, 0.2); /* Leichter goldener Schatten */
+        }
+
+        /* 2. Wenn man über die Karte fährt, zoomt das Pseudo-Element (das Bild) */
+        .img-card:hover::before {
+            transform: scale(1.1); /* Zoom auf 110% */
+        }
+
+        /* === NEUE HOVER EFFEKTE ENDE === */
+        
+        .event-tag, .collab-tag {
             color: white;
-            font-size: 0.7rem;
-            padding: 2px 6px;
-            border-radius: 3px;
+            font-size: 0.75rem;
+            padding: 3px 8px;
+            border-radius: 2px;
             margin-left: 10px;
             vertical-align: middle;
             font-family: 'Roboto', sans-serif;
+            text-transform: uppercase;
         }
+        .event-tag { background-color: #a52a2a; }
+        .collab-tag { background-color: #3b82f6; }
 
         /* List Styles */
-        ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
+        ul { list-style: none; padding: 0; margin: 0; }
         li {
             position: relative;
-            padding-left: 20px;
-            margin-bottom: 10px;
+            padding-left: 25px;
+            margin-bottom: 12px;
             color: #d1d5db;
-            font-size: 0.95rem;
+            font-size: 1rem;
         }
-
         li::before {
-            content: "•";
-            color: var(--text-muted);
+            content: "⚔";
+            color: var(--accent-gold);
             position: absolute;
-            left: 0;
-            font-weight: bold;
+            left: 0; top: 2px;
+            font-size: 0.9rem;
         }
 
-        /* Accordion (Optimierungen) */
+        /* Accordion */
         .accordion-item {
-            background-color: #1a2233;
-            margin-bottom: 8px;
-            border-radius: 6px;
+            background-color: #1a2538;
+            margin-bottom: 10px;
+            border-radius: 4px;
             overflow: hidden;
+            border: 1px solid var(--card-border);
         }
-
         .accordion-header {
-            padding: 15px;
+            padding: 18px;
             cursor: pointer;
             display: flex;
             justify-content: space-between;
             align-items: center;
             font-weight: bold;
-            color: #fff;
+            color: var(--text-main);
+            background: rgba(0,0,0,0.1);
+            transition: background-color 0.3s ease;
         }
-        
-        .accordion-header:hover {
-            background-color: #252e42;
-        }
-
+        .accordion-header:hover { background-color: #25324d; }
         .accordion-content {
-            padding: 0 15px 15px 15px;
+            padding: 0 20px 20px 20px;
             display: none;
             border-top: 1px solid var(--card-border);
             margin-top: 5px;
-            padding-top: 15px;
+            padding-top: 20px;
+            background-color: #131b2b;
         }
-
-        .accordion-content.show {
-            display: block;
-        }
-
-        .arrow {
-            transition: transform 0.3s;
-        }
-        
-        .arrow.rotate {
-            transform: rotate(180deg);
-        }
-
-        /* Helper for icons (using text for simplicity) */
-        .icon-txt {
-            font-size: 1.2rem;
-            margin-right: 5px;
-        }
-
-        /* Chat button floating */
-        .chat-btn {
-            display: block;
-            margin: 20px auto;
-            background: #dbeafe;
-            color: #1e40af;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 20px;
-            font-weight: bold;
-            cursor: pointer;
-        }
+        .accordion-content.show { display: block; }
+        .arrow { transition: transform 0.3s; color: var(--accent-gold); }
+        .arrow.rotate { transform: rotate(180deg); }
 
     </style>
 </head>
@@ -324,21 +326,21 @@
 
             <div class="maintenance-box">
                 <div class="m-info">
-                    <span class="clock-icon">🕒</span>
+                    <span class="clock-icon">🛡️</span>
                     <div>
-                        <strong style="display:block; color: #fff; text-transform: uppercase; font-size: 0.9rem;">Wartungszeitraum</strong>
-                        <span style="font-size: 0.85rem; color: var(--text-muted);">17. Dezember, 06:00 - 06:30 (UTC)</span>
+                        <strong style="display:block; color: var(--text-main); text-transform: uppercase; font-size: 1rem; letter-spacing: 1px;">Wartungszeitraum</strong>
+                        <span style="font-size: 0.9rem; color: var(--text-muted);">17. Dezember, 06:00 - 06:30 (UTC)</span>
                     </div>
                 </div>
                 <div class="m-time-display">
-                    <div style="font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase;">Deine Ortszeit</div>
-                    <div class="m-time-highlight">17.12., 07:00 <span style="font-size:0.8rem; font-weight:normal;">(UTC+1)</span></div>
+                    <div style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase;">Deine Ortszeit</div>
+                    <div class="m-time-highlight">17.12., 07:00 <span style="font-size:0.9rem; font-weight:normal;">(UTC+1)</span></div>
                 </div>
             </div>
         </div>
     </header>
 
-    <main class="container" style="margin-top: 20px;">
+    <main class="container" style="margin-top: 30px;">
         
         <div class="controls">
             <div class="btn-group">
@@ -346,40 +348,37 @@
                 <button class="btn">Highlights</button>
                 <button class="btn">Details</button>
             </div>
-            <button class="btn btn-discord" onclick="copyToClipboard()">
-                <span>📄</span> Text für Discord kopieren
-            </button>
         </div>
 
         <div class="content-grid">
             
             <div class="left-col">
 
-                <div class="card img-card" style="background-image: url('https://images.unsplash.com/photo-1599839575945-a9e5af0c3fa5?q=80&w=2669&auto=format&fit=crop');">
+                <div class="card img-card" style="background-image: url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=2669&auto=format&fit=crop');">
                     <div class="img-overlay">
-                        <h2 style="font-family: 'Cinzel'; margin:0;">SURTRS FLAMMEN <span class="event-tag">KVK Saison</span></h2>
-                        <p style="font-size: 0.9rem; margin-top: 5px;">Die Kingdom Mayhem Conquest Saison beginnt! Flammen toben in Muspelheim. Wikinger, kämpft, um Surtrs Flammen zu löschen!</p>
+                        <h2 style="font-family: 'Cinzel'; margin:0; color: var(--accent-gold);">SURTRS FLAMMEN <span class="event-tag">KVK Saison</span></h2>
+                        <p style="font-size: 1rem; margin-top: 10px;">Die Kingdom Mayhem Conquest Saison beginnt! Flammen toben in Muspelheim. Wikinger, kämpft, um Surtrs Flammen zu löschen!</p>
                     </div>
                 </div>
 
-                <div class="card">
-                    <div class="card-body">
-                        <h3 style="font-family: 'Cinzel'; margin-top:0;">Drachenzähmen leicht gemacht <span class="collab-tag">Kollaboration</span></h3>
-                        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 15px;">
-                            Eine brandneue Zusammenarbeit hat begonnen! In Partnerschaft mit &lt;Drachenzähmen leicht gemacht&gt; begeben wir uns gemeinsam auf eine Reise!
-                        </p>
-                        <ul>
-                            <li style="color: #fbbf24;">✈ Erkunde eine neue Fantasiewelt.</li>
-                            <li style="color: #fbbf24;">⚔ Erlebe neue Abenteuer und Herausforderungen.</li>
-                            <li style="color: #fbbf24;">○ Erobere die Lüfte und schreibe deine eigene Legende!</li>
-                        </ul>
+                <div class="card img-card" style="background-image: url('https://images.unsplash.com/photo-1577493340887-b7b9a3998466?q=80&w=2670&auto=format&fit=crop'); height: 220px;">
+                    <div class="img-overlay" style="background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.7));">
+                         <h3 style="font-family: 'Cinzel'; margin:0; color: var(--accent-gold);">Drachenzähmen leicht gemacht <span class="collab-tag">Kollaboration</span></h3>
+                         <p style="color: #d1d5db; font-size: 0.95rem; margin-bottom: 10px; margin-top: 5px;">
+                             Eine brandneue Zusammenarbeit hat begonnen! Partnering mit &lt;How to Train Your Dragon&gt;, lasst uns gemeinsam auf eine Drachenzähmen-Reise gehen!
+                         </p>
+                         <ul style="font-size: 0.9rem;">
+                             <li>Erkunde eine neue Fantasiewelt.</li>
+                             <li>Erlebe neue Abenteuer und Herausforderungen.</li>
+                             <li>Erobere die Lüfte und schreibe deine eigene Legende!</li>
+                         </ul>
                     </div>
-                </div>
+                 </div>
 
-                <div class="card img-card" style="background-image: url('https://images.unsplash.com/photo-1543589077-47d81606c1bf?q=80&w=2574&auto=format&fit=crop'); height: 200px;">
+                <div class="card img-card" style="background-image: url('https://images.unsplash.com/photo-1516398891210-437f5d2012c6?q=80&w=2670&auto=format&fit=crop'); height: 200px;">
                     <div class="img-overlay">
-                        <h3 style="font-family: 'Cinzel'; margin:0;">WEIHNACHTS-EVENT <span class="event-tag" style="background-color: #10b981;">Event</span></h3>
-                        <p style="font-size: 0.9rem; margin-top: 5px;">Wenn die Glocken läuten, beginnt das Kutschenrennen-Event. Bildet Teams und legt die Strecke gemeinsam zurück!</p>
+                        <h3 style="font-family: 'Cinzel'; margin:0; color: var(--accent-gold);">WEIHNACHTS-EVENT <span class="event-tag" style="background-color: #10b981;">Event</span></h3>
+                        <p style="font-size: 0.95rem; margin-top: 10px;">Wenn die Glocken läuten, beginnt das Kutschenrennen-Event. Bildet Teams und legt die Strecke gemeinsam zurück!</p>
                     </div>
                 </div>
 
@@ -389,7 +388,7 @@
 
                 <div class="card">
                     <div class="card-header">
-                        <span style="color: var(--accent-gold);">○</span> <span class="card-title" style="color: var(--accent-gold);">NEU</span>
+                        <span style="color: var(--accent-gold); font-size: 1.2rem;">⚜️</span> <span class="card-title">NEU</span>
                     </div>
                     <div class="card-body">
                         <ul>
@@ -397,15 +396,16 @@
                             <li><strong>Zweite Forschungswarteschlange:</strong> Freischaltbar durch das [Forschungsauftrag-Paket].</li>
                             <li><strong>Stamm-Shop [Splitter-Markt]:</strong> Tausche Helden- oder Skillsplitter.</li>
                             <li><strong>Inventar & Chat:</strong> Mengenangzeige im Inventar und Entwurf-Speicherfunktion für den Chat.</li>
+                            <li><strong>Kampfeinstellungen (Mobile):</strong> Option, nach einem Angriff auf andere Spieler automatisch zu garnisonieren.</li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="card-header">
-                        <span style="color: var(--accent-blue);">☷</span> <span class="card-title">OPTIMIERUNGEN</span>
+                        <span style="color: var(--accent-blue); font-size: 1.2rem;">⚙️</span> <span class="card-title" style="color: var(--accent-blue);">OPTIMIERUNGEN</span>
                     </div>
-                    <div class="card-body" style="padding: 10px;">
+                    <div class="card-body" style="padding: 15px;">
                         
                         <div class="accordion-item">
                             <div class="accordion-header" onclick="toggleAccordion(this)">
@@ -455,7 +455,7 @@
 
                 <div class="card">
                     <div class="card-header">
-                        <span style="color: var(--success-green);">🐞</span> <span class="card-title" style="color: var(--success-green);">FEHLERBEHEBUNGEN</span>
+                        <span style="color: var(--success-green); font-size: 1.2rem;">🛠️</span> <span class="card-title" style="color: var(--success-green);">FEHLERBEHEBUNGEN</span>
                     </div>
                     <div class="card-body">
                         <ul>
@@ -472,11 +472,9 @@
             </div>
         </div>
 
-        <button class="chat-btn">Diesen Chat fortsetzen</button>
     </main>
 
     <script>
-        // Funktion für die Accordions (Aufklapp-Menüs)
         function toggleAccordion(element) {
             const content = element.nextElementSibling;
             const arrow = element.querySelector('.arrow');
@@ -490,35 +488,6 @@
                 arrow.classList.add('rotate');
                 content.classList.add('show');
             }
-        }
-
-        // Funktion zum Kopieren des Textes (für den Discord Button)
-        function copyToClipboard() {
-            const textToCopy = `Viking Rise Update Notes - 17.12.
-            
-[Wartungszeitraum]
-17. Dezember, 06:00 - 06:30 (UTC)
-
-[Major Updates]
-- KVK Saison: Surtrs Flammen
-- Kollaboration: Drachenzähmen leicht gemacht
-- Weihnachts-Event
-
-[Neu]
-- Neue Monatskarte, Zweite Forschungswarteschlange, Stamm-Shop Features.
-
-[Optimierungen]
-- Bluteid-Krieg: Legionen reduziert, Garnisons-Debuffs angepasst.
-- UI: Koordinaten teilen, optimierte Warteschlangen.
-
-[Fehlerbehebungen]
-- Diverse Bugfixes für Mail, Drill-Ground und Schmiede.`;
-
-            navigator.clipboard.writeText(textToCopy).then(() => {
-                alert("Text wurde in die Zwischenablage kopiert!");
-            }).catch(err => {
-                console.error('Fehler beim Kopieren: ', err);
-            });
         }
     </script>
 </body>
