@@ -1,0 +1,23 @@
+{
+  "date": "17. Dezember",
+  "time": "06:00 - 06:30 (UTC)",
+  "major": [
+    "Die Königreich-Chaos Eroberungssaison [Surtrs Flammen] beginnt.",
+    "Das Weihnachts-Event mit Kutschenrennen startet.",
+    "Neue Kollaboration mit <Drachenzähmen leicht gemacht>."
+  ],
+  "new_features": [
+    "Monatskarte [Lichtschatten-Reise] hinzugefügt.",
+    "Zweite Forschungswarteschlange hinzugefügt.",
+    "Schnell-Upgrade für Skills."
+  ],
+  "optimizations": [
+    "Rückkehr der Weihnachts-Skins 2024.",
+    "Bluteid-Krieg: Legionen reduziert.",
+    "Koordinaten teilen Funktion hinzugefügt."
+  ],
+  "fixes": [
+    "Mail-Aktualisierungsprobleme behoben.",
+    "Anzeige des Drill-Grounds (PC) korrigiert."
+  ]
+}
