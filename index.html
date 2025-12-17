@@ -16,7 +16,7 @@
         body { font-family: 'Roboto', sans-serif; background-color: #050a14; color: #e2e8f0; }
         .viking-font { font-family: 'Cinzel', serif; }
         
-        /* Hintergrund Video/Bild Effekt */
+        /* Hintergrundbild der Startseite */
         .hero-bg {
             background: linear-gradient(to bottom, rgba(5, 10, 20, 0.6), #050a14), 
                         url('https://images.unsplash.com/photo-1514539079130-25950c84af65?q=80&w=2669&auto=format&fit=crop');
@@ -25,8 +25,6 @@
         }
 
         .gold-text { color: #d4af37; }
-        .gold-border { border-color: #d4af37; }
-        
         .btn-primary {
             background: linear-gradient(45deg, #d4af37, #b4941f);
             color: #000;
@@ -38,46 +36,50 @@
             box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
         }
         
-        .nav-link {
-            position: relative;
-            color: #94a3b8;
-            transition: color 0.3s;
-        }
+        .nav-link { position: relative; color: #94a3b8; transition: color 0.3s; }
         .nav-link:hover { color: #d4af37; }
         .nav-link::after {
             content: ''; position: absolute; width: 0; height: 2px; bottom: -4px; left: 0;
             background-color: #d4af37; transition: width 0.3s;
         }
         .nav-link:hover::after { width: 100%; }
+        
+        /* Sprachumschalter Styles */
+        .lang-active { color: #d4af37; font-weight: bold; }
+        .lang-inactive { color: #64748b; }
+        .lang-inactive:hover { color: white; }
     </style>
 </head>
 <body class="min-h-screen flex flex-col">
 
     <nav class="absolute top-0 w-full z-50 border-b border-white/10 bg-black/20 backdrop-blur-md">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            
             <div class="flex items-center gap-2">
                 <span class="text-2xl">🛡️</span>
                 <span class="viking-font text-xl font-bold text-white tracking-widest">Viking<span class="gold-text">Hub</span></span>
             </div>
-            <div class="hidden md:flex gap-8 font-medium">
+            
+            <div class="hidden md:flex gap-8 font-medium items-center">
                 <a href="index.html" class="text-white nav-link">Home</a>
                 <a href="updates.html" class="nav-link">Patch Notes</a>
                 <a href="#" class="nav-link cursor-not-allowed opacity-50">Guides (Bald)</a>
                 <a href="#" class="nav-link cursor-not-allowed opacity-50">Stamm</a>
-            </div>
-            <a href="updates.html" class="md:hidden text-white">
-                <span class="material-symbols-outlined">menu</span>
-            </a>
-        </div>
-        <div class="hidden md:flex gap-8 font-medium items-center">
-                <a href="index.html" class="text-white nav-link">Home</a>
-                <a href="updates.html" class="nav-link">Patch Notes</a>
+                
                 <div class="flex items-center gap-2 border-l border-white/20 pl-6 ml-2">
-                    <a href="index.html" class="text-xs font-bold text-[#d4af37]">DE</a>
+                    <a href="index.html" class="text-xs lang-active">DE</a>
                     <span class="text-xs text-white/20">|</span>
-                    <a href="index_en.html" class="text-xs text-gray-500 hover:text-white transition-colors">EN</a>
+                    <a href="index_en.html" class="text-xs lang-inactive transition-colors">EN</a>
                 </div>
             </div>
+
+            <div class="flex items-center gap-4 md:hidden">
+                 <a href="index_en.html" class="text-xs font-bold text-gray-500">EN</a>
+                 <a href="updates.html" class="text-white">
+                    <span class="material-symbols-outlined">menu</span>
+                </a>
+            </div>
+        </div>
     </nav>
 
     <main class="flex-grow flex items-center justify-center hero-bg relative min-h-[80vh]">
@@ -121,7 +123,6 @@
             <script>
                  (adsbygoogle = window.adsbygoogle || []).push({});
             </script>
-
         </div>
     </div>
 
