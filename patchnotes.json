@@ -1,107 +1,112 @@
-{
-  "meta": {
-    "updated": "2025-12-15T04:08:00Z",
-    "version": "1.0",
-    "maintenance_time": "17. Dezember, 06:00 - 06:30 (UTC)"
-  },
-  "en": {
-    "major": [
-      "The Kingdom Mayhem Conquest Season [Surtr's Flames] is about to begin. Flames roar in Muspelheim!",
-      "New Collaboration: Partnering with <How to Train Your Dragon>, let us embark on a Dragon Taming Journey!",
-      "Christmas Event: Carriage racing event and newly designed Christmas Skins."
-    ],
-    "new_features": [
-      "Added monthly card [Lightshade Journey] (activates Tribe Auto-Assist).",
-      "Added a second Research queue (via Research Order Pack).",
-      "Optimized [Quick Upgrade] for Hero Talents and added it for Skills.",
-      "Added [Tribe Shop] - [Shard Market] to exchange Hero/Skill Shards.",
-      "Added [2025 Hero Skin Choice Chest I] to Tribe Day Treasure Hunt.",
-      "Added bulk donate function to Tribe Tech.",
-      "Added [Add Friend] feature to Chief Profile.",
-      "Added item quantity display bubbles in Inventory.",
-      "Added save draft function for Chat.",
-      "Added [Combat Settings] on mobile (Garrison after attack option)."
-    ],
-    "optimizations": [
-      "Returning: 2024 Christmas series [Sparkling Holiday Night] set & [Snowy Deer's Shadow] flag.",
-      "[Blood Oath War]: Legions reduced from 3 to 1 in Midgard Championship.",
-      "[Blood Oath War]: Garrisoned troops accumulate central building debuffs.",
-      "[Blood Oath War]: Ranking rules optimized (total kill points decide ties).",
-      "Added coordinate sharing function for chat.",
-      "Optimized display and performance of some pages.",
-      "Optimized [Speedup Queue] menu (Training, Research, Healing, Forge).",
-      "Optimized multi-troop selection logic for Marching.",
-      "Optimized display for [Wheel of Fortune] & [Skill Wheel].",
-      "Optimized interface for preset King's Decrees.",
-      "Optimized [Mail] sorting/cleanup and extended expiration times.",
-      "Optimized [Hall of Valor] interactions and performance.",
-      "Optimized [Language Settings] (System vs. Translation language).",
-      "Optimized [Campaign] menu: Inactive events are hidden.",
-      "Collector overview now displays bonuses from unlocked skin attributes.",
-      "Optimized Hero Skin unlocking (no more 10 shards gifted).",
-      "Conquest Season Rewards: Increased Recast Blades & Yggdrasil Dew distribution."
-    ],
-    "fixes": [
-      "Fixed an abnormal refresh issue in [Mail].",
-      "Fixed display issue with [Campaign - Drill Ground] on PC.",
-      "Fixed Hero Talents not taking effect in [Drill Ground].",
-      "Fixed forge progress display issue in [Equipment Forge].",
-      "Fixed avatar display issue when rallying neutral troops.",
-      "Fixed medium checkpoints display in [Hela's Curse].",
-      "Fixed text display issue in [Magic Card Blessing].",
-      "Fixed damage progress display in [Sworn Vengeance].",
-      "Fixed lag issue in [Magic Card Adventure].",
-      "Fixed display issue in [Time-Limited Migration] searches."
-    ]
-  },
-  "de": {
-    "major": [
-      "Die Königreich-Chaos Eroberungssaison [Surtrs Flammen] beginnt. Muspelheim brennt!",
-      "Neue Kollaboration: Gemeinsam mit <Drachenzähmen leicht gemacht> auf Drachenjagd gehen!",
-      "Weihnachts-Event: Kutschenrennen und neue Weihnachts-Skins."
-    ],
-    "new_features": [
-      "Monatskarte [Lichtschatten-Reise] hinzugefügt (Aktiviert Stamm Auto-Assistenz).",
-      "Zweite Forschungswarteschlange hinzugefügt (via Forschungsauftrag-Paket).",
-      "Optimiertes [Schnell-Upgrade] für Talente und neu für Skills.",
-      "[Stamm-Shop] - [Splittermarkt] hinzugefügt (Tausch von Helden/Skill-Splittern).",
-      "[2025 Helden-Skin-Auswahltruhe I] zur Stammestag-Schatzsuche hinzugefügt.",
-      "Massenspende-Funktion für Stammestechnik hinzugefügt.",
-      "[Freund hinzufügen] Funktion im Häuptlingsprofil ergänzt.",
-      "Mengenanzeige-Bubbles im Inventar hinzugefügt.",
-      "Entwurf-Speicherfunktion für den Chat hinzugefügt.",
-      "[Kampfeinstellungen] auf Mobile: Option zum Garnisonieren nach Angriff."
-    ],
-    "optimizations": [
-      "Rückkehr: Weihnachts-Serie 2024 [Funkelnde Weihnachtsnacht] Set & [Schneehirsches Schatten] Flagge.",
-      "[Bluteid-Krieg]: Legionen in der Midgard-Meisterschaft von 3 auf 1 reduziert.",
-      "[Bluteid-Krieg]: Garnisonstruppen sammeln nun denselben Debuff wie zentrale Gebäude.",
-      "[Bluteid-Krieg]: Ranglistenregeln optimiert (Kill-Punkte entscheiden bei Gleichstand).",
-      "Koordinaten-Teilen Funktion für den Chat hinzugefügt.",
-      "Anzeige und Performance einiger Seiten optimiert.",
-      "[Beschleunigungs-Warteschlange] Menü neu organisiert.",
-      "Multi-Truppen-Auswahl beim Marschieren optimiert.",
-      "Anzeige für [Glücksrad] und [Skill-Rad] optimiert.",
-      "Interface für Königserlasse-Voreinstellungen optimiert.",
-      "[Post]: Sortierung/Bereinigung optimiert, Ablaufzeit verlängert.",
-      "[Halle der Tapferkeit]: Interaktionen und Performance verbessert.",
-      "[Spracheinstellungen]: Unterteilt in System- und Übersetzungssprache.",
-      "[Kampagne]: Inaktive Events werden im Menü ausgeblendet.",
-      "Sammler-Übersicht: Zeigt nun Boni von Skins mit Freischalt-Attributen korrekt an.",
-      "Helden-Skin Freischaltung: Es werden keine 10 Splitter mehr geschenkt.",
-      "Eroberungssaison Belohnungen: Mehr Umschmiede-Klingen & Yggdrasil-Tau."
-    ],
-    "fixes": [
-      "Abnormales Refresh-Problem in der [Post] behoben.",
-      "Anzeigefehler beim [Drill Ground] Eingang (PC Version) behoben.",
-      "Fehler behoben, dass Heldentalente im [Drill Ground] nicht wirksam waren.",
-      "Anzeigefehler beim Schmiedefortschritt in der [Ausrüstungsschmiede] behoben.",
-      "Avatar-Anzeigefehler beim Sammeln neutraler Truppen behoben.",
-      "Anzeigefehler bei mittleren Checkpoints in [Hela's Curse] behoben.",
-      "Textanzeigefehler in [Magic Card Blessing] behoben.",
-      "Schadensfortschritts-Anzeige im [Sworn Vengeance] Ranking behoben.",
-      "Lag-Probleme im [Magic Card Adventure] behoben.",
-      "Anzeigefehler bei der Suche nach Königreichen in [Zeitlich begrenzter Migration] behoben."
-    ]
+[
+  {
+    "id": "update_17_12_2025",
+    "meta": {
+      "created_at": "2025-12-15T04:08:00Z",
+      "start_timestamp": "2025-12-17T06:00:00+00:00",
+      "display_time": "Dec 17, 06:00 - 06:30 (UTC)",
+      "title_en": "Update Dec 17",
+      "title_de": "Update vom 17.12."
+    },
+    "en": {
+      "major": [
+        "The Kingdom Mayhem Conquest Season [Surtr's Flames] is about to begin. Flames roar in Muspelheim!",
+        "New Collaboration: Partnering with <How to Train Your Dragon>, let us embark on a Dragon Taming Journey!",
+        "Christmas Event: Carriage racing event and newly designed Christmas Skins."
+      ],
+      "new_features": [
+        "Added monthly card [Lightshade Journey] (activates Tribe Auto-Assist).",
+        "Added a second Research queue (via Research Order Pack).",
+        "Optimized [Quick Upgrade] for Hero Talents and added it for Skills.",
+        "Added [Tribe Shop] - [Shard Market] to exchange Hero/Skill Shards.",
+        "Added [2025 Hero Skin Choice Chest I] to Tribe Day Treasure Hunt.",
+        "Added bulk donate function to Tribe Tech.",
+        "Added [Add Friend] feature to Chief Profile.",
+        "Added item quantity display bubbles in Inventory.",
+        "Added save draft function for Chat.",
+        "Added [Combat Settings] on mobile (Garrison after attack option)."
+      ],
+      "optimizations": [
+        "Returning: 2024 Christmas series [Sparkling Holiday Night] set & [Snowy Deer's Shadow] flag.",
+        "[Blood Oath War]: Legions reduced from 3 to 1 in Midgard Championship.",
+        "[Blood Oath War]: Garrisoned troops accumulate central building debuffs.",
+        "[Blood Oath War]: Ranking rules optimized (total kill points decide ties).",
+        "Added coordinate sharing function for chat.",
+        "Optimized display and performance of some pages.",
+        "Optimized [Speedup Queue] menu (Training, Research, Healing, Forge).",
+        "Optimized multi-troop selection logic for Marching.",
+        "Optimized display for [Wheel of Fortune] & [Skill Wheel].",
+        "Optimized interface for preset King's Decrees.",
+        "Optimized [Mail] sorting/cleanup and extended expiration times.",
+        "Optimized [Hall of Valor] interactions and performance.",
+        "Optimized [Language Settings] (System vs. Translation language).",
+        "Optimized [Campaign] menu: Inactive events are hidden.",
+        "Collector overview now displays bonuses from unlocked skin attributes.",
+        "Optimized Hero Skin unlocking (no more 10 shards gifted).",
+        "Conquest Season Rewards: Increased Recast Blades & Yggdrasil Dew distribution."
+      ],
+      "fixes": [
+        "Fixed an abnormal refresh issue in [Mail].",
+        "Fixed display issue with [Campaign - Drill Ground] on PC.",
+        "Fixed Hero Talents not taking effect in [Drill Ground].",
+        "Fixed forge progress display issue in [Equipment Forge].",
+        "Fixed avatar display issue when rallying neutral troops.",
+        "Fixed medium checkpoints display in [Hela's Curse].",
+        "Fixed text display issue in [Magic Card Blessing].",
+        "Fixed damage progress display in [Sworn Vengeance].",
+        "Fixed lag issue in [Magic Card Adventure].",
+        "Fixed display issue in [Time-Limited Migration] searches."
+      ]
+    },
+    "de": {
+      "major": [
+        "Die Königreich-Chaos Eroberungssaison [Surtrs Flammen] beginnt. Muspelheim brennt!",
+        "Neue Kollaboration: Gemeinsam mit <Drachenzähmen leicht gemacht> auf Drachenjagd gehen!",
+        "Weihnachts-Event: Kutschenrennen und neue Weihnachts-Skins."
+      ],
+      "new_features": [
+        "Monatskarte [Lichtschatten-Reise] hinzugefügt (Aktiviert Stamm Auto-Assistenz).",
+        "Zweite Forschungswarteschlange hinzugefügt (via Forschungsauftrag-Paket).",
+        "Optimiertes [Schnell-Upgrade] für Talente und neu für Skills.",
+        "[Stamm-Shop] - [Splittermarkt] hinzugefügt (Tausch von Helden/Skill-Splittern).",
+        "[2025 Helden-Skin-Auswahltruhe I] zur Stammestag-Schatzsuche hinzugefügt.",
+        "Massenspende-Funktion für Stammestechnik hinzugefügt.",
+        "[Freund hinzufügen] Funktion im Häuptlingsprofil ergänzt.",
+        "Mengenanzeige-Bubbles im Inventar hinzugefügt.",
+        "Entwurf-Speicherfunktion für den Chat hinzugefügt.",
+        "[Kampfeinstellungen] auf Mobile: Option zum Garnisonieren nach Angriff."
+      ],
+      "optimizations": [
+        "Rückkehr: Weihnachts-Serie 2024 [Funkelnde Weihnachtsnacht] Set & [Schneehirsches Schatten] Flagge.",
+        "[Bluteid-Krieg]: Legionen in der Midgard-Meisterschaft von 3 auf 1 reduziert.",
+        "[Bluteid-Krieg]: Garnisonstruppen sammeln nun denselben Debuff wie zentrale Gebäude.",
+        "[Bluteid-Krieg]: Ranglistenregeln optimiert (Kill-Punkte entscheiden bei Gleichstand).",
+        "Koordinaten-Teilen Funktion für den Chat hinzugefügt.",
+        "Anzeige und Performance einiger Seiten optimiert.",
+        "[Beschleunigungs-Warteschlange] Menü neu organisiert.",
+        "Multi-Truppen-Auswahl beim Marschieren optimiert.",
+        "Anzeige für [Glücksrad] und [Skill-Rad] optimiert.",
+        "Interface für Königserlasse-Voreinstellungen optimiert.",
+        "[Post]: Sortierung/Bereinigung optimiert, Ablaufzeit verlängert.",
+        "[Halle der Tapferkeit]: Interaktionen und Performance verbessert.",
+        "[Spracheinstellungen]: Unterteilt in System- und Übersetzungssprache.",
+        "[Kampagne]: Inaktive Events werden im Menü ausgeblendet.",
+        "Sammler-Übersicht: Zeigt nun Boni von Skins mit Freischalt-Attributen korrekt an.",
+        "Helden-Skin Freischaltung: Es werden keine 10 Splitter mehr geschenkt.",
+        "Eroberungssaison Belohnungen: Mehr Umschmiede-Klingen & Yggdrasil-Tau."
+      ],
+      "fixes": [
+        "Abnormales Refresh-Problem in der [Post] behoben.",
+        "Anzeigefehler beim [Drill Ground] Eingang (PC Version) behoben.",
+        "Fehler behoben, dass Heldentalente im [Drill Ground] nicht wirksam waren.",
+        "Anzeigefehler beim Schmiedefortschritt in der [Ausrüstungsschmiede] behoben.",
+        "Avatar-Anzeigefehler beim Sammeln neutraler Truppen behoben.",
+        "Anzeigefehler bei mittleren Checkpoints in [Hela's Curse] behoben.",
+        "Textanzeigefehler in [Magic Card Blessing] behoben.",
+        "Schadensfortschritts-Anzeige im [Sworn Vengeance] Ranking behoben.",
+        "Lag-Probleme im [Magic Card Adventure] behoben.",
+        "Anzeigefehler bei der Suche nach Königreichen in [Zeitlich begrenzter Migration] behoben."
+      ]
+    }
   }
-}
+]
