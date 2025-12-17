@@ -14,21 +14,15 @@
         
         body { font-family: 'Roboto', sans-serif; background-color: #0b101b; }
         .viking-font { font-family: 'Cinzel', serif; }
-        
-        .glass-panel {
-            background: rgba(30, 41, 59, 0.7);
-            backdrop-filter: blur(10px);
-        }
-        
+        .glass-panel { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(10px); }
         .gold-text { color: #d4af37; }
-        .gold-border { border-color: #d4af37; }
         
         /* Listen Styles */
         ul.detail-list { list-style: none; padding: 0; margin: 0; }
         ul.detail-list li { position: relative; padding-left: 24px; margin-bottom: 8px; font-size: 0.9rem; color: #cbd5e1; line-height: 1.5; }
         ul.detail-list li::before { content: "•"; position: absolute; left: 8px; color: #64748b; font-weight: bold; }
         
-        /* Dropdown Styles (Verschönert) */
+        /* Dropdown Styles */
         details {
             margin-bottom: 10px;
             border: 1px solid rgba(255, 255, 255, 0.1);
@@ -36,44 +30,17 @@
             overflow: hidden;
             transition: all 0.3s ease;
         }
-        
-        details[open] {
-            border-color: #d4af37; /* Viking Gold */
-            background: rgba(0, 0, 0, 0.3);
-        }
-
+        details[open] { border-color: #d4af37; background: rgba(0, 0, 0, 0.3); }
         details > summary { 
-            list-style: none; 
-            padding: 15px;
-            background: rgba(255, 255, 255, 0.05);
-            cursor: pointer;
-            font-weight: bold;
-            color: #e2e8f0;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            transition: background 0.2s;
+            list-style: none; padding: 15px; background: rgba(255, 255, 255, 0.05); cursor: pointer; font-weight: bold; color: #e2e8f0; display: flex; justify-content: space-between; align-items: center; transition: background 0.2s;
         }
-        
-        details > summary:hover {
-            background: rgba(212, 175, 55, 0.1);
-            color: #d4af37;
-        }
-
+        details > summary:hover { background: rgba(212, 175, 55, 0.1); color: #d4af37; }
         details > summary::-webkit-details-marker { display: none; }
-        
-        .dropdown-content {
-            padding: 15px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            color: #94a3b8;
-            font-size: 0.9rem;
-            line-height: 1.6;
-        }
+        .dropdown-content { padding: 15px; border-top: 1px solid rgba(255, 255, 255, 0.1); color: #94a3b8; font-size: 0.9rem; line-height: 1.6; }
 
         ::-webkit-scrollbar { width: 8px; }
         ::-webkit-scrollbar-track { background: #0f172a; }
         ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
-        
         .lang-active { color: #d4af37; font-weight: bold; }
         .lang-inactive { color: #64748b; }
         .lang-inactive:hover { color: white; }
@@ -83,12 +50,12 @@
 
     <nav class="w-full z-50 border-b border-white/10 bg-[#0b101b]">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <a href="index.html" class="flex items-center gap-2 hover:opacity-80 transition">
+            <a href="index.html?lang=de" class="flex items-center gap-2 hover:opacity-80 transition">
                 <span class="material-symbols-outlined text-gray-400">arrow_back</span>
                 <span class="viking-font text-lg font-bold text-white">Zurück zur <span class="text-[#d4af37]">Startseite</span></span>
             </a>
             <div class="flex items-center gap-2">
-                <a href="updates.html" class="text-xs lang-active">DE</a>
+                <a href="updates.html?lang=de" class="text-xs lang-active">DE</a>
                 <span class="text-xs text-white/20">|</span>
                 <a href="updates_en.html" class="text-xs lang-inactive transition-colors">EN</a>
             </div>
@@ -186,8 +153,7 @@
                     <h3 class="text-xl font-bold text-blue-400 mb-4 flex items-center gap-2 viking-font">
                         <span class="material-symbols-outlined">tune</span> Optimierungen
                     </h3>
-                    <div id="opt-container" class="space-y-2">
-                        </div>
+                    <div id="opt-container" class="space-y-2"></div>
                 </div>
 
                 <div class="glass-panel p-5 rounded-xl border border-gray-700 filter-item opt">
@@ -237,7 +203,6 @@
             const data = update.de;
             const meta = update.meta;
 
-            // 1. Einfache Listen füllen
             const fillList = (id, items) => {
                 const el = document.getElementById(id);
                 if(el) el.innerHTML = items ? items.map(i => `<li>${i}</li>`).join('') : '';
@@ -245,9 +210,8 @@
             fillList('list-new', data.new_features);
             fillList('list-fixes', data.fixes);
 
-            // 2. DROPDOWNS (Accordions) Generieren
             const optContainer = document.getElementById('opt-container');
-            optContainer.innerHTML = ''; // Leeren
+            optContainer.innerHTML = ''; 
 
             if (data.optimizations && Array.isArray(data.optimizations)) {
                 data.optimizations.forEach(opt => {
@@ -258,7 +222,7 @@
                         summary.innerHTML = `${opt.title} <span class="material-symbols-outlined text-sm transition-transform group-open:rotate-180">expand_more</span>`;
                         
                         const contentDiv = document.createElement('div');
-                        contentDiv.className = "dropdown-content"; 
+                        contentDiv.className = "dropdown-content";
                         
                         const ul = document.createElement('ul');
                         ul.className = "detail-list";
@@ -273,7 +237,6 @@
                         details.appendChild(contentDiv);
                         optContainer.appendChild(details);
                     } else {
-                        // Fallback
                         const div = document.createElement('div');
                         div.className = "text-sm text-gray-400 p-2 border-b border-gray-700";
                         div.textContent = opt;
@@ -282,7 +245,6 @@
                 });
             }
 
-            // 3. Zeit
             document.getElementById('utc-time-display').innerText = meta.display_time || "Unbekannt";
             if (meta.start_timestamp) {
                 const date = new Date(meta.start_timestamp);
