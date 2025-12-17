@@ -13,13 +13,19 @@
         .viking-font { font-family: 'Cinzel', serif; }
         .glass-panel { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(10px); }
         .gold-text { color: #d4af37; }
+        
+        /* Lists */
         ul.detail-list { list-style: none; padding: 0; margin: 0; }
         ul.detail-list li { position: relative; padding-left: 24px; margin-bottom: 8px; font-size: 0.9rem; color: #cbd5e1; line-height: 1.5; }
         ul.detail-list li::before { content: "•"; position: absolute; left: 8px; color: #64748b; font-weight: bold; }
+        
+        /* Dropdowns */
+        details > summary { list-style: none; }
+        details > summary::-webkit-details-marker { display: none; }
+
         ::-webkit-scrollbar { width: 8px; }
         ::-webkit-scrollbar-track { background: #0f172a; }
         ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
-        ::-webkit-scrollbar-thumb:hover { background: #d4af37; }
         .lang-active { color: #d4af37; font-weight: bold; }
         .lang-inactive { color: #64748b; }
         .lang-inactive:hover { color: white; }
@@ -84,10 +90,40 @@
 
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div id="major-updates-section" class="lg:col-span-2 space-y-8">
-                 <div class="glass-panel rounded-xl border border-gray-700 p-6">
-                    <h3 class="text-2xl font-bold text-white mb-4 viking-font border-b border-gray-700 pb-2">⚔️ Highlights</h3>
-                    <ul class="detail-list space-y-4" id="list-major"></ul>
-                 </div>
+                
+                <div class="glass-panel rounded-xl overflow-hidden shadow-lg border border-gray-700 group hover:border-[#d4af37] transition-all duration-300 filter-item major">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="surtr.jpg" alt="Surtr's Flames" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#0b101b] to-transparent"></div>
+                        <h3 class="absolute bottom-4 left-4 text-2xl font-bold text-white drop-shadow-lg viking-font">Surtr's Flames <span class="text-sm bg-red-600/80 px-2 py-0.5 rounded ml-2 align-middle font-sans text-white">KVK Season</span></h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-300 leading-relaxed">The Kingdom Mayhem Conquest Season begins! Fight to extinguish Surtr's flames!</p>
+                    </div>
+                </div>
+
+                <div class="glass-panel rounded-xl overflow-hidden shadow-lg border border-gray-700 group hover:border-[#d4af37] transition-all duration-300 filter-item major">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="dragon.jpg" alt="Dragon Collaboration" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" style="object-position: top center;">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#0b101b] to-transparent"></div>
+                        <h3 class="absolute bottom-4 left-4 text-2xl font-bold text-white drop-shadow-lg viking-font">Dragon Collaboration <span class="text-sm bg-blue-600/80 px-2 py-0.5 rounded ml-2 align-middle font-sans text-white">Collab</span></h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-300 leading-relaxed">Partnering with &lt;How to Train Your Dragon&gt;. Explore a new fantasy world!</p>
+                    </div>
+                </div>
+
+                <div class="glass-panel rounded-xl overflow-hidden shadow-lg border border-gray-700 group hover:border-[#d4af37] transition-all duration-300 filter-item major">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="christmas.jpg" alt="Christmas Event" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#0b101b] to-transparent"></div>
+                        <h3 class="absolute bottom-4 left-4 text-2xl font-bold text-white drop-shadow-lg viking-font">Christmas Event <span class="text-sm bg-green-600/80 px-2 py-0.5 rounded ml-2 align-middle font-sans text-white">Event</span></h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-300 leading-relaxed">Carriage racing and new skins await!</p>
+                    </div>
+                </div>
+
             </div>
 
             <div id="details-section" class="lg:col-span-1 space-y-6">
@@ -102,7 +138,8 @@
                     <h3 class="text-xl font-bold text-blue-400 mb-4 flex items-center gap-2 viking-font">
                         <span class="material-symbols-outlined">tune</span> Optimizations
                     </h3>
-                    <ul class="detail-list" id="list-opt"></ul>
+                    <div id="opt-container" class="space-y-2">
+                        </div>
                 </div>
 
                 <div class="glass-panel p-5 rounded-xl border border-gray-700 filter-item opt">
@@ -127,29 +164,19 @@
 
         async function init() {
             try {
-                // Fetch the List of Updates
                 const response = await fetch('patchnotes.json');
                 allPatchData = await response.json();
                 
-                // Fallback for old structure
-                if(!Array.isArray(allPatchData)) {
-                     console.warn("Converting old JSON format temporarily.");
-                     allPatchData = [ { meta: { title_en: "Current", start_timestamp: new Date().toISOString() }, en: allPatchData.en || allPatchData } ];
-                }
-
-                // Fill Dropdown
                 const selector = document.getElementById('version-select');
                 selector.innerHTML = '';
                 
                 allPatchData.forEach((update, index) => {
                     const option = document.createElement('option');
                     option.value = index;
-                    // Use English Title from Meta
                     option.text = update.meta?.title_en || `Update #${index+1}`;
                     selector.appendChild(option);
                 });
 
-                // Load first (newest) update
                 loadUpdate(0);
 
             } catch (error) { console.error("Error:", error); }
@@ -159,42 +186,71 @@
             const update = allPatchData[index];
             if(!update) return;
 
-            const data = update.en; // Use English content
+            const data = update.en; // Use English data
             const meta = update.meta;
 
-            // 1. Fill Lists
-            const fill = (id, items) => {
+            // 1. Simple Lists
+            const fillList = (id, items) => {
                 const el = document.getElementById(id);
                 if(el) el.innerHTML = items ? items.map(i => `<li>${i}</li>`).join('') : '';
             };
+            fillList('list-new', data.new_features);
+            fillList('list-fixes', data.fixes);
 
-            fill('list-major', data.major);
-            fill('list-new', data.new_features);
-            fill('list-opt', data.optimizations);
-            fill('list-fixes', data.fixes);
+            // 2. DROPDOWNS Logic
+            const optContainer = document.getElementById('opt-container');
+            optContainer.innerHTML = '';
 
-            // 2. Time Calculation
+            if (data.optimizations && Array.isArray(data.optimizations)) {
+                data.optimizations.forEach(opt => {
+                    // Check if it has structure {title:..., items:[...]}
+                    if (opt.title && opt.items) {
+                        const details = document.createElement('details');
+                        details.className = "group bg-black/20 rounded-lg open:bg-black/40 transition-colors";
+                        
+                        const summary = document.createElement('summary');
+                        summary.className = "cursor-pointer p-3 font-bold text-gray-200 flex justify-between items-center select-none text-sm hover:bg-white/5 rounded";
+                        summary.innerHTML = `${opt.title} <span class="material-symbols-outlined text-sm transition-transform group-open:rotate-180">expand_more</span>`;
+                        
+                        const contentDiv = document.createElement('div');
+                        contentDiv.className = "p-3 pt-0 text-xs text-gray-400 space-y-2 border-t border-gray-700/50 mt-2";
+                        
+                        const ul = document.createElement('ul');
+                        ul.className = "detail-list";
+                        opt.items.forEach(item => {
+                            const li = document.createElement('li');
+                            li.textContent = item;
+                            ul.appendChild(li);
+                        });
+                        
+                        contentDiv.appendChild(ul);
+                        details.appendChild(summary);
+                        details.appendChild(contentDiv);
+                        optContainer.appendChild(details);
+                    } else {
+                        // Fallback string
+                        const div = document.createElement('div');
+                        div.className = "text-sm text-gray-400 p-2";
+                        div.textContent = opt;
+                        optContainer.appendChild(div);
+                    }
+                });
+            }
+
+            // 3. Time
             document.getElementById('utc-time-display').innerText = meta.display_time || "Unknown";
-            
             if (meta.start_timestamp) {
                 const date = new Date(meta.start_timestamp);
-                // English Locale for date string
-                const options = { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' };
-                const localStr = date.toLocaleDateString('en-US', options);
-                
-                const offsetMinutes = date.getTimezoneOffset(); 
-                const offsetHours = -(offsetMinutes / 60);
-                const offsetStr = offsetHours >= 0 ? `+${offsetHours}` : offsetHours;
-                
+                const localStr = date.toLocaleDateString('en-US', { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' });
+                const offset = -(date.getTimezoneOffset() / 60);
+                const offsetStr = offset >= 0 ? `+${offset}` : offset;
                 document.getElementById('local-time-display').innerHTML = `${localStr} <span class="text-sm font-normal text-gray-500">(UTC${offsetStr})</span>`;
             } else {
                  document.getElementById('local-time-display').innerText = "--";
             }
         }
 
-        function changeVersion(index) {
-            loadUpdate(index);
-        }
+        function changeVersion(index) { loadUpdate(index); }
         
         function filterContent(type) {
              const btns = ['all', 'major', 'opt'];
