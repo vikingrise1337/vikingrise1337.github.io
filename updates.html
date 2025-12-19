@@ -69,14 +69,21 @@
                 <span class="material-symbols-outlined text-gray-400 notranslate">arrow_back</span>
                 <span class="viking-font text-lg font-bold text-white"><span id="txt-back">Back to</span> <span class="text-[#d4af37]" id="txt-home">Home</span></span>
             </a>
-            <div class="flex items-center gap-3">
-                <a href="?lang=en" class="lang-btn" id="lang-en">EN</a>
-                <span class="text-white/20">|</span>
-                <a href="?lang=de" class="lang-btn" id="lang-de">DE</a>
-                <span class="text-white/20">|</span>
-                <a href="?lang=cn" class="lang-btn" id="lang-cn">CN</a>
-                <span class="text-white/20">|</span>
-                <a href="?lang=ru" class="lang-btn" id="lang-ru">RU</a>
+            
+            <div class="flex items-center">
+                <div class="hidden sm:flex items-center mr-4 pr-4 border-r border-white/20">
+                    <span id="nav-clock" class="text-sm font-mono text-[#d4af37] font-bold">--:--:--</span>
+                </div>
+
+                <div class="flex items-center gap-3">
+                    <a href="?lang=en" class="lang-btn" id="lang-en">EN</a>
+                    <span class="text-white/20">|</span>
+                    <a href="?lang=de" class="lang-btn" id="lang-de">DE</a>
+                    <span class="text-white/20">|</span>
+                    <a href="?lang=cn" class="lang-btn" id="lang-cn">CN</a>
+                    <span class="text-white/20">|</span>
+                    <a href="?lang=ru" class="lang-btn" id="lang-ru">RU</a>
+                </div>
             </div>
         </div>
     </nav>
@@ -110,14 +117,9 @@
                 </div>
             </div>
 
-            <div class="text-center md:text-right bg-black/30 p-3 rounded-lg border border-gray-700 w-full md:w-auto min-w-[140px]">
+            <div class="text-center md:text-right bg-black/30 p-3 rounded-lg border border-gray-700 w-full md:w-auto">
                 <p id="txt-local" class="text-xs text-gray-400 uppercase tracking-widest mb-1">Start Time (Local)</p>
                 <p id="local-time-display" class="text-xl font-mono text-[#d4af37] font-bold">--:--</p>
-                
-                <div class="h-px bg-white/10 my-2 w-full"></div>
-                
-                <p id="txt-now" class="text-[10px] text-gray-500 uppercase tracking-widest mb-0.5">Current Time</p>
-                <p id="live-clock" class="text-sm font-mono text-gray-300">--:--:--</p>
             </div>
         </div>
 
@@ -170,28 +172,28 @@
         const uiTranslations = {
             en: {
                 back: "Back to", home: "Home", badge: "Update Archive", title: "Patch Notes",
-                utc: "Maintenance (UTC)", local: "Start Time (Local)", now: "Current Time",
+                utc: "Maintenance (UTC)", local: "Start Time (Local)",
                 all: "All", major: "Highlights", opt: "Details",
                 cat_new: "New Features", cat_opt: "Optimizations", cat_fix: "Fixes",
                 loading: "Loading Versions..."
             },
             de: {
                 back: "Zurück zur", home: "Startseite", badge: "Update Archiv", title: "Patch Notes",
-                utc: "Wartung (UTC)", local: "Startzeit (Lokal)", now: "Aktuelle Zeit",
+                utc: "Wartung (UTC)", local: "Startzeit (Lokal)",
                 all: "Alle", major: "Highlights", opt: "Details",
                 cat_new: "Neuheiten", cat_opt: "Optimierungen", cat_fix: "Fehlerbehebungen",
                 loading: "Lade Versionen..."
             },
             cn: {
                 back: "返回", home: "主页", badge: "更新存档", title: "更新说明",
-                utc: "维护时间 (UTC)", local: "开始时间 (本地)", now: "当前时间",
+                utc: "维护时间 (UTC)", local: "开始时间 (本地)",
                 all: "全部", major: "亮点", opt: "详情",
                 cat_new: "新功能", cat_opt: "优化", cat_fix: "修复",
                 loading: "加载版本..."
             },
             ru: {
                 back: "Назад на", home: "Главную", badge: "Архив обновлений", title: "Патчноуты",
-                utc: "Тех. работы (UTC)", local: "Начало (Местное)", now: "Текущее время",
+                utc: "Тех. работы (UTC)", local: "Начало (Местное)",
                 all: "Все", major: "Главное", opt: "Детали",
                 cat_new: "Новое", cat_opt: "Оптимизация", cat_fix: "Исправления",
                 loading: "Загрузка..."
@@ -214,9 +216,10 @@
         // --- 3. Globale Variablen ---
         let allPatchData = [];
         
-        // --- 4. Live Uhr starten ---
+        // --- 4. Live Uhr starten (OBEN RECHTS) ---
         function startLiveClock() {
-            const clockEl = document.getElementById('live-clock');
+            const clockEl = document.getElementById('nav-clock');
+            if(!clockEl) return;
             
             function tick() {
                 const now = new Date();
@@ -243,7 +246,7 @@
             document.getElementById('txt-title').innerText = t.title;
             document.getElementById('txt-utc').innerText = t.utc;
             document.getElementById('txt-local').innerText = t.local;
-            document.getElementById('txt-now').innerText = t.now; // <--- NEU
+            
             document.getElementById('btn-all').innerText = t.all;
             document.getElementById('btn-major').innerText = t.major;
             document.getElementById('btn-opt').innerText = t.opt;
