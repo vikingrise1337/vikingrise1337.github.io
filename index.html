@@ -14,20 +14,30 @@
     
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" type="image/png" href="favicon.png">
+    
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8083367890134296" crossorigin="anonymous"></script>
 
     <style>
-        /* Schriftarten inkl. Ruslan Display für Russisch */
-        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Roboto:wght@300;400;500&family=Ruslan+Display&display=swap');
+        /* Google Fonts: Cinzel (Standard) & Roboto (Text) */
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Roboto:wght@300;400;500&display=swap');
+        
+        /* EIGENE SCHRIFTART LADEN (CinzelRus.ttf muss auf GitHub liegen!) */
+        @font-face {
+            font-family: 'CinzelRus';
+            src: url('CinzelRus.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
         
         body { font-family: 'Roboto', sans-serif; background-color: #0b101b; color: #e2e8f0; }
         
-        /* Standard Wikinger Font */
+        /* Standard: Nutze Google Cinzel */
         .viking-font { font-family: 'Cinzel', serif; }
 
-        /* FIX: Wenn Sprache Russisch ist, nutze Ruslan Display */
+        /* WENN RUSSISCH: Nutze zuerst die lokale 'CinzelRus', dann Standard-Serif */
         :lang(ru) .viking-font {
-            font-family: 'Ruslan Display', cursive;
+            font-family: 'CinzelRus', 'Times New Roman', serif;
             letter-spacing: 0.05em;
         }
 
@@ -36,7 +46,7 @@
         .glass-panel:hover { border-color: #d4af37; transform: translateY(-2px); transition: all 0.3s ease; }
         
         .hero-bg {
-            background-image: url('header-bg.jpg'); /* Dein Hintergrundbild */
+            background-image: url('header-bg.jpg'); 
             background-size: cover;
             background-position: center;
         }
@@ -52,14 +62,20 @@
 
     <nav class="absolute top-0 w-full z-50 py-6">
         <div class="container mx-auto px-6 flex justify-end">
-            <div class="flex items-center gap-4 bg-black/40 backdrop-blur-md px-4 py-2 rounded-full border border-white/10">
-                <a href="?lang=en" class="lang-btn" id="lang-en">EN</a>
-                <span class="text-white/20">|</span>
-                <a href="?lang=de" class="lang-btn" id="lang-de">DE</a>
-                <span class="text-white/20">|</span>
-                <a href="?lang=cn" class="lang-btn" id="lang-cn">CN</a>
-                <span class="text-white/20">|</span>
-                <a href="?lang=ru" class="lang-btn" id="lang-ru">RU</a>
+            <div class="flex items-center bg-black/40 backdrop-blur-md px-4 py-2 rounded-full border border-white/10">
+                <div class="hidden sm:flex items-center mr-4 pr-4 border-r border-white/20">
+                    <span id="nav-clock" class="text-sm font-mono text-[#d4af37] font-bold">--:--:--</span>
+                </div>
+
+                <div class="flex items-center gap-3">
+                    <a href="?lang=en" class="lang-btn" id="lang-en">EN</a>
+                    <span class="text-white/20">|</span>
+                    <a href="?lang=de" class="lang-btn" id="lang-de">DE</a>
+                    <span class="text-white/20">|</span>
+                    <a href="?lang=cn" class="lang-btn" id="lang-cn">CN</a>
+                    <span class="text-white/20">|</span>
+                    <a href="?lang=ru" class="lang-btn" id="lang-ru">RU</a>
+                </div>
             </div>
         </div>
     </nav>
@@ -169,12 +185,10 @@
             }
         };
 
-        // 1. Sprache ermitteln
         const urlParams = new URLSearchParams(window.location.search);
         let currentLang = urlParams.get('lang');
         const validLangs = ['en', 'de', 'cn', 'ru'];
 
-        // Fallback
         if (!validLangs.includes(currentLang)) {
             const browserLang = navigator.language || navigator.userLanguage;
             if (browserLang.startsWith('de')) currentLang = 'de';
@@ -183,15 +197,24 @@
             else currentLang = 'en';
         }
 
-        // 2. Inhalte tauschen
+        // Live Clock
+        function startLiveClock() {
+            const clockEl = document.getElementById('nav-clock');
+            if(!clockEl) return;
+            function tick() {
+                const now = new Date();
+                clockEl.innerText = now.toLocaleTimeString(currentLang === 'cn' ? 'zh-CN' : currentLang, {
+                    hour: '2-digit', minute: '2-digit', second: '2-digit'
+                });
+            }
+            tick(); setInterval(tick, 1000); 
+        }
+
         function updateContent() {
             const t = translations[currentLang];
-            
-            // Texte setzen
             document.getElementById('txt-subtitle').innerText = t.subtitle;
             document.getElementById('btn-updates').innerText = t.btn_updates;
             document.getElementById('btn-discord').innerText = t.btn_discord;
-            
             document.getElementById('card1-title').innerText = t.c1_title;
             document.getElementById('card1-desc').innerText = t.c1_desc;
             document.getElementById('card2-title').innerText = t.c2_title;
@@ -199,21 +222,16 @@
             document.getElementById('card3-title').innerText = t.c3_title;
             document.getElementById('card3-desc').innerText = t.c3_desc;
 
-            // WICHTIG: HTML Lang Attribut setzen, damit CSS :lang(ru) greift
             document.documentElement.lang = currentLang;
-
-            // Links aktualisieren
             document.getElementById('link-updates').href = `updates.html?lang=${currentLang}`;
 
-            // Buttons stylen
             validLangs.forEach(l => {
                 const btn = document.getElementById(`lang-${l}`);
-                if (l === currentLang) btn.className = "lang-btn lang-active";
-                else btn.className = "lang-btn lang-inactive";
+                btn.className = l === currentLang ? "lang-btn lang-active" : "lang-btn lang-inactive";
             });
         }
 
-        // Init
+        startLiveClock();
         updateContent();
     </script>
 </body>
