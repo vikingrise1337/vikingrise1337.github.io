@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google" content="notranslate">
+    <title>Viking Rise News</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Roboto:wght@300;400;500&display=swap');
+        @font-face { font-family: 'CinzelRus'; src: url('CinzelRus.ttf') format('truetype'); }
+        
+        body { font-family: 'Roboto', sans-serif; background-color: #0b101b; color: #e2e8f0; }
+        .viking-font { font-family: 'Cinzel', serif; }
+        :lang(ru) .viking-font { font-family: 'CinzelRus', serif; }
+        
+        .glass-card { 
+            background: rgba(30, 41, 59, 0.6); 
+            backdrop-filter: blur(10px); 
+            border: 1px solid rgba(255,255,255,0.1); 
+            transition: all 0.3s ease;
+        }
+        .glass-card:hover { transform: translateY(-5px); border-color: #d4af37; box-shadow: 0 10px 30px -10px rgba(212, 175, 55, 0.2); }
+        
+        .promo-box { border: 1px dashed #d4af37; background: rgba(212,175,55,0.1); }
+        .lang-btn.active { color: #d4af37; text-decoration: underline; }
+    </style>
+</head>
+<body class="min-h-screen pb-20">
+
+    <nav class="w-full z-50 border-b border-white/10 bg-[#0b101b] sticky top-0 backdrop-blur-md">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2 hover:opacity-80">
+                <span class="material-symbols-outlined text-gray-400 notranslate">arrow_back</span>
+                <span class="viking-font text-lg font-bold text-white">Home</span>
+            </a>
+            <div class="flex gap-3 text-sm font-bold text-gray-400">
+                <a href="?lang=en" id="lang-en">EN</a> | <a href="?lang=de" id="lang-de">DE</a> | 
+                <a href="?lang=cn" id="lang-cn">CN</a> | <a href="?lang=ru" id="lang-ru">RU</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-12">
+        <h1 class="viking-font text-4xl md:text-5xl text-center text-white mb-2">Community <span class="text-[#d4af37]">News</span></h1>
+        <p id="sub-title" class="text-center text-gray-400 mb-12">Latest events, codes and announcements.</p>
+
+        <div id="news-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            </div>
+    </div>
+
+    <script>
+        const translations = {
+            en: { sub: "Latest events, codes and announcements.", copy: "Copy", copied: "Copied!" },
+            de: { sub: "Aktuelle Events, Codes und Ankündigungen.", copy: "Kopieren", copied: "Kopiert!" },
+            cn: { sub: "最新活动、代码和公告。", copy: "复制", copied: "已复制!" },
+            ru: { sub: "Последние события, коды и анонсы.", copy: "Копировать", copied: "Скопировано!" }
+        };
+
+        const urlParams = new URLSearchParams(window.location.search);
+        let curLang = urlParams.get('lang') || 'en';
+        if(!['en','de','cn','ru'].includes(curLang)) curLang = 'en';
+
+        // UI Setup
+        document.documentElement.lang = curLang;
+        document.getElementById(`lang-${curLang}`).className = "active text-[#d4af37]";
+        document.getElementById('sub-title').innerText = translations[curLang].sub;
+
+        async function loadNews() {
+            try {
+                const res = await fetch('news.json?v=' + Date.now());
+                const news = await res.json();
+                const container = document.getElementById('news-grid');
+                
+                news.forEach(item => {
+                    const data = item[curLang] || item['en'];
+                    const hasCode = item.code ? true : false;
+                    
+                    const card = `
+                    <div class="glass-card rounded-xl overflow-hidden flex flex-col h-full">
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="${item.image || 'header-bg.jpg'}" class="w-full h-full object-cover transition duration-700 hover:scale-110">
+                            <div class="absolute top-3 right-3 bg-black/70 px-2 py-1 rounded text-xs text-[#d4af37] font-bold border border-[#d4af37]">${item.date}</div>
+                        </div>
+                        
+                        <div class="p-6 flex flex-col flex-1">
+                            <h3 class="viking-font text-xl text-white mb-3 line-clamp-2">${data.title}</h3>
+                            <p class="text-gray-400 text-sm mb-4 line-clamp-3 flex-1">${data.content}</p>
+                            
+                            ${hasCode ? `
+                            <div class="promo-box rounded-lg p-3 flex items-center justify-between gap-2 mt-auto">
+                                <div>
+                                    <p class="text-[10px] uppercase text-[#d4af37] tracking-wider">Promo Code</p>
+                                    <p class="font-mono text-white text-lg tracking-widest">${item.code}</p>
+                                </div>
+                                <button onclick="copyCode(this, '${item.code}')" class="bg-[#d4af37] hover:bg-white text-black p-2 rounded transition">
+                                    <span class="material-symbols-outlined text-lg notranslate">content_copy</span>
+                                </button>
+                            </div>
+                            ${item.expiry ? `<p class="text-xs text-gray-500 mt-2 text-center">Expires: ${item.expiry}</p>` : ''}
+                            ` : ''}
+                        </div>
+                    </div>`;
+                    container.innerHTML += card;
+                });
+            } catch(e) { console.error(e); }
+        }
+
+        function copyCode(btn, code) {
+            navigator.clipboard.writeText(code);
+            const originalIcon = btn.innerHTML;
+            btn.innerHTML = `<span class="material-symbols-outlined text-lg notranslate">check</span>`;
+            btn.classList.add('bg-green-500');
+            setTimeout(() => {
+                btn.innerHTML = originalIcon;
+                btn.classList.remove('bg-green-500');
+            }, 2000);
+        }
+
+        loadNews();
+    </script>
+</body>
+</html>
