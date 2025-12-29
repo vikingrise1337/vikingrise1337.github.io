@@ -96,10 +96,10 @@
 
     <script>
         const translations = {
-            en: { subtitle: "Your unofficial source for Updates, Tools & Community.", btn_updates: "Read Patch Notes", btn_news: "Latest News", btn_discord: "Official Discord", c1_title: "Latest Updates", c1_desc: "Read the patch notes in your language.", c2_title: "News & Events", c2_desc: "Check out the latest promo codes.", c3_title: "Community", c3_desc: "Join the official Discord." },
-            de: { subtitle: "Deine inoffizielle Quelle für Updates, Tools & Community.", btn_updates: "Patch Notes lesen", btn_news: "Aktuelle News", btn_discord: "Offizieller Discord", c1_title: "Aktuelle Updates", c1_desc: "Lies die Patch Notes auf Deutsch.", c2_title: "News & Events", c2_desc: "Die neuesten Promo-Codes & Events.", c3_title: "Community", c3_desc: "Tritt dem offiziellen Discord bei." },
-            cn: { subtitle: "您的维京崛起非官方更新、工具和社区来源。", btn_updates: "阅读更新说明", btn_news: "最新消息", btn_discord: "官方 Discord", c1_title: "最新更新", c1_desc: "阅读中文版的更新说明。", c2_title: "新闻与活动", c2_desc: "查看最新的礼包码。", c3_title: "社区", c3_desc: "加入官方 Discord。" },
-            ru: { subtitle: "Ваш неофициальный источник новостей.", btn_updates: "Читать патчноуты", btn_news: "Новости", btn_discord: "Офиц. Discord", c1_title: "Обновления", c1_desc: "Читайте патчноуты на русском.", c2_title: "Новости и события", c2_desc: "Промокоды и события.", c3_title: "Сообщество", c3_desc: "Присоединяйтесь к Discord." }
+            en: { subtitle: "Your unofficial source for Updates, Tools & Community.", btn_updates: "Read Patch Notes", btn_news: "Latest News", btn_discord: "Official Discord", c1_title: "Latest Updates", c1_desc: "Read the patch notes in your language.", c2_title: "News & Events", c2_desc: "Check out the latest promo codes.", c3_title: "Community", c3_desc: "Join the official Discord.", news_prefix: "News" },
+            de: { subtitle: "Deine inoffizielle Quelle für Updates, Tools & Community.", btn_updates: "Patch Notes lesen", btn_news: "Aktuelle News", btn_discord: "Offizieller Discord", c1_title: "Aktuelle Updates", c1_desc: "Lies die Patch Notes auf Deutsch.", c2_title: "News & Events", c2_desc: "Die neuesten Promo-Codes & Events.", c3_title: "Community", c3_desc: "Tritt dem offiziellen Discord bei.", news_prefix: "News" },
+            cn: { subtitle: "您的维京崛起非官方更新、工具和社区来源。", btn_updates: "阅读更新说明", btn_news: "最新消息", btn_discord: "官方 Discord", c1_title: "最新更新", c1_desc: "阅读中文版的更新说明。", c2_title: "新闻与活动", c2_desc: "查看最新的礼包码。", c3_title: "社区", c3_desc: "加入官方 Discord。", news_prefix: "新闻" },
+            ru: { subtitle: "Ваш неофициальный источник новостей.", btn_updates: "Читать патчноуты", btn_news: "Новости", btn_discord: "Офиц. Discord", c1_title: "Обновления", c1_desc: "Читайте патчноуты на русском.", c2_title: "Новости и события", c2_desc: "Промокоды и события.", c3_title: "Сообщество", c3_desc: "Присоединяйтесь к Discord.", news_prefix: "Новости" }
         };
         const urlParams = new URLSearchParams(window.location.search);
         let curLang = urlParams.get('lang') || 'en';
@@ -136,7 +136,8 @@
                 const news = await res.json();
                 if (news && news.length > 0) {
                     const data = news[0][curLang] || news[0]['en'];
-                    document.getElementById('card2-title').innerHTML = `<span class="text-blue-400">News:</span> ${data.title}`;
+                    const t = translations[curLang];
+                    document.getElementById('card2-title').innerHTML = `<span class="text-blue-400">${t.news_prefix}:</span> ${data.title}`;
                     let summary = data.content.length > 90 ? data.content.substring(0, 90) + "..." : data.content;
                     const codeHTML = news[0].code ? `<br><span class="inline-block mt-2 text-[#d4af37] border border-[#d4af37] px-2 rounded text-xs">CODE: ${news[0].code}</span>` : '';
                     document.getElementById('card2-desc').innerHTML = summary + codeHTML;
