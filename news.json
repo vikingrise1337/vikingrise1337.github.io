@@ -1,5 +1,29 @@
 [
   {
+    "id": "1455058088024477807",
+    "date": "15. Aug 2024",
+    "image": "",
+    "code": null,
+    "expiry": null,
+    "link": null,
+    "en": {
+      "title": "Massive Bot Ban Wave: 25K Accounts Banned",
+      "content": "The Viking Rise team announced a successful bot ban wave, eliminating 25,338 bot accounts in the past week. Chiefs are encouraged to report any suspicious activity to Customer Support for necessary measures to be taken. A full list of banned accounts is available via an attached PDF."
+    },
+    "de": {
+      "title": "**Massive Bot Ban Wave: 25K Accounts Banned**",
+      "content": "Das Viking Rise Team hat eine erfolgreiche Bot-Ban-Welle angekündigt, bei der in der vergangenen Woche 25.338 bot accounts eliminiert wurden.\n\nChiefs werden ermutigt, jede verdächtige Aktivität dem Customer Support zu melden, damit notwendige Maßnahmen ergriffen werden können. Eine vollständige Liste der gesperrten Accounts ist über ein angehängtes PDF verfügbar."
+    },
+    "cn": {
+      "title": "Massive Bot Ban Wave: 25K Accounts Banned\n\n大规模 Bot 封禁潮：25K 账号被禁",
+      "content": "The Viking Rise team announced a successful bot ban wave, eliminating 25,338 bot accounts in the past week. Chiefs are encouraged to report any suspicious activity to Customer Support for necessary measures to be taken. A full list of banned accounts is available via an attached PDF."
+    },
+    "ru": {
+      "title": "Массовая волна бот-банов: Забанено 25K аккаунтов.",
+      "content": "Команда Viking Rise объявила об успешной волне банов ботов, заблокировав 25 338 бот-аккаунтов за прошедшую неделю. Chiefs призывают сообщать о любой подозрительной активности в Службу поддержки для принятия необходимых мер. Полный список заблокированных аккаунтов доступен в прикрепленном PDF-файле."
+    }
+  },
+  {
     "id": "1454944217406111948",
     "date": "25. Dec 2025",
     "image": "",
