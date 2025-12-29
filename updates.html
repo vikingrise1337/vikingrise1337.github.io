@@ -198,28 +198,36 @@
             utc: "Maintenance (UTC)", local: "Start Time (Local)",
             all: "All", major: "Highlights", opt: "Details",
             cat_new: "New Features", cat_opt: "Optimizations", cat_fix: "Fixes",
-            loading: "Loading Versions..."
+            loading: "Loading Versions...",
+            main_feature: "Main Feature",
+            highlight_prefix: "Highlight"
         },
         de: {
             back: "Zurück zur", home: "Startseite", badge: "Update Archiv", title: "Patch Notes",
             utc: "Wartung (UTC)", local: "Startzeit (Lokal)",
             all: "Alle", major: "Highlights", opt: "Details",
             cat_new: "Neuheiten", cat_opt: "Optimierungen", cat_fix: "Fehlerbehebungen",
-            loading: "Lade Versionen..."
+            loading: "Lade Versionen...",
+            main_feature: "Hauptfeature",
+            highlight_prefix: "Highlight"
         },
         cn: {
             back: "返回", home: "主页", badge: "更新存档", title: "更新说明",
             utc: "维护时间 (UTC)", local: "开始时间 (本地)",
             all: "全部", major: "亮点", opt: "详情",
             cat_new: "新功能", cat_opt: "优化", cat_fix: "修复",
-            loading: "加载版本..."
+            loading: "加载版本...",
+            main_feature: "主要功能",
+            highlight_prefix: "亮点"
         },
         ru: {
             back: "Назад на", home: "Главную", badge: "Архив обновлений", title: "Патчноуты",
             utc: "Тех. работы (UTC)", local: "Начало (Местное)",
             all: "Все", major: "Главное", opt: "Детали",
             cat_new: "Новое", cat_opt: "Оптимизация", cat_fix: "Исправления",
-            loading: "Загрузка..."
+            loading: "Загрузка...",
+            main_feature: "Главная особенность",
+            highlight_prefix: "Акцент"
         }
     };
 
@@ -405,6 +413,7 @@
         if (!data) return;
 
         const meta = update.meta || {};
+        const t = uiTranslations[currentLang] || uiTranslations.en;
 
         // --- HERO IMAGE OBEN (Update-spezifisch + Fallback-Kette) ---
         const heroImgEl = document.getElementById("hero-img");
@@ -438,7 +447,7 @@
                                  class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                             <div class="absolute inset-0 bg-gradient-to-t from-[#0b101b] to-transparent"></div>
                             <h3 class="absolute bottom-4 left-4 text-xl font-bold text-white drop-shadow-lg viking-font">
-                                ${i === 0 && heroImage ? 'Main Feature' : `Highlight #${i + 1}`}
+                                ${i === 0 && heroImage ? t.main_feature : `${t.highlight_prefix} #${i + 1}`}
                             </h3>
                         </div>
                         <div class="p-6">
