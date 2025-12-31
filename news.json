@@ -1,5 +1,21 @@
 [
   {
+    "id": "1455908458632183921",
+    "date": "31. Dec 2025",
+    "image": "",
+    "category": "NEWS",
+    "raw_analysis": {
+      "category": "NEWS",
+      "display_date": "31. Dec 2025",
+      "iso_timestamp": "2025-12-31T11:06:00+00:00",
+      "news_data": {
+        "title": "Viking Rise Producer's Letter: 2026 Content Plans & Q&A",
+        "summary": "Producer Johnny thanks players for their support in 2025 and outlines Viking Rise's major content plans for 2026, including new Dragon Crystal systems, KVK scenarios, PVE content, hero expansions, and the introduction of Mount Skins. The letter also addresses frequently asked questions about migration, city development, tribe permissions, hero promotions, KVK matching, and Drill Ground enhancements."
+      },
+      "update_data": {}
+    }
+  },
+  {
     "id": "1455906662316769290",
     "date": "31. Dec 2025",
     "image": "",
