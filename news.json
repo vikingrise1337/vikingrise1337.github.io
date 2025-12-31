@@ -1,5 +1,24 @@
 [
   {
+    "id": "1455895441832022227",
+    "date": "01. Jan 2026",
+    "image": "",
+    "category": "NEWS",
+    "raw_analysis": {
+      "category": "NEWS",
+      "display_date": "01. Jan 2026",
+      "iso_timestamp": "2026-01-01T00:00:00+00:00",
+      "news_data": {
+        "title": "Producer's Letter: Our Plans for 2026",
+        "summary": "Producer Johnny outlines Viking Rise's 2026 content plans, including a new Dragon Crystal-based building and research system, KVK scenarios, PVE content (like Abyssal Cavern), and hero pool expansion. New features such as Mount Skins and Norse-legend-inspired KVK/GVG modes are also revealed. The letter addresses player FAQs on migration, city development, Tribe permissions, hero promotions, KVK matching, and Drill Ground enhancements."
+      },
+      "update_data": {
+        "major": [],
+        "optimizations": []
+      }
+    }
+  },
+  {
     "id": "1455893229206638663",
     "date": "31. Dec 2025",
     "image": "",
