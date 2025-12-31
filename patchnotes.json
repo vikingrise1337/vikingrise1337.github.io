@@ -1,5 +1,74 @@
 [
   {
+    "id": "1455884176233467904",
+    "date": "31. Dec 2025",
+    "image": "",
+    "category": "UPDATE",
+    "raw_analysis": {
+      "category": "UPDATE",
+      "display_date": "31. Dec 2025",
+      "iso_timestamp": "2025-12-31T11:06:00+00:00",
+      "news_data": {
+        "title": "Viking Rise: Producer's Letter - 2026 Vision",
+        "summary": "The producer shares upcoming content plans for 2026, including new core gameplay systems, PVE and KVK modes, hero expansions, and addresses player concerns regarding migration, city development, tribe management, hero promotions, KVK matching, and Drill Ground optimizations.",
+        "promo_code": null,
+        "link": null
+      },
+      "update_data": {
+        "major": [
+          "New Dragon Crystal building and research system.",
+          "New KVK scenarios and GVG modes (e.g., [Jormungand], [Ragnarök]).",
+          "New PVE content and modes (e.g., [Abyssal Cavern]).",
+          "Expanded hero pool and skill system.",
+          "Introduction of Mount Skin feature."
+        ],
+        "optimizations": [
+          {
+            "title": "Migration System",
+            "items": [
+              "Expand migration group sizes.",
+              "Further reduce Migration Pass requirements."
+            ]
+          },
+          {
+            "title": "City Development",
+            "items": [
+              "Expand building and research content with new Dragon Crystal power."
+            ]
+          },
+          {
+            "title": "Tribe Management",
+            "items": [
+              "Reduce management burden for Tribe leadership.",
+              "Subdivide Tribe title permissions."
+            ]
+          },
+          {
+            "title": "Hero Promotion",
+            "items": [
+              "Planned promotion of a new batch of purple heroes to higher grades."
+            ]
+          },
+          {
+            "title": "KVK Matching",
+            "items": [
+              "Continuously optimize KVK matching by fine-tuning metrics (Kingdom Might, personnel composition, historical performance).",
+              "Promptly address feedback from Chiefs."
+            ]
+          },
+          {
+            "title": "Drill Ground",
+            "items": [
+              "Optimize Drill Ground functions.",
+              "Introduce more flexible team composition rules.",
+              "Introduce buff/debuff mechanics."
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
     "id": "1455880298548957275",
     "date": "01. Jan 2026",
     "image": "",
