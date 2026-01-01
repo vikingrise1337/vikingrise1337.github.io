@@ -40,7 +40,9 @@
         .highlight-card {
             border: 1px solid #d4af37; 
             box-shadow: 0 0 15px rgba(212, 175, 55, 0.15); 
-            background: rgba(212, 175, 55, 0.05); 
+            background: rgba(212, 175, 55, 0.05); /* Fallback */
+            background-size: cover;
+            background-position: center;
         }
         .highlight-card:hover {
             box-shadow: 0 0 30px rgba(212, 175, 55, 0.3);
@@ -124,8 +126,8 @@
                 <p id="card1-desc" class="text-sm md:text-base text-gray-400 line-clamp-3">Always up to date.</p>
             </a>
             
-            <a href="https://discord.gg/vikingrise" target="_blank" class="glass-panel highlight-card p-6 md:p-8 rounded-2xl flex flex-col items-center text-center group cursor-pointer relative overflow-hidden">
-                <div class="absolute top-4 right-4 flex items-center gap-2 bg-black/50 px-2 py-1 rounded-full border border-green-500/30">
+            <a id="discord-card" href="https://discord.gg/vikingrise" target="_blank" class="glass-panel highlight-card p-6 md:p-8 rounded-2xl flex flex-col items-center text-center group cursor-pointer relative overflow-hidden">
+                <div class="absolute top-4 right-4 flex items-center gap-2 bg-black/50 px-2 py-1 rounded-full border border-green-500/30 z-10">
                     <span class="relative flex h-2 w-2">
                       <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
                       <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
@@ -133,21 +135,24 @@
                     <span id="discord-online-badge" class="text-[10px] font-mono text-green-400">OFFLINE</span>
                 </div>
 
-                <p id="discord-official-label" class="text-[10px] font-bold text-[#d4af37] uppercase tracking-[0.2em] mb-3">OFFICIAL</p>
+                <div class="relative z-10 flex flex-col items-center h-full w-full">
+                    
+                    <p id="discord-official-label" class="text-[10px] font-bold text-[#d4af37] uppercase tracking-[0.2em] mb-2 drop-shadow-md">OFFICIAL</p>
 
-                <img id="discord-icon" src="favicon.png" class="w-16 h-16 rounded-full mb-3 shadow-lg border-2 border-[#5865F2] hidden group-hover:scale-110 transition-transform duration-500">
-                <span id="discord-fallback-icon" class="material-symbols-outlined text-4xl md:text-5xl text-[#5865F2] mb-3 md:mb-4 notranslate group-hover:scale-110 transition-transform">groups</span>
-                
-                <h3 class="text-xl md:text-2xl font-bold text-white mb-1 viking-font leading-tight">VIKING RISE</h3>
-                
-                <div class="flex items-center justify-center gap-1 mb-4">
-                    <span id="discord-community-label" class="text-sm font-bold text-gray-300">Community Discord</span>
-                    <span class="material-symbols-outlined text-blue-400 text-sm notranslate" title="Verified">verified</span>
-                </div>
-                
-                <div class="text-sm md:text-base text-gray-400 space-y-1 mt-auto">
-                    <p id="discord-status-text">Connecting...</p>
-                    <p id="discord-total-text" class="text-xs text-gray-500 hidden">0 Members</p>
+                    <img id="discord-icon" src="favicon.png" class="w-16 h-16 rounded-full mb-2 shadow-lg border-2 border-[#5865F2] hidden group-hover:scale-110 transition-transform duration-500">
+                    <span id="discord-fallback-icon" class="material-symbols-outlined text-4xl md:text-5xl text-[#5865F2] mb-2 md:mb-4 notranslate group-hover:scale-110 transition-transform">groups</span>
+                    
+                    <h3 class="text-xl md:text-2xl font-bold text-white mb-1 viking-font leading-tight drop-shadow-md">VIKING RISE</h3>
+                    
+                    <div class="flex items-center justify-center gap-1 mb-4 drop-shadow-md">
+                        <span id="discord-community-label" class="text-xs md:text-sm font-bold text-gray-200 tracking-wide">Community Discord</span>
+                        <span class="material-symbols-outlined text-blue-400 text-sm notranslate" title="Verified">verified</span>
+                    </div>
+                    
+                    <div class="text-sm md:text-base text-gray-300 space-y-1 mt-auto drop-shadow-md">
+                        <p id="discord-status-text">Connecting...</p>
+                        <p id="discord-total-text" class="text-xs text-gray-400 hidden">0 Members</p>
+                    </div>
                 </div>
             </a>
 
@@ -173,7 +178,7 @@
                 btn_updates: "Read Patch Notes", btn_news: "Latest News", btn_discord: "Official Discord", 
                 c1_title: "Latest Updates", c1_desc: "Always up to date.", 
                 c2_title: "News & Events", c2_desc: "Loading latest news...", 
-                disc_official: "OFFICIAL", disc_community: "Community Discord",
+                disc_official: "OFFICIAL", disc_community: "COMMUNITY DISCORD",
                 news_prefix: "News", ticker_badge: "NEW", expiry: "Expires:" 
             },
             de: { 
@@ -181,7 +186,7 @@
                 btn_updates: "Patch Notes lesen", btn_news: "Aktuelle News", btn_discord: "Offizieller Discord", 
                 c1_title: "Aktuelle Updates", c1_desc: "Immer auf dem neuesten Stand.", 
                 c2_title: "News & Events", c2_desc: "Lade aktuelle News...", 
-                disc_official: "OFFIZIELL", disc_community: "Community Discord",
+                disc_official: "OFFIZIELLER", disc_community: "COMMUNITY DISCORD",
                 news_prefix: "News", ticker_badge: "NEU", expiry: "Läuft ab:" 
             },
             cn: { 
@@ -189,7 +194,7 @@
                 btn_updates: "阅读更新说明", btn_news: "最新消息", btn_discord: "官方 Discord", 
                 c1_title: "最新更新", c1_desc: "始终保持最新。", 
                 c2_title: "新闻与活动", c2_desc: "正在加载最新新闻...", 
-                disc_official: "官方", disc_community: "社区 Discord",
+                disc_official: "官方", disc_community: "社区 DISCORD",
                 news_prefix: "新闻", ticker_badge: "最新", expiry: "过期:" 
             },
             ru: { 
@@ -197,7 +202,7 @@
                 btn_updates: "Читать патчноуты", btn_news: "Новости", btn_discord: "Офиц. Discord", 
                 c1_title: "Обновления", c1_desc: "Всегда актуально.", 
                 c2_title: "Новости и события", c2_desc: "Загрузка новостей...", 
-                disc_official: "ОФИЦИАЛЬНЫЙ", disc_community: "Discord Сообщества",
+                disc_official: "ОФИЦИАЛЬНЫЙ", disc_community: "DISCORD СООБЩЕСТВА",
                 news_prefix: "Новости", ticker_badge: "НОВОЕ", expiry: "Истекает:" 
             }
         };
@@ -324,16 +329,13 @@
             tickerIndex = (tickerIndex + 1) % tickerItems.length;
         }
 
-        // --- 3. DISCORD (Mitte) ---
+        // --- 3. DISCORD + BANNER (Mitte) ---
         async function fetchDiscordStatus() {
             try {
                 const res = await fetch('https://discord.com/api/v9/invites/vikingrise?with_counts=true');
                 const data = await res.json();
 
                 if (data && data.guild) {
-                    const online = data.approximate_presence_count.toLocaleString();
-                    const total = data.approximate_member_count.toLocaleString();
-                    
                     if (data.guild.icon) {
                         const iconUrl = `https://cdn.discordapp.com/icons/${data.guild.id}/${data.guild.icon}.png`;
                         const img = document.getElementById('discord-icon');
@@ -342,6 +344,15 @@
                         document.getElementById('discord-fallback-icon').classList.add('hidden');
                     }
 
+                    if (data.guild.banner) {
+                        const bannerUrl = `https://cdn.discordapp.com/banners/${data.guild.id}/${data.guild.banner}.jpg?size=600`;
+                        const card = document.getElementById('discord-card');
+                        card.style.backgroundImage = `linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.9)), url(${bannerUrl})`;
+                    }
+
+                    const online = data.approximate_presence_count.toLocaleString();
+                    const total = data.approximate_member_count.toLocaleString();
+                    
                     const elStatus = document.getElementById('discord-status-text');
                     const elTotal = document.getElementById('discord-total-text');
                     const elBadge = document.getElementById('discord-online-badge');
