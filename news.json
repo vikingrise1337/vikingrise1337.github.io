@@ -1,5 +1,29 @@
 [
   {
+    "id": "1456239743418237063",
+    "date": "01. Jan 2026",
+    "image": "",
+    "code": "VR2026",
+    "expiry": "1/5/26 23:59 (UTC)",
+    "link": "https://www.tiktok.com/@vikingrise",
+    "en": {
+      "title": "Happy New Year & Promo Code!",
+      "content": "Greetings to all Chiefs! Wishing a Happy New Year for 2026 and providing a special promo code, VR2026, as a thank you for all the support in 2025. This code expires on 1/5/26 at 23:59 UTC."
+    },
+    "de": {
+      "title": "Frohes Neues Jahr & Promo Code!",
+      "content": "Herzliche Grüße an alle Chiefs! Wir wünschen euch ein frohes neues Jahr für 2026 und präsentieren euch einen speziellen promo code, VR2026, als Dankeschön für all eure Unterstützung im Jahr 2025. Dieser code läuft am 05.01.2026 um 23:59 UTC ab."
+    },
+    "cn": {
+      "title": "新年快乐和 Promo Code！",
+      "content": "大家好，各位 Chief！\n\n恭祝大家2026新年快乐，并送上一个特别的 promo code: VR2026，以感谢大家在2025年的所有支持。此 code 将于 2026年1月5日23:59 UTC 失效。"
+    },
+    "ru": {
+      "title": "С Новым годом! И Promo Code!",
+      "content": "Приветствуем всех Chiefs! Поздравляем с Новым 2026 годом и предоставляем специальный промокод VR2026 в благодарность за всю вашу поддержку в 2025 году. Этот код истекает 5 января 2026 года в 23:59 UTC."
+    }
+  },
+  {
     "id": "1456239082031157423",
     "date": "27. Oct 2023",
     "image": "",
