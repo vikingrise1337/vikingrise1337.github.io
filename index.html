@@ -36,13 +36,6 @@
             box-shadow: 0 10px 20px rgba(0,0,0,0.5); 
         }
         
-        /* Widget Container spezifisch: Kein Hover-Lift, da interaktiv */
-        .widget-panel {
-            background: rgba(30, 41, 59, 0.6); 
-            backdrop-filter: blur(10px); 
-            border: 1px solid rgba(88, 101, 242, 0.3); /* Leichtes Discord-Blau im Rahmen */
-        }
-        
         .hero-bg { background-image: url('header-bg.jpg'); background-size: cover; background-position: center; }
         
         .lang-btn { cursor: pointer; font-size: 0.85rem; font-weight: bold; transition: color 0.3s; }
@@ -131,16 +124,23 @@
                 <p id="card2-desc" class="text-sm md:text-base text-gray-300 italic">Loading latest news...</p>
             </a>
             
-            <div class="widget-panel rounded-2xl overflow-hidden h-[350px] md:h-auto min-h-[300px] flex items-center justify-center">
-                <iframe 
-                    src="https://discord.com/widget?id=989102955569483796&theme=dark" 
-                    width="100%" 
-                    height="100%" 
-                    allowtransparency="true" 
-                    frameborder="0" 
-                    sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
-                </iframe>
-            </div>
+            <a href="https://discord.gg/vikingrise" target="_blank" class="glass-panel p-6 md:p-8 rounded-2xl flex flex-col items-center text-center group cursor-pointer relative overflow-hidden">
+                <div class="absolute top-4 right-4 flex items-center gap-2 bg-black/50 px-2 py-1 rounded-full border border-green-500/30">
+                    <span class="relative flex h-2 w-2">
+                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                      <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                    </span>
+                    <span id="discord-online-badge" class="text-[10px] font-mono text-green-400">OFFLINE</span>
+                </div>
+
+                <span class="material-symbols-outlined text-4xl md:text-5xl text-[#5865F2] mb-3 md:mb-4 notranslate group-hover:scale-110 transition-transform">groups</span>
+                <h3 id="card3-title" class="text-xl md:text-2xl font-bold text-white mb-2 md:mb-3 viking-font">Community</h3>
+                
+                <div class="text-sm md:text-base text-gray-400 space-y-1">
+                    <p id="discord-status-text">Fetching data...</p>
+                    <p id="discord-total-text" class="text-xs text-gray-500 hidden">0 Members</p>
+                </div>
+            </a>
 
         </div>
     </div>
@@ -151,10 +151,10 @@
 
     <script>
         const translations = {
-            en: { subtitle: "Your unofficial source for Updates, Tools & Community.", btn_updates: "Read Patch Notes", btn_news: "Latest News", btn_discord: "Official Discord", c1_title: "Latest Updates", c1_desc: "Read the patch notes in your language.", c2_title: "News & Events", c2_desc: "Check out the latest promo codes.", news_prefix: "News", ticker_badge: "NEW" },
-            de: { subtitle: "Deine inoffizielle Quelle für Updates, Tools & Community.", btn_updates: "Patch Notes lesen", btn_news: "Aktuelle News", btn_discord: "Offizieller Discord", c1_title: "Aktuelle Updates", c1_desc: "Lies die Patch Notes auf Deutsch.", c2_title: "News & Events", c2_desc: "Die neuesten Promo-Codes & Events.", news_prefix: "News", ticker_badge: "NEU" },
-            cn: { subtitle: "您的维京崛起非官方更新、工具和社区来源。", btn_updates: "阅读更新说明", btn_news: "最新消息", btn_discord: "官方 Discord", c1_title: "最新更新", c1_desc: "阅读中文版的更新说明。", c2_title: "新闻与活动", c2_desc: "查看最新的礼包码。", news_prefix: "新闻", ticker_badge: "最新" },
-            ru: { subtitle: "Ваш неофициальный источник новостей.", btn_updates: "Читать патчноуты", btn_news: "Новости", btn_discord: "Офиц. Discord", c1_title: "Обновления", c1_desc: "Читайте патчноуты на русском.", c2_title: "Новости и события", c2_desc: "Промокоды и события.", news_prefix: "Новости", ticker_badge: "НОВОЕ" }
+            en: { subtitle: "Your unofficial source for Updates, Tools & Community.", btn_updates: "Read Patch Notes", btn_news: "Latest News", btn_discord: "Official Discord", c1_title: "Latest Updates", c1_desc: "Read the patch notes in your language.", c2_title: "News & Events", c2_desc: "Check out the latest promo codes.", c3_title: "Community", c3_desc: "Join the official Discord.", news_prefix: "News", ticker_badge: "NEW" },
+            de: { subtitle: "Deine inoffizielle Quelle für Updates, Tools & Community.", btn_updates: "Patch Notes lesen", btn_news: "Aktuelle News", btn_discord: "Offizieller Discord", c1_title: "Aktuelle Updates", c1_desc: "Lies die Patch Notes auf Deutsch.", c2_title: "News & Events", c2_desc: "Die neuesten Promo-Codes & Events.", c3_title: "Community", c3_desc: "Tritt dem offiziellen Discord bei.", news_prefix: "News", ticker_badge: "NEU" },
+            cn: { subtitle: "您的维京崛起非官方更新、工具和社区来源。", btn_updates: "阅读更新说明", btn_news: "最新消息", btn_discord: "官方 Discord", c1_title: "最新更新", c1_desc: "阅读中文版的更新说明。", c2_title: "新闻与活动", c2_desc: "查看最新的礼包码。", c3_title: "社区", c3_desc: "加入官方 Discord。", news_prefix: "新闻", ticker_badge: "最新" },
+            ru: { subtitle: "Ваш неофициальный источник новостей.", btn_updates: "Читать патчноуты", btn_news: "Новости", btn_discord: "Офиц. Discord", c1_title: "Обновления", c1_desc: "Читайте патчноуты на русском.", c2_title: "Новости и события", c2_desc: "Промокоды и события.", c3_title: "Сообщество", c3_desc: "Присоединяйтесь к Discord.", news_prefix: "Новости", ticker_badge: "НОВОЕ" }
         };
         const urlParams = new URLSearchParams(window.location.search);
         let curLang = urlParams.get('lang') || 'en';
@@ -170,7 +170,8 @@
             document.getElementById('card1-desc').innerText = t.c1_desc;
             document.getElementById('card2-title').innerText = t.c2_title;
             document.getElementById('card2-desc').innerText = t.c2_desc;
-            // Card 3 Title entfällt, da Widget Inhalt liefert
+            document.getElementById('card3-title').innerText = t.c3_title;
+            // card3-desc wird dynamisch vom API Script überschrieben
             
             document.getElementById('ticker-badge').innerText = t.ticker_badge;
             
@@ -227,8 +228,40 @@
             tickerIndex = (tickerIndex + 1) % tickerItems.length;
         }
 
+        // --- DISCORD LIVE STATUS (API) ---
+        async function fetchDiscordStatus() {
+            try {
+                const res = await fetch('https://discord.com/api/v9/invites/vikingrise?with_counts=true');
+                const data = await res.json();
+
+                if (data && data.approximate_presence_count) {
+                    const online = data.approximate_presence_count.toLocaleString();
+                    const total = data.approximate_member_count.toLocaleString();
+                    
+                    const elStatus = document.getElementById('discord-status-text');
+                    const elTotal = document.getElementById('discord-total-text');
+                    const elBadge = document.getElementById('discord-online-badge');
+
+                    const onlineText = curLang === 'de' ? 'Online' : 'Online';
+                    const membersText = curLang === 'de' ? 'Mitglieder' : 'Members';
+
+                    elStatus.innerHTML = `<span class="text-white font-bold text-lg">${online}</span> <span class="text-green-400">${onlineText}</span>`;
+                    
+                    elTotal.innerText = `${total} ${membersText}`;
+                    elTotal.classList.remove('hidden');
+
+                    elBadge.innerText = "LIVE";
+                    elBadge.className = "text-[10px] font-mono text-green-400 font-bold";
+                }
+            } catch (e) {
+                console.error("Discord API Error", e);
+                document.getElementById('discord-status-text').innerText = "Join the Official Server";
+            }
+        }
+
         updateContent();
         initTicker();
+        fetchDiscordStatus();
     </script>
 </body>
 </html>
