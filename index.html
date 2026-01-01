@@ -133,13 +133,17 @@
                     <span id="discord-online-badge" class="text-[10px] font-mono text-green-400">OFFLINE</span>
                 </div>
 
+                <p id="discord-official-label" class="text-[10px] font-bold text-[#d4af37] uppercase tracking-[0.2em] mb-3">OFFICIAL</p>
+
                 <img id="discord-icon" src="favicon.png" class="w-16 h-16 rounded-full mb-3 shadow-lg border-2 border-[#5865F2] hidden group-hover:scale-110 transition-transform duration-500">
                 <span id="discord-fallback-icon" class="material-symbols-outlined text-4xl md:text-5xl text-[#5865F2] mb-3 md:mb-4 notranslate group-hover:scale-110 transition-transform">groups</span>
                 
-                <h3 class="text-lg md:text-xl font-bold text-white mb-2 viking-font leading-tight px-1 flex items-center justify-center gap-2 flex-wrap">
-                    <span id="discord-official-text">Official Viking Rise Community Discord</span>
-                    <span class="material-symbols-outlined text-blue-400 text-lg notranslate" title="Verified">verified</span>
-                </h3>
+                <h3 class="text-xl md:text-2xl font-bold text-white mb-1 viking-font leading-tight">VIKING RISE</h3>
+                
+                <div class="flex items-center justify-center gap-1 mb-4">
+                    <span id="discord-community-label" class="text-sm font-bold text-gray-300">Community Discord</span>
+                    <span class="material-symbols-outlined text-blue-400 text-sm notranslate" title="Verified">verified</span>
+                </div>
                 
                 <div class="text-sm md:text-base text-gray-400 space-y-1 mt-auto">
                     <p id="discord-status-text">Connecting...</p>
@@ -169,7 +173,7 @@
                 btn_updates: "Read Patch Notes", btn_news: "Latest News", btn_discord: "Official Discord", 
                 c1_title: "Latest Updates", c1_desc: "Always up to date.", 
                 c2_title: "News & Events", c2_desc: "Loading latest news...", 
-                discord_title: "Official Viking Rise Community Discord", 
+                disc_official: "OFFICIAL", disc_community: "Community Discord",
                 news_prefix: "News", ticker_badge: "NEW", expiry: "Expires:" 
             },
             de: { 
@@ -177,7 +181,7 @@
                 btn_updates: "Patch Notes lesen", btn_news: "Aktuelle News", btn_discord: "Offizieller Discord", 
                 c1_title: "Aktuelle Updates", c1_desc: "Immer auf dem neuesten Stand.", 
                 c2_title: "News & Events", c2_desc: "Lade aktuelle News...", 
-                discord_title: "Offizieller Viking Rise Community Discord", 
+                disc_official: "OFFIZIELL", disc_community: "Community Discord",
                 news_prefix: "News", ticker_badge: "NEU", expiry: "Läuft ab:" 
             },
             cn: { 
@@ -185,7 +189,7 @@
                 btn_updates: "阅读更新说明", btn_news: "最新消息", btn_discord: "官方 Discord", 
                 c1_title: "最新更新", c1_desc: "始终保持最新。", 
                 c2_title: "新闻与活动", c2_desc: "正在加载最新新闻...", 
-                discord_title: "官方 Viking Rise 社区 Discord", 
+                disc_official: "官方", disc_community: "社区 Discord",
                 news_prefix: "新闻", ticker_badge: "最新", expiry: "过期:" 
             },
             ru: { 
@@ -193,7 +197,7 @@
                 btn_updates: "Читать патчноуты", btn_news: "Новости", btn_discord: "Офиц. Discord", 
                 c1_title: "Обновления", c1_desc: "Всегда актуально.", 
                 c2_title: "Новости и события", c2_desc: "Загрузка новостей...", 
-                discord_title: "Официальный Discord VR сообщества", 
+                disc_official: "ОФИЦИАЛЬНЫЙ", disc_community: "Discord Сообщества",
                 news_prefix: "Новости", ticker_badge: "НОВОЕ", expiry: "Истекает:" 
             }
         };
@@ -220,8 +224,9 @@
                  document.getElementById('card2-desc').innerText = t.c2_desc;
             }
 
-            // Discord Karte (Nur Text ändern, Icon bleibt)
-            document.getElementById('discord-official-text').innerText = t.discord_title;
+            // Discord Karte (Neue Labels)
+            document.getElementById('discord-official-label').innerText = t.disc_official;
+            document.getElementById('discord-community-label').innerText = t.disc_community;
             
             document.getElementById('ticker-badge').innerText = t.ticker_badge;
             
@@ -250,9 +255,7 @@
                     const data = latest[curLang] || latest['en'];
                     const content = data.data || data; 
 
-                    // Datum setzen
                     const dateBadge = document.getElementById('update-date-badge');
-                    // Wir nehmen nur das Datum ohne Uhrzeit (split bei Komma)
                     const dateText = meta.display_time ? meta.display_time.split(',')[0] : 'New';
                     dateBadge.innerText = dateText;
                     dateBadge.classList.remove('opacity-0');
@@ -291,7 +294,6 @@
                     const codeHTML = item.code ? `<br><span class="inline-block mt-3 text-[#d4af37] border border-[#d4af37] bg-[#d4af37]/10 px-2 py-1 rounded font-mono font-bold tracking-widest text-sm">CODE: ${item.code}</span>` : '';
                     document.getElementById('card2-desc').innerHTML = summary + codeHTML;
 
-                    // Datum setzen
                     const dateBadge = document.getElementById('news-date-badge');
                     dateBadge.innerText = item.date;
                     dateBadge.classList.remove('opacity-0');
