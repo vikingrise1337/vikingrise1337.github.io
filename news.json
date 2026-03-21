@@ -1,5 +1,29 @@
 [
   {
+    "id": "1484793658329792733",
+    "date": "21. Mär 2026",
+    "image": "",
+    "code": null,
+    "expiry": "2024-03-23",
+    "link": null,
+    "en": {
+      "title": "Wishing Orb Event",
+      "content": "During the event, you can spend Rubies to make wishes and obtain amazing rewards. As you make wishes, you may also trigger a Starlit Gift, which grants you a Magic Box. Magic Boxes can be opened using Azure Star Keys and come in different grades and tiers, each containing different rewards. Please note: When the event ends, any unclaimed additional rewards will be sent to your Inventory, and any unopened Magic Boxes will be recycled."
+    },
+    "de": {
+      "title": "Wishing Orb Event",
+      "content": "Während des Events kannst du Rubies ausgeben, um Wünsche zu äußern und tolle Belohnungen zu erhalten. Während du Wünsche äußerst, kannst du auch ein Starlit Gift auslösen, das dir eine Magic Box gewährt. Magic Boxes können mit Azure Star Keys geöffnet werden und sind in verschiedenen Grades und Tiers erhältlich, die jeweils unterschiedliche Belohnungen enthalten. Bitte beachte: Wenn das Event endet, werden alle nicht abgeholten zusätzlichen Belohnungen an dein Inventory gesendet und alle ungeöffneten Magic Boxes werden recycelt."
+    },
+    "cn": {
+      "title": "Wishing Orb 活动",
+      "content": "活动期间，您可以消耗 Rubies 进行许愿并获得丰厚奖励。在许愿时，您还可能触发 Starlit Gift，从而获得一个 Magic Box。Magic Boxes 可以使用 Azure Star Keys 开启，并分为不同的等级和阶级，各自包含不同的奖励。请注意：活动结束时，任何未领取的额外奖励将发送到您的 Inventory，所有未开启的 Magic Boxes 将被回收。"
+    },
+    "ru": {
+      "title": "Событие Wishing Orb",
+      "content": "Во время события вы можете тратить Rubies, чтобы загадывать желания и получать потрясающие награды. Загадывая желания, вы также можете активировать Starlit Gift, который дает вам Magic Box. Magic Box можно открыть с помощью Azure Star Keys; они бывают разных grades и tiers, и каждый содержит различные награды. Обратите внимание: когда событие закончится, любые неполученные дополнительные награды будут отправлены в ваш Inventory, а любые неоткрытые Magic Box будут утилизированы."
+    }
+  },
+  {
     "id": "1483290395335987232",
     "date": "17. Mär 2026",
     "image": "images/news/1483290395335987232.jpg",
