@@ -9,8 +9,11 @@
       "title_de": "Update vom 25.03.2025",
       "title_cn": "更新 25.03.2025",
       "title_ru": "Обновление 25.03.2025",
-      "image_url": "",
-      "image_urls": []
+      "image_url": "images/updates/update_25_03_2025_1.jpg",
+      "image_urls": [
+        "images/updates/update_25_03_2025_1.jpg",
+        "images/updates/update_25_03_2025_2.jpg"
+      ]
     },
     "en": {
       "major": [
