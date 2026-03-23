@@ -1,5 +1,363 @@
 [
   {
+    "id": "update_25_03_2025",
+    "meta": {
+      "created_at": "2026-03-23T02:08:28.748000Z",
+      "start_timestamp": "2025-03-25T06:00:00.000000Z",
+      "display_time": "3/25 06:00 - 06:30 (UTC)",
+      "title_en": "Update 25.03.2025",
+      "title_de": "Update vom 25.03.2025",
+      "title_cn": "更新 25.03.2025",
+      "title_ru": "Обновление 25.03.2025",
+      "image_url": "",
+      "image_urls": []
+    },
+    "en": {
+      "major": [
+        "The Anniversary Celebration Themed Event, Norn's Thread, is about to begin! Celebrate with exclusive anniversary-themed Hero Skins: Weaver of Time, Sasha, and Arbiter of Fate, Rosky!",
+        "The new event, Aegir's Feast, is about to begin! Set sail, Viking warriors, and go forth for glory and treasures!"
+      ],
+      "new_features": [
+        "Added Hero Promotion: Complete trial quests to promote some Epic Heroes to Legendary Grade. After promotion is complete, you can use both Epic and Legendary generic Hero Shards to ascend Heroes. (Supports: Ivor, Olena, Cecia, and Wooder).",
+        "Added Hero/Skill Wishlist in the Hall of Valor: Increase your chances of getting your desired Skills/Heroes!",
+        "Added an entry point to the Conquest Quest map, allowing players to quickly travel there and defeat monsters.",
+        "Added chance for selectable Diamond rewards to appear in the Magic Card Adventure event.",
+        "Added Log Upload feature to the login screen and Help page for troubleshooting.",
+        "Added Network Switching: Manual selection of backup networks to resolve connection issues.",
+        "Added Hero Skill Effect Filter for more convenient skill selection.",
+        "Return of 2025 Anniversary [Rock and Roll Festival] skin set"
+      ],
+      "optimizations": [
+        {
+          "title": "Divine Jewels",
+          "items": [
+            "Adjusted the enhancement and ascension rules for Divine Jewels.",
+            "Gems of any Star Level can be used as ascension materials.",
+            "Any excess materials from ascension will be converted into Blue Chalcedonies and returned."
+          ]
+        },
+        {
+          "title": "Valhalla Drill",
+          "items": [
+            "Adjusted the reward distribution including participation rewards, ranking rewards, and single-match multi-kill rewards."
+          ]
+        },
+        {
+          "title": "Kingdom Mayhem Conquest Season - Surtr's Flames",
+          "items": [
+            "Reduced the Declaration of War Cooldown for Towns of each level.",
+            "Adjusted Unlock Requirements: Join Battalion at Chronicles Stage 4; Join Battalion Reinforcement at Stage 12.",
+            "Reduced City Durability.",
+            "Improved the rationality of map distribution.",
+            "Added a button to view the war declaration list when viewing own occupied buildings.",
+            "Added Affiliated Tribe and Affiliated Battalion filters to the war declaration list.",
+            "Adjusted the position of the Chronicles Chest and adjusted rewards.",
+            "Adjusted the prizes for Season draw, Preparation Event, and the Expedition Shop."
+          ]
+        },
+        {
+          "title": "Battle Reports",
+          "items": [
+            "Added kill statistics and Talent information for both sides.",
+            "Improved classification and sorting of right-side tabs for more intuitive data access."
+          ]
+        },
+        {
+          "title": "UI and General Visuals",
+          "items": [
+            "Some City Decor item drop rewards will change with the Season.",
+            "Optimized display logic of the purchase button and Summon count below Season Draw.",
+            "Optimized interface display of Viking Horn and Lightshade Journey.",
+            "Optimized display effect of Hero Talent Ascension in Hero Promotion, including a checkbox for Epic Grade Shards."
+          ]
+        }
+      ],
+      "fixes": [
+        "Fixed issue in Kingdom Mayhem-Alfheim's Defense where visual assets from Surtr's Flames could be viewed.",
+        "Fixed war declaration logic in Kingdom Mayhem-Surtr's Flames based on City Territories.",
+        "Fixed display issue where the Chronicles Chest was obscured in Surtr's Flames.",
+        "Fixed abnormal error notifications in Battle Report and Sweep.",
+        "Fixed incorrect custom attribute display for Gems in Drill Ground.",
+        "Fixed issue where Heroes could equip identical skills in the Arena.",
+        "Fixed missing return button and incorrect draw count in the Hall of Valor.",
+        "Fixed display issue with Hero skills and Hero Packs.",
+        "Fixed troop type defaulting back to Axemen in Valhalla Drill when switching paths.",
+        "Fixed display issue with the Worker interface.",
+        "Fixed missing War Fever prompt during marches in some cases.",
+        "Fixed Tribe Flag Tower construction completion errors when reaching limits.",
+        "Fixed errors in Tribe Assistance and Staging Post under poor network conditions.",
+        "Fixed map fog exploration progress and display errors.",
+        "Fixed issue where players could not jump directly to the Clan Shop from Quick Refinement.",
+        "Fixed incorrect help progress when using speedups during Research.",
+        "Fixed lag issues during Rallies.",
+        "Fixed occasional issue claiming free weekly Aesthetic Coupon in Skin Shop.",
+        "Fixed incorrect progress bar display for wild monsters when multiple Troops from Mobius are attacking.",
+        "Fixed bubble display for Divination Shack when points were not full.",
+        "Fixed level inconsistency between Glorious Legacy and Mark of the King.",
+        "Fixed various red dot display issues.",
+        "Fixed some text issues."
+      ]
+    },
+    "de": {
+      "major": [
+        "Das Jubiläumsfeier-Themenevent, Norn's Thread, beginnt in Kürze! Feiert mit exklusiven Jubiläums-Hero Skins: Weaver of Time, Sasha und Arbiter of Fate, Rosky!",
+        "Das neue Event, Aegir's Feast, beginnt in Kürze! Setzt die Segel, Wikinger-Krieger, und zieht aus für Ruhm und Schätze!"
+      ],
+      "new_features": [
+        "Hero Promotion hinzugefügt: Schließt Test-Quests ab, um einige Epic Heroes auf Legendary Grade zu befördern. Sobald die Promotion abgeschlossen ist, könnt ihr sowohl Epic als auch Legendary generische Hero Shards verwenden, um Heroes aufsteigen zu lassen. (Unterstützt: Ivor, Olena, Cecia und Wooder).",
+        "Hero/Skill Wishlist in der Hall of Valor hinzugefügt: Erhöht eure Chancen, eure gewünschten Skills/Heroes zu erhalten!",
+        "Ein Einstiegspunkt zur Conquest Quest Karte wurde hinzugefügt, damit Spieler schnell dorthin reisen und Monster besiegen können.",
+        "Chance auf wählbare Diamond-Belohnungen im Magic Card Adventure Event hinzugefügt.",
+        "Log Upload Funktion zum Anmeldebildschirm und zur Hilfe-Seite für die Fehlersuche hinzugefügt.",
+        "Network Switching hinzugefügt: Manuelle Auswahl von Backup-Netzwerken zur Behebung von Verbindungsproblemen.",
+        "Hero Skill Effect Filter für eine bequemere Skill-Auswahl hinzugefügt.",
+        "Rückkehr des 2025 Anniversary [Rock and Roll Festival] Skin-Sets"
+      ],
+      "optimizations": [
+        {
+          "title": "Divine Jewels",
+          "items": [
+            "Die Regeln für Verstärkung und Ascension von Divine Jewels wurden angepasst.",
+            "Gems jedes Star Level können als Ascension-Materialien verwendet werden.",
+            "Überschüssige Materialien aus der Ascension werden in Blue Chalcedonies umgewandelt und zurückgegeben."
+          ]
+        },
+        {
+          "title": "Valhalla Drill",
+          "items": [
+            "Die Belohnungsverteilung wurde angepasst, einschließlich Teilnahmeprämien, Ranking-Belohnungen und Multi-Kill-Belohnungen für Einzelmatches."
+          ]
+        },
+        {
+          "title": "Kingdom Mayhem Conquest Season - Surtr's Flames",
+          "items": [
+            "Die Abklingzeit für die Declaration of War für Towns jeder Stufe wurde reduziert.",
+            "Anpassung der Freischaltbedingungen: Join Battalion bei Chronicles Stage 4; Join Battalion Reinforcement bei Stage 12.",
+            "Stadt-Durability reduziert.",
+            "Die Rationalität der Kartenverteilung wurde verbessert.",
+            "Schaltfläche zum Anzeigen der Declaration of War Liste beim Betrachten eigener besetzter Gebäude hinzugefügt.",
+            "Filter für Affiliated Tribe und Affiliated Battalion zur Declaration of War Liste hinzugefügt.",
+            "Die Position der Chronicles Chest und die Belohnungen wurden angepasst.",
+            "Die Preise für Season Draw, Preparation Event und den Expedition Shop wurden angepasst."
+          ]
+        },
+        {
+          "title": "Battle Reports",
+          "items": [
+            "Kill-Statistiken und Talent-Informationen für beide Seiten hinzugefügt.",
+            "Verbesserte Klassifizierung und Sortierung der Registerkarten auf der rechten Seite für einen intuitiveren Datenzugriff."
+          ]
+        },
+        {
+          "title": "UI and General Visuals",
+          "items": [
+            "Einige City Decor Item-Drop-Belohnungen ändern sich mit der Season.",
+            "Optimierte Anzeige-Logik der Kauftaste und der Summon-Anzahl unter dem Season Draw.",
+            "Optimierte Oberflächenanzeige von Viking Horn und Lightshade Journey.",
+            "Optimierter Anzeige-Effekt der Hero Talent Ascension in der Hero Promotion, einschließlich eines Kontrollkästchens für Epic Grade Shards."
+          ]
+        }
+      ],
+      "fixes": [
+        "Fehler in Kingdom Mayhem-Alfheim's Defense behoben, bei dem visuelle Assets aus Surtr's Flames angezeigt werden konnten.",
+        "Die Declaration of War Logik in Kingdom Mayhem-Surtr's Flames basierend auf City Territories wurde korrigiert.",
+        "Anzeigefehler behoben, bei dem die Chronicles Chest in Surtr's Flames verdeckt war.",
+        "Abnormale Fehlermeldungen in Battle Report und Sweep behoben.",
+        "Falsche Anzeige benutzerdefinierter Attribute für Gems im Drill Ground behoben.",
+        "Problem behoben, bei dem Heroes in der Arena identische Skills ausrüsten konnten.",
+        "Fehlende Zurück-Taste und falsche Draw-Anzahl in der Hall of Valor behoben.",
+        "Anzeigefehler bei Hero Skills und Hero Packs behoben.",
+        "Problem behoben, bei dem der Truppentyp in Valhalla Drill beim Wechseln der Pfade standardmäßig auf Axemen zurückgesetzt wurde.",
+        "Anzeigefehler in der Worker-Oberfläche behoben.",
+        "Fehlende War Fever Eingabeaufforderung während Märschen in einigen Fällen behoben.",
+        "Fehler beim Abschluss des Baus von Tribe Flag Towers beim Erreichen von Limits behoben.",
+        "Fehler bei Tribe Assistance und Staging Post unter schlechten Netzwerkbedingungen behoben.",
+        "Fortschritt der Map Fog Exploration und Anzeigefehler behoben.",
+        "Problem behoben, bei dem Spieler nicht direkt von Quick Refinement zum Clan Shop springen konnten.",
+        "Falscher Hilfe-Fortschritt bei der Verwendung von Speedups während Research behoben.",
+        "Lag-Probleme während Rallies behoben.",
+        "Gelegentliches Problem beim Beanspruchen des kostenlosen wöchentlichen Aesthetic Coupons im Skin Shop behoben.",
+        "Falsche Anzeige des Fortschrittsbalkens für wilde Monster, wenn mehrere Troops von Mobius angreifen.",
+        "Bubble-Anzeige für Divination Shack behoben, wenn die Punkte nicht voll waren.",
+        "Level-Inkonsistenz zwischen Glorious Legacy und Mark of the King behoben.",
+        "Verschiedene Anzeigefehler bei roten Punkten behoben.",
+        "Einige Textfehler behoben."
+      ]
+    },
+    "cn": {
+      "major": [
+        "周年庆主题活动 Norn's Thread 即将开启！庆祝专属周年庆主题 Hero Skins：Weaver of Time Sasha 和 Arbiter of Fate Rosky！",
+        "全新活动 Aegir's Feast 即将开启！启航吧，Viking 战士们，为了荣耀与宝藏进发！"
+      ],
+      "new_features": [
+        "新增 Hero Promotion：通过试炼任务将部分 Epic 英雄晋升为 Legendary 等级。晋升完成后，可以使用 Epic 和 Legendary 通用 Hero Shards 来升星英雄。（支持：Ivor、Olena、Cecia 和 Wooder）。",
+        "在 Hall of Valor 中新增英雄/技能心愿单：提升获得心仪 Skills/Heroes 的几率！",
+        "在 Conquest Quest 地图中新增入口，允许玩家快速前往并击败怪物。",
+        "Magic Card Adventure 活动中增加可选 Diamond 奖励出现的几率。",
+        "登录界面和帮助页面新增日志上传功能，用于故障排查。",
+        "新增网络切换：手动选择备用网络以解决连接问题。",
+        "新增英雄技能效果筛选，更便捷地选择技能。",
+        "2025 周年庆 [Rock and Roll Festival] 皮肤套装回归"
+      ],
+      "optimizations": [
+        {
+          "title": "Divine Jewels",
+          "items": [
+            "调整了 Divine Jewels 的强化和升阶规则。",
+            "任意星级的 Gems 均可作为升阶材料。",
+            "升阶多余的材料将转化为 Blue Chalcedonies 并返还。"
+          ]
+        },
+        {
+          "title": "Valhalla Drill",
+          "items": [
+            "调整了奖励分配，包括参与奖励、排名奖励和单场多杀奖励。"
+          ]
+        },
+        {
+          "title": "Kingdom Mayhem Conquest Season - Surtr's Flames",
+          "items": [
+            "降低了各等级 Towns 的宣战冷却时间。",
+            "调整解锁条件：Chronicles 第 4 阶段加入 Battalion；第 12 阶段加入 Battalion 增援。",
+            "降低城市耐久度。",
+            "优化地图分布的合理性。",
+            "查看己方占领建筑时，新增查看宣战列表按钮。",
+            "宣战列表新增所属 Tribe 和所属 Battalion 筛选。",
+            "调整了 Chronicles Chest 的位置并调整了奖励。",
+            "调整了 Season 抽取、Preparation Event 和 Expedition Shop 的奖励。"
+          ]
+        },
+        {
+          "title": "Battle Reports",
+          "items": [
+            "新增双方击杀统计和 Talent 信息。",
+            "优化右侧页签分类和排序，数据获取更直观。"
+          ]
+        },
+        {
+          "title": "UI and General Visuals",
+          "items": [
+            "部分 City Decor 道具掉落奖励将随 Season 变化。",
+            "优化 Season 抽取下方购买按钮和 Summon 次数的显示逻辑。",
+            "优化 Viking Horn 和 Lightshade Journey 的界面显示。",
+            "优化 Hero Promotion 中英雄 Talent 升阶显示效果，包含 Epic 等级碎片复选框。"
+          ]
+        }
+      ],
+      "fixes": [
+        "修复了 Kingdom Mayhem-Alfheim's Defense 中可以看到 Surtr's Flames 视觉资源的问题。",
+        "修复了 Kingdom Mayhem-Surtr's Flames 中基于城市领土的宣战逻辑。",
+        "修复了 Surtr's Flames 中 Chronicles Chest 被遮挡的显示问题。",
+        "修复了 Battle Report 和 Sweep 中的异常错误通知。",
+        "修复了 Drill Ground 中 Gems 的自定义属性显示错误。",
+        "修复了英雄在 Arena 中可以装备相同技能的问题。",
+        "修复了 Hall of Valor 缺失返回按钮及抽取计数错误的问题。",
+        "修复了英雄技能和 Hero Packs 的显示问题。",
+        "修复了在 Valhalla Drill 中切换路径时兵种默认回 Axemen 的问题。",
+        "修复了 Worker 界面的显示问题。",
+        "修复了某些情况下行军时缺失 War Fever 提示的问题。",
+        "修复了达到上限时 Tribe Flag Tower 建造完成错误的问题。",
+        "修复了网络较差时 Tribe Assistance 和 Staging Post 的错误。",
+        "修复了地图迷雾探索进度和显示错误。",
+        "修复了玩家无法从 Quick Refinement 直接跳转到 Clan Shop 的问题。",
+        "修复了 Research 使用加速时帮助进度不正确的问题。",
+        "修复了 Rallies 期间的卡顿问题。",
+        "修复了 Skin Shop 偶尔无法领取每周免费 Aesthetic Coupon 的问题。",
+        "修复了多个来自 Mobius 的部队攻击野外怪物时进度条显示不正确的问题。",
+        "修复了积分未满时 Divination Shack 的气泡显示问题。",
+        "修复了 Glorious Legacy 和 Mark of the King 之间等级不一致的问题。",
+        "修复了各类红点显示问题。",
+        "修复了一些文本问题。"
+      ]
+    },
+    "ru": {
+      "major": [
+        "Тематическое событие, посвященное годовщине, Norn's Thread, скоро начнется! Отпразднуйте его с эксклюзивными обликами героев в стиле годовщины: Weaver of Time, Sasha и Arbiter of Fate, Rosky!",
+        "Новое событие, Aegir's Feast, скоро начнется! Поднимайте паруса, воины-викинги, и отправляйтесь за славой и сокровищами!"
+      ],
+      "new_features": [
+        "Добавлено Hero Promotion: выполняйте задания испытаний, чтобы повысить уровень некоторых Epic героев до Legendary Grade. После завершения повышения вы сможете использовать как Epic, так и Legendary общие Hero Shards для возвышения героев. (Поддерживаются: Ivor, Olena, Cecia и Wooder).",
+        "Добавлен список желаний героев/навыков в Hall of Valor: увеличьте свои шансы на получение желаемых Skills/Heroes!",
+        "Добавлена точка входа на карту Conquest Quest, позволяющая игрокам быстро перемещаться туда и побеждать монстров.",
+        "Добавлена возможность появления выбираемых наград в виде Diamond в событии Magic Card Adventure.",
+        "Добавлена функция Log Upload на экран входа и страницу Help для устранения неполадок.",
+        "Добавлено Network Switching: ручной выбор резервных сетей для решения проблем с подключением.",
+        "Добавлен Hero Skill Effect Filter для более удобного выбора навыков.",
+        "Возвращение набора обликов [Rock and Roll Festival] к годовщине 2025 года"
+      ],
+      "optimizations": [
+        {
+          "title": "Divine Jewels",
+          "items": [
+            "Скорректированы правила улучшения и возвышения для Divine Jewels.",
+            "Gems любого Star Level могут быть использованы в качестве материалов для возвышения.",
+            "Любые излишки материалов от возвышения будут преобразованы в Blue Chalcedonies и возвращены."
+          ]
+        },
+        {
+          "title": "Valhalla Drill",
+          "items": [
+            "Скорректировано распределение наград, включая награды за участие, рейтинговые награды и награды за мульти-убийства в одном матче."
+          ]
+        },
+        {
+          "title": "Kingdom Mayhem Conquest Season - Surtr's Flames",
+          "items": [
+            "Сокращено время перезарядки Declaration of War для Towns каждого уровня.",
+            "Скорректированы требования к разблокировке: Join Battalion на Chronicles Stage 4; Join Battalion Reinforcement на Stage 12.",
+            "Снижена прочность города (City Durability).",
+            "Улучшена рациональность распределения карты.",
+            "Добавлена кнопка для просмотра списка объявлений войны при просмотре собственных оккупированных зданий.",
+            "Добавлены фильтры Affiliated Tribe и Affiliated Battalion в список объявлений войны.",
+            "Скорректировано положение Chronicles Chest и изменены награды.",
+            "Скорректированы призы для Season draw, Preparation Event и Expedition Shop."
+          ]
+        },
+        {
+          "title": "Battle Reports",
+          "items": [
+            "Добавлена статистика убийств и информация о Talent для обеих сторон.",
+            "Улучшена классификация и сортировка вкладок с правой стороны для более интуитивного доступа к данным."
+          ]
+        },
+        {
+          "title": "UI and General Visuals",
+          "items": [
+            "Некоторые награды за выпадение предметов City Decor будут меняться в зависимости от Season.",
+            "Оптимизирована логика отображения кнопки покупки и счетчика Summon под Season Draw.",
+            "Оптимизировано отображение интерфейса Viking Horn и Lightshade Journey.",
+            "Оптимизирован эффект отображения Hero Talent Ascension в Hero Promotion, включая флажок для Epic Grade Shards."
+          ]
+        }
+      ],
+      "fixes": [
+        "Исправлена ошибка в Kingdom Mayhem-Alfheim's Defense, из-за которой можно было видеть визуальные ассеты из Surtr's Flames.",
+        "Исправлена логика объявления войны в Kingdom Mayhem-Surtr's Flames на основе City Territories.",
+        "Исправлена ошибка отображения, при которой Chronicles Chest был скрыт в Surtr's Flames.",
+        "Исправлены аномальные уведомления об ошибках в Battle Report и Sweep.",
+        "Исправлено некорректное отображение пользовательских атрибутов для Gems в Drill Ground.",
+        "Исправлена ошибка, из-за которой герои могли экипировать одинаковые навыки в Arena.",
+        "Исправлена отсутствующая кнопка возврата и неверный счетчик призыва в Hall of Valor.",
+        "Исправлена ошибка отображения навыков героев и Hero Packs.",
+        "Исправлена ошибка, из-за которой тип войск по умолчанию сбрасывался на Axemen в Valhalla Drill при смене пути.",
+        "Исправлена ошибка отображения интерфейса Worker.",
+        "Исправлено отсутствие уведомления War Fever во время маршей в некоторых случаях.",
+        "Исправлены ошибки завершения строительства Tribe Flag Tower при достижении лимитов.",
+        "Исправлены ошибки в Tribe Assistance и Staging Post при плохом сетевом соединении.",
+        "Исправлены ошибки прогресса исследования тумана войны и его отображения.",
+        "Исправлена ошибка, из-за которой игроки не могли перейти напрямую в Clan Shop из Quick Refinement.",
+        "Исправлен некорректный прогресс помощи при использовании ускорений во время Research.",
+        "Исправлены задержки во время Rallies.",
+        "Исправлена периодическая ошибка при получении бесплатного еженедельного Aesthetic Coupon в Skin Shop.",
+        "Исправлено некорректное отображение полоски прогресса для диких монстров, когда несколько войск из Mobius атакуют одновременно.",
+        "Исправлено отображение бабла для Divination Shack, когда очки не были полными.",
+        "Исправлено несоответствие уровней между Glorious Legacy и Mark of the King.",
+        "Исправлены различные ошибки отображения красных точек.",
+        "Исправлены некоторые текстовые ошибки."
+      ]
+    }
+  },
+  {
     "id": "update_10_02_2026",
     "meta": {
       "created_at": "2026-02-09T02:08:49.353000Z",
