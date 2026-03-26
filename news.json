@@ -1,5 +1,29 @@
 [
   {
+    "id": "1486682244138664097",
+    "date": "26. Mär 2026",
+    "image": "",
+    "code": null,
+    "expiry": null,
+    "link": null,
+    "en": {
+      "title": "Viking Rise: New Network Switching Function",
+      "content": "Greetings, Chief! Are you experiencing high latency or lag during your adventures? We’ve got you covered! Viking Rise now supports a Network Switching function, allowing you to manually select alternative networks for a smoother gameplay experience. If you’ve been facing unstable connections, try upgrading to the latest version and test out this feature to see if it improves your performance. To access this feature, tap on your Avatar -> Settings -> Network Settings. Give it a try and continue your journey to Valhalla without interruption!"
+    },
+    "de": {
+      "title": "Viking Rise: Neue Netzwerk-Wechselfunktion",
+      "content": "Seid gegrüßt, Häuptling! Hast du während deiner Abenteuer mit hoher Latenz oder Lag zu kämpfen? Wir haben die Lösung für dich! Viking Rise unterstützt jetzt eine Network Switching-Funktion, die es dir ermöglicht, manuell alternative Netzwerke für ein flüssigeres Spielerlebnis auszuwählen. Wenn du mit instabilen Verbindungen zu kämpfen hattest, aktualisiere auf die neueste Version und teste diese Funktion, um zu sehen, ob sie deine Performance verbessert. Um auf dieses Feature zuzugreifen, tippe auf deinen Avatar -> Einstellungen -> Network Settings. Probiere es aus und setze deine Reise nach Valhalla ohne Unterbrechung fort!"
+    },
+    "cn": {
+      "title": "Viking Rise：全新网络切换功能",
+      "content": "尊敬的酋长！在您的冒险过程中是否遇到了高延迟或卡顿？别担心，我们为您提供了支持！Viking Rise 现在支持 Network Switching 功能，允许您手动选择备用网络，以获得更流畅的游戏体验。如果您一直面临连接不稳定的问题，请尝试升级到最新版本并测试此功能，查看是否能改善您的游戏表现。您可以点击 Avatar -> Settings -> Network Settings 来开启此功能。快来试试吧，继续您的 Valhalla 之旅，享受无间断的冒险！"
+    },
+    "ru": {
+      "title": "Viking Rise: Новая функция переключения сети",
+      "content": "Приветствуем, Chief! Испытываете ли вы высокую задержку или лаги во время своих приключений? Мы позаботились об этом! Viking Rise теперь поддерживает функцию Network Switching, позволяющую вручную выбирать альтернативные сети для более плавного игрового процесса. Если вы столкнулись с нестабильным соединением, попробуйте обновиться до последней версии и протестировать эту функцию, чтобы увидеть, улучшит ли она производительность. Чтобы получить доступ к этой функции, нажмите на свой Avatar -> Settings -> Network Settings. Попробуйте и продолжайте свое путешествие в Valhalla без помех!"
+    }
+  },
+  {
     "id": "1484793658329792733",
     "date": "21. Mär 2026",
     "image": "images/news/1484793658329792733.jpg",
