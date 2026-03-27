@@ -1,5 +1,29 @@
 [
   {
+    "id": "1486995445216448552",
+    "date": "27. Mär 2026",
+    "image": "",
+    "code": null,
+    "expiry": null,
+    "link": null,
+    "en": {
+      "title": "Viking Rise Update: Declaration Waiting Times and New Features",
+      "content": "There are two types of declaration waiting times: 1️⃣ Unowned Buildings: Declaration time and durability are significantly reduced, with a minimum of 1 minute and a maximum of 20 minutes. 2️⃣ Owned Buildings: Waiting times vary based on building level. Lower-level buildings in starting regions will have longer declaration times to allow more tactical response, while higher-level buildings maintain a tighter, more intense combat pace. New Features: 🔹 Viking Warships Leaders can construct various types of warships to deploy troops. Each warship offers unique advantages in rally battles and field combat, adding more strategic depth and options on the battlefield. 🔹 Aegir’s Blessing Players will be rated based on their accumulated battle achievements during the event. Higher ratings grant a greater percentage of healing resource refunds after the event ends, along with more “Tidal Spirits,” which can be used to revive soldiers not restored by Odin’s Statue. More content and changes will be gradually revealed through in-game exploration. We look forward to seeing all Chiefs experience the battlefield firsthand."
+    },
+    "de": {
+      "title": "Viking Rise Update: Deklarations-Wartezeiten und neue Features",
+      "content": "Es gibt zwei Arten von Wartezeiten für Deklarationen:\n1️⃣ Unowned Buildings: Declaration time und Haltbarkeit sind deutlich reduziert, mit einem Minimum von 1 Minute und einem Maximum von 20 Minuten.\n2️⃣ Owned Buildings: Die Wartezeiten variieren je nach Gebäudelevel. Gebäude niedrigerer Stufen in Startregionen haben längere Declaration times, um mehr taktische Reaktionen zu ermöglichen, während Gebäude höherer Stufen ein strafferes, intensiveres Kampftempo beibehalten.\n\nNeue Features:\n🔹 Viking Warships\nAnführer können verschiedene Arten von Kriegsschiffen bauen, um Truppen einzusetzen. Jedes Kriegsschiff bietet einzigartige Vorteile in Rally battles und Field combat, was dem Schlachtfeld mehr strategische Tiefe und Optionen verleiht.\n\n🔹 Aegir’s Blessing\nSpieler werden basierend auf ihren angesammelten Kampferfolgen während des Events bewertet. Höhere Bewertungen gewähren einen größeren Prozentsatz an Rückerstattungen für Heilressourcen nach Ende des Events, zusammen mit mehr „Tidal Spirits“, die verwendet werden können, um Soldaten wiederzubeleben, die nicht durch Odin’s Statue wiederhergestellt wurden.\n\nWeitere Inhalte und Änderungen werden nach und nach durch In-Game-Erkundungen enthüllt. Wir freuen uns darauf, zu sehen, wie alle Chiefs das Schlachtfeld aus erster Hand erleben."
+    },
+    "cn": {
+      "title": "Viking Rise 更新：宣战等待时间与新功能",
+      "content": "宣战等待时间分为两种类型：1️⃣ 未占领建筑：宣战时间和耐久度显著降低，最短 1 分钟，最长 20 分钟。2️⃣ 已占领建筑：等待时间根据建筑等级而有所不同。初始区域的低级建筑将拥有更长的宣战时间，以便提供更多的战术响应空间；而高级建筑则保持更紧凑、更激烈的战斗节奏。\n\n新功能：\n🔹 Viking Warships\n领袖可以建造各种类型的战舰来部署部队。每种战舰在集结战斗和野战中都具有独特的优势，为战场增加了更多的策略深度和选择。\n\n🔹 Aegir’s Blessing\n玩家将根据活动期间积累的战斗成就进行评分。评分越高，活动结束后获得的医疗资源返还比例越高，同时还能获得更多 “Tidal Spirits”，可用于复活未被 Odin’s Statue 恢复的士兵。\n\n更多内容和变化将通过游戏内探索逐步揭晓。我们期待各位 Chiefs 亲身体验战场。"
+    },
+    "ru": {
+      "title": "Обновление Viking Rise: Время ожидания Declaration и новые функции",
+      "content": "Существует два типа времени ожидания declaration:\n1️⃣ Unowned Buildings: Время declaration и прочность значительно снижены, минимум 1 минута и максимум 20 минут.\n2️⃣ Owned Buildings: Время ожидания варьируется в зависимости от уровня здания. Здания более низкого уровня в стартовых регионах будут иметь более длительное время declaration, чтобы обеспечить возможность тактического ответа, в то время как здания более высокого уровня сохраняют более плотный и интенсивный темп боя.\n\nNew Features:\n🔹 Viking Warships\nLeaders могут строить различные типы warships для развертывания войск. Каждый warship дает уникальные преимущества в rally battles и field combat, добавляя больше стратегической глубины и вариантов действий на поле боя.\n\n🔹 Aegir’s Blessing\nИгроки будут оцениваться на основе их накопленных боевых достижений во время события. Более высокие рейтинги дают больший процент возврата ресурсов для исцеления после окончания события, а также больше «Tidal Spirits», которые можно использовать для оживления солдат, не восстановленных Odin’s Statue.\n\nБольше контента и изменений будет постепенно раскрываться в ходе внутриигровых исследований. Мы с нетерпением ждем возможности увидеть, как все Chiefs испытают поле боя на личном опыте."
+    }
+  },
+  {
     "id": "1486995443786321940",
     "date": "27. Mär 2026",
     "image": "images/news/1486995443786321940.jpg",
