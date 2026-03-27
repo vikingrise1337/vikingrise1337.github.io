@@ -1,5 +1,29 @@
 [
   {
+    "id": "1486995443786321940",
+    "date": "27. Mär 2026",
+    "image": "",
+    "code": null,
+    "expiry": null,
+    "link": null,
+    "en": {
+      "title": "Aegir’s Feast Event Rules",
+      "content": "Here is a breakdown of the event rules for Aegir’s Feast. This event lasts for 30 days and features a core gameplay mode called “Declaration of War”. The overall mechanics retain the familiar combat experience, while addressing previous feedback regarding long waiting times for war declarations. Adjustments have been made to create a faster-paced and smoother combat flow. Please refer to the image below for specific changes, times are written in seconds."
+    },
+    "de": {
+      "title": "Aegir’s Feast Event-Regeln",
+      "content": "Hier ist eine Übersicht der Event-Regeln für Aegir’s Feast. Dieses Event dauert 30 Tage und bietet einen Core-Gameplay-Modus namens „Declaration of War“. Die allgemeinen Mechaniken behalten das vertraute Kampferlebnis bei, während gleichzeitig auf früheres Feedback bezüglich langer Wartezeiten für War Declarations eingegangen wurde. Es wurden Anpassungen vorgenommen, um einen schnelleren und reibungsloseren Kampffluss zu ermöglichen. Bitte entnimm die spezifischen Änderungen der untenstehenden Abbildung; Zeitangaben sind in Sekunden angegeben."
+    },
+    "cn": {
+      "title": "Aegir’s Feast 活动规则",
+      "content": "以下是 Aegir’s Feast 的活动规则详述。此活动持续 30 天，核心玩法模式为 “Declaration of War”。整体机制保留了熟悉的战斗体验，同时针对此前反馈的宣战等待时间过长的问题进行了优化。我们进行了相关调整，以打造节奏更快、更顺滑的战斗流程。具体变更请参考下图，时间均以秒为单位。"
+    },
+    "ru": {
+      "title": "Правила события Aegir’s Feast",
+      "content": "Вот описание правил события Aegir’s Feast. Это событие длится 30 дней и включает основной игровой режим под названием “Declaration of War”. Общая механика сохраняет привычный боевой опыт, при этом учитывая предыдущие отзывы о длительном времени ожидания объявления войны. Были внесены корректировки для создания более динамичного и плавного темпа сражений. Пожалуйста, ознакомьтесь с изображением ниже для получения информации о конкретных изменениях; время указано в секундах."
+    }
+  },
+  {
     "id": "1486682244138664097",
     "date": "26. Mär 2026",
     "image": "images/news/1486682244138664097.jpg",
