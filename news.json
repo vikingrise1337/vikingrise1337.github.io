@@ -1,5 +1,29 @@
 [
   {
+    "id": "1490640902576672831",
+    "date": "06. Apr 2026",
+    "image": "",
+    "code": "VR3THANKS",
+    "expiry": "At some point",
+    "link": null,
+    "en": {
+      "title": "Viking Rise Code",
+      "content": "🎁 Code: VR3THANKS ⏰ Expiry: At some point"
+    },
+    "de": {
+      "title": "Viking Rise Code",
+      "content": "🎁 Code: VR3THANKS ⏰ Gültig bis: Irgendwann"
+    },
+    "cn": {
+      "title": "Viking Rise 兑换码",
+      "content": "🎁 兑换码：VR3THANKS ⏰ 有效期：某个时间"
+    },
+    "ru": {
+      "title": "Код Viking Rise",
+      "content": "🎁 Код: VR3THANKS ⏰ Истекает: В какой-то момент"
+    }
+  },
+  {
     "id": "1490613132417302658",
     "date": "06. Apr 2026",
     "image": "images/news/1490613132417302658.jpg",
