@@ -1,5 +1,29 @@
 [
   {
+    "id": "1494536694462939158",
+    "date": "17. Apr 2026",
+    "image": "",
+    "code": null,
+    "expiry": null,
+    "link": null,
+    "en": {
+      "title": "Server Channel Policy Update",
+      "content": "Greetings, Chief! Any content posted in <#993380526268354560>  that is **__not a suggestion__** will be deleted. Bugs can be posted in <#993380660725174303>  and all other conversations/topics can be addressed in other channels within the server. We appreciate all the feedback you always give us and we seek for your kind understanding."
+    },
+    "de": {
+      "title": "Update der Server-Kanal-Richtlinien",
+      "content": "Seid gegrüßt, Chief! Sämtliche Inhalte, die in <#993380526268354560> gepostet werden und **__kein Vorschlag__** sind, werden gelöscht. Bugs können in <#993380660725174303> gepostet werden und alle anderen Unterhaltungen/Themen können in anderen Kanälen innerhalb des Servers angesprochen werden. Wir schätzen das gesamte Feedback, das ihr uns immer gebt, und bitten um euer Verständnis."
+    },
+    "cn": {
+      "title": "服务器频道政策更新",
+      "content": "酋长您好！任何发布在 <#993380526268354560> 中且**__并非建议__**的内容都将被删除。Bugs 可以在 <#993380660725174303> 中发布，所有其他对话/主题可以在服务器内的其他频道中进行。我们非常感谢您一直以来给予我们的反馈，并恳请您的理解。"
+    },
+    "ru": {
+      "title": "Обновление политики каналов сервера",
+      "content": "Приветствуем, Вождь! Любой контент, опубликованный в <#993380526268354560>, который **__не является предложением__**, будет удален. О багах можно сообщить в <#993380660725174303>, а все остальные разговоры/темы можно обсудить в других каналах сервера. Мы ценим все ваши отзывы и надеемся на ваше понимание."
+    }
+  },
+  {
     "id": "1492074571904585779",
     "date": "10. Apr 2026",
     "image": "images/news/1492074571904585779.jpg",
