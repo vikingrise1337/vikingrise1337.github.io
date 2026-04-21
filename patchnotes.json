@@ -1,5 +1,287 @@
 [
   {
+    "id": "update_22_04_2025_931773",
+    "meta": {
+      "created_at": "2026-04-21T09:15:32.643000Z",
+      "start_timestamp": "2025-04-22T06:00:00.000000Z",
+      "display_time": "4/22 06:00 - 06:30 (UTC)",
+      "title_en": "Update 22.04.2025",
+      "title_de": "Update vom 22.04.2025",
+      "title_cn": "更新 22.04.2025",
+      "title_ru": "Обновление 22.04.2025",
+      "image_url": "",
+      "image_urls": []
+    },
+    "en": {
+      "major": [
+        "[Morreg's Perilous City] event coming soon! The lost royal city of Morreg has resurfaced. Set forth, brave warriors! Seize the treasures of Morreg and return home amidst songs of glory and victory!",
+        "[Fun Time] event series starting soon! Join us for a relaxing holiday. Savor a divine afternoon and enjoy a peaceful moment of leisure."
+      ],
+      "new_features": [
+        "New [Tribe/Team] number tag types for quicker information sharing.",
+        "New [Battle Flag Preset] feature, allowing deployed Troops to be configured with different Battle Flag Skins while marching.",
+        "New high-multiplier option for [Rune Cards] event. When your chip balance exceeds 2,000, and total chips spent in the current event exceed 200, high-multiplier options lasting 10 minutes may appear.",
+        "Added an option to hide the Troop Avatars of other players on the map.",
+        "New message recall feature in [Chat]. Chat boxes will now automatically expand based on the length of the content.",
+        "Return of 2025 [Mother's Day Tribute] series Skins."
+      ],
+      "optimizations": [
+        {
+          "title": "Rewards and Quest Enhancements",
+          "items": [
+            "Optimized the rewards in the [Daily Quest] Point Chests. Rewards will now refresh based on the current season. Once City Level reaches Level 10, the value of Daily Chest rewards will be increased.",
+            "Optimized certain Prestige level rewards at the [Staging Post]. If a player has already claimed rewards for the affected levels, the system will automatically issue the difference via mail.",
+            "Optimized the chest rewards in [Lightshade Journey]: S2 [Shadow Moon Journey] added Seasoned Worker Shards; All Seasons added Hero and Skill Shards.",
+            "Increased rewards for [Pillage Weston], including Squad Rank rewards, Personal Seafarer rewards, and Personal Point rewards.",
+            "Optimized quests that increase Might in [Hero Promotion] to include Might gained from promoting Troops."
+          ]
+        },
+        {
+          "title": "System Logic and Shops",
+          "items": [
+            "Optimized the [Skill Shop] to support the purchase of Skill Shards from select past seasons.",
+            "Optimized the logic of continuous upgrades of [Speedup Queue]. The system will now prioritize upgrading the first completed task of the same type.",
+            "Optimized to allow a 1:1 recycle of [Fixed Relocators] to [Tribe Relocation items].",
+            "Optimized Wish All in [Wishing Orb] to allow choice of which Magic Box to keep."
+          ]
+        },
+        {
+          "title": "Combat and Event Mechanics",
+          "items": [
+            "Optimized Warship Battle Reports by adding a detailed tab for Warship Skill Damage in [Aegir's Feast].",
+            "Adjusted the Garrison Capacity limits for certain neutral Cities and Tribe buildings in [Aegir's Feast] and various [Kingdom Mayhem] events (Fenrir's Judgment, Hela's Curse, Baldr's Redemption, Alfheim's Defense, and Surtr's Flames).",
+            "Optimized battle reports for [Battle of the Ruins], [Blood Oath War], and [Morreg's Perilous City] with automatic deletion and floating notifications when storage limits are reached."
+          ]
+        },
+        {
+          "title": "UI and Display Improvements",
+          "items": [
+            "Optimized the display effects of the [Troop Type] interface to resolve text overlapping issues.",
+            "Optimized the icon layout and display within the [Settings] menu.",
+            "Optimized the Preview Rewards mode in [Endless Treasures] via toggleable pop-up window.",
+            "Optimized the reward list display in [Emote Matching].",
+            "Optimized the floating text prompts in [Season Summon] when the event has not started yet.",
+            "Optimized the grade colors of select in-game items."
+          ]
+        }
+      ],
+      "fixes": [
+        "Fixed an issue where the description for Tribe Glory rewards in [Kingdom Mayhem-Baldr's Redemption] was displayed incorrectly.",
+        "Fixed an issue in [Emote Matching] where the interface would clear after navigating to the Shop packs.",
+        "Fixed a visual issue where the selection glow effect for quests in [Commission Request] appeared abnormally.",
+        "Fixed pathfinding and stationing issues occurring on certain islands in [Pillage Weston].",
+        "Fixed an issue on the PC version where a resource download pop-up would appear when navigating to the KvK download screen.",
+        "Fixed interaction issues in [Happy Toy Machine] on the PC version.",
+        "Fixed an issue where Tribe names will overlap in [Apex Championship].",
+        "Fixed an issue where the red dot notifications were displayed incorrectly in the [Skin Shop].",
+        "Fixed an issue causing excessive loading times on the settlement screen in [Blood Oath War].",
+        "Fixed an issue where the settlement animation was missing in [Battle of the Ruins].",
+        "Fixed various minor text display issues."
+      ]
+    },
+    "de": {
+      "major": [
+        "[Morreg's Perilous City]-Event beginnt bald! Die verlorene Königsstadt Morreg ist wieder aufgetaucht. Brecht auf, tapfere Krieger! Ergreift die Schätze von Morreg und kehrt unter Siegesliedern nach Hause zurück!",
+        "Event-Reihe [Fun Time] beginnt bald! Begleitet uns in einen erholsamen Urlaub. Genießt einen göttlichen Nachmittag und einen friedlichen Moment der Freizeit."
+      ],
+      "new_features": [
+        "Neue [Tribe/Team]-Nummern-Tag-Typen für schnelleren Informationsaustausch.",
+        "Neue [Battle Flag Preset]-Funktion, mit der eingesetzte Troops während des Marsches mit verschiedenen Battle Flag Skins konfiguriert werden können.",
+        "Neue Option für hohe Multiplikatoren beim [Rune Cards]-Event. Wenn dein Chip-Guthaben 2.000 übersteigt und die im aktuellen Event ausgegebenen Chips insgesamt 200 übersteigen, können für 10 Minuten Optionen mit hohen Multiplikatoren erscheinen.",
+        "Option zum Ausblenden der Troop Avatars anderer Spieler auf der Karte hinzugefügt.",
+        "Neue Nachrichten-Rückruffunktion im [Chat]. Chat-Boxen erweitern sich nun automatisch basierend auf der Länge des Inhalts.",
+        "Rückkehr der Skins der [Mother's Day Tribute]-Serie 2025."
+      ],
+      "optimizations": [
+        {
+          "title": "Belohnungen und Quest-Verbesserungen",
+          "items": [
+            "Belohnungen in den [Daily Quest]-Punktetruhen optimiert. Belohnungen werden nun basierend auf der aktuellen Saison aktualisiert. Sobald das City Level Level 10 erreicht, wird der Wert der Daily Chest-Belohnungen erhöht.",
+            "Bestimmte Prestige-Level-Belohnungen am [Staging Post] optimiert. Falls ein Spieler bereits Belohnungen für die betroffenen Level beansprucht hat, stellt das System die Differenz automatisch per Mail zu.",
+            "Truhenbelohnungen in [Lightshade Journey] optimiert: S2 [Shadow Moon Journey] hat Seasoned Worker Shards hinzugefügt; Alle Saisons haben Hero und Skill Shards hinzugefügt.",
+            "Belohnungen für [Pillage Weston] erhöht, einschließlich Squad Rank-Belohnungen, Personal Seafarer-Belohnungen und Personal Point-Belohnungen.",
+            "Quests zur Erhöhung der Might in [Hero Promotion] optimiert, um durch das Befördern von Troops gewonnene Might einzuschließen."
+          ]
+        },
+        {
+          "title": "Systemlogik und Shops",
+          "items": [
+            "Den [Skill Shop] optimiert, um den Kauf von Skill Shards aus ausgewählten vergangenen Saisons zu unterstützen.",
+            "Logik für kontinuierliche Upgrades der [Speedup Queue] optimiert. Das System priorisiert nun das Upgrade der ersten abgeschlossenen Aufgabe des gleichen Typs.",
+            "Optimiert, um einen 1:1-Recycle von [Fixed Relocators] in [Tribe Relocation items] zu ermöglichen.",
+            "Optimiert Wish All in [Wishing Orb], um die Auswahl der zu behaltenden Magic Box zu ermöglichen."
+          ]
+        },
+        {
+          "title": "Kampf- und Event-Mechaniken",
+          "items": [
+            "Warship-Kampfberichte optimiert durch Hinzufügen eines detaillierten Tabs für Warship Skill Damage in [Aegir's Feast].",
+            "Garrison Capacity-Limits für bestimmte neutrale Cities und Tribe-Gebäude in [Aegir's Feast] und verschiedenen [Kingdom Mayhem]-Events (Fenrir's Judgment, Hela's Curse, Baldr's Redemption, Alfheim's Defense und Surtr's Flames) angepasst.",
+            "Kampfberichte für [Battle of the Ruins], [Blood Oath War] und [Morreg's Perilous City] mit automatischer Löschung und schwebenden Benachrichtigungen bei Erreichen der Speichergrenzen optimiert."
+          ]
+        },
+        {
+          "title": "UI- und Anzeige-Verbesserungen",
+          "items": [
+            "Anzeigeeffekte des [Troop Type]-Interface optimiert, um Textüberschneidungen zu beheben.",
+            "Icon-Layout und Anzeige im [Settings]-Menü optimiert.",
+            "Vorschau-Modus für Belohnungen in [Endless Treasures] via umschaltbarem Pop-up-Fenster optimiert.",
+            "Anzeige der Belohnungsliste in [Emote Matching] optimiert.",
+            "Schwebende Texthinweise in [Season Summon] optimiert, wenn das Event noch nicht begonnen hat.",
+            "Grad-Farben ausgewählter In-Game-Items optimiert."
+          ]
+        }
+      ],
+      "fixes": [
+        "Problem behoben, bei dem die Beschreibung für Tribe Glory-Belohnungen in [Kingdom Mayhem-Baldr's Redemption] falsch angezeigt wurde.",
+        "Problem in [Emote Matching] behoben, bei dem sich das Interface nach dem Navigieren zu den Shop-Paketen leeren würde.",
+        "Visuelles Problem behoben, bei dem der Auswahl-Glow-Effekt für Quests in [Commission Request] abnormal erschien.",
+        "Pathfinding- und Stationierungsprobleme auf bestimmten Inseln in [Pillage Weston] behoben.",
+        "Problem in der PC-Version behoben, bei dem ein Ressourcen-Download-Pop-up beim Navigieren zum KvK-Download-Bildschirm erschien.",
+        "Interaktionsprobleme in [Happy Toy Machine] in der PC-Version behoben.",
+        "Problem behoben, bei dem Tribe-Namen in [Apex Championship] überlappten.",
+        "Problem behoben, bei dem die rote Punkt Benachrichtigungen im [Skin Shop] falsch angezeigt wurden.",
+        "Problem behoben, das zu übermäßigen Ladezeiten auf dem Abrechnungsbildschirm in [Blood Oath War] führte.",
+        "Problem behoben, bei dem die Abrechnungsanimation in [Battle of the Ruins] fehlte.",
+        "Verschiedene kleinere Textanzeigefehler behoben."
+      ]
+    },
+    "cn": {
+      "major": [
+        "[Morreg's Perilous City] 活动即将开启！失落的皇家都城 Morreg 重新浮现。出发吧，勇敢的战士们！夺取 Morreg 的宝藏，在荣耀与胜利的歌声中班师回朝！",
+        "[Fun Time] 系列活动即将开始！加入我们，享受一段轻松的假期。品味神圣的午后，享受宁静的闲暇时刻。"
+      ],
+      "new_features": [
+        "新增 [Tribe/Team] 数字标签类型，以便更快捷地分享信息。",
+        "新增 [Battle Flag Preset] 功能，允许部署的 Troops 在行军时配置不同的 Battle Flag Skins。",
+        "新增 [Rune Cards] 活动的高倍率选项。当您的筹码余额超过 2,000，且当前活动中消耗的筹码总数超过 200 时，可能会出现持续 10 分钟的高倍率选项。",
+        "增加了隐藏地图上其他玩家 Troop Avatars 的选项。",
+        "新增 [Chat] 中的消息撤回功能。聊天框现在将根据内容的长度自动展开。",
+        "2025 [Mother's Day Tribute] 系列 Skins 回归。"
+      ],
+      "optimizations": [
+        {
+          "title": "奖励与任务增强",
+          "items": [
+            "优化了 [Daily Quest] 积分宝箱中的奖励。奖励现在将根据当前赛季刷新。一旦 City Level 达到 10 级，每日宝箱奖励的价值将会提升。",
+            "优化了 [Staging Post] 的某些 Prestige 等级奖励。如果玩家已经领取了受影响等级的奖励，系统将通过邮件自动补发差额。",
+            "优化了 [Lightshade Journey] 中的宝箱奖励：S2 [Shadow Moon Journey] 增加了 Seasoned Worker Shards；所有赛季均增加了 Hero 和 Skill Shards。",
+            "增加了 [Pillage Weston] 的奖励，包括 Squad Rank 奖励、个人 Seafarer 奖励和个人积分奖励。",
+            "优化了 [Hero Promotion] 中增加 Might 的任务，将提升 Troops 获得的 Might 纳入其中。"
+          ]
+        },
+        {
+          "title": "系统逻辑与商店",
+          "items": [
+            "优化了 [Skill Shop]，支持购买过去特定赛季的 Skill Shards。",
+            "优化了 [Speedup Queue] 连续升级的逻辑。系统现在将优先升级同类型中第一个完成的任务。",
+            "优化为允许将 [Fixed Relocators] 以 1:1 的比例回收为 [Tribe Relocation items]。",
+            "优化了 [Wishing Orb] 中的“全部许愿”，允许选择保留哪种 Magic Box。"
+          ]
+        },
+        {
+          "title": "战斗与活动机制",
+          "items": [
+            "通过在 [Aegir's Feast] 中增加 Warship Skill Damage 的详细页签，优化了 Warship 战报。",
+            "调整了 [Aegir's Feast] 和各种 [Kingdom Mayhem] 活动（Fenrir's Judgment, Hela's Curse, Baldr's Redemption, Alfheim's Defense 和 Surtr's Flames）中某些中立 Cities 和 Tribe 建筑的 Garrison Capacity 限制。",
+            "优化了 [Battle of the Ruins]、[Blood Oath War] 和 [Morreg's Perilous City] 的战报，在达到存储上限时将自动删除并显示浮窗通知。"
+          ]
+        },
+        {
+          "title": "UI 与显示改进",
+          "items": [
+            "优化了 [Troop Type] 界面的显示效果，解决了文本重叠问题。",
+            "优化了 [Settings] 菜单内的图标布局和显示。",
+            "通过可切换的弹出窗口优化了 [Endless Treasures] 中的奖励预览模式。",
+            "优化了 [Emote Matching] 中的奖励列表显示。",
+            "优化了 [Season Summon] 活动尚未开始时的浮动文本提示。",
+            "优化了选定游戏内物品的等级颜色。"
+          ]
+        }
+      ],
+      "fixes": [
+        "修复了 [Kingdom Mayhem-Baldr's Redemption] 中 Tribe Glory 奖励描述显示错误的问题。",
+        "修复了 [Emote Matching] 中导航到商店礼包后界面会清空的问题。",
+        "修复了 [Commission Request] 中任务选中发光效果显示异常的问题。",
+        "修复了 [Pillage Weston] 中某些岛屿上出现的寻路和驻扎问题。",
+        "修复了 PC 版本中在导航到 KvK 下载界面时会出现资源下载弹窗的问题。",
+        "修复了 PC 版本中 [Happy Toy Machine] 的交互问题。",
+        "修复了 [Apex Championship] 中 Tribe 名称重叠的问题。",
+        "修复了 [Skin Shop] 中红点通知显示不正确的问题。",
+        "修复了导致 [Blood Oath War] 结算界面加载时间过长的问题。",
+        "修复了 [Battle of the Ruins] 中缺少结算动画的问题。",
+        "修复了各种次要的文本显示问题。"
+      ]
+    },
+    "ru": {
+      "major": [
+        "Скоро начнется событие [Morreg's Perilous City]! Потерянный королевский город Morreg вновь восстал из руин. Вперед, отважные воины! Захватите сокровища Morreg и вернитесь домой под звуки песен славы и победы!",
+        "Скоро начнется серия событий [Fun Time]! Присоединяйтесь к нам для спокойного праздника. Насладитесь божественным днем и проведите время в умиротворяющем досуге."
+      ],
+      "new_features": [
+        "Новые типы цифровых тегов для [Tribe/Team] для более быстрого обмена информацией.",
+        "Новая функция [Battle Flag Preset], позволяющая настраивать различные Battle Flag Skins для развернутых войск во время марша.",
+        "Новая опция высокого множителя для события [Rune Cards]. Когда ваш баланс фишек превышает 2000, а общее количество потраченных фишек в текущем событии превышает 200, могут появиться опции высокого множителя длительностью 10 минут.",
+        "Добавлена опция скрытия аватаров войск других игроков на карте.",
+        "Новая функция отзыва сообщений в [Chat]. Окна чата теперь будут автоматически расширяться в зависимости от длины контента.",
+        "Возвращение серии Skins [Mother's Day Tribute] 2025 года."
+      ],
+      "optimizations": [
+        {
+          "title": "Улучшения наград и заданий",
+          "items": [
+            "Оптимизированы награды в сундуках очков [Daily Quest]. Награды теперь будут обновляться в зависимости от текущего сезона. По достижении 10-го уровня города ценность наград из ежедневных сундуков будет увеличена.",
+            "Оптимизированы награды за определенные уровни престижа на [Staging Post]. Если игрок уже забрал награды за затронутые уровни, система автоматически отправит разницу по почте.",
+            "Оптимизированы награды в сундуках в [Lightshade Journey]: в S2 [Shadow Moon Journey] добавлены фрагменты Seasoned Worker; во все сезоны добавлены фрагменты Hero и Skill.",
+            "Увеличены награды за [Pillage Weston], включая награды за ранг отряда, личные награды моряка и награды за личные очки.",
+            "Оптимизированы задания на повышение Might в [Hero Promotion], чтобы они учитывали Might, полученную от улучшения войск."
+          ]
+        },
+        {
+          "title": "Системная логика и магазины",
+          "items": [
+            "Оптимизирован [Skill Shop]: теперь поддерживается покупка фрагментов Skill из прошлых сезонов.",
+            "Оптимизирована логика последовательных улучшений [Speedup Queue]. Теперь система будет отдавать приоритет улучшению первой завершенной задачи того же типа.",
+            "Добавлена возможность переработки [Fixed Relocators] в предметы [Tribe Relocation] в соотношении 1:1.",
+            "Оптимизирована функция «Загадать все» в [Wishing Orb], позволяющая выбирать, какой Magic Box оставить."
+          ]
+        },
+        {
+          "title": "Механики боя и событий",
+          "items": [
+            "Оптимизированы отчеты о сражениях военных кораблей: добавлена подробная вкладка урона навыков корабля в [Aegir's Feast].",
+            "Скорректированы лимиты вместимости гарнизона для определенных нейтральных городов и зданий Tribe в [Aegir's Feast] и различных событиях [Kingdom Mayhem] (Fenrir's Judgment, Hela's Curse, Baldr's Redemption, Alfheim's Defense и Surtr's Flames).",
+            "Оптимизированы отчеты о битвах для [Battle of the Ruins], [Blood Oath War] и [Morreg's Perilous City] с автоматическим удалением и всплывающими уведомлениями при достижении лимита хранилища."
+          ]
+        },
+        {
+          "title": "Улучшения интерфейса и отображения",
+          "items": [
+            "Оптимизированы эффекты отображения интерфейса [Troop Type] для решения проблем с наложением текста.",
+            "Оптимизировано расположение значков и отображение в меню [Settings].",
+            "Оптимизирован режим предпросмотра наград в [Endless Treasures] через переключаемое всплывающее окно.",
+            "Оптимизировано отображение списка наград в [Emote Matching].",
+            "Оптимизированы всплывающие текстовые подсказки в [Season Summon], когда событие еще не началось.",
+            "Оптимизированы цвета грейдов для некоторых игровых предметов."
+          ]
+        }
+      ],
+      "fixes": [
+        "Исправлена ошибка, из-за которой описание наград Tribe Glory в [Kingdom Mayhem-Baldr's Redemption] отображалось некорректно.",
+        "Исправлена ошибка в [Emote Matching], из-за которой интерфейс очищался после перехода к наборам в магазине.",
+        "Исправлена визуальная ошибка, из-за которой эффект свечения при выборе заданий в [Commission Request] отображался некорректно.",
+        "Исправлены проблемы с поиском пути и размещением на некоторых островах в [Pillage Weston].",
+        "Исправлена ошибка в версии для ПК, из-за которой при переходе на экран загрузки KvK появлялось всплывающее окно загрузки ресурсов.",
+        "Исправлены проблемы взаимодействия в [Happy Toy Machine] в версии для ПК.",
+        "Исправлена ошибка, из-за которой названия Tribe накладывались друг на друга в [Apex Championship].",
+        "Исправлена ошибка, из-за которой уведомления в виде красных точек некорректно отображались в [Skin Shop].",
+        "Исправлена ошибка, вызывавшая чрезмерно долгое время загрузки на экране расчета в [Blood Oath War].",
+        "Исправлена ошибка, из-за которой отсутствовала анимация расчета в [Battle of the Ruins].",
+        "Исправлены различные незначительные ошибки отображения текста."
+      ]
+    }
+  },
+  {
     "id": "update_25_03_2025",
     "meta": {
       "created_at": "2026-03-23T02:08:28.748000Z",
