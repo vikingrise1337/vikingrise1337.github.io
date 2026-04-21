@@ -1,5 +1,29 @@
 [
   {
+    "id": "1496016061420666944",
+    "date": "21. Apr 2026",
+    "image": "",
+    "code": null,
+    "expiry": null,
+    "link": null,
+    "en": {
+      "title": "Viking Rise Update Note",
+      "content": "Viking Rise #🛠update-note"
+    },
+    "de": {
+      "title": "Viking Rise Update-Notiz",
+      "content": "Viking Rise #🛠update-note"
+    },
+    "cn": {
+      "title": "Viking Rise 更新公告",
+      "content": "Viking Rise #🛠update-note"
+    },
+    "ru": {
+      "title": "Viking Rise: Список изменений",
+      "content": "Viking Rise #🛠update-note"
+    }
+  },
+  {
     "id": "1494536694462939158",
     "date": "17. Apr 2026",
     "image": "images/news/1494536694462939158.jpg",
