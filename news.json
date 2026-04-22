@@ -1,5 +1,29 @@
 [
   {
+    "id": "1496365864402948106",
+    "date": "22. Apr 2026",
+    "image": "",
+    "code": "VRXEARTH26",
+    "expiry": "2026-05-06 (UTC)",
+    "link": null,
+    "en": {
+      "title": "Viking Rise Code",
+      "content": "🌏  Code: VRXEARTH26 ⏰ Expiry: 2026-05-06 (UTC) First come first served, each Chief ID can claim this code once."
+    },
+    "de": {
+      "title": "Viking Rise Code",
+      "content": "🌏 Code: VRXEARTH26 ⏰ Ablaufdatum: 2026-05-06 (UTC) Wer zuerst kommt, mahlt zuerst, jede Chief ID kann diesen Code einmal einlösen."
+    },
+    "cn": {
+      "title": "Viking Rise 兑换码",
+      "content": "🌏 兑换码: VRXEARTH26 ⏰ 有效期至: 2026-05-06 (UTC) 先到先得，每个 Chief ID 仅限兑换一次。"
+    },
+    "ru": {
+      "title": "Код Viking Rise",
+      "content": "🌏 Код: VRXEARTH26 ⏰ Срок действия: 2026-05-06 (UTC) Количество ограничено, каждый Chief ID может использовать этот код один раз."
+    }
+  },
+  {
     "id": "1496016061420666944",
     "date": "21. Apr 2026",
     "image": "images/news/1496016061420666944.jpg",
