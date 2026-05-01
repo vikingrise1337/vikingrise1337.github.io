@@ -1,5 +1,29 @@
 [
   {
+    "id": "1499599653140828211",
+    "date": "01. Mai 2026",
+    "image": "",
+    "code": "VIKINGMAYDAY",
+    "expiry": "2026-05-15 (UTC)",
+    "link": null,
+    "en": {
+      "title": "Viking Rise Gift Code",
+      "content": "🎁 Code: VIKINGMAYDAY ⏰ Expiry: 2026-05-15 (UTC) First come first served, each Chief ID can claim this code once."
+    },
+    "de": {
+      "title": "Viking Rise Geschenkcode",
+      "content": "🎁 Code: VIKINGMAYDAY ⏰ Ablaufdatum: 2026-05-15 (UTC) Wer zuerst kommt, mahlt zuerst, jede Chief ID kann diesen Code einmal einlösen."
+    },
+    "cn": {
+      "title": "Viking Rise 礼包码",
+      "content": "🎁 代码: VIKINGMAYDAY ⏰ 有效期至: 2026-05-15 (UTC) 先到先得，每个 Chief ID 仅限领取一次。"
+    },
+    "ru": {
+      "title": "Viking Rise Подарочный код",
+      "content": "🎁 Код: VIKINGMAYDAY ⏰ Срок действия: 2026-05-15 (UTC) В порядке живой очереди, каждый Chief ID может активировать этот код один раз."
+    }
+  },
+  {
     "id": "1496365864402948106",
     "date": "22. Apr 2026",
     "image": "images/news/1496365864402948106.jpg",
