@@ -1,5 +1,29 @@
 [
   {
+    "id": "1502888278070788186",
+    "date": "10. Mai 2026",
+    "image": "",
+    "code": "VRMOTHERSDAY",
+    "expiry": "2026-05-24 UTC",
+    "link": null,
+    "en": {
+      "title": "Mother's Day Celebration",
+      "content": "Greetings, Chief! Today, we celebrate the strength, warmth, and unwavering care of mothers across the world. Just like the fiercest warriors and wisest leaders in Viking Rise, they guide, protect, and inspire us every step of the way 🫂 This Mother's Day, let us take a moment to honor the ones who have shaped our journeys and given us the courage to conquer new horizons. How are you celebrating this Mother's Day? Share your stories, messages, or even a special shoutout in the comments and spread the love with your fellow warriors 💐"
+    },
+    "de": {
+      "title": "Muttertagsfeier",
+      "content": "Seid gegrüßt, Häuptling! Heute feiern wir die Stärke, Wärme und unermüdliche Fürsorge von Müttern auf der ganzen Welt. Genau wie die tapfersten Krieger und weisesten Anführer in Viking Rise leiten, schützen und inspirieren sie uns auf jedem Schritt unseres Weges 🫂 An diesem Muttertag wollen wir uns einen Moment Zeit nehmen, um diejenigen zu ehren, die unsere Reisen geprägt und uns den Mut gegeben haben, neue Horizonte zu erobern. Wie feiert ihr diesen Muttertag? Teilt eure Geschichten, Nachrichten oder sogar einen besonderen Gruß in den Kommentaren und verbreitet die Liebe unter euren Mitkriegern 💐"
+    },
+    "cn": {
+      "title": "母亲节庆典",
+      "content": "首领，您好！今天，我们庆祝全球母亲的力量、温暖和无私关怀。就像 Viking Rise 中最勇猛的战士和最睿智的领袖一样，她们在人生的每一步中指引、守护并激励着我们 🫂 在这个母亲节，让我们花一点时间向那些塑造了我们旅程、并赋予我们勇气去征服新领域的母亲们致敬。你打算如何庆祝这个母亲节？在评论中分享您的故事、寄语，甚至是一份特别的致谢，与您的战友们一起传递爱心吧 💐"
+    },
+    "ru": {
+      "title": "Празднование Дня матери",
+      "content": "Приветствуем, Вождь! Сегодня мы празднуем силу, тепло и непоколебимую заботу матерей во всем мире. Как и самые свирепые воины и мудрейшие лидеры в Viking Rise, они направляют, защищают и вдохновляют нас на каждом шагу 🫂 В этот День матери давайте найдем время, чтобы почтить тех, кто сформировал наш путь и дал нам мужество покорять новые горизонты. Как вы празднуете этот День матери? Поделитесь своими историями, сообщениями или даже особым приветом в комментариях и поделитесь любовью со своими собратьями-воинами 💐"
+    }
+  },
+  {
     "id": "1499599653140828211",
     "date": "01. Mai 2026",
     "image": "images/news/1499599653140828211.jpg",
