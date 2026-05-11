@@ -1,5 +1,29 @@
 [
   {
+    "id": "1503244434899210281",
+    "date": "11. Mai 2026",
+    "image": "",
+    "code": "VRMOTHERSDAY",
+    "expiry": "2026-05-24 UTC",
+    "link": null,
+    "en": {
+      "title": "Viking Rise Mother's Day Code",
+      "content": "First come first served, each Chief ID can claim this code once."
+    },
+    "de": {
+      "title": "Viking Rise Mother's Day Code",
+      "content": "Wer zuerst kommt, mahlt zuerst, jede Chief ID kann diesen Code einmalig einlösen."
+    },
+    "cn": {
+      "title": "Viking Rise 母亲节兑换码",
+      "content": "先到先得，每个 Chief ID 仅限领取一次此兑换码。"
+    },
+    "ru": {
+      "title": "Viking Rise: Код к Дню матери",
+      "content": "В порядке живой очереди, каждый Chief ID может активировать этот код один раз."
+    }
+  },
+  {
     "id": "1502888278070788186",
     "date": "10. Mai 2026",
     "image": "images/news/1502888278070788186.jpg",
