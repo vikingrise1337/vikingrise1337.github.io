@@ -1,5 +1,29 @@
 [
   {
+    "id": "1507210477158273204",
+    "date": "22. Mai 2026",
+    "image": "",
+    "code": null,
+    "expiry": null,
+    "link": "https://discord.com/channels/989102955569483796/1495599763058589726",
+    "en": {
+      "title": "Tribe Showdown",
+      "content": "The battle between Tribes is about to begin...welcome to the all-new Tribe Showdown! Only the strongest Tribes in each Kingdom will rise to the challenge, where every upgrade, every battle, and every contribution matters. Across 5 intense weeks of competition, Tribes will clash in themed challenges to earn Victory Points, climb the League rankings, and claim powerful rewards! From nurturing Mounts and training Troops, to researching Tech and strengthening Heroes, each day brings a new way to prove your Tribe’s might. Strategy, teamwork, and coordination will decide who dominates the battlefield and who falls behind. Will your Tribe conquer the leagues and rise to the top, or be left behind in the dust of war? Gather your allies, prepare your forces, and fight for glory in Tribe Showdown!"
+    },
+    "de": {
+      "title": "Tribe Showdown",
+      "content": "Der Kampf zwischen den Tribes steht kurz bevor... willkommen beim brandneuen Tribe Showdown! Nur die stärksten Tribes in jedem Kingdom werden sich der Herausforderung stellen, bei der jedes Upgrade, jeder Kampf und jeder Beitrag zählt. In 5 intensiven Wettbewerbswochen werden Tribes in thematischen Herausforderungen aufeinandertreffen, um Victory Points zu verdienen, in der League-Rangliste aufzusteigen und mächtige Belohnungen zu beanspruchen! Von der Pflege von Mounts und dem Training von Troops bis hin zur Erforschung von Tech und der Stärkung von Heroes – jeder Tag bietet eine neue Möglichkeit, die Stärke deines Tribe unter Beweis zu stellen. Strategie, Teamarbeit und Koordination entscheiden darüber, wer das Schlachtfeld beherrscht und wer zurückfällt. Wird dein Tribe die Leagues erobern und an die Spitze aufsteigen oder im Staub des Krieges zurückgelassen werden? Versammle deine Verbündeten, bereite deine Truppen vor und kämpfe für Ruhm im Tribe Showdown!"
+    },
+    "cn": {
+      "title": "部落对决",
+      "content": "部落间的战斗即将打响……欢迎来到全新的“部落对决（Tribe Showdown）”！只有每个王国中最强大的部落才能迎接挑战，在这里，每一次升级、每一场战斗、每一份贡献都至关重要。在为期 5 周的激烈竞争中，部落将通过各种主题挑战来赢取胜利点数（Victory Points），提升联盟排名，并赢取丰厚奖励！从培养坐骑（Mounts）和训练部队（Troops），到研究科技（Tech）和强化英雄（Heroes），每一天都有新的方式来证明你们部落的实力。策略、团队合作和协调能力将决定谁能主宰战场，谁会被甩在身后。你们的部落是会征服各大联盟登顶巅峰，还是在战争的尘埃中被遗忘？召集盟友，整装待发，在“部落对决（Tribe Showdown）”中为荣耀而战！"
+    },
+    "ru": {
+      "title": "Tribe Showdown",
+      "content": "Битва между племенами вот-вот начнется... добро пожаловать в совершенно новый Tribe Showdown! Только сильнейшие племена в каждом Королевстве примут этот вызов, где каждое улучшение, каждое сражение и каждый вклад имеют значение. В течение 5 недель напряженного соревнования племена будут сталкиваться в тематических испытаниях, чтобы заработать очки победы, подняться в рейтинге лиг и получить ценные награды! От выращивания маунтов и тренировки войск до изучения технологий и усиления героев — каждый день приносит новый способ доказать мощь вашего племени. Стратегия, командная работа и координация решат, кто будет доминировать на поле боя, а кто останется позади. Сможет ли ваше племя покорить лиги и подняться на вершину, или же останется в пыли войны? Собирайте союзников, готовьте свои силы и сражайтесь за славу в Tribe Showdown!"
+    }
+  },
+  {
     "id": "1504016724645904427",
     "date": "13. Mai 2026",
     "image": "images/news/1504016724645904427.jpg",
