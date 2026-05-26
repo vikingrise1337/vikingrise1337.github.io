@@ -1,5 +1,287 @@
 [
   {
+    "id": "update_27_05_2024_603384",
+    "meta": {
+      "created_at": "2026-05-26T06:34:47.405000Z",
+      "start_timestamp": "2024-05-27T06:00:00.000000Z",
+      "display_time": "5/27 06:00 - 06:30 (UTC)",
+      "title_en": "Update 27.05.2024",
+      "title_de": "Update vom 27.05.2024",
+      "title_cn": "更新 27.05.2024",
+      "title_ru": "Обновление 27.05.2024",
+      "image_url": "",
+      "image_urls": []
+    },
+    "en": {
+      "major": [
+        "Kingdom Mayhem Conquest Season 'Jormungand's Calamity' begins.",
+        "Launch of 'Pitch Party' event.",
+        "New Sx Heroes: Skull-Splitting Hammer · Havarl, Azure Lance Oath · Galveig, and Silver Moon Aria · Eflreya (available after 900 days).",
+        "New Sx skills: Tanngrisnir Chariot, Verdfor's Wings, and Gullinbursti's Roar (available after 900 days)."
+      ],
+      "new_features": [
+        "Added 'Tribe Showdown' event.",
+        "Added 'Exalted Privilege' feature with Exalted Shop and Exalted Wheel.",
+        "Added 'Castle Skin Transformation' feature.",
+        "Return of the 2025 anniversary 'Fun Anniversary Movement' skin.",
+        "Added number label '0' on map and changed 'Battalion' number label color to red."
+      ],
+      "optimizations": [
+        {
+          "title": "Rewards and Mall",
+          "items": [
+            "Increased rewards for daily events including Vikings' Reign, Viking Horn, Wheel of Fortune, Skill Wheel, Lightshade Journey, Warship Construction, and Train Lagertha.",
+            "Improved contents of packs in the Mall including Top Picks, Recast Blade, Yggdrasil Dew, Tribe Day, Sea Spirit Blessing, Battle to the Top, and This Month's Special.",
+            "Updated Skin choice items in 'Tribe Day Treasure Hunt' event.",
+            "Optimized reward rules of 'Distant Voyage' to support automatic collection.",
+            "Optimized contents in 'Exchange Shop' and added Dragon Crystal item."
+          ]
+        },
+        {
+          "title": "Game Systems and Progression",
+          "items": [
+            "Adjusted values and materials for 'Basic Equipment' and 'Monster Equipment'.",
+            "Optimized 'Beast Wars' event with auto-use item attack feature.",
+            "Optimized 'Divine Jewel' Quick Ascend feature for cross-Star Level Ascension.",
+            "Optimized filtering and sorting logic for march dispatch by Hero Might.",
+            "Optimized quick fill feature for Mount Experience.",
+            "Optimized 'Escort Shop' for one-tap collection of personal rewards.",
+            "Optimized 'Equipment interface' with [Equip All] and [Unequip All] features.",
+            "Optimized Battle Flag presets and sequence logic.",
+            "Optimized 'Wishlist' update rules and interactions.",
+            "Optimized Tribe auto-assist floating text prompts."
+          ]
+        },
+        {
+          "title": "Display and Interface",
+          "items": [
+            "Optimized display content in Simple Mode on the map.",
+            "Optimized Pack switching for 'Top Picks' and 'This Month's Special'.",
+            "Optimized animations in 'Magic Card Adventure' with skip feature.",
+            "Optimized logic for Deploying Heroes on the Walls.",
+            "Optimized stranger message blocking in chat.",
+            "Optimized map’s pure battle mode.",
+            "Optimized badge display for 'Choice Chest' items.",
+            "Optimized auto-trigger logic of 'Outdoor Meet'."
+          ]
+        }
+      ],
+      "fixes": [
+        "Fixed background mismatch in Hero details interface.",
+        "Fixed red dots for Team Captains and Bookmarks failing to clear.",
+        "Fixed Chat channel disappearing after entering the battlefield.",
+        "Fixed 'Morreg's Perilous City' monster attack and war declaration issues.",
+        "Fixed 'Kingdom Mayhem - Svartalfheim' recruitment stage quest refresh issue.",
+        "Fixed 'Aegir's Feast' issues with Supply Vehicle and troop recycling.",
+        "Fixed 'Arena' skill change save issue.",
+        "Fixed 'Skin Shop' selection frame display abnormality.",
+        "Fixed PC resource download prompt issue in 'Kingdom Mayhem'.",
+        "Fixed several text display issues."
+      ]
+    },
+    "de": {
+      "major": [
+        "Die Kingdom Mayhem Conquest Saison 'Jormungand's Calamity' beginnt.",
+        "Start des 'Pitch Party'-Events.",
+        "Neue Sx-Helden: Skull-Splitting Hammer · Havarl, Azure Lance Oath · Galveig und Silver Moon Aria · Eflreya (verfügbar nach 900 Tagen).",
+        "Neue Sx-Skills: Tanngrisnir Chariot, Verdfor's Wings und Gullinbursti's Roar (verfügbar nach 900 Tagen)."
+      ],
+      "new_features": [
+        "Event 'Tribe Showdown' hinzugefügt.",
+        "Funktion 'Exalted Privilege' mit Exalted Shop und Exalted Wheel hinzugefügt.",
+        "Funktion 'Castle Skin Transformation' hinzugefügt.",
+        "Rückkehr des 2025-Jubiläums-Skins 'Fun Anniversary Movement'.",
+        "Nummernlabel '0' auf der Karte hinzugefügt und Farbe des 'Battalion'-Nummernlabels auf Rot geändert."
+      ],
+      "optimizations": [
+        {
+          "title": "Belohnungen und Shop",
+          "items": [
+            "Erhöhte Belohnungen für tägliche Events, einschließlich Vikings' Reign, Viking Horn, Wheel of Fortune, Skill Wheel, Lightshade Journey, Warship Construction und Train Lagertha.",
+            "Verbesserter Inhalt der Pakete im Mall, einschließlich Top Picks, Recast Blade, Yggdrasil Dew, Tribe Day, Sea Spirit Blessing, Battle to the Top und This Month's Special.",
+            "Skin-Auswahl-Gegenstände im Event 'Tribe Day Treasure Hunt' aktualisiert.",
+            "Belohnungsregeln von 'Distant Voyage' optimiert, um automatische Abholung zu unterstützen.",
+            "Inhalt im 'Exchange Shop' optimiert und Dragon Crystal-Gegenstand hinzugefügt."
+          ]
+        },
+        {
+          "title": "Spielsysteme und Fortschritt",
+          "items": [
+            "Werte und Materialien für 'Basic Equipment' und 'Monster Equipment' angepasst.",
+            "Event 'Beast Wars' mit automatischer Angriffsfunktion für Gegenstände optimiert.",
+            "Funktion 'Divine Jewel' Quick Ascend für Sternen-übergreifende Aufstiege optimiert.",
+            "Filter- und Sortierlogik für den Truppenmarsch nach Hero Might optimiert.",
+            "Schnellausfüllfunktion für Mount Experience optimiert.",
+            "Optimierung des 'Escort Shop' für das Sammeln persönlicher Belohnungen mit einem Klick.",
+            "Optimierung der 'Equipment interface' mit [Equip All] und [Unequip All] Funktionen.",
+            "Battle Flag-Presets und Sequenzlogik optimiert.",
+            "Aktualisierungsregeln und Interaktionen für 'Wishlist' optimiert.",
+            "Floating-Text-Benachrichtigungen für 'Tribe auto-assist' optimiert."
+          ]
+        },
+        {
+          "title": "Anzeige und Interface",
+          "items": [
+            "Anzeigeinhalt im 'Simple Mode' auf der Karte optimiert.",
+            "Paketwechsel für 'Top Picks' und 'This Month's Special' optimiert.",
+            "Animationen in 'Magic Card Adventure' mit Überspringen-Funktion optimiert.",
+            "Logik für das Stationieren von Helden auf den Mauern optimiert.",
+            "Blockierung von Nachrichten von Fremden im Chat optimiert.",
+            "Reiner Kampfmodus der Karte optimiert.",
+            "Abzeichen-Anzeige für 'Choice Chest'-Gegenstände optimiert.",
+            "Automatische Auslöselogik von 'Outdoor Meet' optimiert."
+          ]
+        }
+      ],
+      "fixes": [
+        "Hintergrund-Diskrepanz im Helden-Detail-Interface behoben.",
+        "Fehlendes Verschwinden von roten Punkten bei Team Captains und Lesezeichen behoben.",
+        "Verschwinden des Chat-Kanals nach dem Betreten des Schlachtfelds behoben.",
+        "Probleme mit Monsterangriffen und Kriegserklärungen bei 'Morreg's Perilous City' behoben.",
+        "Problem mit der Aktualisierung der Rekrutierungsstufen-Quest bei 'Kingdom Mayhem - Svartalfheim' behoben.",
+        "Probleme bei 'Aegir's Feast' bezüglich Supply Vehicle und Truppenrecycling behoben.",
+        "Problem beim Speichern von Skill-Änderungen in der 'Arena' behoben.",
+        "Anomalie bei der Anzeige des Auswahlrahmens im 'Skin Shop' behoben.",
+        "Problem mit der Aufforderung zum Herunterladen von PC-Ressourcen in 'Kingdom Mayhem' behoben.",
+        "Verschiedene Textanzeigeprobleme behoben."
+      ]
+    },
+    "cn": {
+      "major": [
+        "王国动乱赛季“耶梦加得之灾”开启。",
+        "开启“狂欢派对”活动。",
+        "新增Sx英雄：碎颅之锤·哈瓦尔（Havarl）、苍蓝长枪誓言·加尔维格（Galveig）和银月咏叹调·埃弗蕾亚（Eflreya）（开服900天后开放）。",
+        "新增Sx技能：坦格里斯尼尔战车（Tanngrisnir Chariot）、维德福尼尔之翼（Verdfor's Wings）和古林博斯帝的咆哮（Gullinbursti's Roar）（开服900天后开放）。"
+      ],
+      "new_features": [
+        "新增“部落对决”活动。",
+        "新增“至尊特权”功能，包含至尊商店和至尊转盘。",
+        "新增“城堡皮肤转换”功能。",
+        "2025周年庆“周年庆狂欢”皮肤限时返场。",
+        "地图新增“0”号数字标签，并将“营地（Battalion）”数字标签颜色更改为红色。"
+      ],
+      "optimizations": [
+        {
+          "title": "奖励与商城",
+          "items": [
+            "提升日常活动奖励，包括维京统治（Vikings' Reign）、维京号角（Viking Horn）、命运之轮（Wheel of Fortune）、技能转盘（Skill Wheel）、光影之旅（Lightshade Journey）、战船建造（Warship Construction）和训练拉格纳（Train Lagertha）。",
+            "优化商城礼包内容，包括精选（Top Picks）、重铸之刃（Recast Blade）、世界树露水（Yggdrasil Dew）、部落日（Tribe Day）、海神之佑（Sea Spirit Blessing）、巅峰对决（Battle to the Top）和本月特惠（This Month's Special）。",
+            "更新“部落日宝藏猎人”活动中的皮肤选择道具。",
+            "优化“远航（Distant Voyage）”奖励规则，支持自动领取。",
+            "优化“兑换商店”内容，并新增龙晶（Dragon Crystal）道具。"
+          ]
+        },
+        {
+          "title": "游戏系统与成长",
+          "items": [
+            "调整“基础装备”和“怪物装备”的数值与材料。",
+            "优化“兽王争霸（Beast Wars）”活动，新增自动使用道具攻击功能。",
+            "优化“神圣宝石（Divine Jewel）”快速升星功能，支持跨星级升星。",
+            "优化按英雄战力（Hero Might）派遣部队的筛选与排序逻辑。",
+            "优化坐骑经验快速填充功能。",
+            "优化“护送商店”，支持个人奖励一键领取。",
+            "优化“装备界面”，新增[全部装备]和[全部卸下]功能。",
+            "优化战旗预设及序列逻辑。",
+            "优化“心愿单”更新规则与交互。",
+            "优化部落自动协助的悬浮文字提示。"
+          ]
+        },
+        {
+          "title": "显示与界面",
+          "items": [
+            "优化地图简易模式下的显示内容。",
+            "优化“精选”和“本月特惠”礼包切换。",
+            "优化“魔法卡冒险（Magic Card Adventure）”动画，新增跳过功能。",
+            "优化城墙驻防英雄的部署逻辑。",
+            "优化聊天中陌生人消息屏蔽功能。",
+            "优化地图纯净战斗模式。",
+            "优化“自选宝箱”道具的徽标显示。",
+            "优化“户外聚会（Outdoor Meet）”自动触发逻辑。"
+          ]
+        }
+      ],
+      "fixes": [
+        "修复英雄详情界面背景不匹配的问题。",
+        "修复队长和书签红点无法清除的问题。",
+        "修复进入战场后聊天频道消失的问题。",
+        "修复“莫雷格的危险之城（Morreg's Perilous City）”怪物攻击和宣战问题。",
+        "修复“王国动乱 - 瓦尔塔海姆（Svartalfheim）”招募阶段任务刷新问题。",
+        "修复“埃吉尔的盛宴（Aegir's Feast）”中补给车和部队回收的问题。",
+        "修复“竞技场（Arena）”技能更改保存失败的问题。",
+        "修复“皮肤商店”选择框显示异常。",
+        "修复“王国动乱”中PC资源下载提示问题。",
+        "修复若干文本显示问题。"
+      ]
+    },
+    "ru": {
+      "major": [
+        "Начинается сезон Kingdom Mayhem Conquest 'Jormungand's Calamity'.",
+        "Запуск события 'Pitch Party'.",
+        "Новые Sx-герои: Skull-Splitting Hammer · Havarl, Azure Lance Oath · Galveig и Silver Moon Aria · Eflreya (доступны через 900 дней).",
+        "Новые навыки Sx: Tanngrisnir Chariot, Verdfor's Wings и Gullinbursti's Roar (доступны через 900 дней)."
+      ],
+      "new_features": [
+        "Добавлено событие 'Tribe Showdown'.",
+        "Добавлена функция 'Exalted Privilege' с магазином Exalted Shop и колесом Exalted Wheel.",
+        "Добавлена функция 'Castle Skin Transformation'.",
+        "Возвращение юбилейного скина 2025 года 'Fun Anniversary Movement'.",
+        "Добавлена цифра '0' в качестве метки на карте, цвет метки 'Battalion' изменен на красный."
+      ],
+      "optimizations": [
+        {
+          "title": "Награды и Магазин",
+          "items": [
+            "Увеличены награды за ежедневные события, включая Vikings' Reign, Viking Horn, Wheel of Fortune, Skill Wheel, Lightshade Journey, Warship Construction и Train Lagertha.",
+            "Улучшено содержимое наборов в магазине, включая Top Picks, Recast Blade, Yggdrasil Dew, Tribe Day, Sea Spirit Blessing, Battle to the Top и This Month's Special.",
+            "Обновлены предметы выбора скинов в событии 'Tribe Day Treasure Hunt'.",
+            "Оптимизированы правила наград в 'Distant Voyage' с поддержкой автоматического сбора.",
+            "Оптимизировано содержимое 'Exchange Shop' и добавлен предмет Dragon Crystal."
+          ]
+        },
+        {
+          "title": "Игровые системы и развитие",
+          "items": [
+            "Скорректированы значения и материалы для 'Basic Equipment' и 'Monster Equipment'.",
+            "Оптимизировано событие 'Beast Wars' с функцией автоматического использования предметов атаки.",
+            "Оптимизирована функция 'Divine Jewel' Quick Ascend для возвышения уровня звезд.",
+            "Оптимизирована логика фильтрации и сортировки при отправке отрядов по мощи героев.",
+            "Оптимизирована функция быстрого заполнения опыта скакуна.",
+            "Оптимизирован 'Escort Shop' для сбора личных наград в одно нажатие.",
+            "Оптимизирован интерфейс оборудования с функциями [Equip All] и [Unequip All].",
+            "Оптимизированы пресеты боевых знамен и логика последовательности.",
+            "Оптимизированы правила обновления 'Wishlist' и взаимодействие с ним.",
+            "Оптимизированы всплывающие подсказки автопомощи племени."
+          ]
+        },
+        {
+          "title": "Отображение и интерфейс",
+          "items": [
+            "Оптимизировано содержимое в простом режиме отображения на карте.",
+            "Оптимизировано переключение наборов для 'Top Picks' и 'This Month's Special'.",
+            "Оптимизирована анимация в 'Magic Card Adventure' с функцией пропуска.",
+            "Оптимизирована логика размещения героев на стенах.",
+            "Оптимизирована блокировка сообщений от незнакомцев в чате.",
+            "Оптимизирован чистый боевой режим карты.",
+            "Оптимизировано отображение значков для предметов 'Choice Chest'.",
+            "Оптимизирована логика автоматического срабатывания 'Outdoor Meet'."
+          ]
+        }
+      ],
+      "fixes": [
+        "Исправлено несоответствие фона в интерфейсе информации о герое.",
+        "Исправлена проблема с неисчезающими красными точками для капитанов команд и закладок.",
+        "Исправлено исчезновение канала чата после входа на поле боя.",
+        "Исправлены проблемы с атаками монстров и объявлением войны в 'Morreg's Perilous City'.",
+        "Исправлена проблема с обновлением квестов этапа вербовки в 'Kingdom Mayhem - Svartalfheim'.",
+        "Исправлены проблемы в 'Aegir's Feast', связанные с транспортными средствами снабжения и переработкой войск.",
+        "Исправлена проблема с сохранением смены навыков на 'Arena'.",
+        "Исправлено аномальное отображение рамки выбора в 'Skin Shop'.",
+        "Исправлена проблема с запросом на загрузку ресурсов ПК в 'Kingdom Mayhem'.",
+        "Исправлен ряд текстовых ошибок отображения."
+      ]
+    }
+  },
+  {
     "id": "update_22_04_2025_931773",
     "meta": {
       "created_at": "2026-04-21T09:15:32.643000Z",
