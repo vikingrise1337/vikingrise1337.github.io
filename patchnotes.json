@@ -1,5 +1,83 @@
 [
   {
+    "id": "update_22_05_2024_820556",
+    "meta": {
+      "created_at": "2026-05-27T08:10:49.060000Z",
+      "start_timestamp": "2024-05-22T00:00:00.000000Z",
+      "display_time": "Viking Rise Update",
+      "title_en": "Update 22.05.2024",
+      "title_de": "Update vom 22.05.2024",
+      "title_cn": "更新 22.05.2024",
+      "title_ru": "Обновление 22.05.2024",
+      "image_url": "",
+      "image_urls": []
+    },
+    "en": {
+      "major": [
+        "Equipment statistics and attributes adjustment"
+      ],
+      "new_features": [],
+      "optimizations": [
+        {
+          "title": "Equipment Changes",
+          "items": [
+            "Adjusted statistics and attributes for various equipment",
+            "Lowered level requirements for certain equipment to improve accessibility"
+          ]
+        }
+      ],
+      "fixes": []
+    },
+    "de": {
+      "major": [
+        "Anpassung der Ausrüstungsstatistiken und Attribute"
+      ],
+      "new_features": [],
+      "optimizations": [
+        {
+          "title": "Ausrüstungsänderungen",
+          "items": [
+            "Anpassung der Statistiken und Attribute für verschiedene Ausrüstungsgegenstände",
+            "Senkung der Levelanforderungen für bestimmte Ausrüstung zur Verbesserung der Zugänglichkeit"
+          ]
+        }
+      ],
+      "fixes": []
+    },
+    "cn": {
+      "major": [
+        "装备统计数据与属性调整"
+      ],
+      "new_features": [],
+      "optimizations": [
+        {
+          "title": "装备变更",
+          "items": [
+            "调整了多种装备的统计数据与属性",
+            "降低了部分装备的等级要求以提升易用性"
+          ]
+        }
+      ],
+      "fixes": []
+    },
+    "ru": {
+      "major": [
+        "Корректировка характеристик и атрибутов снаряжения"
+      ],
+      "new_features": [],
+      "optimizations": [
+        {
+          "title": "Изменения снаряжения",
+          "items": [
+            "Скорректированы характеристики и атрибуты различных видов снаряжения",
+            "Снижены требования к уровню для определенного снаряжения для улучшения доступности"
+          ]
+        }
+      ],
+      "fixes": []
+    }
+  },
+  {
     "id": "update_27_05_2024_603384",
     "meta": {
       "created_at": "2026-05-26T06:34:47.405000Z",
