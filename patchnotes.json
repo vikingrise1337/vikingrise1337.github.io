@@ -1,5 +1,615 @@
 [
   {
+    "id": "update_27_05_2025_268371",
+    "meta": {
+      "created_at": "2026-06-03T09:16:53.530000Z",
+      "start_timestamp": "2025-05-27T06:00:00.000000Z",
+      "display_time": "5/27 06:00 - 06:30 (UTC)",
+      "title_en": "Update 27.05.2025",
+      "title_de": "Update vom 27.05.2025",
+      "title_cn": "更新 27.05.2025",
+      "title_ru": "Обновление 27.05.2025",
+      "image_url": "",
+      "image_urls": []
+    },
+    "en": {
+      "major": [
+        "Kingdom Mayhem Conquest Season \"Jormungand's Calamity\" is about to begin. Viking warriors, march to Jotunheim and challenge the World Serpent. You may be the Hero destined to defeat it.",
+        "The \"Pitch Party\" event is about to kick off. On this field, only by going all out can you claim the championship!",
+        "Added new Sx Heroes \"Skull-Splitting Hammer · Havarl\", \"Azure Lance Oath · Galveig\", and \"Silver Moon Aria · Eflreya\". These Heroes will become available after your Kingdom has been open for 900 days.",
+        "Added new Sx skills \"Tanngrisnir Chariot\", \"Verdfor's Wings\", and \"Gullinbursti's Roar\". These skills will become available after your Kingdom has been open for 900 days."
+      ],
+      "new_features": [
+        "Added the \"Tribe Showdown\" event: The first phase will be available on Sx Season servers (Servers 1–552), and will gradually be available on other servers; The event adopts a seasonal format: 1 phase lasts 5 weeks, with 1 showdown each week;",
+        "Added the \"Exalted Privilege\" feature: Reach specified conditions to unlock the \"Exalted Shop\" and \"Exalted Wheel\". Excess Prosperity Points can be spent to draw rewards such as Shards. After fusing Shards, you can obtain the City Skin \"Starry Wing\". Unlock requirements: Server age ≥ 56 days and Prosperity level 18 (level 15 unlocks entry and reward preview).",
+        "Added the \"Castle Skin Transformation\" feature: Without changing the attributes of the currently used Castle Skin, you can freely switch between owned Castle Skins. Unlock requirement: Obtain 7 permanent Castle Skins to unlock the Transformation feature.",
+        "The 2025 anniversary \"Fun Anniversary Movement\" skin will return soon.",
+        "Added the number label \"0\" on the map and changed the \"Battalion\" number label to red."
+      ],
+      "optimizations": [
+        {
+          "title": "Increased rewards for some daily events.",
+          "items": [
+            "Including: Vikings' Reign, Viking Horn, Wheel of Fortune, Skill Wheel, Lightshade Journey, Warship Construction, Train Lagertha, and more."
+          ]
+        },
+        {
+          "title": "Improved contents of certain packs in the Mall.",
+          "items": [
+            "Adjustments made to Top Picks Pack, Recast Blade Pack, Yggdrasil Dew Pack, Tribe Day Pack, Sea Spirit Blessing Pack, Battle to the Top Pack, Mall - This Month's Special Pack, and others."
+          ]
+        },
+        {
+          "title": "Adjusted values and materials distribution for \"Basic Equipment\" and \"Monster Equipment\" to make progression smoother.",
+          "items": [
+            "Increased attribute values of \"Basic Equipment\" and \"Monster Equipment\";",
+            "\"Monster Material Box\" changed from random materials to a selectable Monster series material box; added 8 types of Monster material boxes, each yielding one random Monster material of the corresponding Grade when opened."
+          ]
+        },
+        {
+          "title": "Updated the Skin choice items in the \"Tribe Day Treasure Hunt\" event.",
+          "items": [
+            "Added 2025 second-half Skin Chest;",
+            "Added 2025 second-half Hero Skins to the Hero Skin Choice Chest."
+          ]
+        },
+        {
+          "title": "Optimized the reward rules of \"Distant Voyage\", now supporting automatic collection of guaranteed prizes.",
+          "items": []
+        },
+        {
+          "title": "Optimized the \"Beast Wars\" event by adding an auto-use item attack feature.",
+          "items": []
+        },
+        {
+          "title": "Optimized the \"Divine Jewel\" Quick Ascend feature, now supporting higher Star Level Jewels and cross-Star Level Ascension.",
+          "items": []
+        },
+        {
+          "title": "Optimized the contents available in the \"Exchange Shop\" of various events and added the Dragon Crystal item.",
+          "items": [
+            "Includes: Sacred Crucible, Battle of the Ruins, Apex Championship, Blood Oath War, Naval Dominion.",
+            "Applicable only to Kingdoms in S4 and later Seasons."
+          ]
+        },
+        {
+          "title": "Optimized filtering and sorting logic for march dispatch, now sorted by Hero Might by default.",
+          "items": [
+            "Includes: Naval Dominion, Morreg's Perilous City, Battle of the Ruins, Pillage Weston, Blood Oath War, Valhalla Drill, Kingdom Mayhem & the current server map."
+          ]
+        },
+        {
+          "title": "Optimized the quick fill feature for Mount Experience, now automatically selecting the highest possible level for upgrade.",
+          "items": []
+        },
+        {
+          "title": "Optimized the \"Escort Shop\" by allowing one-tap collection of Escort Caravan personal rewards.",
+          "items": []
+        },
+        {
+          "title": "Optimized the \"Equipment interface\" by adding [Equip All] and [Unequip All] features.",
+          "items": []
+        },
+        {
+          "title": "Optimized usage rules for sequential mode in Battle Flag presets across different scenarios.",
+          "items": [
+            "Inner and outer cities on the map (within KVK): share the same sequence;",
+            "Independent sequences: Battle of the Ruins, Blood Oath War, Pillage Weston, Naval Dominion;",
+            "Arena: no counting or reset upon return; Battle Flag slots correspond directly to the current Troop order."
+          ]
+        },
+        {
+          "title": "Optimized display content in Simple Mode on the map.",
+          "items": [
+            "In Simple Mode, player Troops only display the Main Commander;",
+            "When Rally leaders are hidden, corresponding Battle Flag effects are also hidden."
+          ]
+        },
+        {
+          "title": "Optimized Pack switching for \"Top Picks\" and \"This Month's Special.\"",
+          "items": [
+            "Added a \"Type Switch\" feature for Pack groups to switch between different groups."
+          ]
+        },
+        {
+          "title": "Optimized animations in \"Magic Card Adventure.\" When \"Auto Flip\" is checked, animations can be skipped.",
+          "items": []
+        },
+        {
+          "title": "Optimized logic for Deploying Heroes on the Walls; banned Heroes will no longer be displayed.",
+          "items": []
+        },
+        {
+          "title": "Optimized the stranger message blocking feature in chat.",
+          "items": [
+            "When players disable messages from strangers, others may only send a limited number of replies (up to 20) if the player initiates a private chat; additionally, sending messages to Blacklisted players requires confirmation and removal from the Blacklist first."
+          ]
+        },
+        {
+          "title": "Optimized the map's pure battle mode, displaying 5 march queues and hiding redundant information.",
+          "items": []
+        },
+        {
+          "title": "Optimized update rules and interaction experience for Heroes/skills in the \"Wishlist\".",
+          "items": [
+            "Wishlist updates are synchronized with pool updates, and prompts are added when max Star Level Heroes/skills are included."
+          ]
+        },
+        {
+          "title": "Optimized Tribe auto-assist floating text prompts by merging multiple simultaneous messages.",
+          "items": []
+        },
+        {
+          "title": "Optimized badge display for \"Choice Chest\" items.",
+          "items": []
+        },
+        {
+          "title": "Optimized the auto-trigger logic of \"Outdoor Meet\".",
+          "items": []
+        }
+      ],
+      "fixes": [
+        "Fixed the issue where the background in the details interface did not match the Hero Skin background.",
+        "Fixed the issue where red dots for Team Captains and Bookmarks could not be cleared.",
+        "Fixed the issue where the Chat channel would disappear after entering the battlefield.",
+        "Fixed issues in \"Morreg's Perilous City\" where after monster attack attempts were exhausted, other players did not return in time, and occasional cases where war declaration succeeded but defenders could not be attacked.",
+        "Fixed the issue in \"Kingdom Mayhem - Svartalfheim\" during the recruitment stage where Recast quest progress did not refresh after completion.",
+        "Fixed issues in \"Aegir's Feast\" where the Supply Vehicle could not be selected, Troops could not be recycled, and war declaration messages displayed abnormally.",
+        "Fixed the issue in \"Arena\" where changes were not saved after replacing skills.",
+        "Fixed the issue where the selection frame position displayed abnormally when scrolling down in the \"Skin Shop.\"",
+        "Fixed the issue on PC where a resource download prompt appeared when navigating to \"Kingdom Mayhem\".",
+        "Fixed several text display issues."
+      ]
+    },
+    "de": {
+      "major": [
+        "Die Kingdom Mayhem Eroberungssaison \"Jormungand's Calamity\" steht kurz vor dem Beginn. Wikingerkrieger, marschiert nach Jotunheim und fordert die Weltschlange heraus. Vielleicht bist du der Hero, der dazu bestimmt ist, sie zu besiegen.",
+        "Das Event \"Pitch Party\" steht kurz vor dem Start. Auf diesem Spielfeld kannst du die Meisterschaft nur erringen, wenn du alles gibst!",
+        "Neue Sx Heroes \"Skull-Splitting Hammer · Havarl\", \"Azure Lance Oath · Galveig\" und \"Silver Moon Aria · Eflreya\" hinzugefügt. Diese Heroes werden verfügbar, nachdem dein Kingdom seit 900 Tagen geöffnet ist.",
+        "Neue Sx-Skills \"Tanngrisnir Chariot\", \"Verdfor's Wings\" und \"Gullinbursti's Roar\" hinzugefügt. Diese Skills werden verfügbar, nachdem dein Kingdom seit 900 Tagen geöffnet ist."
+      ],
+      "new_features": [
+        "Das Event \"Tribe Showdown\" hinzugefügt: Die erste Phase wird auf den Servern der Sx Season (Server 1–552) verfügbar sein und nach und nach auf anderen Servern freigeschaltet. Das Event nutzt ein saisonales Format: 1 Phase dauert 5 Wochen mit 1 Showdown pro Woche.",
+        "Das Feature \"Exalted Privilege\" hinzugefügt: Erreiche bestimmte Bedingungen, um den \"Exalted Shop\" und das \"Exalted Wheel\" freizuschalten. Überschüssige Prosperity Points können ausgegeben werden, um Belohnungen wie Shards zu ziehen. Nach dem Verschmelzen von Shards kannst du den City Skin \"Starry Wing\" erhalten. Freischaltbedingungen: Server-Alter ≥ 56 Tage und Prosperity-Stufe 18 (Stufe 15 schaltet den Zugang und die Belohnungsvorschau frei).",
+        "Das Feature \"Castle Skin Transformation\" hinzugefügt: Ohne die Attribute des aktuell verwendeten Castle Skin zu ändern, kannst du frei zwischen deinen besessenen Castle Skins wechseln. Freischaltbedingung: Erhalte 7 permanente Castle Skins, um das Transformation-Feature freizuschalten.",
+        "Der Jubiläums-Skin \"Fun Anniversary Movement\" von 2025 kehrt bald zurück.",
+        "Die Nummernbezeichnung \"0\" auf der Karte hinzugefügt und die Nummernbezeichnung für \"Battalion\" in Rot geändert."
+      ],
+      "optimizations": [
+        {
+          "title": "Belohnungen für einige tägliche Events erhöht.",
+          "items": [
+            "Darunter: Vikings' Reign, Viking Horn, Wheel of Fortune, Skill Wheel, Lightshade Journey, Warship Construction, Train Lagertha und mehr."
+          ]
+        },
+        {
+          "title": "Inhalte bestimmter Pakete im Mall verbessert.",
+          "items": [
+            "Anpassungen vorgenommen an: Top Picks Pack, Recast Blade Pack, Yggdrasil Dew Pack, Tribe Day Pack, Sea Spirit Blessing Pack, Battle to the Top Pack, Mall - This Month's Special Pack und anderen."
+          ]
+        },
+        {
+          "title": "Werte und Materialverteilung für \"Basic Equipment\" und \"Monster Equipment\" angepasst, um den Fortschritt reibungsloser zu gestalten.",
+          "items": [
+            "Attributwerte von \"Basic Equipment\" und \"Monster Equipment\" erhöht;",
+            "\"Monster Material Box\" von zufälligen Materialien in eine auswählbare Monster-Serien-Materialbox geändert; 8 Arten von Monster-Materialboxen hinzugefügt, von denen jede beim Öffnen ein zufälliges Monster-Material des entsprechenden Grads liefert."
+          ]
+        },
+        {
+          "title": "Skin-Auswahlobjekte im Event \"Tribe Day Treasure Hunt\" aktualisiert.",
+          "items": [
+            "Skin Chest der zweiten Hälfte von 2025 hinzugefügt;",
+            "Hero Skins der zweiten Hälfte von 2025 zur Hero Skin Choice Chest hinzugefügt."
+          ]
+        },
+        {
+          "title": "Die Belohnungsregeln von \"Distant Voyage\" optimiert; unterstützt jetzt das automatische Abholen von garantierten Preisen.",
+          "items": []
+        },
+        {
+          "title": "Das Event \"Beast Wars\" optimiert durch Hinzufügen einer Funktion zur automatischen Nutzung von Gegenstandsangriffen.",
+          "items": []
+        },
+        {
+          "title": "Die Schnellaufstiegsfunktion für \"Divine Jewel\" optimiert; unterstützt jetzt Juwelen mit höherem Sternenlevel und Sternenlevel-übergreifenden Aufstieg.",
+          "items": []
+        },
+        {
+          "title": "Die im \"Exchange Shop\" verschiedener Events verfügbaren Inhalte optimiert und das Objekt Dragon Crystal hinzugefügt.",
+          "items": [
+            "Umfasst: Sacred Crucible, Battle of the Ruins, Apex Championship, Blood Oath War, Naval Dominion.",
+            "Gilt nur für Kingdoms in S4 und späteren Saisons."
+          ]
+        },
+        {
+          "title": "Filter- und Sortierlogik für den Marschversand optimiert, standardmäßig nach Hero Might sortiert.",
+          "items": [
+            "Umfasst: Naval Dominion, Morreg's Perilous City, Battle of the Ruins, Pillage Weston, Blood Oath War, Valhalla Drill, Kingdom Mayhem und die aktuelle Serverkarte."
+          ]
+        },
+        {
+          "title": "Die Schnellfüllfunktion für Mount Experience optimiert, wählt nun automatisch die höchstmögliche Stufe für die Aufwertung aus.",
+          "items": []
+        },
+        {
+          "title": "Den \"Escort Shop\" optimiert, indem persönliche Belohnungen der Escort Caravan mit einem Fingertipp abgeholt werden können.",
+          "items": []
+        },
+        {
+          "title": "Das \"Equipment-Interface\" durch Hinzufügen der Funktionen [Equip All] und [Unequip All] optimiert.",
+          "items": []
+        },
+        {
+          "title": "Nutzungsregeln für den sequenziellen Modus bei Battle Flag-Voreinstellungen in verschiedenen Szenarien optimiert.",
+          "items": [
+            "Innere und äußere Städte auf der Karte (innerhalb von KVK): teilen sich dieselbe Sequenz;",
+            "Unabhängige Sequenzen: Battle of the Ruins, Blood Oath War, Pillage Weston, Naval Dominion;",
+            "Arena: kein Zählen oder Zurücksetzen bei der Rückkehr; Battle Flag-Plätze entsprechen direkt der aktuellen Truppenreihenfolge."
+          ]
+        },
+        {
+          "title": "Anzeigeinhalte im Simple Mode auf der Karte optimiert.",
+          "items": [
+            "Im Simple Mode zeigen Spielertruppen nur den Main Commander an;",
+            "Wenn Rally-Leiter ausgeblendet sind, werden auch die entsprechenden Battle Flag-Effekte ausgeblendet."
+          ]
+        },
+        {
+          "title": "Paketwechsel für \"Top Picks\" und \"This Month's Special\" optimiert.",
+          "items": [
+            "Eine \"Typ-Wechsel\"-Funktion für Paketgruppen hinzugefügt, um zwischen verschiedenen Gruppen zu wechseln."
+          ]
+        },
+        {
+          "title": "Animationen in \"Magic Card Adventure\" optimiert. Wenn \"Auto Flip\" aktiviert ist, können Animationen übersprungen werden.",
+          "items": []
+        },
+        {
+          "title": "Die Logik für das Stationieren von Heroes auf den Walls optimiert; gesperrte Heroes werden nicht mehr angezeigt.",
+          "items": []
+        },
+        {
+          "title": "Die Funktion zum Blockieren von Nachrichten von Fremden im Chat optimiert.",
+          "items": [
+            "Wenn Spieler Nachrichten von Fremden deaktivieren, können andere nur eine begrenzte Anzahl von Antworten (bis zu 20) senden, falls der Spieler einen privaten Chat initiiert; zudem erfordert das Senden von Nachrichten an Spieler auf der Blacklist eine Bestätigung und vorherige Entfernung von der Blacklist."
+          ]
+        },
+        {
+          "title": "Den reinen Kampfmodus der Karte optimiert, zeigt 5 Marsch-Warteschlangen an und blendet redundante Informationen aus.",
+          "items": []
+        },
+        {
+          "title": "Aktualisierungsregeln und Interaktionserfahrung für Heroes/Skills in der \"Wishlist\" optimiert.",
+          "items": [
+            "Wishlist-Aktualisierungen werden mit Pool-Aktualisierungen synchronisiert, und es werden Hinweise hinzugefügt, wenn Heroes/Skills mit maximalem Sternenlevel enthalten sind."
+          ]
+        },
+        {
+          "title": "Schwebende Textprompts für die automatische Tribe-Hilfe durch Zusammenführen mehrerer gleichzeitiger Nachrichten optimiert.",
+          "items": []
+        },
+        {
+          "title": "Abzeichenanzeige für \"Choice Chest\"-Objekte optimiert.",
+          "items": []
+        },
+        {
+          "title": "Die automatische Auslöselogik von \"Outdoor Meet\" optimiert.",
+          "items": []
+        }
+      ],
+      "fixes": [
+        "Fehler behoben, bei dem der Hintergrund im Detail-Interface nicht mit dem Hero-Skin-Hintergrund übereinstimmte.",
+        "Fehler behoben, bei dem rote Punkte für Team Captains und Bookmarks nicht gelöscht werden konnten.",
+        "Fehler behoben, bei dem der Chat-Kanal nach dem Betreten des Schlachtfelds verschwand.",
+        "Fehler in \"Morreg's Perilous City\" behoben, bei denen nach dem Aufbrauchen der Monster-Angriffsversuche andere Spieler nicht rechtzeitig zurückkehrten, sowie gelegentliche Fälle, in denen die Kriegserklärung erfolgreich war, die Verteidiger jedoch nicht angegriffen werden konnten.",
+        "Fehler in \"Kingdom Mayhem - Svartalfheim\" während der Rekrutierungsphase behoben, bei dem der Fortschritt der Recast-Quest nach Abschluss nicht aktualisiert wurde.",
+        "Fehler in \"Aegir's Feast\" behoben, bei denen das Supply Vehicle nicht ausgewählt werden konnte, Truppen nicht zurückgezogen werden konnten und Kriegserklärungsnachrichten abnormal angezeigt wurden.",
+        "Fehler in \"Arena\" behoben, bei dem Änderungen nach dem Ersetzen von Skills nicht gespeichert wurden.",
+        "Fehler behoben, bei dem die Position des Auswahlrahmens beim Herunterscrollen im \"Skin Shop\" abnormal angezeigt wurde.",
+        "Fehler auf dem PC behoben, bei dem ein Ressourcen-Download-Hinweis erschien, wenn zu \"Kingdom Mayhem\" navigiert wurde.",
+        "Mehrere Textanzeigefehler behoben."
+      ]
+    },
+    "cn": {
+      "major": [
+        "Kingdom Mayhem Conquest Season \"Jormungand's Calamity\" is about to begin. Viking warriors, march to Jotunheim and challenge the World Serpent. You may be the Hero destined to defeat it.",
+        "The \"Pitch Party\" event is about to kick off. On this field, only by going all out can you claim the championship!",
+        "Added new Sx Heroes \"Skull-Splitting Hammer · Havarl\", \"Azure Lance Oath · Galveig\", and \"Silver Moon Aria · Eflreya\". These Heroes will become available after your Kingdom has been open for 900 days.",
+        "Added new Sx skills \"Tanngrisnir Chariot\", \"Verdfor's Wings\", and \"Gullinbursti's Roar\". These skills will become available after your Kingdom has been open for 900 days."
+      ],
+      "new_features": [
+        "Added the \"Tribe Showdown\" event: The first phase will be available on Sx Season servers (Servers 1–552), and will gradually be available on other servers; The event adopts a seasonal format: 1 phase lasts 5 weeks, with 1 showdown each week;",
+        "Added the \"Exalted Privilege\" feature: Reach specified conditions to unlock the \"Exalted Shop\" and \"Exalted Wheel\". Excess Prosperity Points can be spent to draw rewards such as Shards. After fusing Shards, you can obtain the City Skin \"Starry Wing\". Unlock requirements: Server age ≥ 56 days and Prosperity level 18 (level 15 unlocks entry and reward preview).",
+        "Added the \"Castle Skin Transformation\" feature: Without changing the attributes of the currently used Castle Skin, you can freely switch between owned Castle Skins. Unlock requirement: Obtain 7 permanent Castle Skins to unlock the Transformation feature.",
+        "The 2025 anniversary \"Fun Anniversary Movement\" skin will return soon.",
+        "Added the number label \"0\" on the map and changed the \"Battalion\" number label to red."
+      ],
+      "optimizations": [
+        {
+          "title": "提升了部分日常活动的奖励。",
+          "items": [
+            "包括：Vikings' Reign、Viking Horn、Wheel of Fortune、Skill Wheel、Lightshade Journey、Warship Construction、Train Lagertha 等。"
+          ]
+        },
+        {
+          "title": "提升了商城中部分礼包的内容。",
+          "items": [
+            "对 Top Picks Pack、Recast Blade Pack、Yggdrasil Dew Pack、Tribe Day Pack、Sea Spirit Blessing Pack、Battle to the Top Pack、商城 - This Month's Special Pack 等礼包进行了调整。"
+          ]
+        },
+        {
+          "title": "调整了 \"Basic Equipment\" 和 \"Monster Equipment\" 的属性数值与材料产出，使成长体验更加平滑。",
+          "items": [
+            "提升了 \"Basic Equipment\" 和 \"Monster Equipment\" 的属性数值；",
+            "\"Monster Material Box\" 由随机材料调整为可选的怪物系列材料箱；新增了 8 种怪物材料箱，开启后可随机获得一个对应品级的怪物材料。"
+          ]
+        },
+        {
+          "title": "更新了 \"Tribe Day Treasure Hunt\" 活动中的皮肤自选道具。",
+          "items": [
+            "新增了 2025 下半年皮肤宝箱；",
+            "英雄皮肤自选箱中新增了 2025 下半年的英雄皮肤。"
+          ]
+        },
+        {
+          "title": "优化了 \"Distant Voyage\" 的奖励规则，现支持自动领取保底奖励。",
+          "items": []
+        },
+        {
+          "title": "优化了 \"Beast Wars\" 活动，新增了自动使用道具进行攻击的功能。",
+          "items": []
+        },
+        {
+          "title": "优化了 \"Divine Jewel\" 的一键升星功能，现已支持更高星级的宝石及跨星级升星。",
+          "items": []
+        },
+        {
+          "title": "优化了多个活动 \"Exchange Shop\" 的可兑换内容，并新增了龙晶道具。",
+          "items": [
+            "包括：Sacred Crucible、Battle of the Ruins、Apex Championship、Blood Oath War、Naval Dominion。",
+            "仅适用于 S4 及后续赛季的王国。"
+          ]
+        },
+        {
+          "title": "优化了出征派遣的筛选与排序逻辑，默认优先按战力进行排序。",
+          "items": [
+            "包括：Naval Dominion、Morreg's Perilous City、Battle of the Ruins、Pillage Weston、Blood Oath War、Valhalla Drill、Kingdom Mayhem 以及当前服务器地图。"
+          ]
+        },
+        {
+          "title": "优化了坐骑经验的快速填充功能，现会自动选择最高可提升的等级进行升级。",
+          "items": []
+        },
+        {
+          "title": "优化了 \"Escort Shop\"，支持一键领取护送商队个人奖励。",
+          "items": []
+        },
+        {
+          "title": "优化了装备界面，新增了 [一键装备] 和 [一键卸下] 功能。",
+          "items": []
+        },
+        {
+          "title": "优化了不同场景下战旗预设顺序模式的使用规则。",
+          "items": [
+            "地图上的内城与外城（KVK 范围内）：共享同一套顺序；",
+            "独立顺序：Battle of the Ruins、Blood Oath War、Pillage Weston、Naval Dominion；",
+            "Arena：返回时不进行计数或重置；战旗槽位直接对应当前的部队顺序。"
+          ]
+        },
+        {
+          "title": "优化了地图极简模式下的显示内容。",
+          "items": [
+            "在极简模式下，玩家部队仅显示主将；",
+            "当隐藏集结发起者时，相应的战旗特效也将同步隐藏。"
+          ]
+        },
+        {
+          "title": "优化了 \"Top Picks\" 和 \"This Month's Special\" 的礼包切换体验。",
+          "items": [
+            "为礼包组新增了“分类切换”功能，方便在不同组别之间进行切换。"
+          ]
+        },
+        {
+          "title": "优化了 \"Magic Card Adventure\" 的动画效果。当勾选“自动翻牌”时，可跳过动画。",
+          "items": []
+        },
+        {
+          "title": "优化了城墙守将派遣逻辑；被禁用的英雄将不再显示。",
+          "items": []
+        },
+        {
+          "title": "优化了聊天中屏蔽陌生人消息的功能。",
+          "items": [
+            "当玩家禁用陌生人消息时，若玩家主动发起私聊，对方最多只能回复有限数量的消息（上限 20 条）；此外，向黑名单内的玩家发送消息时需要先进行二次确认并移出黑名单。"
+          ]
+        },
+        {
+          "title": "优化了地图的纯净战斗模式，仅显示 5 个行军队列，并隐藏多余信息。",
+          "items": []
+        },
+        {
+          "title": "优化了 \"Wishlist\" 中英雄/技能的更新规则和交互体验。",
+          "items": [
+            "心愿单更新将与卡池更新同步，且当包含已满星的英雄/技能时，会添加相应提示。"
+          ]
+        },
+        {
+          "title": "优化了部落自动协助的漂浮文字提示，将同时出现的多个提示进行了合并。",
+          "items": []
+        },
+        {
+          "title": "优化了 \"Choice Chest\" 道具的角标显示。",
+          "items": []
+        },
+        {
+          "title": "优化了 \"Outdoor Meet\" 的自动触发逻辑。",
+          "items": []
+        }
+      ],
+      "fixes": [
+        "修复了详情界面中的背景与英雄皮肤背景不一致的问题。",
+        "修复了队长和书签的红点无法清除的问题。",
+        "修复了进入战场后聊天频道消失的问题。",
+        "修复了 \"Morreg's Perilous City\" 中的问题：在怪物袭击次数耗尽后，其他玩家未能及时返回，以及偶尔出现的宣战成功但无法攻击防守者的情况。",
+        "修复了 \"Kingdom Mayhem - Svartalfheim\" 招募阶段中，重铸任务进度在完成后未刷新的问题。",
+        "修复了 \"Aegir's Feast\" 中的问题：补给车无法被选中、部队无法回收以及宣战信息显示异常。",
+        "修复了 \"Arena\" 中更换技能后修改未保存的问题。",
+        "修复了在 \"Skin Shop\" 下拉时，选择框位置显示异常的问题。",
+        "修复了 PC 端在跳转至 \"Kingdom Mayhem\" 时会出现资源下载提示的问题。",
+        "修复了若干文本显示问题。"
+      ]
+    },
+    "ru": {
+      "major": [
+        "Сезон завоеваний Kingdom Mayhem «Jormungand's Calamity» вот-вот начнется. Воины-викинги, отправляйтесь в Jotunheim и бросьте вызов World Serpent. Возможно, именно вы — тот самый Hero, которому суждено победить его.",
+        "Событие «Pitch Party» вот-вот начнется. На этом поле только выложившись на полную, вы сможете завоевать чемпионство!",
+        "Добавлены новые Sx Heroes: «Skull-Splitting Hammer · Havarl», «Azure Lance Oath · Galveig» и «Silver Moon Aria · Eflreya». Эти Heroes станут доступны после того, как ваш Kingdom будет открыт в течение 900 дней.",
+        "Добавлены новые Sx навыки «Tanngrisnir Chariot», «Verdfor's Wings» и «Gullinbursti's Roar». Эти навыки станут доступны после того, как ваш Kingdom будет открыт в течение 900 дней."
+      ],
+      "new_features": [
+        "Добавлено событие «Tribe Showdown»: первый этап будет доступен на серверах сезона Sx (серверы 1–552) и постепенно появится на других серверах. Событие проходит в сезонном формате: 1 этап длится 5 недель, по 1 противостоянию каждую неделю.",
+        "Добавлена функция «Exalted Privilege»: выполните указанные условия, чтобы разблокировать «Exalted Shop» и «Exalted Wheel». Избыточные Prosperity Points можно потратить на розыгрыш наград, таких как Shards. После объединения Shards вы сможете получить City Skin «Starry Wing». Требования для разблокировки: возраст сервера ≥ 56 дней и уровень Prosperity 18 (уровень 15 открывает доступ и предварительный просмотр наград).",
+        "Добавлена функция «Castle Skin Transformation»: без изменения характеристик используемого в данный момент Castle Skin вы можете свободно переключаться между имеющимися Castle Skins. Требование для разблокировки: получите 7 постоянных Castle Skins, чтобы разблокировать функцию Transformation.",
+        "Скоро вернется юбилейный скин 2025 года «Fun Anniversary Movement».",
+        "Добавлена числовая метка «0» на карте, а цвет числовой метки «Battalion» изменен на красный."
+      ],
+      "optimizations": [
+        {
+          "title": "Увеличены награды за некоторые ежедневные события.",
+          "items": [
+            "Включая: Vikings' Reign, Viking Horn, Wheel of Fortune, Skill Wheel, Lightshade Journey, Warship Construction, Train Lagertha и другие."
+          ]
+        },
+        {
+          "title": "Улучшено содержимое некоторых наборов в Mall.",
+          "items": [
+            "Внесены изменения в наборы Top Picks Pack, Recast Blade Pack, Yggdrasil Dew Pack, Tribe Day Pack, Sea Spirit Blessing Pack, Battle to the Top Pack, Mall - This Month's Special Pack и другие."
+          ]
+        },
+        {
+          "title": "Скорректированы показатели и распределение материалов для «Basic Equipment» и «Monster Equipment», чтобы сделать развитие более плавным.",
+          "items": [
+            "Увеличены значения характеристик «Basic Equipment» и «Monster Equipment»;",
+            "«Monster Material Box» изменен со случайных материалов на выбираемый сундук с материалами серии Monster; добавлено 8 типов сундуков с материалами Monster, каждый из которых при открытии дает один случайный материал Monster соответствующего класса (Grade)."
+          ]
+        },
+        {
+          "title": "Обновлены предметы выбора Skin в событии «Tribe Day Treasure Hunt».",
+          "items": [
+            "Добавлен Skin Chest за вторую половину 2025 года;",
+            "Добавлены Hero Skins за вторую половину 2025 года в Hero Skin Choice Chest."
+          ]
+        },
+        {
+          "title": "Оптимизированы правила получения наград в «Distant Voyage»: теперь поддерживается автоматический сбор гарантированных призов.",
+          "items": []
+        },
+        {
+          "title": "Оптимизировано событие «Beast Wars»: добавлена функция автоиспользования предметов для атаки.",
+          "items": []
+        },
+        {
+          "title": "Оптимизирована функция быстрого вознесения (Quick Ascend) для «Divine Jewel»: теперь поддерживаются Jewels более высокого звездного уровня (Star Level) и межзвездное вознесение (cross-Star Level Ascension).",
+          "items": []
+        },
+        {
+          "title": "Оптимизировано содержимое «Exchange Shop» в различных событиях, а также добавлен предмет Dragon Crystal.",
+          "items": [
+            "Включает: Sacred Crucible, Battle of the Ruins, Apex Championship, Blood Oath War, Naval Dominion.",
+            "Применимо только к Kingdoms в S4 и более поздних сезонах."
+          ]
+        },
+        {
+          "title": "Оптимизирована логика фильтрации и сортировки при отправке маршей: теперь по умолчанию сортировка выполняется по Hero Might.",
+          "items": [
+            "Включает: Naval Dominion, Morreg's Perilous City, Battle of the Ruins, Pillage Weston, Blood Oath War, Valhalla Drill, Kingdom Mayhem и карту текущего сервера."
+          ]
+        },
+        {
+          "title": "Оптимизирована функция быстрого заполнения для Mount Experience: теперь автоматически выбирается максимально возможный уровень для улучшения.",
+          "items": []
+        },
+        {
+          "title": "Оптимизирован «Escort Shop»: теперь личные награды Escort Caravan можно собирать одним касанием.",
+          "items": []
+        },
+        {
+          "title": "Оптимизирован интерфейс снаряжения («Equipment interface»): добавлены функции [Equip All] и [Unequip All].",
+          "items": []
+        },
+        {
+          "title": "Оптимизированы правила использования последовательного режима в шаблонах Battle Flag для различных сценариев.",
+          "items": [
+            "Внутренние и внешние города на карте (внутри KVK): используют одну и ту же последовательность;",
+            "Независимые последовательности: Battle of the Ruins, Blood Oath War, Pillage Weston, Naval Dominion;",
+            "Arena: нет подсчета или сброса при возвращении; слоты Battle Flag напрямую соответствуют текущему порядку войск (Troops)."
+          ]
+        },
+        {
+          "title": "Оптимизировано отображение контента в Simple Mode на карте.",
+          "items": [
+            "В Simple Mode для войск (Troops) игрока отображается только Main Commander;",
+            "Если лидеры Rally скрыты, соответствующие эффекты Battle Flag также скрываются."
+          ]
+        },
+        {
+          "title": "Оптимизировано переключение наборов для «Top Picks» и «This Month's Special».",
+          "items": [
+            "Добавлена функция переключения типа («Type Switch») для групп наборов (Pack), позволяющая переключаться между различными группами."
+          ]
+        },
+        {
+          "title": "Оптимизирована анимация в «Magic Card Adventure». Если отмечен пункт «Auto Flip», анимацию можно пропустить.",
+          "items": []
+        },
+        {
+          "title": "Оптимизирована логика размещения Heroes на Walls; заблокированные Heroes больше не будут отображаться.",
+          "items": []
+        },
+        {
+          "title": "Оптимизирована функция блокировки сообщений от незнакомцев в чате.",
+          "items": [
+            "Если игроки отключают сообщения от незнакомцев, другие пользователи могут отправить лишь ограниченное количество ответов (до 20), если этот игрок сам начнет приватный чат. Кроме того, для отправки сообщений игрокам из черного списка (Blacklist) требуется сначала подтвердить действие и удалить их из Blacklist."
+          ]
+        },
+        {
+          "title": "Оптимизирован чистый боевой режим карты: теперь отображаются 5 очередей марша, а избыточная информация скрывается.",
+          "items": []
+        },
+        {
+          "title": "Оптимизированы правила обновления и взаимодействие для Heroes/навыков в «Wishlist».",
+          "items": [
+            "Обновления Wishlist синхронизируются с обновлениями пула, а при добавлении Heroes/навыков с максимальным звездным уровнем (Star Level) отображаются подсказки."
+          ]
+        },
+        {
+          "title": "Оптимизированы всплывающие текстовые подсказки автопомощи Tribe путем объединения нескольких сообщений, отправляемых одновременно.",
+          "items": []
+        },
+        {
+          "title": "Оптимизировано отображение значков для предметов «Choice Chest».",
+          "items": []
+        },
+        {
+          "title": "Оптимизирована логика автозапуска события «Outdoor Meet».",
+          "items": []
+        }
+      ],
+      "fixes": [
+        "Исправлена ошибка, из-за которой фон в интерфейсе подробностей не соответствовал фону Hero Skin.",
+        "Исправлена ошибка, из-за которой не исчезали красные точки для Team Captains и Bookmarks.",
+        "Исправлена ошибка, из-за которой канал Chat исчезал после входа на поле боя.",
+        "Исправлены ошибки в «Morreg's Perilous City», из-за которых после исчерпания попыток атаки монстров другие игроки не возвращались вовремя, а также редкие случаи, когда объявление войны проходило успешно, но защитников нельзя было атаковать.",
+        "Исправлена ошибка в «Kingdom Mayhem - Svartalfheim» на этапе набора, из-за которой прогресс задания Recast не обновлялся после его завершения.",
+        "Исправлены ошибки в «Aegir's Feast», из-за которых нельзя было выбрать Supply Vehicle, войска (Troops) не могли быть возвращены, а сообщения об объявлении войны отображались некорректно.",
+        "Исправлена ошибка в «Arena», из-за которой изменения не сохранялись после замены навыков.",
+        "Исправлена ошибка, из-за которой положение рамки выбора отображалось некорректно при прокрутке вниз в «Skin Shop».",
+        "Исправлена ошибка на ПК, из-за которой при переходе в «Kingdom Mayhem» появлялось окно предложения загрузки ресурсов.",
+        "Исправлено несколько ошибок отображения текста."
+      ]
+    }
+  },
+  {
     "id": "update_27_05_2025_401906",
     "meta": {
       "created_at": "2026-06-03T08:53:49.272000Z",
