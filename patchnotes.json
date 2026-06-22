@@ -1,5 +1,311 @@
 [
   {
+    "id": "update_24_06_2026_663436",
+    "meta": {
+      "created_at": "2026-06-22T15:22:08.488000Z",
+      "start_timestamp": "2026-06-24T06:00:00.000000Z",
+      "display_time": "6/24 06:00 - 06:30 (UTC)",
+      "title_en": "Update 24.06.2026",
+      "title_de": "Update vom 24.06.2026",
+      "title_cn": "更新 24.06.2026",
+      "title_ru": "Обновление 24.06.2026",
+      "image_url": "",
+      "image_urls": []
+    },
+    "en": {
+      "major": [
+        "The [Sound of the North] series of events will soon be available. Let us draw close to nature and communicate with the gods through song, dance, and music. Unlock requirements: Reach Main Castle level 9, and Chapter 19.",
+        "The [Memory Tome] event will soon begin. With the Viking journey as its soul, it records longship voyages, Einherjar's Oath, and the legends of the gods, rekindling the immortal glory of the Vikings. Collect the full Card Album to obtain the corresponding rewards. Unlock requirements: Reach Main Castle level 10, and Chapter 21."
+      ],
+      "new_features": [
+        "New [Mount Skin] feature: Collect the corresponding Shards to unlock brand-new Mount Skins. (Requires Mount system unlocked; Shards released in [Memory Tome] event; attribute bonuses apply universally whether equipped or not)",
+        "Opened the [Exalted Sanctum] feature within [Exalted Privilege]: Unlocks after obtaining the [Exalted Collection] Tier 1 City Skin, with new Exalted Collection sets covering Tier 2-6 City Skins and other Skin content.",
+        "Added the [Equipment Recommendation] feature: Recommends corresponding basic, monster, and blessed equipment based on hero troop type.",
+        "Added content to the Kingdom Mayhem Conquest Season [Jormungand's Calamity]: King's Shop (King can open using the new [Royal Trade Decree] skill), Jotun Warzone & Tribe Jotun (occupy arenas to summon Gladiators/Tribe Jotun), Blockade Tower (blocks expanding City Territory), and Manor Treasury (yield determined by deposit period and level).",
+        "Update to the [Tribe Showdown] event: New [Commendation Order] feature during settlement period starting on 7/6; adjusted S4 Season Tribe Ranking rewards (Jewel drops added for Gold Leagues and above); added weekly active battle status pop-up and tab; server range to be gradually expanded.",
+        "New [Kingdom Imprisonment]: The King can spend Gems to imprison any Chief in this Kingdom, preventing them from entering Kingdom Mayhem and locking them at their City coordinates.",
+        "New sorting and Might threshold settings for [Kingdom Migration] applicants: The King can set the minimum Might value for migration applications.",
+        "In Season Sx and later, Dragon Crystal rewards have been added to quests for rally killing monsters.",
+        "Added display of Jewel information worn by each Caravan Chief in the [Escort Caravan] event.",
+        "Added display of the total number of rounds in the current battle in [Battle Report].",
+        "Added [Kingdom Mayhem] honor display in the [Tribe Honor Wall] and optimized the overall layout of the Honor Wall.",
+        "New [Dragon Crystal Level Ranking] feature: Ranked by Stronghold level, then by descending personal Might.",
+        "New [Kingdom Strength Statistics] feature.",
+        "Added a Kingdom Might explanation tooltip in [Kingdom Details]."
+      ],
+      "optimizations": [
+        {
+          "title": "System and Feature Optimizations",
+          "items": [
+            "Adjusted Kingdom migration [Migration Pass] consumption: Greatly reduced migration pass consumption for powerful/common/recommended Kingdoms.",
+            "Optimized the [Collector] feature: Level cap increased to 60 after Sx season; added [Bonus Overview] and [Level Rewards] tabs.",
+            "Optimized the Monster Sweep feature: Added Sweep confirmation pop-up and a [Sweep Again] button to quickly start the next round.",
+            "Optimized [Hero Talent Upgrade]: Removed the requirement that a Hero must reach level 10 before upgrading Talents.",
+            "Optimized Personal Mission data in the [Kingdom Mayhem] Season Sx Chronicles: Data is now retained after migration.",
+            "Optimized [mail] categories: Original [King Mail] now only stores handwritten mails from the King; a new [Kingdom Notice] category has been added for system mails.",
+            "Optimized [Arena] skill data and Mount details tabs with more detailed damage source statistics.",
+            "Optimized [Season Hero Ban Feature]: Detailed prompts now display explaining the banned skills, equipment, and Hero names.",
+            "Optimized [Chat] feature to support translation when quoting others' messages.",
+            "Optimized the [Conquest Quest] interface, adding a display of the equipment list that can be crafted from the corresponding monster drop materials.",
+            "Added Ascend sound effects for [Rally Skin] and optimized the visual presentation of Rally Skin Shard icons."
+          ]
+        },
+        {
+          "title": "Event and Balance Adjustments",
+          "items": [
+            "Optimized [Aegir's Feast]: buff effects now extend until the event fully closes; optimized map display of rally squad icons; Nautical Chests now show icons directly on the map.",
+            "Adjusted reward content of the [Featured] Rebate Shop.",
+            "Adjusted wounded treatment in [Battle of the Ruins]: changed to using medical points that recover over time to treat heavily wounded troops.",
+            "Adjusted buffs from [Dragon Crystal Research] to garrison attack, defense, and health: they now take effect when garrisoning neutral buildings.",
+            "Adjusted [Chapter Mission]: Added the objective [Kill Niflungs] to Chapter 13.",
+            "Adjusted item types and reduced prices in multiple shops (Wandering Merchant, Skill Shop, Clan Shop, Prestige Shop, Glory Shop, Ruins Shop, Blood Pact Shop, Dominion Shop, and Morreg Shop).",
+            "Adjusted [Campaign Tech] in Sx and later seasons to reduce resource treatment costs for higher-tier troops (T5-T10) gradually increasing with the season.",
+            "Adjusted the visible chapter and city level thresholds for some early events/packs to distribute them more evenly across the development timeline.",
+            "Removed the [Monthly Purchase Special] event and replaced it with an open weekly purchase event."
+          ]
+        }
+      ],
+      "fixes": [
+        "Fixed multiple issues in [Morreg's Perilous City], including half-body portrait flickering, troops remaining after defeat, incorrect defending lord damage records, discontinuous kill streak broadcasts, incorrect battle times for declared-war cities, incorrect Supply Truck arrival records, unsaved Battle Report settings, display errors for the escort countdown, and the central wonder blocking the Supply Truck.",
+        "Fixed the issue where using quick Hero lineup did not correctly save the lineup.",
+        "Fixed the issue where the item corner marker displayed a quantity of 0 after exchanging Dragon Crystals in the Rebate Shop.",
+        "Fixed the abnormal display issue of the reward pop-up in [Magic Card Adventure].",
+        "Fixed the issue where the burning effect did not disappear after occupying a Fort.",
+        "Fixed the issue where the Caravan escort value was displayed incorrectly in [Escort Caravan].",
+        "Fixed the issue in [Kingdom Mayhem - Surtr's Flames] where the wonder icon size was incorrect when viewing the maps of other servers.",
+        "Fixed the abnormal display of the chat list in some cases in the [Chat] feature, as well as the issue where input content was cleared when others recalled messages.",
+        "Fixed the issue where the Might displayed in [Arena] was inconsistent with the actual Might of the Defense Lineup.",
+        "Fixed the issues in [Aegir's Feast] where water relocation was blocked and Warship icons were displayed incorrectly.",
+        "Fixed the issue where the [Season Summon] button was incorrectly grayed out.",
+        "Fixed the issue where the trigger timing of the [Worker Commission] errand guide was incorrect.",
+        "Fixed the issue where the number of Hero Talent purify attempts in the [Battle Log] was inconsistent with the actual number.",
+        "Fixed the issue where a Skin was not displayed on the list after being obtained when the corresponding Hero was not owned.",
+        "Fixed the issue where the progress bar was not displayed in [Returns Overview] when the return progress was not yet full.",
+        "Fixed the issue where some resource displays in the Tribe Warehouse of [Aegir's Feast] exceeded the frame.",
+        "Fixed some text issues."
+      ]
+    },
+    "de": {
+      "major": [
+        "Die Eventserie [Sound of the North] wird bald verfügbar sein. Lasst uns der Natur nahekommen und durch Gesang, Tanz und Musik mit den Göttern kommunizieren. Freischaltbedingungen: Erreiche Hauptburg-Level 9 und Kapitel 19.",
+        "Das Event [Memory Tome] beginnt in Kürze. Mit der Reise der Wikinger als Seele zeichnet es Langschiffreisen, den Einherjar's Oath und die Legenden der Götter auf und lässt den unsterblichen Ruhm der Wikinger neu aufleben. Sammle das vollständige Kartenalbum, um die entsprechenden Belohnungen zu erhalten. Freischaltbedingungen: Erreiche Hauptburg-Level 10 und Kapitel 21."
+      ],
+      "new_features": [
+        "Neues Feature [Mount Skin]: Sammle die entsprechenden Splitter, um brandneue Mount Skins freizuschalten. (Erfordert freigeschaltetes Mount-System; Splitter werden im Event [Memory Tome] veröffentlicht; Attributsboni gelten universell, unabhängig davon, ob sie ausgerüstet sind oder nicht)",
+        "Feature [Exalted Sanctum] innerhalb von [Exalted Privilege] freigeschaltet: Wird nach dem Erhalt des [Exalted Collection] Tier 1 City Skins freigeschaltet, mit neuen Exalted Collection-Sets, die Tier 2-6 City Skins und andere Skin-Inhalte abdecken.",
+        "Feature [Equipment Recommendation] hinzugefügt: Empfiehlt entsprechende Basis-, Monster- und gesegnete Ausrüstung basierend auf dem Truppentyp des Helden.",
+        "Inhalte zur Kingdom Mayhem Conquest-Saison [Jormungand's Calamity] hinzugefügt: King's Shop (König kann diesen mit der neuen Fähigkeit [Royal Trade Decree] öffnen), Jotun Warzone & Tribe Jotun (Besetze Arenen, um Gladiatoren/Tribe Jotun zu beschwören), Blockade Tower (blockiert expandierendes Stadtgebiet) und Manor Treasury (Ertrag wird durch Einzahlungsdauer und Level bestimmt).",
+        "Update für das Event [Tribe Showdown]: Neues Feature [Commendation Order] während des Abrechnungszeitraums ab dem 6.7.; angepasste Stammes-Ranglistenbelohnungen für die S4-Saison (Juwelen-Drops für Gold-Ligen und höher hinzugefügt); wöchentliches Pop-up und Tab für den aktiven Kampfstatus hinzugefügt; Serverbereich wird schrittweise erweitert.",
+        "Neues Feature [Kingdom Imprisonment]: Der König kann Edelsteine ausgeben, um jeden beliebigen Häuptling in diesem Königreich gefangen zu nehmen. Dies verhindert deren Beitritt zu Kingdom Mayhem und sperrt sie auf ihren Stadtkoordinaten.",
+        "Neue Sortierungs- und Macht-Schwellenwerteinstellungen für Bewerber der [Kingdom Migration]: Der König kann den Mindestmachtwert für Migrationsanträge festlegen.",
+        "In Saison Sx und später wurden Quests für das Töten von Monstern per Rallye Dragon Crystal-Belohnungen hinzugefügt.",
+        "Anzeige von Juwelen-Informationen hinzugefügt, die von jedem Karawanen-Häuptling im Event [Escort Caravan] getragen werden.",
+        "Anzeige der Gesamtanzahl der Runden im aktuellen Kampf im [Battle Report] hinzugefügt.",
+        "[Kingdom Mayhem]-Ehrenanzeige in der [Tribe Honor Wall] hinzugefügt und das Gesamtlayout der Ehrenwand optimiert.",
+        "Neues Feature [Dragon Crystal Level Ranking]: Sortiert nach Festungs-Level, dann nach absteigender persönlicher Macht.",
+        "Neues Feature [Kingdom Strength Statistics] hinzugefügt.",
+        "Erklärungstooltip für die Königreich-Macht in [Kingdom Details] hinzugefügt."
+      ],
+      "optimizations": [
+        {
+          "title": "System and Feature Optimizations",
+          "items": [
+            "Verbrauch von [Migration Pass] für die Königreich-Migration angepasst: Der Verbrauch an Migrationspässen für mächtige/gewöhnliche/empfohlene Königreiche wurde stark reduziert.",
+            "Feature [Collector] optimiert: Level-Obergrenze nach der Sx-Saison auf 60 erhöht; Tabs [Bonus Overview] und [Level Rewards] hinzugefügt.",
+            "Monster-Sweep-Funktion optimiert: Bestätigungs-Pop-up für den Sweep und eine Schaltfläche [Sweep Again] hinzugefügt, um die nächste Runde schnell zu starten.",
+            "[Hero Talent Upgrade] optimiert: Die Bedingung, dass ein Held Level 10 erreichen muss, bevor Talente aufgewertet werden können, wurde entfernt.",
+            "Persönliche Missionsdaten in den [Kingdom Mayhem] Saison-Sx-Chroniken optimiert: Die Daten bleiben nun nach der Migration erhalten.",
+            "[mail]-Kategorien optimiert: Die ursprüngliche [King Mail] speichert jetzt nur noch handgeschriebene Briefe des Königs; eine neue Kategorie [Kingdom Notice] wurde für System-Mails hinzugefügt.",
+            "[Arena]-Fähigkeitendaten und Mount-Details-Tabs mit detaillierteren Statistiken zur Schadensquelle optimiert.",
+            "[Season Hero Ban Feature] optimiert: Detaillierte Eingabeaufforderungen erklären nun die gesperrten Fähigkeiten, Ausrüstungen und Heldennamen.",
+            "[Chat]-Feature optimiert, um Übersetzungen beim Zitieren von Nachrichten anderer zu unterstützen.",
+            "Benutzeroberfläche von [Conquest Quest] optimiert, indem eine Anzeige der Ausrüstungsliste hinzugefügt wurde, die aus den entsprechenden Monster-Drop-Materialien hergestellt werden kann.",
+            "Aufstiegs-Soundeffekte für [Rally Skin] hinzugefügt und die visuelle Darstellung der Rally Skin-Splittersymbole optimiert."
+          ]
+        },
+        {
+          "title": "Event and Balance Adjustments",
+          "items": [
+            "[Aegir's Feast] optimiert: Buff-Effekte wirken nun bis zum vollständigen Ende des Events; Kartendarstellung von Rally-Trupp-Symbolen optimiert; Nautische Truhen zeigen Symbole jetzt direkt auf der Karte.",
+            "Belohnungsinhalt des [Featured]-Rabatt-Shops angepasst.",
+            "Verwundetenbehandlung in [Battle of the Ruins] angepasst: Umgestellt auf die Verwendung von medizinischen Punkten, die sich mit der Zeit regenerieren, um schwer verwundete Truppen zu behandeln.",
+            "Buffs aus der [Dragon Crystal Research] für Garnisonsangriff, -verteidigung und -leben angepasst: Sie wirken jetzt beim Garnisonieren neutraler Gebäude.",
+            "[Chapter Mission] angepasst: Das Ziel [Kill Niflungs] wurde zu Kapitel 13 hinzugefügt.",
+            "Gegenstandstypen angepasst und Preise in mehreren Shops reduziert (Wandering Merchant, Skill Shop, Clan Shop, Prestige Shop, Glory Shop, Ruins Shop, Blood Pact Shop, Dominion Shop und Morreg Shop).",
+            "[Campaign Tech] in Sx- und späteren Saisons angepasst, um die Ressourcen-Behandlungskosten für Truppen höherer Stufen (T5-T10) zu reduzieren, was sich im Verlauf der Saison allmählich steigert.",
+            "Die sichtbaren Kapitel- und Stadtlevel-Schwellenwerte für einige frühe Events/Pakete wurden angepasst, um sie gleichmäßiger über den Entwicklungszeitraum zu verteilen.",
+            "Das Event [Monthly Purchase Special] wurde entfernt und durch ein offenes wöchentliches Kauf-Event ersetzt."
+          ]
+        }
+      ],
+      "fixes": [
+        "Mehrere Probleme in [Morreg's Perilous City] behoben, darunter das Flackern von Halbkörperporträts, verbleibende Truppen nach einer Niederlage, fehlerhafte Schadensaufzeichnungen der verteidigenden Lords, unzusammenhängende Übertragungen von Kill-Streaks, fehlerhafte Kampfzeiten für Städte im Kriegszustand, fehlerhafte Ankunftsaufzeichnungen der Supply Trucks, nicht gespeicherte Battle Report-Einstellungen, Anzeigefehler beim Eskort-Countdown und das Blockieren der Supply Trucks durch das zentrale Wunder.",
+        "Problem behoben, bei dem die Verwendung der schnellen Heldenaufstellung die Aufstellung nicht korrekt gespeichert hat.",
+        "Problem behoben, bei dem die Gegenstands-Eckmarkierung nach dem Umtausch von Dragon Crystals im Rabatt-Shop eine Menge von 0 anzeigte.",
+        "Problem mit der fehlerhaften Anzeige des Belohnungs-Pop-ups in [Magic Card Adventure] behoben.",
+        "Problem behoben, bei dem der Brenneffekt nach dem Besetzen einer Festung nicht verschwand.",
+        "Problem behoben, bei dem der Karawanen-Eskortwert in [Escort Caravan] falsch angezeigt wurde.",
+        "Problem in [Kingdom Mayhem - Surtr's Flames] behoben, bei dem die Größe des Wunder-Symbols fehlerhaft war, wenn Karten anderer Server angezeigt wurden.",
+        "Problem mit der fehlerhaften Anzeige der Chatliste in einigen Fällen im [Chat]-Feature behoben, sowie das Problem, dass eingegebene Inhalte gelöscht wurden, wenn andere Nachrichten zurückgezogen haben.",
+        "Problem behoben, bei dem die in der [Arena] angezeigte Macht nicht mit der tatsächlichen Macht der Verteidigungsaufstellung übereinstimmte.",
+        "Probleme in [Aegir's Feast] behoben, bei denen die Wasser-Umsiedlung blockiert war und Kriegsschiff-Symbole fehlerhaft angezeigt wurden.",
+        "Problem behoben, bei dem die Schaltfläche [Season Summon] fälschlicherweise ausgegraut war.",
+        "Problem behoben, bei dem der Auslösezeitpunkt der Anleitung für [Worker Commission]-Aufgaben fehlerhaft war.",
+        "Problem behoben, bei dem die Anzahl der Versuche zur Läuterung von Heldentalenten im [Battle Log] nicht mit der tatsächlichen Anzahl übereinstimmte.",
+        "Problem behoben, bei dem ein Skin nach dem Erhalt nicht in der Liste angezeigt wurde, wenn der entsprechende Held nicht im Besitz war.",
+        "Problem behoben, bei dem der Fortschrittsbalken in [Returns Overview] nicht angezeigt wurde, wenn der Rückkehrfortschritt noch nicht voll war.",
+        "Problem behoben, bei dem einige Ressourcenanzeigen im Stammeslager von [Aegir's Feast] über den Rahmen hinausgingen.",
+        "Einige Textprobleme wurden behoben."
+      ]
+    },
+    "cn": {
+      "major": [
+        "The [Sound of the North] series of events will soon be available. Let us draw close to nature and communicate with the gods through song, dance, and music. Unlock requirements: Reach Main Castle level 9, and Chapter 19.",
+        "The [Memory Tome] event will soon begin. With the Viking journey as its soul, it records longship voyages, Einherjar's Oath, and the legends of the gods, rekindling the immortal glory of the Vikings. Collect the full Card Album to obtain the corresponding rewards. Unlock requirements: Reach Main Castle level 10, and Chapter 21."
+      ],
+      "new_features": [
+        "New [Mount Skin] feature: Collect the corresponding Shards to unlock brand-new Mount Skins. (Requires Mount system unlocked; Shards released in [Memory Tome] event; attribute bonuses apply universally whether equipped or not)",
+        "Opened the [Exalted Sanctum] feature within [Exalted Privilege]: Unlocks after obtaining the [Exalted Collection] Tier 1 City Skin, with new Exalted Collection sets covering Tier 2-6 City Skins and other Skin content.",
+        "Added the [Equipment Recommendation] feature: Recommends corresponding basic, monster, and blessed equipment based on hero troop type.",
+        "Added content to the Kingdom Mayhem Conquest Season [Jormungand's Calamity]: King's Shop (King can open using the new [Royal Trade Decree] skill), Jotun Warzone & Tribe Jotun (occupy arenas to summon Gladiators/Tribe Jotun), Blockade Tower (blocks expanding City Territory), and Manor Treasury (yield determined by deposit period and level).",
+        "Update to the [Tribe Showdown] event: New [Commendation Order] feature during settlement period starting on 7/6; adjusted S4 Season Tribe Ranking rewards (Jewel drops added for Gold Leagues and above); added weekly active battle status pop-up and tab; server range to be gradually expanded.",
+        "New [Kingdom Imprisonment]: The King can spend Gems to imprison any Chief in this Kingdom, preventing them from entering Kingdom Mayhem and locking them at their City coordinates.",
+        "New sorting and Might threshold settings for [Kingdom Migration] applicants: The King can set the minimum Might value for migration applications.",
+        "In Season Sx and later, Dragon Crystal rewards have been added to quests for rally killing monsters.",
+        "Added display of Jewel information worn by each Caravan Chief in the [Escort Caravan] event.",
+        "Added display of the total number of rounds in the current battle in [Battle Report].",
+        "Added [Kingdom Mayhem] honor display in the [Tribe Honor Wall] and optimized the overall layout of the Honor Wall.",
+        "New [Dragon Crystal Level Ranking] feature: Ranked by Stronghold level, then by descending personal Might.",
+        "New [Kingdom Strength Statistics] feature.",
+        "Added a Kingdom Might explanation tooltip in [Kingdom Details]."
+      ],
+      "optimizations": [
+        {
+          "title": "System and Feature Optimizations",
+          "items": [
+            "Adjusted Kingdom migration [Migration Pass] consumption: Greatly reduced migration pass consumption for powerful/common/recommended Kingdoms.",
+            "Optimized the [Collector] feature: Level cap increased to 60 after Sx season; added [Bonus Overview] and [Level Rewards] tabs.",
+            "Optimized the Monster Sweep feature: Added Sweep confirmation pop-up and a [Sweep Again] button to quickly start the next round.",
+            "Optimized [Hero Talent Upgrade]: Removed the requirement that a Hero must reach level 10 before upgrading Talents.",
+            "Optimized Personal Mission data in the [Kingdom Mayhem] Season Sx Chronicles: Data is now retained after migration.",
+            "Optimized [mail] categories: Original [King Mail] now only stores handwritten mails from the King; a new [Kingdom Notice] category has been added for system mails.",
+            "Optimized [Arena] skill data and Mount details tabs with more detailed damage source statistics.",
+            "Optimized [Season Hero Ban Feature]: Detailed prompts now display explaining the banned skills, equipment, and Hero names.",
+            "Optimized [Chat] feature to support translation when quoting others' messages.",
+            "Optimized the [Conquest Quest] interface, adding a display of the equipment list that can be crafted from the corresponding monster drop materials.",
+            "Added Ascend sound effects for [Rally Skin] and optimized the visual presentation of Rally Skin Shard icons."
+          ]
+        },
+        {
+          "title": "Event and Balance Adjustments",
+          "items": [
+            "Optimized [Aegir's Feast]: buff effects now extend until the event fully closes; optimized map display of rally squad icons; Nautical Chests now show icons directly on the map.",
+            "Adjusted reward content of the [Featured] Rebate Shop.",
+            "Adjusted wounded treatment in [Battle of the Ruins]: changed to using medical points that recover over time to treat heavily wounded troops.",
+            "Adjusted buffs from [Dragon Crystal Research] to garrison attack, defense, and health: they now take effect when garrisoning neutral buildings.",
+            "Adjusted [Chapter Mission]: Added the objective [Kill Niflungs] to Chapter 13.",
+            "Adjusted item types and reduced prices in multiple shops (Wandering Merchant, Skill Shop, Clan Shop, Prestige Shop, Glory Shop, Ruins Shop, Blood Pact Shop, Dominion Shop, and Morreg Shop).",
+            "Adjusted [Campaign Tech] in Sx and later seasons to reduce resource treatment costs for higher-tier troops (T5-T10) gradually increasing with the season.",
+            "Adjusted the visible chapter and city level thresholds for some early events/packs to distribute them more evenly across the development timeline.",
+            "Removed the [Monthly Purchase Special] event and replaced it with an open weekly purchase event."
+          ]
+        }
+      ],
+      "fixes": [
+        "Fixed multiple issues in [Morreg's Perilous City], including half-body portrait flickering, troops remaining after defeat, incorrect defending lord damage records, discontinuous kill streak broadcasts, incorrect battle times for declared-war cities, incorrect Supply Truck arrival records, unsaved Battle Report settings, display errors for the escort countdown, and the central wonder blocking the Supply Truck.",
+        "Fixed the issue where using quick Hero lineup did not correctly save the lineup.",
+        "Fixed the issue where the item corner marker displayed a quantity of 0 after exchanging Dragon Crystals in the Rebate Shop.",
+        "Fixed the abnormal display issue of the reward pop-up in [Magic Card Adventure].",
+        "Fixed the issue where the burning effect did not disappear after occupying a Fort.",
+        "Fixed the issue where the Caravan escort value was displayed incorrectly in [Escort Caravan].",
+        "Fixed the issue in [Kingdom Mayhem - Surtr's Flames] where the wonder icon size was incorrect when viewing the maps of other servers.",
+        "Fixed the abnormal display of the chat list in some cases in the [Chat] feature, as well as the issue where input content was cleared when others recalled messages.",
+        "Fixed the issue where the Might displayed in [Arena] was inconsistent with the actual Might of the Defense Lineup.",
+        "Fixed the issues in [Aegir's Feast] where water relocation was blocked and Warship icons were displayed incorrectly.",
+        "Fixed the issue where the [Season Summon] button was incorrectly grayed out.",
+        "Fixed the issue where the trigger timing of the [Worker Commission] errand guide was incorrect.",
+        "Fixed the issue where the number of Hero Talent purify attempts in the [Battle Log] was inconsistent with the actual number.",
+        "Fixed the issue where a Skin was not displayed on the list after being obtained when the corresponding Hero was not owned.",
+        "Fixed the issue where the progress bar was not displayed in [Returns Overview] when the return progress was not yet full.",
+        "Fixed the issue where some resource displays in the Tribe Warehouse of [Aegir's Feast] exceeded the frame.",
+        "Fixed some text issues."
+      ]
+    },
+    "ru": {
+      "major": [
+        "Скоро начнется серия событий [Sound of the North]. Давайте станем ближе к природе и пообщаемся с богами с помощью песен, танцев и музыки. Требования для разблокировки: уровень Главного замка 9 и глава 19.",
+        "Скоро начнется событие [Memory Tome]. Неся в себе душу походов викингов, оно запечатлело плавания драккаров, Einherjar's Oath и легенды о богах, вновь разжигая бессмертную славу викингов. Соберите весь альбом карт, чтобы получить соответствующие награды. Требования для разблокировки: уровень Главного замка 10 и глава 21."
+      ],
+      "new_features": [
+        "Новая функция [Mount Skin]: собирайте соответствующие осколки, чтобы разблокировать новые облики маунтов. (Требуется разблокированная система маунтов; осколки можно получить в событии [Memory Tome]; бонусы к характеристикам применяются всегда, независимо от того, экипирован облик или нет)",
+        "Открыта функция [Exalted Sanctum] внутри [Exalted Privilege]: открывается после получения облика города [Exalted Collection] ранга 1, с новыми наборами Exalted Collection, охватывающими облики города рангов 2–6 и другой контент обликов.",
+        "Добавлена функция [Equipment Recommendation]: рекомендует базовое снаряжение, снаряжение против монстров и благословенное снаряжение на основе типа войск героя.",
+        "Добавлен контент в сезон завоеваний Kingdom Mayhem [Jormungand's Calamity]: King's Shop (король может открыть его с помощью нового навыка [Royal Trade Decree]), Jotun Warzone и Tribe Jotun (захватывайте арены для призыва гладиаторов/Tribe Jotun), Blockade Tower (блокирует расширение территории города) и Manor Treasury (доход зависит от периода вклада и уровня).",
+        "Обновление события [Tribe Showdown]: новая функция [Commendation Order] во время периода подведения итогов, начиная с 6 июля; скорректированы награды рейтинга племен сезона S4 (добавлен шанс выпадения Jewel для Gold Leagues и выше); добавлено еженедельное всплывающее окно и вкладка активного боевого статуса; диапазон серверов будет постепенно расширяться.",
+        "Новое событие [Kingdom Imprisonment]: король может потратить Gems, чтобы заточить в тюрьму любого Chief в этом королевстве, не позволяя ему войти в Kingdom Mayhem и заблокировав его на координатах города.",
+        "Новые настройки сортировки и порога Might для заявителей на [Kingdom Migration]: король может установить минимальное значение Might для заявок на миграцию.",
+        "В сезоне Sx и более поздних награды Dragon Crystal были добавлены в задания за убийство монстров в сборе.",
+        "Добавлено отображение информации о Jewel, которые использует каждый Caravan Chief в событии [Escort Caravan].",
+        "Добавлено отображение общего количества раундов текущего боя в [Battle Report].",
+        "Добавлено отображение чести Kingdom Mayhem на [Tribe Honor Wall] и оптимизирован общий интерфейс Стены почета.",
+        "Новая функция [Dragon Crystal Level Ranking]: рейтинг по уровню Stronghold, затем по убыванию личного Might.",
+        "Новая функция [Kingdom Strength Statistics].",
+        "Добавлена всплывающая подсказка с объяснением Kingdom Might в [Kingdom Details]."
+      ],
+      "optimizations": [
+        {
+          "title": "Оптимизация систем и функций",
+          "items": [
+            "Скорректировано потребление [Migration Pass] для миграции королевства: значительно снижено потребление свитков миграции для могущественных/обычных/рекомендуемых королевств.",
+            "Оптимизирована функция [Collector]: максимальный уровень увеличен до 60 после сезона Sx; добавлены вкладки [Bonus Overview] и [Level Rewards].",
+            "Оптимизирована функция быстрой победы над монстрами: добавлено всплывающее окно подтверждения быстрой победы и кнопка [Sweep Again] для быстрого запуска следующего раунда.",
+            "Оптимизировано [Hero Talent Upgrade]: удалено требование о том, что герой должен достичь уровня 10 перед улучшением талантов.",
+            "Оптимизированы данные личных миссий в хрониках сезона Sx Kingdom Mayhem: данные теперь сохраняются после миграции.",
+            "Оптимизированы категории [mail]: в исходной [King Mail] теперь хранятся только написанные вручную письма от короля; добавлена новая категория [Kingdom Notice] для системных писем.",
+            "Оптимизированы данные навыков [Arena] и вкладки информации о маунтах с более подробной статистикой источников урона.",
+            "Оптимизирована функция [Season Hero Ban Feature]: теперь отображаются подробные подсказки с объяснением заблокированных навыков, снаряжения и имен героев.",
+            "Оптимизирована функция [Chat]: добавлена поддержка перевода при цитировании сообщений других игроков.",
+            "Оптимизирован интерфейс [Conquest Quest]: добавлено отображение списка снаряжения, которое можно изготовить из материалов, выпадающих из соответствующих монстров.",
+            "Добавлены звуковые эффекты Ascend для [Rally Skin] и оптимизировано визуальное представление значков Rally Skin Shard."
+          ]
+        },
+        {
+          "title": "Изменения событий и баланса",
+          "items": [
+            "Оптимизировано [Aegir's Feast]: эффекты усилений теперь действуют до полного закрытия события; оптимизировано отображение значков отрядов сбора на карте; Nautical Chests теперь показывают значки прямо на карте.",
+            "Скорректировано содержимое наград магазина скидок [Featured].",
+            "Скорректировано лечение раненых в [Battle of the Ruins]: теперь для лечения тяжелораненых войск используются медицинские очки, которые восстанавливаются со временем.",
+            "Скорректированы усиления от [Dragon Crystal Research] к атаке, обороне и здоровью гарнизона: теперь они вступают в силу при размещении гарнизона в нейтральных зданиях.",
+            "Скорректирована [Chapter Mission]: добавлена цель [Kill Niflungs] в главу 13.",
+            "Скорректированы типы предметов и снижены цены в нескольких магазинах (Wandering Merchant, Skill Shop, Clan Shop, Prestige Shop, Glory Shop, Ruins Shop, Blood Pact Shop, Dominion Shop и Morreg Shop).",
+            "Скорректирована [Campaign Tech] в сезоне Sx и более поздних, чтобы снизить стоимость лечения ресурсами для войск более высоких рангов (T5-T10), которая постепенно увеличивается с сезоном.",
+            "Скорректированы видимые пороги глав и уровней города для некоторых ранних событий/наборов, чтобы распределить их более равномерно по шкале развития.",
+            "Удалено событие [Monthly Purchase Special], оно заменено открытым событием еженедельных покупок."
+          ]
+        }
+      ],
+      "fixes": [
+        "Исправлено несколько проблем в [Morreg's Perilous City], включая мерцание портрета в пол-роста, оставшиеся войска после поражения, некорректные записи урона обороняющегося лорда, прерывистые трансляции серий убийств, некорректное время боя для городов с объявленной войной, некорректные записи прибытия Supply Truck, несохраненные настройки Battle Report, ошибки отображения таймера сопровождения и блокирование Supply Truck центральным чудом.",
+        "Исправлена ошибка, из-за которой использование быстрого состава героев не сохраняло состав корректно.",
+        "Исправлена ошибка, из-за которой угловой маркер предмета отображал количество 0 после обмена Dragon Crystals в магазине скидок.",
+        "Исправлена ошибка некорректного отображения всплывающего окна наград в [Magic Card Adventure].",
+        "Исправлена ошибка, из-за которой эффект горения не исчезал после захвата Fort.",
+        "Исправлена ошибка, из-за которой стоимость сопровождения каравана отображалась некорректно в [Escort Caravan].",
+        "Исправлена ошибка в [Kingdom Mayhem - Surtr's Flames], из-за которой размер значка чуда был некорректным при просмотре карт других серверов.",
+        "Исправлено некорректное отображение списка чатов в некоторых случаях в функции [Chat], а также ошибка, из-за которой введенный текст очищался, когда другие пользователи отзывали сообщения.",
+        "Исправлена ошибка, из-за которой Might, отображаемая в [Arena], не соответствовала фактической Might для Defense Lineup.",
+        "Исправлены ошибки в [Aegir's Feast], из-за которых перемещение по воде было заблокировано, а значки Warship отображались некорректно.",
+        "Исправлена ошибка, из-за которой кнопка [Season Summon] была неактивна (серая).",
+        "Исправлена ошибка, из-за которой время запуска руководства по поручениям [Worker Commission] было некорректным.",
+        "Исправлена ошибка, из-за которой количество попыток очищения талантов героя в [Battle Log] не соответствовало фактическому количеству.",
+        "Исправлена ошибка, из-за которой облик не отображался в списке после получения, если соответствующий герой отсутствовал.",
+        "Исправлена ошибка, из-за которой полоса прогресса не отображалась в [Returns Overview], когда прогресс возврата еще не был заполнен полностью.",
+        "Исправлена ошибка, из-за которой некоторые отображения ресурсов в Tribe Warehouse в [Aegir's Feast] выходили за рамки.",
+        "Исправлены некоторые текстовые ошибки."
+      ]
+    }
+  },
+  {
     "id": "update_27_05_2025_268371",
     "meta": {
       "created_at": "2026-06-03T09:16:53.530000Z",
