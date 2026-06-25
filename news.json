@@ -1,5 +1,29 @@
 [
   {
+    "id": "1519643986510352425",
+    "date": "25. Jun 2026",
+    "image": "",
+    "code": null,
+    "expiry": null,
+    "link": null,
+    "en": {
+      "title": "Kingdom Migration System Updates",
+      "content": "New updates have been made to the Kingdom Migration system in Viking Rise! To make migration more accessible and flexible, Migration Pass consumption has been significantly reduced for Powerful, Common, and Recommended Kingdoms. In addition, Kings can now set a minimum Might requirement for migration applicants, allowing for better management of incoming migrations. Be sure to review the latest Migration Cost document and migration requirements carefully before planning your next move! However, do take note that the document is for reference only. For final details regarding the Kingdom Migration costs and requirements, please kindly check the corresponding details in-game."
+    },
+    "de": {
+      "title": "Updates für das Kingdom Migration-System",
+      "content": "Es gibt neue Updates für das Kingdom Migration-System in Viking Rise! Um die Migration zugänglicher und flexibler zu gestalten, wurde der Verbrauch von Migration Passes für Powerful, Common und Recommended Kingdoms erheblich reduziert. Zudem können Kings nun eine Mindestanforderung an Might für Migrationsbewerber festlegen, was eine bessere Verwaltung eingehender Migrationen ermöglicht. Sieh dir das neueste Migration Cost-Dokument und die Migrationsanforderungen sorgfältig an, bevor du deinen nächsten Schritt planst! Bitte beachte jedoch, dass das Dokument nur als Referenz dient. Die endgültigen Details zu den Kosten und Anforderungen der Kingdom Migration entnimmst du bitte den entsprechenden Details im Spiel."
+    },
+    "cn": {
+      "title": "Kingdom Migration系统更新",
+      "content": "Viking Rise中的Kingdom Migration系统迎来了全新更新！为了让迁徙更加便利和灵活，Powerful、Common和Recommended Kingdoms的Migration Pass消耗已大幅减少。此外，国王现在可以为迁徙申请者设置最低Might要求，从而更好地管理迁入的移民。在计划下一次行动之前，请务必仔细阅读最新的Migration Cost文档和迁徙要求！但是，请注意，该文档仅供参考。关于Kingdom Migration费用和要求的最终详情，请在游戏内查看相应的信息。"
+    },
+    "ru": {
+      "title": "Обновления системы Kingdom Migration",
+      "content": "В системе Kingdom Migration в Viking Rise произошли новые обновления! Чтобы сделать миграцию более доступной и гибкой, потребление Migration Pass было значительно снижено для королевств Powerful, Common и Recommended. Кроме того, теперь Короли могут устанавливать минимальное требование к Might для кандидатов на миграцию, что позволяет лучше управлять входящей миграцией. Обязательно внимательно изучите последний документ Migration Cost и требования к миграции, прежде чем планировать свой следующий шаг! Однако обратите внимание, что этот документ предназначен только для ознакомления. Для получения окончательной информации о стоимости и требованиях Kingdom Migration, пожалуйста, ознакомьтесь с соответствующими подробностями в игре."
+    }
+  },
+  {
     "id": "1518637750314598400",
     "date": "22. Jun 2026",
     "image": "images/news/1518637750314598400.jpg",
