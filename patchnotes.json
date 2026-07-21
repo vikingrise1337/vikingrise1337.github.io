@@ -1,5 +1,295 @@
 [
   {
+    "id": "update_22_07_2024_267139",
+    "meta": {
+      "created_at": "2026-07-21T18:20:23.128000Z",
+      "start_timestamp": "2024-07-22T06:00:00.000000Z",
+      "display_time": "7/22 06:00 - 07:00 (UTC)",
+      "title_en": "Update 22.07.2024",
+      "title_de": "Update vom 22.07.2024",
+      "title_cn": "更新 22.07.2024",
+      "title_ru": "Обновление 22.07.2024",
+      "image_url": "",
+      "image_urls": []
+    },
+    "en": {
+      "major": [
+        "The [Goldrush Journey] is about to begin. Participate in the event to obtain rewards such as main castle skins, decor items, nameplates, and more.",
+        "The [Tidal Pearl Contest] will soon be available. Raise your axes, break through the tides, and bravely seize the pearls!",
+        "The [Wolf King Battle] is coming soon. The Wolf King has appeared. Quickly dispatch your troops and march to fight it!",
+        "The [Romaría Vikinga] event is coming soon!"
+      ],
+      "new_features": [
+        "Added skill availability in the Expedition Shop for [Kingdom Mayhem · Jormungand's Calamity]: Inferno Dance, Gungnir's Sting, and Serpent's Rampage.",
+        "Added the [Editable Reinforcement Troop Limit] function to the tribe [Preset Tribe Flag Towers].",
+        "Before entering Kingdom Mayhem Season 1, added the [Tribe Assemble Point] feature.",
+        "Added [Fortune Gifts] to some events, allowing surprise prizes to be automatically shared to the Alliance chat channel.",
+        "Added [Caravan Refresh Vouchers] to refresh personal caravan quality.",
+        "The [Pool Party] skin set and the [Temple Festival] event pack nameplate will return soon."
+      ],
+      "optimizations": [
+        {
+          "title": "Memory Tome and Aegir's Feast Optimizations",
+          "items": [
+            "Optimized the interaction logic of [Tribe Exchange] in [Memory Tome]. Published exchange information can now be removed and modified at any time.",
+            "Adjusted some war timings, ruins battle period, protection time, maximum number of players who can occupy manors, and transport speed of warship chests in [Aegir's Feast]."
+          ]
+        },
+        {
+          "title": "General System and Interface Optimizations",
+          "items": [
+            "Optimized [Morreg's Perilous City]. The world map warning function is now enabled within the event as well.",
+            "Optimized the tribe atmosphere by adding feedback for Likes and Tribe Assist effects; added a Tribe invite link to settings and menu.",
+            "Optimized the [Red Packet] function by adding Red Packet Likes and a display of the Red Packet claim limit.",
+            "Optimized the [Like] function. Added Like count display to the Details interface, and accumulated Like counts will not reset.",
+            "Optimized the [Crystal Trove] function with player ID display and an application function.",
+            "Optimized the speedup navigation logic for task queues.",
+            "Optimized the content of the resource replenishment pop-up and added navigation to obtain corresponding items.",
+            "Optimized the wall durability display in battle reports and reinforcement pop-up interfaces during [Kingdom Mayhem] series seasons.",
+            "Optimized the item fusing interface in the [Smithy] by adding material quantity display.",
+            "Optimized the hero talent upgrade interface. Core talents now display the corresponding special frame.",
+            "Adjusted the content and rules in the [Tribe Shop].",
+            "Optimized the display effects of item icons and hero icon quality background colors.",
+            "Adjusted the rewards for some stages of [Distant Voyage].",
+            "Adjusted the usage rules for Prosperity Points items: items will be used automatically after being obtained.",
+            "Adjusted Staging Post rewards: random rewards from Staging Post Quests at Prestige Lv. 6 and above have been adjusted to Staging Post Fortune Chests."
+          ]
+        }
+      ],
+      "fixes": [
+        "Fixed an issue where the countdown days in [Supply Shop] were incorrect.",
+        "Fixed an issue where quoted content in [Chat] was incorrect.",
+        "Fixed an issue where flag effects in the [Arena] were not displayed properly.",
+        "Fixed an issue where the Manor quantity display overlapped when occupying Manors in [Kingdom Mayhem].",
+        "Fixed an issue where tapping the [?] button in [Skins] behaved abnormally.",
+        "Fixed an issue where the avatar in [Morreg's Perilous City] broadcasts did not match the actual player.",
+        "Fixed an issue where all-season heroes could be seen in some gameplay events.",
+        "Fixed an issue where mount skill upgrade progress was displayed incorrectly.",
+        "Fixed an issue where calendar rewards were displayed incorrectly in the preparation event for [Kingdom Mayhem-Jormungand's Calamity].",
+        "Fixed an issue in [Kingdom Mayhem-Jormungand's Calamity] where forts could be built in advance before occupying ruins.",
+        "Fixed an issue where the selected quality in [Rune Search] was opposite to the actual quality.",
+        "Fixed an issue in [Pirate's Gamble] where task chests could appear without a countdown.",
+        "Fixed an issue in [Pirate's Gamble] where claiming rewards after completing tasks would abnormally prompt that the task was not completed.",
+        "Fixed an issue in [Aegir's Feast] where there was no prompt when chests dropped by monsters blocked city relocation.",
+        "Fixed an issue in [Blood Oath War] where the side color changed abnormally after leaving the Tribe.",
+        "Fixed a display issue with the building details interface in [Blood Oath War].",
+        "Fixed an issue in the [Migration] function where a prompt incorrectly displayed that the Might requirement was not met despite meeting it.",
+        "Fixed an issue in [Skills] where skill information in the recommended skill replacement pop-up did not match the actual skill.",
+        "Fixed an issue where after a [Triggered Pack] popped up, the pack contents disappeared after jumping to another interface and returning.",
+        "Fixed an issue where in [Clearing Dangers], under poor network conditions, tapping [View More] caused a display error on the leaderboard.",
+        "Fixed some text issues.",
+        "Fixed some red dot display issues."
+      ]
+    },
+    "de": {
+      "major": [
+        "Die [Goldrush Journey] beginnt bald. Nimm am Event teil, um Belohnungen wie Hauptburgen-Skins, Deko-Gegenstände, Namensschilder und mehr zu erhalten.",
+        "Der [Tidal Pearl Contest] ist bald verfügbar. Erhebt eure Äxte, brecht durch die Gezeiten und erobert mutig die Perlen!",
+        "Der [Wolf King Battle] steht kurz bevor. Der Wolfskönig ist erschienen. Entsende schnell deine Truppen und marschiere, um gegen ihn zu kämpfen!",
+        "Das Event [Romaría Vikinga] beginnt bald!"
+      ],
+      "new_features": [
+        "Fähigkeitenverfügbarkeit im Expedition Shop für [Kingdom Mayhem · Jormungand's Calamity] hinzugefügt: Inferno Dance, Gungnir's Sting und Serpent's Rampage.",
+        "Die Funktion [Editable Reinforcement Troop Limit] zum Stamm [Preset Tribe Flag Towers] hinzugefügt.",
+        "Vor dem Betreten von Kingdom Mayhem Season 1 wurde die Funktion [Tribe Assemble Point] hinzugefügt.",
+        "[Fortune Gifts] zu einigen Events hinzugefügt, wodurch Überraschungspreise automatisch im Allianzkanal geteilt werden.",
+        "[Caravan Refresh Vouchers] hinzugefügt, um die Qualität der persönlichen Karawane zu aktualisieren.",
+        "Das Skin-Set [Pool Party] und das Namensschild des Event-Pakets [Temple Festival] kehren bald zurück."
+      ],
+      "optimizations": [
+        {
+          "title": "Memory Tome und Aegir's Feast Optimierungen",
+          "items": [
+            "Die Interaktionslogik von [Tribe Exchange] im [Memory Tome] optimiert. Veröffentlichte Tauschinformationen können nun jederzeit entfernt und geändert werden.",
+            "Einige Kriegszeiten, die Kampfperiode der Ruinen, die Schutzzeit, die maximale Anzahl von Spielern, die Herrenhäuser besetzen können, und die Transportgeschwindigkeit von Kriegsschiff-Truhen in [Aegir's Feast] angepasst."
+          ]
+        },
+        {
+          "title": "Allgemeine System- und Oberflächenoptimierungen",
+          "items": [
+            "[Morreg's Perilous City] optimiert. Die Weltkarten-Warnfunktion ist nun auch innerhalb des Events aktiviert.",
+            "Die Stamm-Atmosphäre optimiert, indem Feedback für Likes und Tribe Assist-Effekte hinzugefügt wurde; ein Stamm-Einladungslink wurde zu den Einstellungen und dem Menü hinzugefügt.",
+            "Die Funktion [Red Packet] optimiert, indem Red Packet Likes und eine Anzeige des Red Packet-Anspruchslimits hinzugefügt wurden.",
+            "Die Funktion [Like] optimiert. Die Anzeige der Like-Anzahl zur Detail-Schnittstelle hinzugefügt, und angesammelte Like-Anzahlen werden nicht zurückgesetzt.",
+            "Die Funktion [Crystal Trove] mit Spielerkennungsanzeige und einer Bewerbungsfunktion optimiert.",
+            "Die Beschleunigungs-Navigationslogik für Aufgaben-Warteschlangen optimiert.",
+            "Den Inhalt des Ressourcen-Auffüllungs-Pop-ups optimiert und Navigation zum Erhalt entsprechender Gegenstände hinzugefügt.",
+            "Die Anzeige der Wandhaltbarkeit in Kampfberichten und Verstärkungs-Pop-up-Schnittstellen während der Saisons der [Kingdom Mayhem]-Serie optimiert.",
+            "Die Gegenstands-Schmelz-Schnittstelle in der [Smithy] durch Hinzufügen der Materialmengenanzeige optimiert.",
+            "Die Helden-Talent-Upgrade-Schnittstelle optimiert. Kern-Talente zeigen nun den entsprechenden Spezialrahmen an.",
+            "Den Inhalt und die Regeln im [Tribe Shop] angepasst.",
+            "Die Anzeigeeffekte von Gegenstandssymbolen und den Hintergrundfarben der Heldensymbol-Qualität angepasst.",
+            "Die Belohnungen für einige Phasen von [Distant Voyage] angepasst.",
+            "Die Nutzungsregeln für Wohlstandspunkte-Gegenstände angepasst: Gegenstände werden nach dem Erhalt automatisch verwendet.",
+            "Die Posten-Belohnungen angepasst: Zufällige Belohnungen von Posten-Quests ab Prestige-Stufe 6 und höher wurden zu Posten-Glückstruhen angepasst."
+          ]
+        }
+      ],
+      "fixes": [
+        "Ein Problem wurde behoben, bei dem die Countdown-Tage im [Supply Shop] falsch waren.",
+        "Ein Problem wurde behoben, bei dem zitierter Inhalt im [Chat] falsch war.",
+        "Ein Problem wurde behoben, bei dem Flaggen-Effekte in der [Arena] nicht richtig angezeigt wurden.",
+        "Ein Problem wurde behoben, bei dem sich die Herrenhaus-Mengenanzeige beim Besetzen von Herrenhäusern in [Kingdom Mayhem] überschnitt.",
+        "Ein Problem wurde behoben, bei dem das Tippen auf die Schaltfläche [?] in [Skins] abnormal funktionierte.",
+        "Ein Problem wurde behoben, bei dem der Avatar in den Broadcasts von [Morreg's Perilous City] nicht dem tatsächlichen Spieler entsprach.",
+        "Ein Problem wurde behoben, bei dem Ganzjahres-Helden in einigen Gameplay-Events zu sehen waren.",
+        "Ein Problem wurde behoben, bei dem der Fortschritt des Reittier-Fähigkeiten-Upgrades falsch angezeigt wurde.",
+        "Ein Problem wurde behoben, bei dem Kalender-Belohnungen im Vorbereitungs-Event für [Kingdom Mayhem-Jormungand's Calamity] falsch angezeigt wurden.",
+        "Ein Problem in [Kingdom Mayhem-Jormungand's Calamity] wurde behoben, bei dem Festungen im Voraus gebaut werden konnten, bevor Ruinen besetzt wurden.",
+        "Ein Problem wurde behoben, bei dem die ausgewählte Qualität in der [Rune Search] der tatsächlichen Qualität entgegengesetzt war.",
+        "Ein Problem in [Pirate's Gamble] wurde behoben, bei dem Aufgabentruhen ohne Countdown erscheinen konnten.",
+        "Ein Problem in [Pirate's Gamble] wurde behoben, bei dem das Beanspruchen von Belohnungen nach Abschluss von Aufgaben fälschlicherweise anzeigte, dass die Aufgabe nicht abgeschlossen sei.",
+        "Ein Problem in [Aegir's Feast] wurde behoben, bei dem es keinen Hinweis gab, wenn von Monstern fallen gelassene Truhen die Stadtsiedlung blockierten.",
+        "Ein Problem im [Blood Oath War] wurde behoben, bei dem sich die Seitenfarbe nach dem Verlassen des Stammes abnormal änderte.",
+        "Ein Anzeigeproblem mit der Gebäudedetail-Schnittstelle im [Blood Oath War] wurde behoben.",
+        "Ein Problem in der Funktion [Migration] wurde behoben, bei dem fälschlicherweise angezeigt wurde, dass die Machtvoraussetzung nicht erfüllt sei, obwohl sie erfüllt war.",
+        "Ein Problem in [Skills] wurde behoben, bei dem die Fähigkeiteninformationen im empfohlenen Fähigkeiten-Austausch-Pop-up nicht mit der tatsächlichen Fähigkeit übereinstimmten.",
+        "Ein Problem wurde behoben, bei dem nach dem Aufpoppen eines [Triggered Pack] die Paketinhalte verschwanden, nachdem man zu einer anderen Schnittstelle gewechselt und zurückgekehrt war.",
+        "Ein Problem wurde behoben, bei dem unter schlechten Netzwerkbedingungen in [Clearing Dangers] das Tippen auf [View More] zu einem Anzeigefehler in der Bestenliste führte.",
+        "Einige Textprobleme wurden behoben.",
+        "Einige Probleme bei der Anzeige von roten Punkten wurden behoben."
+      ]
+    },
+    "cn": {
+      "major": [
+        "[淘金之旅]即将开启。参与活动即可获得主城皮肤、装饰物品、名牌等丰富奖励。",
+        "[潮汐明珠大赛]即将上线。举起战斧，破浪前行，勇敢夺取明珠吧！",
+        "[狼王之战]即将到来。狼王现身，速速派遣部队前往迎战！",
+        "[维京狂欢节]活动即将开启！"
+      ],
+      "new_features": [
+        "在远征商店的[王国乱斗·耶梦加得的天灾]中新增了技能获取：地狱之舞、冈格尼尔之刺和巨蟒暴走。",
+        "在部落[预设部落旗帜塔]中新增了[可编辑增援部队上限]功能。",
+        "在进入王国乱斗第1赛季前，新增了[部落集结地]功能。",
+        "部分活动中新增了[幸运礼包]，可将惊喜奖品自动分享至联盟聊天频道。",
+        "新增[商队刷新券]，用于刷新个人商队品质。",
+        "[泳池派对]皮肤套装与[庙会节]活动礼包名牌即将返场。"
+      ],
+      "optimizations": [
+        {
+          "title": "记忆法典与埃吉尔盛宴优化",
+          "items": [
+            "优化了[记忆法典]中[部落兑换]的交互逻辑。已发布的兑换信息现在可以随时撤回和修改。",
+            "调整了[埃吉尔盛宴]中的部分战争时间、遗迹战期、保护时间、庄园最大占领人数以及战舰宝箱的运输速度。"
+          ]
+        },
+        {
+          "title": "通用系统与界面优化",
+          "items": [
+            "优化了[莫雷格的险恶之城]。世界地图警告功能现在在活动内也将生效。",
+            "优化了部落氛围，新增了点赞和部落协助效果的反馈；在设置和菜单中新增了部落邀请链接。",
+            "优化了[红包]功能，新增了红包点赞及红包领取上限显示。",
+            "优化了[点赞]功能。详情界面新增了点赞数显示，且累计点赞数不会重置。",
+            "优化了[水晶宝藏]功能，新增了玩家ID显示和申请功能。",
+            "优化了任务队列的加速导航逻辑。",
+            "优化了资源补给弹窗的内容，并新增了获取对应道具的导航。",
+            "优化了[王国乱斗]系列赛季中战报和增援弹窗界面的城墙耐久度显示。",
+            "优化了[铁匠铺]中的道具合成界面，新增了材料数量显示。",
+            "优化了英雄天赋升级界面。核心天赋现在会显示对应的特殊边框。",
+            "调整了[部落商店]中的内容和规则。",
+            "优化了道具图标和英雄图标品质背景颜色的显示效果。",
+            "调整了[远航]部分关卡的奖励。",
+            "调整了繁荣度道具的使用规则：道具获取后将自动使用。",
+            "调整了驿站奖励：声望6级及以上的驿站任务随机奖励已调整为驿站幸运宝箱。"
+          ]
+        }
+      ],
+      "fixes": [
+        "修复了[物资商店]倒计时天数不正确的问题。",
+        "修复了[聊天]中引用内容不正确的问题。",
+        "修复了[竞技场]中旗帜效果显示不正常的问题。",
+        "修复了在[王国乱斗]中占领庄园时，庄园数量显示重叠的问题。",
+        "修复了点击[皮肤]中的[?]按钮时表现异常的问题。",
+        "修复了[莫雷格的险恶之城]广播中的头像与实际玩家不符的问题。",
+        "修复了部分玩法活动中可以看到全赛季英雄的问题。",
+        "修复了坐骑技能升级进度显示不正确的问题。",
+        "修复了[王国乱斗-耶梦加得的天灾]预热活动中日历奖励显示不正确的问题。",
+        "修复了在[王国乱斗-耶梦加得的天灾]中，占领遗迹前可以提前建造堡垒的问题。",
+        "修复了[符文搜寻]中选择的品质与实际品质相反的问题。",
+        "修复了[海盗赌局]中任务宝箱出现时没有倒计时的问题。",
+        "修复了[海盗赌局]中完成任务后领取奖励时异常提示任务未完成的问题。",
+        "修复了[埃吉尔盛宴]中怪物掉落的宝箱阻挡迁城时没有提示的问题。",
+        "修复了在[Blood Oath War]中离开部落后阵营颜色异常变化的问题。",
+        "修复了[Blood Oath War]中建筑详情界面的显示问题。",
+        "修复了在[移民]功能中，明明满足战力要求却错误提示未达到要求的问题。",
+        "修复了在[技能]中，推荐技能替换弹窗内的技能信息与实际技能不符的问题。",
+        "修复了[触发礼包]弹出后，跳转到其他界面再返回导致礼包内容消失的问题。",
+        "修复了在[险境清除]中，网络较差时点击[查看更多]导致排行榜显示错误的问题。",
+        "修复了一些文本问题。",
+        "修复了一些红点显示问题。"
+      ]
+    },
+    "ru": {
+      "major": [
+        "Скоро начнется [Goldrush Journey]. Участвуйте в событии, чтобы получить такие награды, как скины главного замка, элементы декора, именные таблички и многое другое.",
+        "Скоро начнется [Tidal Pearl Contest]. Поднимите топоры, прорвитесь сквозь прилив и смело захватите жемчуг!",
+        "Скоро начнется [Wolf King Battle]. Король волков появился. Срочно отправляйте войска и выступайте в бой!",
+        "Скоро начнется событие [Romaría Vikinga]!"
+      ],
+      "new_features": [
+        "В Магазин экспедиции для [Kingdom Mayhem · Jormungand's Calamity] добавлена доступность навыков: Inferno Dance, Gungnir's Sting и Serpent's Rampage.",
+        "В функцию [Editable Reinforcement Troop Limit] для башен племени [Preset Tribe Flag Towers] добавлена возможность настройки.",
+        "Перед входом в 1-й сезон Kingdom Mayhem добавлена функция [Tribe Assemble Point].",
+        "В некоторые события добавлены [Fortune Gifts], позволяющие автоматически отправлять призовые сюрпризы в чат альянса.",
+        "Добавлены [Caravan Refresh Vouchers] для обновления качества личного каравана.",
+        "Скоро возвращаются набор скинов [Pool Party] и именная табличка набора события [Temple Festival]."
+      ],
+      "optimizations": [
+        {
+          "title": "Оптимизация «Книги памяти» и «Пира Эгира»",
+          "items": [
+            "Оптимизирована логика взаимодействия [Tribe Exchange] в [Memory Tome]. Опубликованную информацию об обмене теперь можно удалить или изменить в любое время.",
+            "Скорректировано время некоторых войн, период сражений за руины, время защиты, максимальное количество игроков, которые могут занимать усадьбы, и скорость транспортировки сундуков военных кораблей в [Aegir's Feast]."
+          ]
+        },
+        {
+          "title": "Общая оптимизация системы и интерфейса",
+          "items": [
+            "Оптимизировано [Morreg's Perilous City]. Функция предупреждения на карте мира теперь также включена внутри события.",
+            "Оптимизирована атмосфера племени: добавлена обратная связь для лайков и эффектов помощи племени; в настройки и меню добавлена ссылка-приглашение в племя.",
+            "Оптимизирована функция [Red Packet]: добавлены лайки красных конвертов и отображение лимита получения красных конвертов.",
+            "Оптимизирована функция [Like]. В интерфейс сведений добавлено отображение счетчика лайков, а накопленное количество лайков больше не сбрасывается.",
+            "Оптимизирована функция [Crystal Trove] с отображением ID игрока и функцией подачи заявок.",
+            "Оптимизирована логика навигации по ускорению для очередей задач.",
+            "Оптимизирован контент всплывающего окна пополнения ресурсов и добавлена навигация для получения соответствующих предметов.",
+            "Оптимизировано отображение прочности стен в отчетах о битвах и во всплывающих окнах подкреплений во время сезонов серии [Kingdom Mayhem].",
+            "Оптимизирован интерфейс объединения предметов в [Smithy] за счет добавления отображения количества материалов.",
+            "Оптимизирован интерфейс улучшения талантов героя. Основные таланты теперь отображают соответствующую особую рамку.",
+            "Скорректированы контент и правила в [Tribe Shop].",
+            "Оптимизированы эффекты отображения значков предметов и фоновых цветов качества значков героев.",
+            "Скорректированы награды за некоторые этапы [Distant Voyage].",
+            "Скорректированы правила использования предметов очков процветания: предметы будут использоваться автоматически после их получения.",
+            "Скорректированы награды почтовой станции: случайные награды за задания почтовой станции ур. престижа 6 и выше заменены на сундуки удачи почтовой станции."
+          ]
+        }
+      ],
+      "fixes": [
+        "Исправлена ошибка, из-за которой дни обратного отсчета в [Supply Shop] были некорректными.",
+        "Исправлена ошибка, из-за которой цитируемый контент в [Chat] был некорректным.",
+        "Исправлена ошибка, из-за которой эффекты флагов в [Arena] отображались некорректно.",
+        "Исправлена ошибка, из-за которой отображение количества усадеб накладывалось друг на друга при их захвате в [Kingdom Mayhem].",
+        "Исправлена ошибка, из-за которой нажатие кнопки [?] в [Skins] работало ненормально.",
+        "Исправлена ошибка, из-за которой аватар в трансляциях [Morreg's Perilous City] не соответствовал реальному игроку.",
+        "Исправлена ошибка, из-за которой межсезонные герои были видны в некоторых игровых событиях.",
+        "Исправлена ошибка, из-за которой прогресс улучшения навыков скакуна отображался некорректно.",
+        "Исправлена ошибка, из-за которой награды календаря отображались некорректно в событии подготовки к [Kingdom Mayhem-Jormungand's Calamity].",
+        "Исправлена ошибка в [Kingdom Mayhem-Jormungand's Calamity], из-за которой форты можно было строить заранее до захвата руин.",
+        "Исправлена ошибка, из-за которой выбранное качество в [Rune Search] было противоположно фактическому качеству.",
+        "Исправлена ошибка в [Pirate's Gamble], из-за которой сундуки с заданиями могли появляться без обратного отсчета.",
+        "Исправлена ошибка в [Pirate's Gamble], из-за которой притязание на награды после выполнения заданий ошибочно сообщало, что задание не выполнено.",
+        "Исправлена ошибка в [Aegir's Feast], из-за которой не было предупреждения, когда сундуки, сброшенные монстрами, блокировали перенос города.",
+        "Исправлена ошибка в [Blood Oath War], из-за которой цвет стороны менялся ненормально после выхода из племени.",
+        "Исправлена проблема с отображением интерфейса сведений о здании в [Blood Oath War].",
+        "Исправлена ошибка в функции [Migration], из-за которой ошибочно появлялось сообщение о том, что требование мощи не выполнено, хотя оно было выполнено.",
+        "Исправлена ошибка в [Skills], из-за которой информация о навыке во всплывающем окне замены рекомендуемого навыка не соответствовала реальному навыку.",
+        "Исправлена ошибка, из-за которой после появления [Triggered Pack] содержимое набора исчезало после перехода в другой интерфейс и возврата.",
+        "Исправлена ошибка, из-за которой в [Clearing Dangers] при плохих условиях сети нажатие [View More] вызывало ошибку отображения в таблице лидеров.",
+        "Исправлены некоторые текстовые ошибки.",
+        "Исправлены некоторые проблемы с отображением красных точек."
+      ]
+    }
+  },
+  {
     "id": "update_24_06_2026_663436",
     "meta": {
       "created_at": "2026-06-22T15:22:08.488000Z",
