@@ -1,5 +1,435 @@
 [
   {
+    "id": "update_19_08_2024_220536",
+    "meta": {
+      "created_at": "2026-08-17T06:42:46.020000Z",
+      "start_timestamp": "2024-08-19T06:00:00.000000Z",
+      "display_time": "8/19 06:00 - 07:00 (UTC)",
+      "title_en": "Update 19.08.2024",
+      "title_de": "Update vom 19.08.2024",
+      "title_cn": "更新 19.08.2024",
+      "title_ru": "Обновление 19.08.2024",
+      "image_url": "",
+      "image_urls": []
+    },
+    "en": {
+      "major": [
+        "The Griffin Alliance is about to begin. Tame the fierce Griffin, ride it to soar above storms, and receive rewards from the sky.",
+        "Goldrush Journey themed skins Flying Meteor·Alf and Viking Eye·Artur are coming soon.",
+        "The Flames of Victory skin set will soon return."
+      ],
+      "new_features": [
+        "Added Valiant Arena, Berserk Arena, and Gods Arena. Participate in different arenas based on Hero Might, raise your rank, and earn achievement rewards.",
+        "Added the Jewel Mine event. Recast Jewels to receive surprises.",
+        "New Blood Oath War reward: Eagle's Oath skin set.",
+        "Added results displays for the preparation events of Kingdom Mayhem Conquest Season Svartalfheim and Expedition to England.",
+        "Added the ability to exchange generic Hero Shards for Hero Yvette shards.",
+        "Added display prompts for building resource costs.",
+        "Added monster materials chest rewards to the clan shop.",
+        "Added Google Play Games achievements to the Google Play Version."
+      ],
+      "optimizations": [
+        {
+          "title": "Optimized main interface entry display",
+          "items": [
+            "Certain events will now be accessed from Campaign instead of the main interface.",
+            "During important event stage changes, bubble and red dot prompts will appear on the main interface Campaign entrance.",
+            "During Kingdom Mayhem - Conquest Season event stage changes, bubble and red dot prompts will appear on the main interface entrance."
+          ]
+        },
+        {
+          "title": "Optimized Battle of the Ruins & Apex Championship",
+          "items": [
+            "During the registration stage, starting/substitute members can be manually set up."
+          ]
+        },
+        {
+          "title": "Optimized troop Quick Train and Quick Promote functions",
+          "items": [
+            "When corresponding resource items are insufficient, Choice Resource Boxes will be used automatically to supplement them.",
+            "Added several text prompts in Quick Promote or Promote."
+          ]
+        },
+        {
+          "title": "Optimized early-game experience and inventory",
+          "items": [
+            "Added a Speedup item overflow return function.",
+            "Optimized item sorting in Inventory."
+          ]
+        },
+        {
+          "title": "Optimized Warship allocation and display functions",
+          "items": [
+            "When a ship has already been linked to a preconfigured troop, that ship will not be allocated by default when creating a troop.",
+            "When creating a Troop, if the captain is a gathering hero, ships will not be automatically allocated.",
+            "Added a Warship icon display to the troop overview screen on short-term KVK maps."
+          ]
+        },
+        {
+          "title": "Optimized Tribe Showdown and Rankings",
+          "items": [
+            "Optimized the Tribe Showdown interface, adding Like display for This Week's Schedule, a quest points pop-up, and league change prompts.",
+            "Optimized the Ranking function, added the Hero Might Ranking."
+          ]
+        },
+        {
+          "title": "General System Optimizations",
+          "items": [
+            "Optimized the Rally function; the march distance of Reinforcement Troops can now be manually limited.",
+            "Optimized the Chat Assistant to support querying the Tribe Growth Gift Box quest list.",
+            "Optimized the list display of Anti-Scout items in City Buffs.",
+            "Optimized the entrance unlock logic in the Clan to hide locked function entrances.",
+            "Optimized the interaction logic for Create Troop by adjusting layout of Battle Flag Preset and Clear buttons.",
+            "Optimized the red dot appearance when using Legacy Golden Branch for Legacy Learning in Mount Skill.",
+            "Optimized Chat function logic for group chat invitations and creation limits.",
+            "Optimized Event Hub entrance and Happy Toy Machine quick grab interaction.",
+            "Optimized bottom frame color for item grades.",
+            "Adjusted handling logic for Kingdom Mayhem preparation event items to automatically recycle after the event ends.",
+            "Optimized Rank display for past Kingdom Mayhem season honor medals on the Tribe Honor Wall.",
+            "Adjusted reward distribution and lowered shop prices for some gameplay modes like Valhalla Drill, Naval Dominion, and Sacred Crucible.",
+            "Adjusted monster skills in Wolf King Battle, balancing damage dealt by non-overpowering troop types.",
+            "Adjusted distribution content in Eternal Wheel after Kingdom Mayhem Jormungand's Calamity.",
+            "Adjusted trigger logic for some orange skill-triggered packs."
+          ]
+        }
+      ],
+      "fixes": [
+        "Fixed an issue where Like data in Your Details was abnormal under weak network conditions.",
+        "Fixed an issue in the Infirmary where the percentage format for reducing healing resource costs was inconsistent.",
+        "Fixed an issue where abnormal camp quests appeared in Staging Post.",
+        "Fixed an issue in Tidal Pearl Contest where player servers were displayed incorrectly on the rankings.",
+        "Fixed an issue in Tidal Pearl Contest where mine nodes did not disappear after gathering is complete.",
+        "Fixed abnormal red dot and event item display issues for the Attack button in Beast Wars.",
+        "Fixed an issue in some rankings where time differences during data retrieval caused settlement mismatches.",
+        "Fixed an occasional issue in the inner city where mercenaries did not disappear after being defeated.",
+        "Fixed an issue in Kingdom Mayhem Conquest Season where ranks were displayed incorrectly when Manor Ranking was descending.",
+        "Fixed an issue in Kingdom Mayhem Conquest Season where enemy and allied data displayed abnormally in battle reports.",
+        "Fixed an issue with abnormal Jotun battle buffs in Kingdom Mayhem Jormungand's Calamity.",
+        "Fixed an issue in Jormungand's Calamity where troops did not attack after arriving following a declaration of war.",
+        "Fixed abnormal terrain display in Kingdom Mayhem Jormungand's Calamity.",
+        "Fixed an issue where scouting mails of a tribe city in Jormungand's Calamity had no coordinates.",
+        "Fixed an issue in Jormungand's Calamity where the interactable area of Ruins was too large.",
+        "Fixed an issue in Wolf King Battle where the attack could not be launched if the main commander was not in the city.",
+        "Fixed an issue in Clan invitation links where Tribe Gift Level in Chat bar information was incorrect.",
+        "Fixed abnormal widescreen adaptation issues for some packs and abnormal Divination animations.",
+        "Fixed an abnormality with the @ function in Chat and the issue where modified Chief Hall remarks were visible to others.",
+        "Fixed an issue where rhombus shapes were abnormally displayed in the Chat interface and audio playback on some devices."
+      ]
+    },
+    "de": {
+      "major": [
+        "Das Event Die Greifen-Allianz beginnt in Kürze. Zähme den wilden Greif, reite ihn, um über Stürme hinwegzufliegen, und erhalte Belohnungen vom Himmel.",
+        "Die Skins Flying Meteor·Alf und Viking Eye·Artur im Goldrush Journey-Thema sind bald verfügbar.",
+        "Das Skin-Set Die Flammen des Sieges kehrt bald zurück."
+      ],
+      "new_features": [
+        "Valiant Arena, Berserk Arena und Gods Arena wurden hinzugefügt. Nimm basierend auf der Heldenmacht an verschiedenen Arenen teil, steige im Rang auf und verdiene Errungenschaftsbelohnungen.",
+        "Das Jewel Mine-Event wurde hinzugefügt. Forme Juwelen um, um Überraschungen zu erhalten.",
+        "Neue Blood Oath War-Belohnung: Skin-Set Eagle's Oath.",
+        "Ergebnisanzeigen für die Vorbereitungsveranstaltungen der Kingdom Mayhem Conquest Season Svartalfheim und Expedition nach England wurden hinzugefügt.",
+        "Die Möglichkeit hinzugefügt, generische Hero Shards gegen Hero Yvette-Fragmente einzutauschen.",
+        "Anzeigebringende Hinweise für den Bau von Ressourcenkosten hinzugefügt.",
+        "Monster-Materialien-Truhen-Belohnungen zum Clan-Shop hinzugefügt.",
+        "Google Play Games-Ergebnisse zur Google Play-Version hinzugefügt."
+      ],
+      "optimizations": [
+        {
+          "title": "Optimierte Anzeige des Hauptschnittstelleneingangs",
+          "items": [
+            "Bestimmte Events sind nun über Kampagne statt über die Hauptschnittstelle erreichbar.",
+            "Bei wichtigen Event-Phasenwechseln erscheinen Blasen- und rote Punkt-Hinweise am Kampagneneingang der Hauptschnittstelle.",
+            "Bei Event-Phasenwechseln von Kingdom Mayhem - Conquest Season erscheinen Blasen- und rote Punkt-Hinweise am Eingang der Hauptschnittstelle."
+          ]
+        },
+        {
+          "title": "Optimierte Battle of the Ruins & Apex Championship",
+          "items": [
+            "Während der Registrierungsphase können Start- und Ersatzmitglieder manuell eingerichtet werden."
+          ]
+        },
+        {
+          "title": "Optimierte Truppen-Funktionen für Schnelltraining und Schnellbeförderung",
+          "items": [
+            "Wenn entsprechende Ressourcen-Items nicht ausreichen, werden Auswahl-Ressourcenkisten automatisch verwendet, um sie zu ergänzen.",
+            "Mehrere Text-Prompts bei Schnellbeförderung oder Beförderung hinzugefügt."
+          ]
+        },
+        {
+          "title": "Optimierte Early-Game-Erfahrung und Inventar",
+          "items": [
+            "Eine Überlauf-Rückgabefunktion für Speedup-Items wurde hinzugefügt.",
+            "Optimierte Item-Sortierung im Inventar."
+          ]
+        },
+        {
+          "title": "Optimierte Kriegsschiff-Zuweisungs- und Anzeigefunktionen",
+          "items": [
+            "Wenn ein Schiff bereits mit einer vorkonfigurierten Truppe verknüpft ist, wird dieses Schiff beim Erstellen einer Truppe standardmäßig nicht zugewiesen.",
+            "Wenn beim Erstellen einer Truppe der Hauptmann ein Sammelheld ist, werden Schiffe nicht automatisch zugewiesen.",
+            "Eine Kriegsschiff-Symbolanzeige auf dem Truppenübersichts-Bildschirm auf kurzfristigen KVK-Karten hinzugefügt."
+          ]
+        },
+        {
+          "title": "Optimierte Tribe Showdown und Ranglisten",
+          "items": [
+            "Die Tribe Showdown-Schnittstelle wurde optimiert; eine Like-Anzeige für den Zeitplan dieser Woche, ein Questpunkte-Popup und Ligawechsel-Hinweise wurden hinzugefügt.",
+            "Die Ranglistenfunktion wurde optimiert, die Heldenmacht-Rangliste wurde hinzugefügt."
+          ]
+        },
+        {
+          "title": "Allgemeine Systemoptimierungen",
+          "items": [
+            "Die Rally-Funktion wurde optimiert; die Marschdistanz von Verstärkungstruppen kann nun manuell begrenzt werden.",
+            "Der Chat-Assistent wurde optimiert, um das Abfragen der Questliste für das Tribe Growth Gift Box zu unterstützen.",
+            "Die Listenanzeige von Anti-Scout-Items in Stadt-Buffs wurde optimiert.",
+            "Die Eingangs-Freischaltlogik im Clan wurde optimiert, um gesperrte Funktionszugänge auszublenden.",
+            "Die Interaktionslogik zum Erstellen von Truppen wurde durch Anpassen des Layouts der Kampfesflaggen-Voreinstellung und der Löschen-Schaltflächen optimiert.",
+            "Das Erscheinen des roten Punkts bei der Verwendung von Legacy Golden Branch für Legacy Learning in Mount Skill optimiert.",
+            "Die Chat-Funktionslogik für Gruppenchat-Einladungen und Erstellungslimits optimiert.",
+            "Event Hub-Eingang und Happy Toy Machine-Schnellgreif-Interaktion optimiert.",
+            "Untere Rahmenfarbe für Item-Klassen optimiert.",
+            "Die Handhabungslogik für Vorbereitungs-Event-Items von Kingdom Mayhem angepasst, um diese nach Event-Ende automatisch zu recyceln.",
+            "Die Ranglistenanzeige für vergangene Ehrenmedaillen der Kingdom Mayhem-Saison an der Tribe Honor Wall optimiert.",
+            "Die Belohnungsverteilung angepasst und die Shop-Preise für einige Gameplay-Modi wie Valhalla Drill, Naval Dominion und Sacred Crucible gesenkt.",
+            "Monsterskills im Wolf King Battle angepasst und den Schaden von nicht-überwältigenden Truppentypen ausgeglichen.",
+            "Verteilungsinhalt im Eternal Wheel nach Kingdom Mayhem Jormungand's Calamity angepasst.",
+            "Ausgabelogik für einige orange Skill-getriggerte Pakete angepasst."
+          ]
+        }
+      ],
+      "fixes": [
+        "Ein Problem wurde behoben, bei dem Like-Daten unter Your Details bei schwachen Netzwerkbedingungen abnormal waren.",
+        "Ein Problem in der Krankenstation wurde behoben, bei dem das Prozentformat zur Reduzierung der Heilungsressourcenkosten inkonsistent war.",
+        "Ein Problem wurde behoben, bei dem im Staging Post abnormale Lager-Quests auftraten.",
+        "Ein Problem im Tidal Pearl Contest wurde behoben, bei dem Spielerserver in den Ranglisten falsch angezeigt wurden.",
+        "Ein Problem im Tidal Pearl Contest wurde behoben, bei dem Minenknoten nach Abschluss des Sammelns nicht verschwanden.",
+        "Abnormale rote Punkt- und Event-Item-Anzeigeprobleme für die Angriffs-Schaltfläche in Beast Wars behoben.",
+        "Ein Problem in einigen Ranglisten wurde behoben, bei dem Zeitdifferenzen während des Datenabrufs zu Abrechnungs-Fehlanpassungen führten.",
+        "Ein gelegentliches Problem in der Innenstadt wurde behoben, bei dem Söldner nach ihrer Niederlage nicht verschwanden.",
+        "Ein Problem in der Kingdom Mayhem Conquest Season wurde behoben, bei dem Ränge falsch angezeigt wurden, wenn das Manor Ranking absteigend war.",
+        "Ein Problem in der Kingdom Mayhem Conquest Season wurde behoben, bei dem Feind- und Verbündetendaten in Kampfberichten abnormal angezeigt wurden.",
+        "Ein Problem mit abnormalen Jotun-Kampf-Buffs in Kingdom Mayhem Jormungand's Calamity behoben.",
+        "Ein Problem in Jormungand's Calamity wurde behoben, bei dem Truppen nach dem Eintreffen nach einer Kriegserklärung nicht angriffen.",
+        "Abnormale Geländedarstellung in Kingdom Mayhem Jormungand's Calamity behoben.",
+        "Ein Problem wurde behoben, bei dem Aufklärungsmails einer Tribe City in Jormungand's Calamity keine Koordinaten hatten.",
+        "Ein Problem in Jormungand's Calamity wurde behoben, bei dem der interaktive Bereich von Ruinen zu groß war.",
+        "Ein Problem im Wolf King Battle wurde behoben, bei dem der Angriff nicht gestartet werden konnte, wenn sich der Hauptkommandant nicht in der Stadt befand.",
+        "Ein Problem in Clan-Einladungslinks wurde behoben, bei dem das Tribe Gift Level in den Chat-Leisten-Informationen falsch war.",
+        "Abnormale Widescreen-Anpassungsprobleme für einige Pakete und abnormale Divination-Animationen behoben.",
+        "Eine Abnormalität mit der @-Funktion im Chat und das Problem, dass modifizierte Chief Hall-Bemerkungen für andere sichtbar waren, behoben.",
+        "Ein Problem wurde behoben, bei dem Rautenformen in der Chat-Schnittstelle und bei der Audiowiedergabe auf einigen Geräten abnormal angezeigt wurden."
+      ]
+    },
+    "cn": {
+      "major": [
+        "「Griffin Alliance」活动即将开启。驯服凶猛的Griffin，乘风破浪翱翔于风暴之上，获取来自天空的奖励。",
+        "Goldrush Journey 主题皮肤「Flying Meteor·Alf」与「Viking Eye·Artur」即将登场。",
+        "「Flames of Victory」皮肤套装即将返场。"
+      ],
+      "new_features": [
+        "新增 Valiant Arena、Berserk Arena 以及 Gods Arena。根据 Hero Might 参与不同的竞技场，提升段位并赢取成就奖励。",
+        "新增 Jewel Mine 活动。重铸 Jewels 获得惊喜。",
+        "新增 Blood Oath War 奖励：Eagle's Oath 皮肤套装。",
+        "新增 Kingdom Mayhem Conquest Season Svartalfheim 与 Expedition to England 预热活动的结算展示。",
+        "新增通用 Hero Shards 兑换 Hero Yvette shards 的功能。",
+        "新增建筑资源消耗的显示提示。",
+        "新增怪物材料宝箱奖励至军团商店。",
+        "Google Play 版本新增 Google Play Games 成就。"
+      ],
+      "optimizations": [
+        {
+          "title": "优化主界面入口展示",
+          "items": [
+            "部分活动现在从 Campaign 进入，不再从主界面进入。",
+            "在重要的活动阶段切换时，主界面 Campaign 入口将显示气泡和红点提示。",
+            "在 Kingdom Mayhem - Conquest Season 活动阶段切换时，主界面入口将显示气泡和红点提示。"
+          ]
+        },
+        {
+          "title": "优化 Battle of the Ruins 与 Apex Championship",
+          "items": [
+            "在报名阶段，可手动设置首发/替补成员。"
+          ]
+        },
+        {
+          "title": "优化部队快捷训练（Quick Train）与快捷晋升（Quick Promote）功能",
+          "items": [
+            "当对应资源道具不足时，将自动使用自选资源宝箱（Choice Resource Boxes）进行补足。",
+            "在快捷晋升或晋升中新增多项文字提示。"
+          ]
+        },
+        {
+          "title": "优化游戏前期体验与背包",
+          "items": [
+            "新增加速道具溢出返还功能。",
+            "优化背包中的道具排序。"
+          ]
+        },
+        {
+          "title": "优化战舰分配与展示功能",
+          "items": [
+            "当战舰已与预设部队绑定时，创建部队时该战舰将不会被默认分配。",
+            "创建部队时，若主将为采集英雄，将不会自动分配战舰。",
+            "在短期 KVK 地图的部队概览界面新增战舰图标显示。"
+          ]
+        },
+        {
+          "title": "优化 Tribe Showdown 与排行榜",
+          "items": [
+            "优化 Tribe Showdown 界面，本周赛程新增点赞显示、任务积分弹窗以及联赛变更提示。",
+            "优化排行榜功能，新增 Hero Might 排行榜。"
+          ]
+        },
+        {
+          "title": "常规系统优化",
+          "items": [
+            "优化集结（Rally）功能；增援部队的行军距离现在可以手动限制。",
+            "优化聊天助手，支持查询 Tribe Growth Gift Box 任务列表。",
+            "优化城防buff中反侦察道具的列表显示。",
+            "优化氏族（Clan）内的入口解锁逻辑，隐藏已锁定的功能入口。",
+            "优化创建部队的交互逻辑，调整战旗预设和清除按钮的布局。",
+            "优化 Mount Skill 中使用 Legacy Golden Branch 进行 Legacy Learning 时的红点显示。",
+            "优化群聊邀请及创建限制的聊天功能逻辑。",
+            "优化 Event Hub 入口及 Happy Toy Machine 快速抓取交互。",
+            "优化道具品质的底框颜色。",
+            "调整 Kingdom Mayhem 预热活动道具的处理逻辑，活动结束后自动回收。",
+            "优化氏族荣誉墙上往届 Kingdom Mayhem 赛季荣誉勋章的段位显示。",
+            "调整 Valhalla Drill、Naval Dominion 以及 Sacred Crucible 等部分玩法玩法的奖励产出并降低商店价格。",
+            "调整 Wolf King Battle 中的怪物技能，平衡非克制兵种造成的伤害。",
+            "调整 Kingdom Mayhem Jormungand's Calamity 结束后 Eternal Wheel 的产出内容。",
+            "调整部分橙色技能触发礼包的触发逻辑。"
+          ]
+        }
+      ],
+      "fixes": [
+        "修复了网络较差时个人资料（Your Details）中的点赞数据异常的问题。",
+        "修复了医务室中减少治疗资源消耗的百分比格式不一致的问题。",
+        "修复了驿站（Staging Post）中出现异常阵营任务的问题。",
+        "修复了 Tidal Pearl Contest 中玩家服务器在排行榜上显示错误的问题。",
+        "修复了 Tidal Pearl Contest 中采集完成后矿点未消失的问题。",
+        "修复了 Beast Wars 中攻击按钮的红点及活动道具显示异常的问题。",
+        "修复了部分排行榜中数据拉取时的时间差导致结算不匹配的问题。",
+        "修复了内城中雇佣兵被击败后偶尔不消失的问题。",
+        "修复了 Kingdom Mayhem Conquest Season 中庄园排行榜降序时段位显示错误的问题。",
+        "修复了 Kingdom Mayhem Conquest Season 中战报里敌我双方数据展示异常的问题。",
+        "修复了 Kingdom Mayhem Jormungand's Calamity 中约顿海姆战斗增益异常的问题。",
+        "修复了 Jormungand's Calamity 中宣战后部队抵达却不发动攻击的问题。",
+        "修复了 Kingdom Mayhem Jormungand's Calamity 中地形显示异常的问题。",
+        "修复了 Jormungand's Calamity 中氏族城市侦察邮件没有坐标的问题。",
+        "修复了 Jormungand's Calamity 中遗迹交互区域过大的问题。",
+        "修复了 Wolf King Battle 中主将不在城内时无法发起进攻的问题。",
+        "修复了氏族邀请链接中聊天栏信息的 Tribe Gift Level 错误的问题。",
+        "修复了部分礼包宽屏适配异常以及占卜动画异常的问题。",
+        "修复了聊天中的 @ 功能异常以及修改酋长殿备注后其他人可见的问题。",
+        "修复了部分设备上聊天界面中菱形异常显示及音频播放的问题。"
+      ]
+    },
+    "ru": {
+      "major": [
+        "Скоро начнется событие «Альянс грифонов». Приручите свирепого грифона, взмойте на нем над бурями и получайте награды с небес.",
+        "Скоро появятся тематические облики «Золотая лихорадка»: Летающий метеорит·Альф и Глаз викинга·Артур.",
+        "Скоро в игру вернутся облики из набора «Пламя победы»."
+      ],
+      "new_features": [
+        "Добавлены Valiant Arena, Berserk Arena и Gods Arena. Участвуйте в разных аренах в зависимости от мощи героев, повышайте свой ранг и получайте награды за достижения.",
+        "Добавлено событие «Шахта самоцветов». Переплавляйте самоцветы, чтобы получать сюрпризы.",
+        "Новая награда за войну Blood Oath: набор обликов «Клятва орла».",
+        "Добавлено отображение результатов подготовительных событий для Kingdom Mayhem Conquest Season Svartalfheim и Expedition to England.",
+        "Добавлена возможность обменивать универсальные фрагменты героев на фрагменты героя Yvette.",
+        "Добавлены подсказки с отображением стоимости ресурсов на строительство.",
+        "В магазин клана добавлены награды в виде сундуков с материалами монстров.",
+        "В версию для Google Play добавлены достижения Google Play Games."
+      ],
+      "optimizations": [
+        {
+          "title": "Оптимизировано отображение входа в главный интерфейс",
+          "items": [
+            "Некоторые события теперь будут доступны из Кампании вместо главного интерфейса.",
+            "При смене этапов важных событий на входе в Кампанию в главном интерфейсе будут появляться всплывающие подсказки и красные точки.",
+            "При смене этапов событий Kingdom Mayhem - Conquest Season на входе в главный интерфейс будут появляться всплывающие подсказки и красные точки."
+          ]
+        },
+        {
+          "title": "Оптимизированы Battle of the Ruins и Apex Championship",
+          "items": [
+            "На этапе регистрации можно вручную настроить основных участников и замен."
+          ]
+        },
+        {
+          "title": "Оптимизированы функции быстрого обучения и быстрого повышения уровня войск",
+          "items": [
+            "Если соответствующих ресурсных предметов недостаточно, для их восполнения будут автоматически использоваться коробки выбора ресурсов.",
+            "Добавлено несколько текстовых подсказок при быстром повышении или повышении."
+          ]
+        },
+        {
+          "title": "Оптимизирован игровой процесс на ранних этапах и инвентарь",
+          "items": [
+            "Добавлена функция возврата излишков предметов ускорения.",
+            "Оптимизирована сортировка предметов в Инвентаре."
+          ]
+        },
+        {
+          "title": "Оптимизированы функции распределения и отображения военных кораблей",
+          "items": [
+            "Если корабль уже привязан к заранее настроенному отряду, он не будет распределяться по умолчанию при создании отряда.",
+            "При создании отряда, если капитаном является герой сбора, корабли не будут распределяться автоматически.",
+            "Добавлено отображение значка военного корабля на экране обзора отряда на краткосрочных картах KVK."
+          ]
+        },
+        {
+          "title": "Оптимизированы Tribe Showdown и рейтинги",
+          "items": [
+            "Оптимизирован интерфейс Tribe Showdown: добавлено отображение отметок «Нравится» для расписания на эту неделю, всплывающее окно очков заданий и подсказки о смене лиги.",
+            "Оптимизирована функция рейтингов, добавлен рейтинг мощи героев."
+          ]
+        },
+        {
+          "title": "Общие оптимизации системы",
+          "items": [
+            "Оптимизирована функция сбора; дальность марша подкрепления теперь можно ограничивать вручную.",
+            "Оптимизирован чат-помощник для поддержки запросов списка заданий подарочного набора развития племени.",
+            "Оптимизировано отображение списка предметов защиты от разведки в баффах города.",
+            "Оптимизирована логика разблокировки входов в клане для скрытия заблокированных функций.",
+            "Оптимизирована логика взаимодействия при создании отряда путем настройки макета кнопок предварительной установки боевого знамени и очистки.",
+            "Оптимизировано появление красной точки при использовании Legacy Golden Branch для изучения наследия в навыке скакуна.",
+            "Оптимизирована логика функции чата для приглашений в групповой чат и ограничений на создание.",
+            "Оптимизирован вход в центр событий и быстрое взаимодействие с Happy Toy Machine.",
+            "Оптимизирован цвет нижней рамки для рангов предметов.",
+            "Скорректирована логика обработки предметов подготовительного события Kingdom Mayhem для их автоматической переработки после окончания события.",
+            "Оптимизировано отображение рангов прошлых медалей чести сезона Kingdom Mayhem на Стене чести племени.",
+            "Скорректировано распределение наград и снижены цены в магазине для некоторых режимов игры, таких как Valhalla Drill, Naval Dominion и Sacred Crucible.",
+            "Скорректированы навыки монстров в Wolf King Battle, сбалансирован урон, наносимый типами войск без превосходства.",
+            "Скорректировано содержимое распределения в Eternal Wheel после события Kingdom Mayhem Jormungand's Calamity.",
+            "Скорректирована логика срабатывания некоторых наборов с оранжевыми навыками."
+          ]
+        }
+      ],
+      "fixes": [
+        "Исправлена проблема, из-за которой данные об отметках «Нравится» в вашей информации отображались некорректно при слабом сетевом соединении.",
+        "Исправлена проблема в лазарете, из-за которой формат процентов снижения стоимости ресурсов на лечение был несогласованным.",
+        "Исправлена проблема, из-за которой в почтовом отделении появлялись аномальные задания лагеря.",
+        "Исправлена проблема в Tidal Pearl Contest, из-за которой серверы игроков некорректно отображались в рейтингах.",
+        "Исправлена проблема в Tidal Pearl Contest, из-за которой шахтные узлы не исчезали после завершения сбора.",
+        "Исправлена проблема с отображением аномальных красных точек и предметов событий для кнопки атаки в Beast Wars.",
+        "Исправлена проблема в некоторых рейтингах, из-за которой разница во времени при получении данных вызывала несоответствия в расчетах.",
+        "Исправлена периодически возникающая проблема во внутреннем городе, из-за которой наемники не исчезали после поражения.",
+        "Исправлена проблема в Kingdom Mayhem Conquest Season, из-за которой ранги отображались некорректно при убывающей сортировке рейтинга усадьбы.",
+        "Исправлена проблема в Kingdom Mayhem Conquest Season, из-за которой данные врагов и союзников отображались некорректно в отчетах о боях.",
+        "Исправлена проблема с аномальными боевыми баффами Йотуна в Kingdom Mayhem Jormungand's Calamity.",
+        "Исправлена проблема в Jormungand's Calamity, из-за которой войска не атаковали после прибытия по объявлению войны.",
+        "Исправлено аномальное отображение ландшафта в Kingdom Mayhem Jormungand's Calamity.",
+        "Исправлена проблема, из-за которой у писем разведки города племени в Jormungand's Calamity не было координат.",
+        "Исправлена проблема в Jormungand's Calamity, из-за которой интерактивная зона руин была слишком большой.",
+        "Исправлена проблема в Wolf King Battle, из-за которой невозможно было начать атаку, если главный командир находился вне города.",
+        "Исправлена проблема в ссылках-приглашениях в клан, из-за которой уровень подарков племени в информации строки чата был некорректным.",
+        "Исправлены проблемы с аномальной адаптацией под широкоформатные экраны для некоторых наборов и аномальная анимация гадания.",
+        "Исправлена аномалия с функцией @ в чате и проблема, из-за которой измененные примечания начальника зала были видны другим.",
+        "Исправлена проблема, из-за которой в интерфейсе чата и при воспроизведении звука на некоторых устройствах некорректно отображались ромбы."
+      ]
+    }
+  },
+  {
     "id": "update_22_07_2024_267139",
     "meta": {
       "created_at": "2026-07-21T18:20:23.128000Z",
