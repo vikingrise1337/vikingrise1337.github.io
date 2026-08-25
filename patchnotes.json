@@ -1,5 +1,67 @@
 [
   {
+    "id": "update_01_09_2026_410842",
+    "meta": {
+      "created_at": "2026-08-25T20:27:33.265000Z",
+      "start_timestamp": "2026-09-01T00:00:00.000000Z",
+      "display_time": "2026/09/01 – 2026/09/30 (UTC)",
+      "title_en": "Update 01.09.2026",
+      "title_de": "Update vom 01.09.2026",
+      "title_cn": "更新 01.09.2026",
+      "title_ru": "Обновление 01.09.2026",
+      "image_url": "",
+      "image_urls": []
+    },
+    "en": {
+      "major": [
+        "Return of the Viking Rise × How to Train Your Dragon collaboration"
+      ],
+      "new_features": [
+        "New collaboration chapter featuring Hiccup, Toothless, and brand-new content inspired by the world of Berk",
+        "Exciting collaboration challenges and exclusive in-game rewards",
+        "Social media celebration giveaway featuring exclusive Viking Rise × How to Train Your Dragon merchandise sets"
+      ],
+      "optimizations": [],
+      "fixes": []
+    },
+    "de": {
+      "major": [
+        "Rückkehr der Viking Rise × How to Train Your Dragon-Kollaboration"
+      ],
+      "new_features": [
+        "Neues Kollaborationskapitel mit Hiccup, Toothless und brandneuen Inhalten, die von der Welt von Berk inspiriert sind",
+        "Spannende Kollaborations-Herausforderungen und exklusive In-Game-Belohnungen",
+        "Social-Media-Feier-Giveaway mit exklusiven Viking Rise × How to Train Your Dragon-Merchandise-Sets"
+      ],
+      "optimizations": [],
+      "fixes": []
+    },
+    "cn": {
+      "major": [
+        "Viking Rise × How to Train Your Dragon 联动回归"
+      ],
+      "new_features": [
+        "全新联动章节，包含 Hiccup、Toothless 以及灵感源自 Berk 世界的全新内容",
+        "精彩的联动挑战与独家游戏内奖励",
+        "社交媒体庆祝抽奖活动，包含独家 Viking Rise × How to Train Your Dragon 周边套装"
+      ],
+      "optimizations": [],
+      "fixes": []
+    },
+    "ru": {
+      "major": [
+        "Возвращение коллаборации Viking Rise × How to Train Your Dragon"
+      ],
+      "new_features": [
+        "Новая глава коллаборации с участием Hiccup, Toothless и совершенно новым контентом, вдохновленным миром Berk",
+        "Захватывающие испытания коллаборации и эксклюзивные внутриигровые награды",
+        "Праздничный розыгрыш в социальных сетях с эксклюзивными наборами мерча Viking Rise × How to Train Your Dragon"
+      ],
+      "optimizations": [],
+      "fixes": []
+    }
+  },
+  {
     "id": "update_19_08_2024_220536",
     "meta": {
       "created_at": "2026-08-17T06:42:46.020000Z",
