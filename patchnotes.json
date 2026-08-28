@@ -1,5 +1,67 @@
 [
   {
+    "id": "update_28_08_2026_788427",
+    "meta": {
+      "created_at": "2026-08-28T08:05:14.679000Z",
+      "start_timestamp": "2026-08-28T08:05:14.679000Z",
+      "display_time": "28. Aug 2026",
+      "title_en": "Update 28.08.2026",
+      "title_de": "Update vom 28.08.2026",
+      "title_cn": "更新 28.08.2026",
+      "title_ru": "Обновление 28.08.2026",
+      "image_url": "",
+      "image_urls": []
+    },
+    "en": {
+      "major": [
+        "Second chapter of the How to Train Your Dragon collaboration"
+      ],
+      "new_features": [
+        "Brand-new cosmetics",
+        "Powerful event rewards",
+        "Limited-edition collectibles"
+      ],
+      "optimizations": [],
+      "fixes": []
+    },
+    "de": {
+      "major": [
+        "Zweites Kapitel der How to Train Your Dragon-Kollaboration"
+      ],
+      "new_features": [
+        "Brandneue Kosmetika",
+        "Mächtige Event-Belohnungen",
+        "Limitierte Sammlerstücke"
+      ],
+      "optimizations": [],
+      "fixes": []
+    },
+    "cn": {
+      "major": [
+        "How to Train Your Dragon 联动第二章"
+      ],
+      "new_features": [
+        "全新外观装扮",
+        "强力活动奖励",
+        "限定收藏品"
+      ],
+      "optimizations": [],
+      "fixes": []
+    },
+    "ru": {
+      "major": [
+        "Вторая глава коллаборации How to Train Your Dragon"
+      ],
+      "new_features": [
+        "Совершенно новые косметические предметы",
+        "Мощные награды события",
+        "Лимитированные коллекционные предметы"
+      ],
+      "optimizations": [],
+      "fixes": []
+    }
+  },
+  {
     "id": "update_01_09_2026_410842",
     "meta": {
       "created_at": "2026-08-25T20:27:33.265000Z",
