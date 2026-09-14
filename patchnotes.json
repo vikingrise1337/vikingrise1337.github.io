@@ -1,5 +1,347 @@
 [
   {
+    "id": "update_14_09_2026_411689",
+    "meta": {
+      "created_at": "2026-09-14T09:55:23.021000Z",
+      "start_timestamp": "2026-09-14T09:55:23.021000Z",
+      "display_time": "14. Sep 2026",
+      "title_en": "Update 14.09.2026",
+      "title_de": "Update vom 14.09.2026",
+      "title_cn": "更新 14.09.2026",
+      "title_ru": "Обновление 14.09.2026",
+      "image_url": "",
+      "image_urls": []
+    },
+    "en": {
+      "major": [],
+      "new_features": [],
+      "optimizations": [
+        {
+          "title": "The [Blood Moon Festival] skin set will soon return.",
+          "items": []
+        },
+        {
+          "title": "Optimized city [village] related experiences:",
+          "items": [
+            "Optimized item sorting in Internal Affairs.",
+            "Skill icons on the village chief replacement menu can now be tapped to view descriptions.",
+            "Optimized interactions on the village replacement menu.",
+            "Optimized the village switching guide."
+          ]
+        },
+        {
+          "title": "Optimized [Morreg's Perilous City]:",
+          "items": [
+            "Optimized the display of the waiting list and battle queue.",
+            "Optimized the stamina return rules when no battles occur.",
+            "Adjusted the number of Clock Core monsters on the map, which is now related to the current number of tribes.",
+            "Personal Mission progress will now start counting after the current Chapter is unlocked.",
+            "Increased the daily limits for hijack, escort, city defense, siege, and shop currency.",
+            "Increased currency rewards for killing defenders.",
+            "Increased Personal Mission rewards.",
+            "Increased rewards for successful escort, siege, and city defense.",
+            "Increased first-time occupation rewards."
+          ]
+        },
+        {
+          "title": "Optimized the [City Skin Transformation] feature and added a [Disable Transformation] toggle.",
+          "items": []
+        },
+        {
+          "title": "Optimized the [Beast Wars] feature, removed the manual attack animation, added a [Reward Overview] pop-up, and optimized the red dot display.",
+          "items": []
+        },
+        {
+          "title": "Optimized the [Hero Talent] screen, splitting it into [Hero Star Level] and [Level Talent] to improve convenience and overall display, and removed the prerequisite that upgrading Level Talents requires a specific Hero Star Level.",
+          "items": []
+        },
+        {
+          "title": "Optimized the display after [building upgrade] completion. On the building upgrade screen, tapping upgrade or completing an upgrade will no longer automatically close the screen.",
+          "items": []
+        },
+        {
+          "title": "Optimized the free Troop dispatch logic for [Gathering]. When troop capacity and gathering buffs are the same, the created Troop will prioritize dispatching porter-type Heroes.",
+          "items": []
+        },
+        {
+          "title": "Optimized the [Chat] feature, adding the ability to edit again after recalling a message.",
+          "items": []
+        },
+        {
+          "title": "Optimized the [Rally] feature. After starting a rally, restriction conditions can now be changed again. The changed restrictions only affect subsequent troops that have not yet arrived.",
+          "items": []
+        },
+        {
+          "title": "Optimized the display format of the [Tribe] help queue and the Like display format for special encounters.",
+          "items": []
+        },
+        {
+          "title": "Adjusted the content available in the [Prosperity Shop], adding SX Legendary Skill Shards.",
+          "items": []
+        },
+        {
+          "title": "Optimized the [Kingdom Details] content, adding a record display of how many times the Kingdom has completed [Kingdom Mayhem].",
+          "items": []
+        },
+        {
+          "title": "The shield that is provided after maintenance ends has been adjusted from 8 hours to 24 hours. (When a player comes online, the shield will be automatically canceled.)",
+          "items": []
+        },
+        {
+          "title": "Adjusted the battle start time for registration time slot 4 in [Blood Oath War] and [Battle of the Ruins] from Sunday 04:00 UTC to Sunday 01:00 UTC.",
+          "items": []
+        }
+      ],
+      "fixes": []
+    },
+    "de": {
+      "major": [],
+      "new_features": [],
+      "optimizations": [
+        {
+          "title": "Das [Blood Moon Festival]-Skin-Set kehrt bald zurück.",
+          "items": []
+        },
+        {
+          "title": "Erlebnisse bezüglich Stadt-[village] optimiert:",
+          "items": [
+            "Objektsortierung in Internal Affairs optimiert.",
+            "Fähigkeitssymbole im Menü zum Ersetzen des Dorfchefs können jetzt angetippt werden, um Beschreibungen anzuzeigen.",
+            "Interaktionen im Menü zum Ersetzen des Dorfs optimiert.",
+            "Leitfaden für den Dorfwechsel optimiert."
+          ]
+        },
+        {
+          "title": "[Morreg's Perilous City] optimiert:",
+          "items": [
+            "Anzeige der Warteliste und der Kampfwarteschlange optimiert.",
+            "Regeln für die Rückerstattung von Ausdauer optimiert, wenn keine Kämpfe stattfinden.",
+            "Anzahl der Clock Core-Monster auf der Karte angepasst, die nun von der aktuellen Anzahl der Tribes abhängt.",
+            "Der Fortschritt bei Personal Missions wird nun gezählt, sobald das aktuelle Chapter freigeschaltet ist.",
+            "Tägliche Limits für Hijack, Escort, City Defense, Siege und Shop-Währung erhöht.",
+            "Währungsbelohnungen für das Eliminieren von Verteidigern erhöht.",
+            "Belohnungen für Personal Missions erhöht.",
+            "Belohnungen für erfolgreichen Escort, Siege und City Defense erhöht.",
+            "Belohnungen für die erstmalige Besetzung erhöht."
+          ]
+        },
+        {
+          "title": "Die Funktion [City Skin Transformation] optimiert und einen Umschalter für [Disable Transformation] hinzugefügt.",
+          "items": []
+        },
+        {
+          "title": "Die [Beast Wars]-Funktion optimiert, die manuelle Angriffsanimation entfernt, ein Pop-up für die [Reward Overview] hinzugefügt und die Anzeige des roten Punkts optimiert.",
+          "items": []
+        },
+        {
+          "title": "Den [Hero Talent]-Bildschirm optimiert und zur Verbesserung des Komforts und der Gesamtanzeige in [Hero Star Level] und [Level Talent] aufgeteilt, sowie die Voraussetzung entfernt, dass das Aufwerten von Level Talents ein bestimmtes Hero Star Level erfordert.",
+          "items": []
+        },
+        {
+          "title": "Anzeige nach Abschluss von [building upgrade] optimiert. Auf dem Gebäude-Upgrade-Bildschirm schließt das Antippen von Upgrade oder das Abschließen eines Upgrades den Bildschirm nicht mehr automatisch.",
+          "items": []
+        },
+        {
+          "title": "Logik für die freie Troop-Entsendung beim [Gathering] optimiert. Wenn Truppenkapazität und Sammel-Buffs identisch sind, entsendet die erstellte Troop bevorzugt Helden vom Typ Träger.",
+          "items": []
+        },
+        {
+          "title": "Die [Chat]-Funktion optimiert und die Möglichkeit hinzugefügt, Nachrichten nach dem Zurückrufen erneut zu bearbeiten.",
+          "items": []
+        },
+        {
+          "title": "Die [Rally]-Funktion optimiert. Nach dem Starten einer Rally können Einschränkungsbedingungen nun erneut geändert werden. Die geänderten Einschränkungen wirken sich nur auf nachfolgende Truppen aus, die noch nicht eingetroffen sind.",
+          "items": []
+        },
+        {
+          "title": "Anzeigeformat der [Tribe]-Hilfewarteschlange und das Like-Anzeigeformat für besondere Begegnungen optimiert.",
+          "items": []
+        },
+        {
+          "title": "Verfügbare Inhalte im [Prosperity Shop] angepasst und SX Legendary Skill Shards hinzugefügt.",
+          "items": []
+        },
+        {
+          "title": "Inhalte unter [Kingdom Details] optimiert und eine Verlaufsanzeige hinzugefügt, wie oft das Kingdom [Kingdom Mayhem] abgeschlossen hat.",
+          "items": []
+        },
+        {
+          "title": "Der nach Ende der Wartung gewährte Schild wurde von 8 Stunden auf 24 Stunden angepasst. (Sobald ein Spieler online geht, wird der Schild automatisch aufgehoben.)",
+          "items": []
+        },
+        {
+          "title": "Startzeit der Kämpfe für das Registrierungszeitfenster 4 in [Blood Oath War] und [Battle of the Ruins] von Sonntag 04:00 UTC auf Sonntag 01:00 UTC angepasst.",
+          "items": []
+        }
+      ],
+      "fixes": []
+    },
+    "cn": {
+      "major": [],
+      "new_features": [],
+      "optimizations": [
+        {
+          "title": "[Blood Moon Festival] 皮肤套装即将返场。",
+          "items": []
+        },
+        {
+          "title": "优化主城 [village] 相关体验：",
+          "items": [
+            "优化了内政中的道具排序。",
+            "更换村长界面中的技能图标现在可以点击查看描述。",
+            "优化了更换 village 界面的交互。",
+            "优化了 village 切换引导。"
+          ]
+        },
+        {
+          "title": "优化 [Morreg's Perilous City]：",
+          "items": [
+            "优化了候补列表和战斗队列的显示。",
+            "优化了未发生战斗时的体力返还规则。",
+            "调整了地图上 Clock Core 怪物的数量，现与当前 tribe 数量相关联。",
+            "当前 Chapter 解锁后，Personal Mission 进度才会开始计算。",
+            "提高了掠夺、护送、城防、攻城以及商店货币的每日上限。",
+            "提高了击杀守军的货币奖励。",
+            "提高了 Personal Mission 奖励。",
+            "提高了护送、攻城和城防成功的奖励。",
+            "提高了首次占领奖励。"
+          ]
+        },
+        {
+          "title": "优化了 [City Skin Transformation] 功能，并新增了 [Disable Transformation] 开关。",
+          "items": []
+        },
+        {
+          "title": "优化了 [Beast Wars] 功能，移除了手动攻击动画，新增了 [Reward Overview] 弹窗，并优化了红点显示。",
+          "items": []
+        },
+        {
+          "title": "优化了 [Hero Talent] 界面，将其拆分为 [Hero Star Level] 和 [Level Talent] 以提升操作便利性与整体展示效果，并移除了升级 Level Talent 需要特定 Hero Star Level 的前置条件。",
+          "items": []
+        },
+        {
+          "title": "优化了 [building upgrade] 完成后的显示。在建筑升级界面中，点击升级或完成升级将不再自动关闭界面。",
+          "items": []
+        },
+        {
+          "title": "优化了 [Gathering] 时的自由 Troop 派遣逻辑。当部队容量和采集增益相同时，创建的 Troop 将优先派遣负重型 Hero。",
+          "items": []
+        },
+        {
+          "title": "优化了 [Chat] 功能，撤回消息后新增重新编辑功能。",
+          "items": []
+        },
+        {
+          "title": "优化了 [Rally] 功能。发起集结后，限制条件现在可以重新更改。更改后的限制仅对后续尚未到达的部队生效。",
+          "items": []
+        },
+        {
+          "title": "优化了 [Tribe] 帮助队列的显示样式以及奇遇的点赞显示样式。",
+          "items": []
+        },
+        {
+          "title": "调整了 [Prosperity Shop] 的商品内容，新增了 SX Legendary Skill Shards。",
+          "items": []
+        },
+        {
+          "title": "优化了 [Kingdom Details] 内容，新增了 Kingdom 完成 [Kingdom Mayhem] 次数的记录展示。",
+          "items": []
+        },
+        {
+          "title": "维护结束后提供的护盾时长已从 8 小时调整为 24 小时。（玩家上线后，护盾将自动解除。）",
+          "items": []
+        },
+        {
+          "title": "将 [Blood Oath War] 和 [Battle of the Ruins] 报名时间段 4 的战斗开始时间从周日 04:00 UTC 调整为周日 01:00 UTC。",
+          "items": []
+        }
+      ],
+      "fixes": []
+    },
+    "ru": {
+      "major": [],
+      "new_features": [],
+      "optimizations": [
+        {
+          "title": "Набор обликов [Blood Moon Festival] скоро вернется.",
+          "items": []
+        },
+        {
+          "title": "Оптимизировано взаимодействие с городскими [village]:",
+          "items": [
+            "Оптимизирована сортировка предметов в Internal Affairs.",
+            "Нажав на значки навыков в меню смены деревенского старосты, теперь можно просмотреть их описание.",
+            "Оптимизировано взаимодействие в меню смены деревни.",
+            "Оптимизировано руководство по переключению деревни."
+          ]
+        },
+        {
+          "title": "Оптимизировано событие [Morreg's Perilous City]:",
+          "items": [
+            "Оптимизировано отображение списка ожидания и очереди боя.",
+            "Оптимизированы правила возврата выносливости в случаях, когда бои не состоялись.",
+            "Скорректировано количество монстров Clock Core на карте: теперь оно зависит от текущего количества племен.",
+            "Прогресс Personal Mission теперь начинает учитываться после открытия текущей Chapter.",
+            "Увеличены ежедневные лимиты для перехвата, сопровождения, защиты города, осады и валюты магазина.",
+            "Увеличены награды в валюте за убийство защитников.",
+            "Увеличены награды за Personal Mission.",
+            "Увеличены награды за успешное сопровождение, осаду и защиту города.",
+            "Увеличены награды за первый захват."
+          ]
+        },
+        {
+          "title": "Оптимизирована функция [City Skin Transformation] и добавлен переключатель [Disable Transformation].",
+          "items": []
+        },
+        {
+          "title": "Оптимизирована функция [Beast Wars]: удалена анимация ручной атаки, добавлено всплывающее окно [Reward Overview] и оптимизировано отображение красной точки.",
+          "items": []
+        },
+        {
+          "title": "Оптимизирован экран [Hero Talent]: он разделен на [Hero Star Level] и [Level Talent] для большего удобства и наглядности; также удалено требование определенного Hero Star Level для улучшения Level Talents.",
+          "items": []
+        },
+        {
+          "title": "Оптимизировано отображение после завершения [building upgrade]. На экране улучшения здания нажатие кнопки улучшения или его завершение больше не закрывает экран автоматически.",
+          "items": []
+        },
+        {
+          "title": "Оптимизирована логика свободной отправки Troop для [Gathering]. При одинаковой вместимости войск и бонусах к сбору созданный Troop будет отдавать приоритет отправке героев типа «носильщик».",
+          "items": []
+        },
+        {
+          "title": "Оптимизирована функция [Chat]: добавлена возможность повторного редактирования после отзыва сообщения.",
+          "items": []
+        },
+        {
+          "title": "Оптимизирована функция [Rally]. После начала сбора условия ограничений теперь можно изменить снова. Измененные условия влияют только на последующие отряды, которые еще не прибыли.",
+          "items": []
+        },
+        {
+          "title": "Оптимизирован формат отображения очереди помощи [Tribe] и формат отображения отметок «Нравится» для особых встреч.",
+          "items": []
+        },
+        {
+          "title": "Скорректирован ассортимент в [Prosperity Shop]: добавлены SX Legendary Skill Shards.",
+          "items": []
+        },
+        {
+          "title": "Оптимизировано содержимое [Kingdom Details]: добавлено отображение счетчика завершений события [Kingdom Mayhem] данным королевством.",
+          "items": []
+        },
+        {
+          "title": "Длительность щита, предоставляемого после завершения техработ, увеличена с 8 до 24 часов. (Когда игрок заходит в сеть, щит автоматически снимается.)",
+          "items": []
+        },
+        {
+          "title": "Время начала битвы для 4-го слота регистрации в [Blood Oath War] и [Battle of the Ruins] перенесено с воскресенья 04:00 UTC на воскресенье 01:00 UTC.",
+          "items": []
+        }
+      ],
+      "fixes": []
+    }
+  },
+  {
     "id": "update_16_09_2026_797165",
     "meta": {
       "created_at": "2026-09-14T09:55:03.944000Z",
