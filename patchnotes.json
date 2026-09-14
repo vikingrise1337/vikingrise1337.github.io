@@ -1,5 +1,95 @@
 [
   {
+    "id": "update_16_09_2026_797165",
+    "meta": {
+      "created_at": "2026-09-14T09:55:03.944000Z",
+      "start_timestamp": "2026-09-16T06:00:00.000000Z",
+      "display_time": "9/16 06:00 - 07:00 (UTC)",
+      "title_en": "Update 16.09.2026",
+      "title_de": "Update vom 16.09.2026",
+      "title_cn": "更新 16.09.2026",
+      "title_ru": "Обновление 16.09.2026",
+      "image_url": "",
+      "image_urls": []
+    },
+    "en": {
+      "major": [
+        "A new season experience—[Cycle Season]—is now available! Chiefs can vote to choose the Campaign Scenario, plan the season direction together with their tribe, select their own [Cycle Season], and write a brand-new legend for the Vikings! Preview starts on September 17, 2026, first opens in Kingdoms 1-288.",
+        "Added [Promote Heroes to SP Grade]. [Pathfinder·Verdandi], [Snake Eye·Sigurd], and [Divine Servant·Jens] will be available first. SP Heroes have brand-new model skins and stronger abilities, and can be promoted and upgraded by consuming [Generic SP Hero Shards].",
+        "The [Time Journal] event series will begin soon! Participate in the event and complete the Card Album to claim rewards such as the new mount skin [Calamity]. Unlock Requirements: Reach Chief Hall Lv 10 and Chapter 21. Event Time: 2026/10/01 00:00 - 2026/12/31 00:00 UTC."
+      ],
+      "new_features": [
+        "Added the [Hero Promote to SP Grade] feature. Unlocks after Kingdom experiences 7 Conquest Seasons (Sx) or completes Kingdom Mayhem 9 times. Specific Awakened Heroes can be promoted to SP Grade and Ascended using [Generic SP Hero Shards]. Unlocks [SP Honor Stele Buff] after any SP Hero's Talents reach max level.",
+        "Added the [Prosperity Era] event. Obtain Prosperity Seals and reach points to claim rewards. Unlocks at Chief Hall Lv 6 and Chapter 12; available on the first day after new-server players create a character in Kingdom 751 and later.",
+        "Added the [SP Hero's Path] event. Complete specified quests to unlock puzzle pieces and obtain line rewards. Available in Kingdoms 1-288 from 2026/09/24 00:00 - 2026/10/01 00:00 UTC.",
+        "Added [SP Hero Journey]. Available in Kingdoms 1-288 from 2026/09/24 00:00 - 2026/10/01 00:00 UTC (Chief Hall Lv 9 and Chapter 19).",
+        "Added the [Ironclad Star Path], [Arrow Star Path], and [Lance Star Path] events. Develop SP Heroes to obtain rewards. Available in Kingdoms 1-288 during self-selected Campaign Scenario period of [Cycle Season].",
+        "Added a summary feature to the [Chat] system to automatically generate a summary of chat content when unread messages reach a certain number.",
+        "Added a second confirmation pop-up when exchanging for max-star Skill Shards in the [Expedition Shop].",
+        "Added the Arena skin feature, allowing players to change the Arena Starlight Ruins."
+      ],
+      "optimizations": [],
+      "fixes": []
+    },
+    "de": {
+      "major": [
+        "Ein neues Season-Erlebnis – [Cycle Season] – ist jetzt verfügbar! Chiefs können abstimmen, um das Campaign Scenario zu wählen, die Richtung der Season gemeinsam mit ihrem Tribe zu planen, ihre eigene [Cycle Season] auszuwählen und eine brandneue Legende für die Vikings zu schreiben! Die Vorschau beginnt am 17. September 2026 und öffnet zuerst in Kingdoms 1-288.",
+        "[Promote Heroes to SP Grade] hinzugefügt. [Pathfinder·Verdandi], [Snake Eye·Sigurd] und [Divine Servant·Jens] werden zuerst verfügbar sein. SP Heroes verfügen über brandneue Model-Skins sowie stärkere Fähigkeiten und können durch den Verbrauch von [Generic SP Hero Shards] befördert und aufgewertet werden.",
+        "Die Event-Reihe [Time Journal] beginnt bald! Nimm am Event teil und vervollständige das Card Album, um Belohnungen wie den neuen Mount-Skin [Calamity] einzufordern. Freischaltbedingungen: Erreiche Chief Hall Lv 10 und Chapter 21. Event-Zeit: 2026/10/01 00:00 - 2026/12/31 00:00 UTC."
+      ],
+      "new_features": [
+        "Das Feature [Hero Promote to SP Grade] wurde hinzugefügt. Wird freigeschaltet, nachdem ein Kingdom 7 Conquest Seasons (Sx) durchlaufen oder Kingdom Mayhem 9-mal abgeschlossen hat. Bestimmte Awakened Heroes können auf SP Grade befördert und mit [Generic SP Hero Shards] ascended werden. Schaltet [SP Honor Stele Buff] frei, nachdem die Talente eines beliebigen SP Heroes die maximale Stufe erreicht haben.",
+        "Das Event [Prosperity Era] wurde hinzugefügt. Erhalte Prosperity Seals und erreiche Punkte, um Belohnungen einzufordern. Schaltet ab Chief Hall Lv 6 und Chapter 12 frei; verfügbar am ersten Tag, nachdem Spieler auf neuen Servern einen Charakter in Kingdom 751 und später erstellt haben.",
+        "Das Event [SP Hero's Path] wurde hinzugefügt. Schließe bestimmte Quests ab, um Puzzleteile freizuschalten und Linienbelohnungen zu erhalten. Verfügbar in Kingdoms 1-288 vom 2026/09/24 00:00 - 2026/10/01 00:00 UTC.",
+        "[SP Hero Journey] hinzugefügt. Verfügbar in Kingdoms 1-288 vom 2026/09/24 00:00 - 2026/10/01 00:00 UTC (Chief Hall Lv 9 und Chapter 19).",
+        "Die Events [Ironclad Star Path], [Arrow Star Path] und [Lance Star Path] wurden hinzugefügt. Entwickle SP Heroes, um Belohnungen zu erhalten. Verfügbar in Kingdoms 1-288 während des selbstgewählten Campaign Scenario-Zeitraums der [Cycle Season].",
+        "Dem [Chat]-System wurde eine Zusammenfassungsfunktion hinzugefügt, um automatisch eine Zusammenfassung des Chat-Inhalts zu erstellen, wenn ungelesene Nachrichten eine bestimmte Anzahl erreichen.",
+        "Ein zweites Bestätigungs-Pop-up beim Eintauschen gegen Skill Shards mit maximalen Sternen im [Expedition Shop] hinzugefügt.",
+        "Arena-Skin-Funktion hinzugefügt, mit der Spieler die Arena Starlight Ruins anpassen können."
+      ],
+      "optimizations": [],
+      "fixes": []
+    },
+    "cn": {
+      "major": [
+        "全新赛季体验——[Cycle Season]现已开启！首领们可以投票选择Campaign Scenario，与部落一同规划赛季方向，自主选择[Cycle Season]，为维京人书写崭新的传奇！预告将于2026年9月17日开启，首批在Kingdoms 1-288开放。",
+        "新增[Promote Heroes to SP Grade]。[Pathfinder·Verdandi]、[Snake Eye·Sigurd]和[Divine Servant·Jens]将率先登场。SP Heroes拥有全新的模型外观和更强大的技能，可通过消耗[Generic SP Hero Shards]进行升阶和升级。",
+        "[Time Journal]系列活动即将开启！参与活动并完成卡册即可领取全新坐骑外观[Calamity]等丰厚奖励。解锁条件：Chief Hall达到Lv 10且完成Chapter 21。活动时间：2026/10/01 00:00 - 2026/12/31 00:00 UTC。"
+      ],
+      "new_features": [
+        "新增[Hero Promote to SP Grade]功能。所在Kingdom经历7次Conquest Seasons (Sx)或完成9次Kingdom Mayhem后解锁。特定的Awakened Heroes可以使用[Generic SP Hero Shards]晋升至SP Grade并进行升阶。当任意SP Hero的天赋达到满级后，将解锁[SP Honor Stele Buff]。",
+        "新增[Prosperity Era]活动。获取Prosperity Seals并达到指定积分即可领取奖励。Chief Hall达到Lv 6且完成Chapter 12时解锁；在Kingdom 751及之后的王国中，新服玩家创建角色后的第一天即可参与。",
+        "新增[SP Hero's Path]活动。完成指定任务解锁拼图碎片以获取连线奖励。将于2026/09/24 00:00 - 2026/10/01 00:00 UTC在Kingdoms 1-288开放。",
+        "新增[SP Hero Journey]。将于2026/09/24 00:00 - 2026/10/01 00:00 UTC在Kingdoms 1-288开放（需Chief Hall达到Lv 9且完成Chapter 19）。",
+        "新增[Ironclad Star Path]、[Arrow Star Path]和[Lance Star Path]活动。培养SP Heroes即可获取奖励。在[Cycle Season]的自选Campaign Scenario期间对Kingdoms 1-288开放。",
+        "[Chat]系统新增摘要功能，当未读消息达到一定数量时将自动生成聊天内容摘要。",
+        "在[Expedition Shop]中兑换已满星的Skill Shards时新增二次确认弹窗。",
+        "新增Arena外观功能，玩家可以更换Arena Starlight Ruins外观。"
+      ],
+      "optimizations": [],
+      "fixes": []
+    },
+    "ru": {
+      "major": [
+        "Новый сезонный опыт — [Cycle Season] — уже доступен! Вожди могут голосовать за выбор Campaign Scenario, планировать направление сезона вместе со своим племенем, выбирать свой собственный [Cycle Season] и писать совершенно новую легенду викингов! Предварительный просмотр начнется 17 сентября 2026 года, впервые откроется в Kingdoms 1-288.",
+        "Добавлено [Promote Heroes to SP Grade]. Первыми станут доступны [Pathfinder·Verdandi], [Snake Eye·Sigurd] и [Divine Servant·Jens]. SP Heroes обладают совершенно новыми обликами моделей и более мощными способностями, а также могут быть повышены и улучшены с помощью [Generic SP Hero Shards].",
+        "Серия событий [Time Journal] скоро начнется! Участвуйте в событии и соберите Card Album, чтобы получить такие награды, как новый скин для маунта [Calamity]. Требования для разблокировки: достичь Chief Hall Lv 10 и Chapter 21. Время проведения события: 2026/10/01 00:00 - 2026/12/31 00:00 UTC."
+      ],
+      "new_features": [
+        "Добавлена функция [Hero Promote to SP Grade]. Разблокируется после того, как Kingdom пройдет 7 Conquest Seasons (Sx) или завершит Kingdom Mayhem 9 раз. Определенные Awakened Heroes могут быть повышены до SP Grade и вознесены с помощью [Generic SP Hero Shards]. Разблокирует [SP Honor Stele Buff] после того, как Talents любого SP Hero достигнут максимального уровня.",
+        "Добавлено событие [Prosperity Era]. Получайте Prosperity Seals и набирайте очки, чтобы забрать награды. Разблокируется на Chief Hall Lv 6 и Chapter 12; доступно в первый день после создания персонажа игроками на новых серверах в Kingdom 751 и новее.",
+        "Добавлено событие [SP Hero's Path]. Выполняйте указанные задания, чтобы открывать фрагменты пазла и получать награды за линии. Доступно в Kingdoms 1-288 с 2026/09/24 00:00 по 2026/10/01 00:00 UTC.",
+        "Добавлено событие [SP Hero Journey]. Доступно в Kingdoms 1-288 с 2026/09/24 00:00 по 2026/10/01 00:00 UTC (Chief Hall Lv 9 и Chapter 19).",
+        "Добавлены события [Ironclad Star Path], [Arrow Star Path] и [Lance Star Path]. Развивайте SP Heroes, чтобы получать награды. Доступно в Kingdoms 1-288 во время выбранного периода Campaign Scenario сезона [Cycle Season].",
+        "В систему [Chat] добавлена функция сводки, которая автоматически генерирует краткое содержание чата, когда количество непрочитанных сообщений достигает определенного числа.",
+        "Добавлено окно повторного подтверждения при обмене на Skill Shards максимального уровня звезд в [Expedition Shop].",
+        "Добавлена функция скинов Arena, позволяющая игрокам изменять Arena Starlight Ruins."
+      ],
+      "optimizations": [],
+      "fixes": []
+    }
+  },
+  {
     "id": "update_28_08_2026_788427",
     "meta": {
       "created_at": "2026-08-28T08:05:14.679000Z",
