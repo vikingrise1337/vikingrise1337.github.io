@@ -9,8 +9,11 @@
       "title_de": "Update vom 21.10.2026",
       "title_cn": "更新 21.10.2026",
       "title_ru": "Обновление 21.10.2026",
-      "image_url": "",
-      "image_urls": []
+      "image_url": "images/updates/update_21_10_2026_109237_1.jpg",
+      "image_urls": [
+        "images/updates/update_21_10_2026_109237_1.jpg",
+        "images/updates/update_21_10_2026_109237_2.jpg"
+      ]
     },
     "en": {
       "major": [
