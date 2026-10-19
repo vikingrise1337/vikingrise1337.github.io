@@ -1,5 +1,255 @@
 [
   {
+    "id": "update_21_10_2026_109237",
+    "meta": {
+      "created_at": "2026-10-19T05:10:09.497000Z",
+      "start_timestamp": "2026-10-21T06:00:00.000000Z",
+      "display_time": "10/21 06:00 - 07:00 (UTC)",
+      "title_en": "Update 21.10.2026",
+      "title_de": "Update vom 21.10.2026",
+      "title_cn": "更新 21.10.2026",
+      "title_ru": "Обновление 21.10.2026",
+      "image_url": "",
+      "image_urls": []
+    },
+    "en": {
+      "major": [
+        "The [Magical Halloween Night] event is coming soon. Come enjoy a fantastical Halloween! Trick or treat! (Event Time: 2026/10/25 00:00 - 2026/11/1 00:00 UTC; Shop Exchange Time: 2026/10/25 00:00 - 2026/11/2 00:00 UTC; Unlock Requirements: Reach Chief Hall Lv 9 and Chapter 19)",
+        "[Treasure Matching] is about to begin. Select your desired item and start matching. If a newly revealed treasure matches the [Lucky Treasure] you selected, you can obtain the reward! (Event Time: 2026/11/13 00:00 - 2026/11/16 00:00 UTC; Unlock Requirements: Reach Chief Hall Lv 9 and Chapter 19)"
+      ],
+      "new_features": [
+        "Adjustments to early-game gameplay and features: Added the [Break the Shadows] encounter (triggered after occupying the first village) and [Hela's Phantom] challenge to the early-game (only characters created after the update are supported).",
+        "Added the [Equip All] feature to the Arena, Sworn Vengeance, and Rat Extermination; saved data will take effect normally.",
+        "Optimized Worker recruitment: Added [Quick Recruit] entrances, [Auto Shard Recruit] upon fusing Worker Shards when not at max limit, and [Worker Recruitment Discount] reducing cost in the Clan Camp.",
+        "City automation feature: Added [Worker Errand Gathering Automation] queue to deploy exclusive gatherers for daily gathering efficiency."
+      ],
+      "optimizations": [
+        {
+          "title": "Optimized the [Morreg's Perilous City] event",
+          "items": [
+            "Added the Supply Truck repair feature: each repair costs 1 Field Ration.",
+            "When a Supply Truck sent by a tribe is defeated, it will remain in place and enter the 'Awaiting Repair' state; all players in the tribe can send troops to repair the Supply Truck. The more troops sent, the faster the repair.",
+            "Added a Troop [Return] button: when the troop can be recalled, the 'Return' button will be displayed next to the troop avatar. It will not be displayed when the troop cannot be recalled.",
+            "Optimized Shop content: Morreg Shop will no longer display other shop pages."
+          ]
+        },
+        {
+          "title": "Optimized the interface of [Staging Post Benefits]",
+          "items": []
+        },
+        {
+          "title": "Optimized the interface of the [Skin Shop]",
+          "items": [
+            "Added separate skin and item tabs."
+          ]
+        },
+        {
+          "title": "Optimized [Trial of Courage]",
+          "items": [
+            "Added records of the player who summoned the defeated wild monster and the damage dealt to the wild monster."
+          ]
+        },
+        {
+          "title": "Optimized the display of the [Blood Oath War]",
+          "items": [
+            "Hidden the Might/total member count information of both friendly and enemy Legions."
+          ]
+        },
+        {
+          "title": "Optimized the display of the [Apex Championship]",
+          "items": [
+            "Hidden tribe Might in some menus."
+          ]
+        },
+        {
+          "title": "Optimized the mobile display for some gameplay modes",
+          "items": [
+            "Added a [Collapse] button. After entering the battlefield, the UI will be collapsed by default.",
+            "Supported gameplay modes: Tidal Pearl Contest, Naval Dominion, Blood Oath War, Battle of the Ruins, Apex Championship."
+          ]
+        }
+      ],
+      "fixes": []
+    },
+    "de": {
+      "major": [
+        "Das [Magical Halloween Night]-Event beginnt in Kürze. Komm und genieße ein fantastisches Halloween! Süßes oder Saures! (Event-Zeitraum: 2026/10/25 00:00 - 2026/11/1 00:00 UTC; Shop-Einlösezeitraum: 2026/10/25 00:00 - 2026/11/2 00:00 UTC; Freischaltbedingungen: Chief Hall Stufe 9 und Kapitel 19 erreichen)",
+        "[Treasure Matching] beginnt in Kürze. Wähle deinen gewünschten Gegenstand und starte das Matching. Wenn ein neu aufgedeckter Schatz mit dem ausgewählten [Lucky Treasure] übereinstimmt, erhältst du die Belohnung! (Event-Zeitraum: 2026/11/13 00:00 - 2026/11/16 00:00 UTC; Freischaltbedingungen: Chief Hall Stufe 9 und Kapitel 19 erreichen)"
+      ],
+      "new_features": [
+        "Anpassungen am Gameplay und an den Funktionen im Early-Game: Begegnung [Break the Shadows] (ausgelöst nach der Besetzung des ersten Dorfes) und [Hela's Phantom]-Herausforderung im Early-Game hinzugefügt (wird nur für nach dem Update erstellte Charaktere unterstützt).",
+        "Die Funktion [Equip All] wurde zu Arena, Sworn Vengeance und Rat Extermination hinzugefügt; gespeicherte Daten werden normal wirksam.",
+        "Worker-Rekrutierung optimiert: Zugänge für [Quick Recruit], [Auto Shard Recruit] beim Verschmelzen von Worker-Splittern bei nicht erreichtem Limit und [Worker Recruitment Discount] zur Kostenreduzierung im Clan Camp hinzugefügt.",
+        "Stadt-Automatisierungsfunktion: Warteschlange [Worker Errand Gathering Automation] hinzugefügt, um exklusive Sammler für eine effiziente tägliche Sammlung einzusetzen."
+      ],
+      "optimizations": [
+        {
+          "title": "[Morreg's Perilous City]-Event optimiert",
+          "items": [
+            "Reparaturfunktion für Supply Truck hinzugefügt: Jede Reparatur kostet 1 Field Ration.",
+            "Wenn ein von einem Stamm entsandter Supply Truck besiegt wird, bleibt er an Ort und Stelle und wechselt in den Status „Awaiting Repair“; alle Spieler des Stammes können Truppen entsenden, um den Supply Truck zu reparieren. Je mehr Truppen entsendet werden, desto schneller erfolgt die Reparatur.",
+            "Truppen-Schaltfläche [Return] hinzugefügt: Wenn die Truppe zurückgerufen werden kann, wird die „Return“-Schaltfläche neben dem Truppen-Avatar angezeigt. Sie wird nicht angezeigt, wenn die Truppe nicht zurückgerufen werden kann.",
+            "Shop-Inhalte optimiert: Morreg Shop zeigt keine anderen Shop-Seiten mehr an."
+          ]
+        },
+        {
+          "title": "Benutzeroberfläche von [Staging Post Benefits] optimiert",
+          "items": []
+        },
+        {
+          "title": "Benutzeroberfläche des [Skin Shop] optimiert",
+          "items": [
+            "Separate Tabs für Skins und Gegenstände hinzugefügt."
+          ]
+        },
+        {
+          "title": "[Trial of Courage] optimiert",
+          "items": [
+            "Aufzeichnungen über den Spieler hinzugefügt, der das besiegte wilde Monster beschworen hat, sowie den am wilden Monster verursachten Schaden."
+          ]
+        },
+        {
+          "title": "Anzeige von [Blood Oath War] optimiert",
+          "items": [
+            "Informationen zu Might/Gesamtmitgliederzahl sowohl verbündeter als auch feindlicher Legions ausgeblendet."
+          ]
+        },
+        {
+          "title": "Anzeige der [Apex Championship] optimiert",
+          "items": [
+            "Stammes-Might in einigen Menüs ausgeblendet."
+          ]
+        },
+        {
+          "title": "Mobile Anzeige für einige Spielmodi optimiert",
+          "items": [
+            "[Collapse]-Schaltfläche hinzugefügt. Nach dem Betreten des Schlachtfelds wird das UI standardmäßig eingeklappt.",
+            "Unterstützte Spielmodi: Tidal Pearl Contest, Naval Dominion, Blood Oath War, Battle of the Ruins, Apex Championship."
+          ]
+        }
+      ],
+      "fixes": []
+    },
+    "cn": {
+      "major": [
+        "[Magical Halloween Night] 活动即将开启。快来体验奇幻的万圣节吧！不给糖就捣蛋！（活动时间：2026/10/25 00:00 - 2026/11/1 00:00 UTC；商店兑换时间：2026/10/25 00:00 - 2026/11/2 00:00 UTC；解锁条件：达到 Chief Hall Lv 9 且完成 Chapter 19）",
+        "[Treasure Matching] 即将开启。选择您心仪的物品并开始匹配。如果新翻开的宝藏与您所选的 [Lucky Treasure] 一致，即可获得奖励！（活动时间：2026/11/13 00:00 - 2026/11/16 00:00 UTC；解锁条件：达到 Chief Hall Lv 9 且完成 Chapter 19）"
+      ],
+      "new_features": [
+        "前期玩法与功能调整：在游戏前期新增了 [Break the Shadows] 遭遇事件（占领首个村庄后触发）以及 [Hela's Phantom] 挑战（仅支持更新后创建的角色）。",
+        "在 Arena、Sworn Vengeance 和 Rat Extermination 中新增了 [Equip All] 功能；保存的数据将正常生效。",
+        "优化了 Worker 招募：新增 [Quick Recruit] 入口，当未达上限时合成 Worker Shards 可触发 [Auto Shard Recruit]，并在 Clan Camp 中提供降低消耗的 [Worker Recruitment Discount]。",
+        "城市自动化功能：新增 [Worker Errand Gathering Automation] 队列，可派遣专属采集者以提高日常采集效率。"
+      ],
+      "optimizations": [
+        {
+          "title": "优化了 [Morreg's Perilous City] 活动",
+          "items": [
+            "新增 Supply Truck 维修功能：每次维修消耗 1 个 Field Ration。",
+            "当部落派出的 Supply Truck 被击败时，它将留在原地并进入“Awaiting Repair”状态；该部落的所有玩家都可以派遣部队前往维修 Supply Truck。派遣的部队越多，维修速度越快。",
+            "新增部队 [Return] 按钮：当部队可以被召回时，部队头像旁将显示“Return”按钮。当部队无法被召回时则不显示。",
+            "优化了商店内容：Morreg Shop 将不再显示其他商店页面。"
+          ]
+        },
+        {
+          "title": "优化了 [Staging Post Benefits] 的界面",
+          "items": []
+        },
+        {
+          "title": "优化了 [Skin Shop] 的界面",
+          "items": [
+            "新增了独立的皮肤与物品分页。"
+          ]
+        },
+        {
+          "title": "优化了 [Trial of Courage]",
+          "items": [
+            "新增了被击败野怪的召唤者玩家记录以及对野怪造成的伤害记录。"
+          ]
+        },
+        {
+          "title": "优化了 [Blood Oath War] 的显示",
+          "items": [
+            "隐藏了敌我双方 Legions 的 Might 及成员总数信息。"
+          ]
+        },
+        {
+          "title": "优化了 [Apex Championship] 的显示",
+          "items": [
+            "在部分菜单中隐藏了部落 Might。"
+          ]
+        },
+        {
+          "title": "优化了部分玩法模式的移动端显示",
+          "items": [
+            "新增了 [Collapse] 按钮。进入战场后，UI 将默认处于折叠状态。",
+            "支持的玩法模式：Tidal Pearl Contest、Naval Dominion、Blood Oath War、Battle of the Ruins、Apex Championship。"
+          ]
+        }
+      ],
+      "fixes": []
+    },
+    "ru": {
+      "major": [
+        "Событие [Magical Halloween Night] скоро начнется. Приходите и насладитесь фантастическим Хэллоуином! Сладость или гадость! (Время события: 25.10.2026 00:00 - 01.11.2026 00:00 UTC; Время обмена в магазине: 25.10.2026 00:00 - 02.11.2026 00:00 UTC; Требования для разблокировки: Chief Hall 9 ур. и Chapter 19)",
+        "[Treasure Matching] вот-вот начнется. Выберите желаемый предмет и начните сопоставление. Если вновь открытое сокровище совпадет с выбранным вами [Lucky Treasure], вы получите награду! (Время события: 13.11.2026 00:00 - 16.11.2026 00:00 UTC; Требования для разблокировки: Chief Hall 9 ур. и Chapter 19)"
+      ],
+      "new_features": [
+        "Изменения геймплея и функций на ранних этапах игры: добавлены столкновение [Break the Shadows] (срабатывает после захвата первой деревни) и испытание [Hela's Phantom] на раннем этапе игры (доступно только для персонажей, созданных после обновления).",
+        "Добавлена функция [Equip All] для режимов Arena, Sworn Vengeance и Rat Extermination; сохраненные данные вступят в силу обычным образом.",
+        "Оптимизирован наем Worker: добавлены входы [Quick Recruit], [Auto Shard Recruit] при объединении Worker Shards при недостигнутом лимите, а также скидка [Worker Recruitment Discount], снижающая стоимость в Clan Camp.",
+        "Функция автоматизации города: добавлена очередь [Worker Errand Gathering Automation] для отправки особых сборщиков ради ежедневной эффективности сбора."
+      ],
+      "optimizations": [
+        {
+          "title": "Оптимизировано событие [Morreg's Perilous City]",
+          "items": [
+            "Добавлена функция ремонта Supply Truck: каждый ремонт стоит 1 Field Ration.",
+            "Когда отправленный племенем Supply Truck терпит поражение, он остается на месте и переходит в статус «Ожидает ремонта»; все игроки племени могут отправлять войска для ремонта Supply Truck. Чем больше войск отправлено, тем быстрее ремонт.",
+            "Добавлена кнопка Troop [Return]: когда войска можно отозвать, кнопка «Return» отображается рядом с аватаром отряда. Она не отображается, если отряд нельзя отозвать.",
+            "Оптимизировано содержимое магазина: в Morreg Shop больше не отображаются страницы других магазинов."
+          ]
+        },
+        {
+          "title": "Оптимизирован интерфейс [Staging Post Benefits]",
+          "items": []
+        },
+        {
+          "title": "Оптимизирован интерфейс [Skin Shop]",
+          "items": [
+            "Добавлены отдельные вкладки для обликов и предметов."
+          ]
+        },
+        {
+          "title": "Оптимизирован режим [Trial of Courage]",
+          "items": [
+            "Добавлены записи об игроке, призвавшем побежденного дикого монстра, и о нанесенном дикому монстру уроне."
+          ]
+        },
+        {
+          "title": "Оптимизировано отображение [Blood Oath War]",
+          "items": [
+            "Скрыта информация о Might/общем количестве участников как союзных, так и вражеских Legion."
+          ]
+        },
+        {
+          "title": "Оптимизировано отображение [Apex Championship]",
+          "items": [
+            "В некоторых меню скрыт Might племени."
+          ]
+        },
+        {
+          "title": "Оптимизировано мобильное отображение для некоторых режимов игры",
+          "items": [
+            "Добавлена кнопка [Collapse]. После входа на поле боя интерфейс будет свернут по умолчанию.",
+            "Поддерживаемые режимы игры: Tidal Pearl Contest, Naval Dominion, Blood Oath War, Battle of the Ruins, Apex Championship."
+          ]
+        }
+      ],
+      "fixes": []
+    }
+  },
+  {
     "id": "update_14_09_2026_411689",
     "meta": {
       "created_at": "2026-09-14T09:55:23.021000Z",
