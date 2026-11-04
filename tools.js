@@ -1,4 +1,4 @@
-import {resources, planTroops, planUpgrades, compareBonuses, planGathering} from "./tool-math.js?v=1";
+import {resources, planTroops, planUpgrades, compareBonuses, planGathering, compareTroopTiers, planItems} from "./tool-math.js?v=2";
 
 const languages = ["en", "de", "cn", "ru"];
 const words = {
@@ -6,10 +6,52 @@ const words = {
   tools:["Player tools","Spielerwerkzeuge","玩家工具","Инструменты игрока"],
   intro:["Plan troops, upgrades, equipment and gathering with your in-game values.","Plane Truppen, Ausbau, Ausrüstung und Sammelmärsche mit deinen Spielwerten.","使用游戏内数值规划部队、升级、装备与采集。","Планируйте войска, улучшения, снаряжение и сбор по значениям из игры."],
   foot:["Unofficial fan tools for Viking Rise.","Inoffizielle Fan-Werkzeuge für Viking Rise.","Viking Rise 非官方玩家工具。","Неофициальные инструменты сообщества Viking Rise."],
+  heroMeta:["7 tools · works without a game login","7 Werkzeuge · ohne Spiel-Login","7 个工具 · 无需游戏登录","7 инструментов · вход в игру не нужен"],
+  allTools:["← All tools","← Alle Werkzeuge","← 全部工具","← Все инструменты"],
+  resultHint:["Your result will appear here. Load an example to try the calculator.","Hier erscheint dein Ergebnis. Lade ein Beispiel, um den Rechner auszuprobieren.","计算结果显示在这里。可载入示例体验。","Здесь появится результат. Загрузите пример, чтобы попробовать калькулятор."],
   troops:["Troops & events","Truppen & Events","部队与活动","Войска и события"],
   upgrades:["Buildings & research","Bau & Forschung","建造与研究","Здания и исследования"],
   builds:["Jewels & mounts","Juwelen & Reittiere","宝石与坐骑","Самоцветы и ездовые животные"],
   gather:["Gathering","Rohstoffe sammeln","资源采集","Сбор ресурсов"],
+  tiers:["Troop tier comparison","Truppenstufen vergleichen","兵阶对比","Сравнение войск"],
+  growth:["Shards, XP & emblems","Scherben, EP & Embleme","碎片、经验与徽章","Осколки, опыт и эмблемы"],
+  migration:["Migration passes","Migrationspässe","移民券","Билеты миграции"],
+  troopSummary:["Train, heal or promote within your event budget.","Trainieren, heilen oder befördern. Mit Budget fürs Event.","规划训练、治疗或晋升的活动预算。","Обучение, лечение и повышение с учётом бюджета события."],
+  upgradeSummary:["Add up steps, prerequisites and speedups.","Kosten, Voraussetzungen und Beschleuniger zusammenrechnen.","汇总升级步骤、前置条件与加速。","Учтите этапы, требования и ускорения."],
+  buildSummary:["Compare bonuses and skill effects across two setups.","Boni und Fertigkeiten zweier Zusammenstellungen vergleichen.","比较两套配置的加成与技能效果。","Сравните бонусы и навыки двух сборок."],
+  gatherSummary:["See the yield per trip and per hour.","Ertrag pro Marsch und pro Stunde ausrechnen.","计算单趟与每小时采集量。","Рассчитайте добычу за поход и за час."],
+  tierSummary:["Compare the cost of two tiers for the same number of troops.","Kosten zweier Stufen für dieselbe Truppenzahl vergleichen.","对比两种兵阶在相同兵数下的开销。","Сравните стоимость двух уровней при одинаковом числе войск."],
+  growthSummary:["Find out how much you still need for your next upgrade.","Sehen, was dir bis zur nächsten Zielstufe fehlt.","查看升级到目标等级还缺多少材料。","Узнайте, сколько не хватает до цели."],
+  migrationSummary:["Check your passes and compare against a power limit.","Pässe zählen und Machtgrenze prüfen.","核对移民券与战力上限。","Проверьте билеты и лимит мощи."],
+  tierIntro:["Take two training previews with the same buffs. The calculator scales both to the same troop count so you can see the cost difference.","Übernimm zwei Trainingsvorschauen mit denselben Boni. Der Rechner rechnet beide auf dieselbe Truppenzahl hoch und zeigt den Unterschied.","取两种兵阶在相同加成下的训练预览。计算器按相同兵数换算并显示差额。","Введите два предварительных расчёта с одинаковыми бонусами. Сравнение выполняется для одного числа войск."],
+  growthIntro:["Pick an item type and enter the cost of each remaining level from the game. The result compares your stock with the amount still needed.","Wähle ein Material und trage die Kosten für jede verbleibende Stufe aus dem Spiel ein. Der Rechner gleicht den Bedarf mit deinem Bestand ab.","选择材料并输入游戏中剩余各级的消耗。计算器会用需求对比库存。","Выберите материал и укажите стоимость оставшихся уровней из игры. Калькулятор сравнит потребность с запасом."],
+  migrationIntro:["Enter the pass cost and power limit shown for your target kingdom. Other migration conditions depend on the in-game event.","Übernimm Passkosten und Machtgrenze aus der Anzeige für dein Zielkönigreich. Weitere Migrationsbedingungen stehen im Event im Spiel.","输入游戏显示的目标王国移民券费用与战力上限。其他条件以游戏活动为准。","Укажите стоимость и лимит мощи для выбранного королевства. Остальные условия смотрите в событии игры."],
+  item:["Material","Material","材料","Материал"],
+  heroShards:["Hero shards","Heldenscherben","英雄碎片","Осколки героя"],
+  skillShards:["Skill shards","Fertigkeitsscherben","技能碎片","Осколки навыка"],
+  xp:["Experience (XP)","Erfahrung (EP)","经验值","Опыт"],
+  emblems:["Worker emblems","Arbeiter-Embleme","工人徽章","Эмблемы рабочих"],
+  fromLevel:["Current level","Aktuelle Stufe","当前等级","Текущий уровень"],
+  toLevel:["Target level","Zielstufe","目标等级","Целевой уровень"],
+  stepCosts:["Cost per level, one number per line","Kosten je Stufe, eine Zahl pro Zeile","每级消耗，每行一个数字","Стоимость уровней, по одному числу в строке"],
+  badSteps:["Enter one whole number for every level between current and target.","Gib für jede Stufe vom aktuellen Stand bis zum Ziel genau eine ganze Zahl ein.","请为从当前到目标的每一级输入一个整数。","Введите одно целое число для каждого уровня до цели."],
+  packCount:["XP items","EP-Gegenstände","经验道具数量","Предметов опыта"],
+  packValue:["XP per item","EP pro Gegenstand","每件经验值","Опыт за предмет"],
+  xpApplied:["XP already applied toward the next level","EP bereits in die nächste Stufe investiert","下一级已获得的经验","Уже набранный опыт до следующего уровня"],
+  packsPair:["Enter both the item count and XP per item.","Gib Anzahl und EP pro Gegenstand an.","请输入道具数量与单件经验值。","Введите число предметов и опыт за предмет."],
+  xpTooHigh:["XP already applied exceeds the cost of the next level.","Die investierten EP sind höher als die Kosten der nächsten Stufe.","已投入经验超过下一级所需经验。","Уже вложенный опыт превышает стоимость следующего уровня."],
+  owned:["In stock","Im Bestand","当前库存","В запасе"],
+  needed:["Required","Benötigt","所需","Требуется"],
+  missing:["Still missing","Fehlen noch","仍缺少","Не хватает"],
+  surplus:["Left over","Übrig","剩余","Остаток"],
+  coverage:["Covered","Gedeckt","已备齐比例","Покрытие"],
+  passCost:["Passes required in game","Benötigte Pässe laut Spiel","游戏显示所需移民券","Требуемые в игре билеты"],
+  power:["Your power","Deine Macht","你的战力","Ваша мощь"],
+  powerLimit:["Power limit","Machtgrenze","战力上限","Лимит мощи"],
+  belowPower:["Within the entered limit","Innerhalb der eingegebenen Grenze","未超出输入的上限","В пределах указанного лимита"],
+  abovePower:["Above the entered limit","Über der eingegebenen Grenze","超出输入的上限","Выше указанного лимита"],
+  limitPair:["Enter both power values to check the limit.","Gib beide Machtwerte ein, um die Grenze zu prüfen.","请同时输入战力和上限。","Введите оба значения мощи, чтобы проверить лимит."],
+  tierDifferent:["Choose two different troop tiers.","Wähle zwei unterschiedliche Truppenstufen.","请选择两个不同兵阶。","Выберите два разных уровня войск."],
   troopIntro:["Enter one sample batch from the game. Use the same tier and bonuses as your planned batch.","Übernimm einen Beispieldurchlauf aus dem Spiel. Truppenstufe und Boni müssen zu deinem geplanten Durchlauf passen.","输入游戏中一批部队的数值。样本的兵阶和加成应与计划一致。","Введите данные одной партии из игры. Уровень войск и бонусы должны совпадать с вашим планом."],
   upgradeIntro:["Add the steps and prerequisites shown in the game. Give the same prerequisite the same name and level to count it once.","Füge die im Spiel angezeigten Schritte und Voraussetzungen hinzu. Gleiche Voraussetzungen mit identischem Namen und Stufe werden einmal gezählt.","添加游戏中显示的步骤和前置条件。名称和等级相同的前置条件仅计算一次。","Добавьте этапы и требования из игры. Одинаковые требования с тем же названием и уровнем учитываются один раз."],
   buildIntro:["Compare two setups. Enter the displayed bonuses and record skill effects separately.","Vergleiche zwei Zusammenstellungen. Trage angezeigte Boni ein und halte Fertigkeitseffekte separat fest.","比较两套配置。输入显示的加成，技能效果单独记录。","Сравните две сборки. Введите указанные бонусы, а эффекты навыков запишите отдельно."],
@@ -142,7 +184,7 @@ function field(grid, key, kind, options = {}) {
     input.placeholder = "0:00";
     input.title = t("durationHint");
   } else {
-    input.maxLength = kind === "textarea" ? 500 : 100;
+    input.maxLength = options.maxLength ?? (kind === "textarea" ? 500 : 100);
   }
   if (options.required) input.required = true;
   if (options.value != null) input.value = options.value;
@@ -212,10 +254,15 @@ function setValues(fields, values) {
 }
 
 function calculator(parent, calculate, sample) {
+  const workbench = node("div", null, "workbench");
   const form = node("form");
-  const result = node("section", null, "results");
-  result.hidden = true;
+  const result = node("section", null, "results result-card");
+  result.tabIndex = -1;
   result.setAttribute("aria-live", "polite");
+  function resetResult() {
+    result.replaceChildren(node("h3", t("result")), node("p", t("resultHint"), "result-placeholder"));
+  }
+  resetResult();
   const sampleNote = node("p", t("exampleNote"), "hint");
   sampleNote.hidden = true;
   const actions = node("div", null, "form-actions");
@@ -229,12 +276,23 @@ function calculator(parent, calculate, sample) {
   form.addEventListener("submit", event => {
     event.preventDefault();
     result.replaceChildren(node("h3", t("result")));
-    result.hidden = false;
     calculate(result);
+    if (matchMedia("(max-width: 760px)").matches) {
+      result.focus({preventScroll:true});
+      result.scrollIntoView({block:"nearest"});
+    }
   });
   form.addEventListener("input", () => { sampleNote.hidden = true; });
-  parent.append(form, result);
-  return {form, finish:() => form.append(actions, sampleNote)};
+  workbench.append(form, result);
+  parent.append(workbench);
+  return {form, resetResult, finish:() => form.append(actions, sampleNote)};
+}
+
+function highlight(parent, label, value) {
+  const card = node("div", null, "result-highlight");
+  card.append(node("strong", value), node("p", label));
+  parent.append(card);
+  return card;
 }
 
 function references(parent, links) {
@@ -269,10 +327,10 @@ function troops(parent) {
       costs:readResources(costFields), stocks:readResources(stockFields), time:deadline, boosts:seconds(planFields.boosts) ?? 0
     });
     if (plan.maximum == null && target == null) return hint(result, "moreLimits");
-    if (plan.maximum != null) stats(result, [
-      [t("maximum"), numberFormat.format(plan.maximum)],
-      [t("limited"), plan.limiting.map(t).join(" · ")]
-    ]);
+    if (plan.maximum != null) {
+      highlight(result, t("maximum"), numberFormat.format(plan.maximum));
+      stats(result, [[t("limited"), plan.limiting.map(t).join(" · ")]]);
+    }
     if (target != null) {
       stats(result, [
         [t("action"), t(action) + (action === "promote" ? " T" + fromTier + " → T" : " T") + tier],
@@ -506,16 +564,180 @@ function gathering(parent) {
   ]);
 }
 
+function tierComparison(parent) {
+  const {form, finish} = calculator(parent, result => {
+    const read = fields => ({
+      batch:numeric(fields.batch), duration:seconds(fields.duration),
+      might:numeric(fields.might), costs:readResources(fields.costs)
+    });
+    if (first.tier.value === second.tier.value) return hint(result, "tierDifferent");
+    const before = read(first);
+    const after = read(second);
+    if (!before.duration || !after.duration) return hint(result, "positiveTime");
+    const count = numeric(target);
+    highlight(result, t("target"), numberFormat.format(count));
+    const table = node("table", null, "build-results comparison-table");
+    const header = table.createTHead().insertRow();
+    for (const text of [t("value"), "T" + first.tier.value, "T" + second.tier.value]) {
+      const th = node("th", text);
+      th.scope = "col";
+      header.append(th);
+    }
+    const deltaHeading = node("th", "Δ");
+    deltaHeading.scope = "col";
+    deltaHeading.title = t("difference");
+    deltaHeading.setAttribute("aria-label", t("difference"));
+    header.append(deltaHeading);
+    const body = table.createTBody();
+    for (const stat of compareTroopTiers(before, after, count)) {
+      const row = body.insertRow();
+      const format = value => {
+        if (value == null) return "—";
+        return stat.key === "duration" ? (value < 0n ? "−" + duration(-value) : duration(value)) : numberFormat.format(value);
+      };
+      const delta = (stat.delta != null && stat.delta > 0n ? "+" : "") + format(stat.delta);
+      const label = t(stat.key === "might" ? "totalMight" : stat.key);
+      for (const text of [label, format(stat.before), format(stat.after), delta]) row.insertCell().textContent = text;
+    }
+    const scroll = node("div", null, "table-scroll");
+    scroll.tabIndex = 0;
+    scroll.setAttribute("role", "region");
+    scroll.setAttribute("aria-label", t("tiers"));
+    scroll.append(table);
+    result.append(scroll);
+    hint(result, "estimate");
+  }, () => {
+    target.value = "10000";
+    setValues(first, {tier:"7",batch:1000,duration:"10:00",might:10000});
+    setValues(second, {tier:"8",batch:2000,duration:"25:00",might:28000});
+    setValues(first.costs, {food:350000,wood:250000,stone:150000,gold:100000,crystals:0});
+    setValues(second.costs, {food:900000,wood:600000,stone:320000,gold:200000,crystals:0});
+  });
+  hint(form, "durationHint");
+  const {grid} = fieldset(form, "plan");
+  const target = field(grid, "target", "number", {required:true,min:1});
+  function preview(key, selectedTier) {
+    const {grid} = fieldset(form, key);
+    const tiers = Array.from({length:10}, (_, index) => [String(index + 1), "T" + (index + 1)]);
+    return {
+      tier:field(grid, "tier", "select", {choices:tiers,value:selectedTier}),
+      batch:field(grid, "batch", "number", {required:true,min:1}),
+      duration:field(grid, "duration", "time", {required:true}),
+      might:field(grid, "might", "number", {min:-1e12}),
+      costs:resourceFields(grid)
+    };
+  }
+  const first = preview("a", "7");
+  const second = preview("b", "8");
+  hint(form, "missingHint");
+  finish();
+}
+
+function showInventoryResult(result, plan, unit) {
+  const card = highlight(result, unit + " · " + t(plan.missing > 0n ? "missing" : "needed"),
+    numberFormat.format(plan.missing > 0n ? plan.missing : plan.needed));
+  const progress = node("progress", null, "progress-meter");
+  progress.max = 100;
+  progress.value = plan.coverage;
+  progress.setAttribute("aria-label", t("coverage"));
+  card.append(progress);
+  stats(result, [
+    [t("needed"), numberFormat.format(plan.needed)],
+    [t("owned"), numberFormat.format(plan.available)],
+    [t("missing"), numberFormat.format(plan.missing)],
+    [t("surplus"), numberFormat.format(plan.extra)]
+  ]);
+}
+
+function growthPlanner(parent) {
+  const types = ["heroShards","skillShards","xp","emblems"];
+  const {form, resetResult, finish} = calculator(parent, result => {
+    const lines = fields.stepCosts.value.trim().split(/\r?\n/).map(line => line.trim()).filter(Boolean);
+    const count = numeric(fields.toLevel) - numeric(fields.fromLevel);
+    if (count < 1 || lines.length !== count || lines.some(line => !/^\d{1,13}$/.test(line))) {
+      return hint(result, "badSteps");
+    }
+    const xp = fields.item.value === "xp";
+    const packs = xp ? numeric(fields.packCount) : null;
+    const packValue = xp ? numeric(fields.packValue) : null;
+    const applied = xp ? numeric(fields.xpApplied) ?? 0 : 0;
+    if ((packs == null) !== (packValue == null)) return hint(result, "packsPair");
+    if (BigInt(applied) > BigInt(lines[0])) return hint(result, "xpTooHigh");
+    const plan = planItems(lines, numeric(fields.owned) ?? 0, packs ?? 0, packValue ?? 0, applied);
+    showInventoryResult(result, plan, t(fields.item.value));
+  }, () => {
+    if (fields.item.value === "xp") {
+      setValues(fields, {fromLevel:12,toLevel:14,stepCosts:"2000\n3500",owned:700,packCount:6,packValue:500,xpApplied:1200});
+    } else {
+      setValues(fields, {fromLevel:2,toLevel:5,stepCosts:"20\n35\n60",owned:72});
+    }
+  });
+  const {grid} = fieldset(form, "plan");
+  const fields = {
+    item:field(grid, "item", "select", {choices:types.map(key => [key,t(key)])}),
+    fromLevel:field(grid, "fromLevel", "number", {required:true,max:999}),
+    toLevel:field(grid, "toLevel", "number", {required:true,min:1,max:999}),
+    owned:field(grid, "owned", "number"),
+    stepCosts:field(grid, "stepCosts", "textarea", {required:true,maxLength:12000}),
+    xpApplied:field(grid, "xpApplied", "number"),
+    packCount:field(grid, "packCount", "number"),
+    packValue:field(grid, "packValue", "number")
+  };
+  function syncType() {
+    for (const key of ["packCount","packValue","xpApplied"]) fields[key].closest("label").hidden = fields.item.value !== "xp";
+  }
+  fields.item.addEventListener("change", () => {
+    const type = fields.item.value;
+    form.reset();
+    fields.item.value = type;
+    syncType();
+    resetResult();
+  });
+  syncType();
+  finish();
+  references(parent, [
+    ["Viking Rise Info Hub · Shards", "https://vikingriseinfo.com/pages/hero-shards"],
+    ["Viking Rise Info Hub · Workers", "https://vikingriseinfo.com/pages/worker"]
+  ]);
+}
+
+function migrationPlanner(parent) {
+  const {form, finish} = calculator(parent, result => {
+    showInventoryResult(result, planItems([numeric(fields.passCost)], numeric(fields.owned) ?? 0), t("migration"));
+    const power = numeric(fields.power);
+    const limit = numeric(fields.powerLimit);
+    if (power != null && limit != null) {
+      const key = power <= limit ? "belowPower" : "abovePower";
+      stats(result, [[t("powerLimit"), t(key)]]);
+    } else if (power != null || limit != null) {
+      hint(result, "limitPair");
+    }
+  }, () => setValues(fields, {passCost:24,owned:17,power:45000000,powerLimit:50000000}));
+  const {grid} = fieldset(form, "migration");
+  const fields = {
+    passCost:field(grid, "passCost", "number", {required:true}),
+    owned:field(grid, "owned", "number"),
+    power:field(grid, "power", "number"), powerLimit:field(grid, "powerLimit", "number")
+  };
+  finish();
+  references(parent, [["Viking Rise Info Hub · Migration", "https://vikingriseinfo.com/pages/relocation"]]);
+}
+
 const tools = {
-  troops:["⚔", "troopIntro", troops],
-  upgrades:["⚒", "upgradeIntro", upgrades],
-  builds:["◆", "buildIntro", builds],
-  gather:["❧", "gatherIntro", gathering]
+  troops:["⚔", "troopIntro", "troopSummary", troops],
+  tiers:["⇄", "tierIntro", "tierSummary", tierComparison],
+  upgrades:["⚒", "upgradeIntro", "upgradeSummary", upgrades],
+  growth:["✦", "growthIntro", "growthSummary", growthPlanner],
+  builds:["◆", "buildIntro", "buildSummary", builds],
+  gather:["❧", "gatherIntro", "gatherSummary", gathering],
+  migration:["↗", "migrationIntro", "migrationSummary", migrationPlanner]
 };
 const panels = new Map();
 const links = new Map();
 const panelHost = document.getElementById("tool-panel");
 const nav = document.getElementById("tool-list");
+const back = document.getElementById("tool-back");
+let activeTool;
 document.documentElement.lang = locale;
 document.title = "Viking Rise · " + t("tools");
 document.getElementById("home-link").href = "index.html?lang=" + lang;
@@ -529,24 +751,29 @@ language.addEventListener("change", () => {
   location.assign(url);
 });
 
-for (const [key, [icon]] of Object.entries(tools)) {
+for (const [key, [icon, , summary]] of Object.entries(tools)) {
   const link = node("a");
   const mark = node("span", icon, "tool-icon");
   mark.setAttribute("aria-hidden", "true");
-  link.append(mark, node("span", t(key)));
+  const label = node("span");
+  label.append(node("span", t(key), "tool-name"), node("span", t(summary), "tool-summary"));
+  const arrow = node("span", "→", "tool-arrow");
+  arrow.setAttribute("aria-hidden", "true");
+  link.append(mark, label, arrow);
   link.href = "#" + key;
   nav.append(link);
   links.set(key, link);
 }
 
-function showTool() {
+function showTool(event) {
   const hash = location.hash.slice(1);
-  const key = Object.hasOwn(tools, hash) ? hash : "troops";
-  if (!panels.has(key)) {
-    const [, intro, render] = tools[key];
+  const key = Object.hasOwn(tools, hash) ? hash : null;
+  if (key && !panels.has(key)) {
+    const [, intro, , render] = tools[key];
     const panel = node("section", null, "panel");
     const title = node("h2", t(key));
     title.id = "heading-" + key;
+    title.tabIndex = -1;
     panel.setAttribute("aria-labelledby", title.id);
     panel.append(title, node("p", t(intro)));
     render(panel);
@@ -554,10 +781,16 @@ function showTool() {
     panels.set(key, panel);
   }
   for (const [id, panel] of panels) panel.hidden = id !== key;
-  for (const [id, link] of links) {
-    if (id === key) link.setAttribute("aria-current", "page");
-    else link.removeAttribute("aria-current");
+  back.hidden = !key;
+  nav.hidden = Boolean(key);
+  if (event) {
+    const focus = key ? panels.get(key).querySelector("h2") : links.get(activeTool);
+    if (focus) {
+      focus.focus({preventScroll:true});
+      (key ? back : nav).scrollIntoView({block:"start"});
+    }
   }
+  activeTool = key;
 }
 
 window.addEventListener("hashchange", showTool);

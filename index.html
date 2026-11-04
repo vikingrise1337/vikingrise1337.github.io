@@ -96,9 +96,15 @@
             <p id="txt-subtitle" class="text-sm md:text-2xl text-gray-300 mb-8 md:mb-10 font-light tracking-wide max-w-xs md:max-w-none mx-auto">
                 Your unofficial source for Updates, Tools & Community.
             </p>
+            <a id="link-tools-hero" href="tools.html" class="inline-flex items-center gap-3 px-7 py-3 md:px-9 md:py-4 mb-3 bg-[#d4af37] text-black rounded font-bold text-base md:text-lg shadow-lg hover:bg-[#e8c85d] transition-colors">
+                <span class="material-symbols-outlined notranslate" aria-hidden="true">calculate</span>
+                <span id="tools-hero-title">Open player tools</span>
+                <span aria-hidden="true">→</span>
+            </a>
+            <p id="tools-hero-note" class="text-sm text-gray-300 mb-7">7 calculators for troops, upgrades and more</p>
             
             <div class="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center w-full max-w-md sm:max-w-none mb-8 md:mb-10">
-                <a id="link-updates" href="updates.html" class="group relative w-full sm:w-auto px-6 py-3 md:px-8 md:py-4 bg-[#d4af37] text-black font-bold text-base md:text-lg rounded shadow-[0_0_15px_rgba(212,175,55,0.3)] hover:shadow-[0_0_30px_rgba(212,175,55,0.6)] transition-all overflow-hidden flex justify-center items-center">
+                <a id="link-updates" href="updates.html" class="group relative w-full sm:w-auto px-6 py-3 md:px-8 md:py-4 bg-white/10 backdrop-blur text-white font-bold text-base md:text-lg rounded border border-white/20 hover:bg-white/20 transition-colors overflow-hidden flex justify-center items-center">
                     <span class="relative z-10 flex items-center gap-2">
                         <span class="material-symbols-outlined notranslate">newspaper</span> <span id="btn-updates">Read Patch Notes</span>
                     </span>
@@ -122,7 +128,30 @@
         </div>
     </div>
 
-    <div class="bg-[#0b101b] py-12 md:py-20 px-4 -mt-10 md:-mt-20 relative z-20">
+    <section class="bg-[#0b101b] pt-8 pb-10 px-4 relative z-20" aria-labelledby="tools-feature-title">
+        <div class="container mx-auto">
+            <div class="flex flex-wrap items-baseline justify-between gap-3 mb-4">
+                <h2 class="viking-font text-2xl md:text-3xl font-bold text-white" id="tools-feature-title">Player tools</h2>
+                <a id="link-tools-all" href="tools.html" class="gold-text text-sm font-bold underline underline-offset-4">All calculators →</a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <a data-tool="troops" href="tools.html#troops" class="glass-panel rounded-xl p-5 flex items-center gap-4">
+                    <span class="material-symbols-outlined gold-text notranslate" aria-hidden="true">swords</span>
+                    <span><strong class="block text-white">Troops &amp; events</strong><span class="block text-sm text-gray-300">Estimate what you can train before the deadline.</span></span>
+                </a>
+                <a data-tool="growth" href="tools.html#growth" class="glass-panel rounded-xl p-5 flex items-center gap-4">
+                    <span class="material-symbols-outlined gold-text notranslate" aria-hidden="true">stars</span>
+                    <span><strong class="block text-white">Shards &amp; XP</strong><span class="block text-sm text-gray-300">See how much is missing for the next level.</span></span>
+                </a>
+                <a data-tool="upgrades" href="tools.html#upgrades" class="glass-panel rounded-xl p-5 flex items-center gap-4">
+                    <span class="material-symbols-outlined gold-text notranslate" aria-hidden="true">construction</span>
+                    <span><strong class="block text-white">Buildings &amp; research</strong><span class="block text-sm text-gray-300">Add up costs, prerequisites and speedups.</span></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="bg-[#0b101b] py-10 md:py-14 px-4 relative z-20">
         <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
             
             <a id="card-link-updates" href="updates.html" class="glass-panel p-6 md:p-8 rounded-2xl flex flex-col items-center text-center group cursor-pointer relative overflow-hidden">
@@ -175,14 +204,6 @@
 
     <footer class="bg-black/50 border-t border-white/5 py-6 md:py-8 text-center">
         <p class="text-gray-600 text-xs md:text-sm">&copy; 2025 Viking Rise Community Hub.</p>
-        
-        <div class="mt-3 flex justify-center items-center gap-2 opacity-50 hover:opacity-100 transition-opacity">
-            <span class="material-symbols-outlined text-xs text-[#d4af37]">visibility</span>
-            <span class="text-[10px] text-gray-400 uppercase tracking-widest">
-                <span id="txt-visits">Visits</span>: 
-                <span id="page-counter" class="text-[#d4af37] font-mono font-bold">...</span>
-            </span>
-        </div>
     </footer>
 
     <script>
@@ -194,7 +215,6 @@
                 c2_title: "News & Events", c2_desc: "Loading latest news...", 
                 disc_official: "OFFICIAL", disc_community: "COMMUNITY DISCORD",
                 news_prefix: "News", ticker_badge: "NEW", expiry: "Expires:",
-                visits: "Visits" // NEU
             },
             de: { 
                 subtitle: "Deine inoffizielle Quelle für Updates, Tools & Community.", 
@@ -203,7 +223,6 @@
                 c2_title: "News & Events", c2_desc: "Lade aktuelle News...", 
                 disc_official: "OFFIZIELLER", disc_community: "COMMUNITY DISCORD",
                 news_prefix: "News", ticker_badge: "NEU", expiry: "Läuft ab:",
-                visits: "Besuche" // NEU
             },
             cn: { 
                 subtitle: "您的维京崛起非官方更新、工具和社区来源。", 
@@ -212,7 +231,6 @@
                 c2_title: "新闻与活动", c2_desc: "正在加载最新新闻...", 
                 disc_official: "官方", disc_community: "社区 DISCORD",
                 news_prefix: "新闻", ticker_badge: "最新", expiry: "过期:",
-                visits: "访问量" // NEU
             },
             ru: { 
                 subtitle: "Ваш неофициальный источник новостей.", 
@@ -221,16 +239,31 @@
                 c2_title: "Новости и события", c2_desc: "Загрузка новостей...", 
                 disc_official: "ОФИЦИАЛЬНЫЙ", disc_community: "DISCORD СООБЩЕСТВА",
                 news_prefix: "Новости", ticker_badge: "НОВОЕ", expiry: "Истекает:",
-                visits: "Визиты" // NEU
             }
         };
         const urlParams = new URLSearchParams(window.location.search);
         let curLang = urlParams.get('lang') || 'en';
         if(!['en','de','cn','ru'].includes(curLang)) curLang = 'en';
 
+        const toolsCopy = {
+            en: {nav:'Tools', heading:'Player tools', hero:'Open player tools', note:'7 calculators for troops, upgrades and more', all:'All calculators →',
+                troops:['Troops & events','Estimate what you can train before the deadline.'], growth:['Shards & XP','See how much is missing for the next level.'], upgrades:['Buildings & research','Add up costs, prerequisites and speedups.']},
+            de: {nav:'Werkzeuge', heading:'Spielerwerkzeuge', hero:'Spielerwerkzeuge öffnen', note:'7 Rechner für Truppen, Ausbau und mehr', all:'Alle Rechner →',
+                troops:['Truppen & Events','Schätze, wie viele Truppen du bis zum Event-Ende schaffst.'], growth:['Scherben & EP','Sieh, was dir bis zur Zielstufe fehlt.'], upgrades:['Bau & Forschung','Berechne Kosten, Voraussetzungen und Beschleuniger.']},
+            cn: {nav:'工具', heading:'玩家工具', hero:'打开玩家工具', note:'7 个计算器，涵盖部队、升级等', all:'全部计算器 →',
+                troops:['部队与活动','估算活动结束前可训练多少部队。'], growth:['碎片与经验','查看达到目标等级还差多少材料。'], upgrades:['建造与研究','汇总费用、前置条件和加速。']},
+            ru: {nav:'Инструменты', heading:'Инструменты игрока', hero:'Открыть инструменты', note:'7 калькуляторов для войск, улучшений и не только', all:'Все калькуляторы →',
+                troops:['Войска и события','Оцените, сколько войск успеете обучить.'], growth:['Осколки и опыт','Узнайте, сколько не хватает до цели.'], upgrades:['Здания и исследования','Сложите затраты, требования и ускорения.']}
+        };
+
         function updateContent() {
             const t = translations[curLang];
-            document.getElementById('btn-tools').textContent = {en:'Tools', de:'Werkzeuge', cn:'工具', ru:'Инструменты'}[curLang];
+            const tool = toolsCopy[curLang];
+            document.getElementById('btn-tools').textContent = tool.nav;
+            document.getElementById('tools-feature-title').textContent = tool.heading;
+            document.getElementById('tools-hero-title').textContent = tool.hero;
+            document.getElementById('tools-hero-note').textContent = tool.note;
+            document.getElementById('link-tools-all').textContent = tool.all;
             document.getElementById('txt-subtitle').innerText = t.subtitle;
             document.getElementById('btn-updates').innerText = t.btn_updates;
             document.getElementById('btn-news').innerText = t.btn_news;
@@ -251,9 +284,6 @@
             
             document.getElementById('ticker-badge').innerText = t.ticker_badge;
             
-            // NEU: Übersetzung für "Visits" anwenden
-            const visitEl = document.getElementById('txt-visits');
-            if(visitEl) visitEl.innerText = t.visits;
             
             document.documentElement.lang = curLang;
             const suffix = `?lang=${curLang}`;
@@ -261,6 +291,14 @@
             document.getElementById('card-link-updates').href = "updates.html" + suffix;
             document.getElementById('link-news-nav').href = "news.html" + suffix;
             document.getElementById('link-tools-nav').href = "tools.html" + suffix;
+            document.getElementById('link-tools-hero').href = "tools.html" + suffix;
+            document.getElementById('link-tools-all').href = "tools.html" + suffix;
+            for (const card of document.querySelectorAll('[data-tool]')) {
+                const key = card.dataset.tool;
+                card.href = "tools.html" + suffix + "#" + key;
+                card.querySelector('strong').textContent = tool[key][0];
+                card.querySelector('span.block').textContent = tool[key][1];
+            }
             document.getElementById('link-news-hero').href = "news.html" + suffix;
             document.getElementById('card-link-news').href = "news.html" + suffix;
             
@@ -423,33 +461,10 @@
             }
         }
 
-        // --- 4. VISIT COUNTER (Robust) ---
-        async function initCounter() {
-            // Wenn der AdBlocker aktiv ist, wirft fetch oft direkt einen Fehler.
-            // Die "1337" ist der Fallback.
-            const namespace = 'vikingrise1337'; 
-            const key = 'homepage_visits';
-            const el = document.getElementById('page-counter');
-            
-            try {
-                // Wir nutzen counterapi.dev - kostenlos und ohne Anmeldung
-                const res = await fetch(`https://api.counterapi.dev/v1/${namespace}/${key}/up`);
-                if(!res.ok) throw new Error("API returned status: " + res.status);
-                
-                const data = await res.json();
-                el.innerText = data.count.toLocaleString();
-            } catch (e) {
-                console.error("Counter failed (likely adblocker):", e);
-                // Statischer Fallback, damit die Seite nicht kaputt aussieht
-                el.innerText = "Please disable your Adblock"; 
-            }
-        }
-
         updateContent();
         initTicker();
         fetchLatestUpdate();
         fetchDiscordStatus();
-        initCounter();
     </script>
 </body>
 </html>

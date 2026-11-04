@@ -90,3 +90,29 @@ export function planGathering({amount, load, outbound, gathering, inbound}) {
     cycle, perHour:Math.floor(collected * 3600 / cycle)
   };
 }
+
+export function compareTroopTiers(a, b, target) {
+  const rows = [];
+  for (const key of [...resources, "duration", "might"]) {
+    const value = sample => {
+      const amount = key === "duration" || key === "might" ? sample[key] : sample.costs[key];
+      return amount == null ? null : proportional(amount, target, sample.batch, key !== "might");
+    };
+    const before = value(a);
+    const after = value(b);
+    if (before == null && after == null) continue;
+    rows.push({key, before, after, delta:before == null || after == null ? null : after - before});
+  }
+  return rows;
+}
+
+export function planItems(requirements, owned, packCount = 0, packValue = 0, applied = 0) {
+  const total = requirements.reduce((sum, amount) => sum + BigInt(amount), 0n);
+  const needed = total > BigInt(applied) ? total - BigInt(applied) : 0n;
+  const available = BigInt(owned) + BigInt(packCount) * BigInt(packValue);
+  const missing = needed > available ? needed - available : 0n;
+  return {
+    needed, available, missing, extra:available > needed ? available - needed : 0n,
+    coverage:needed === 0n ? 100 : Number((needed - missing) * 1000n / needed) / 10
+  };
+}
