@@ -1,102 +1,21 @@
-@font-face {
-  font-family: Viking;
-  src: url("CinzelRus.ttf") format("truetype");
-  font-display: swap;
-}
-:root {
-  color-scheme: dark;
-  --page: #10141b;
-  --panel: #191f29;
-  --raised: #222a36;
-  --border: #343d4b;
-  --ink: #f5f1e8;
-  --muted: #bdc5d1;
-  --accent: #ebc77a;
-}
-body[data-page="updates"] { --accent: #a9d6f1; }
-* { box-sizing: border-box; }
-[hidden] { display: none !important; }
-body {
-  margin: 0;
-  background: radial-gradient(ellipse at 75% 0%, #263344 0%, transparent 38rem), var(--page);
-  color: var(--ink);
-  font: 1rem/1.6 system-ui, sans-serif;
-}
-a { color: var(--accent); text-underline-offset: .2em; }
-button, input, select { font: inherit; }
-button, select, summary { cursor: pointer; }
-:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
-img { display: block; max-width: 100%; }
-p, h1, h2, h3 { margin: 0; }
-.wrap, .top-inner { width: min(1160px, calc(100% - 48px)); margin-inline: auto; }
-.top { border-bottom: 1px solid var(--border); background: #10141bee; }
-.top-inner { display: flex; align-items: center; gap: clamp(.7rem, 3vw, 2.4rem); min-height: 68px; }
-.brand { display: flex; gap: .65rem; align-items: center; font: 700 1rem Viking, Georgia, serif; color: var(--ink); white-space: nowrap; }
-.top a { text-decoration: none; }
-.top nav { display: flex; align-self: stretch; align-items: stretch; gap: clamp(.6rem, 2vw, 1.6rem); }
-.top nav a { display: flex; align-items: center; color: var(--muted); border-bottom: 2px solid transparent; }
-.top nav a[aria-current], .top nav a:hover { color: var(--accent); border-color: currentColor; }
-select, input { color: var(--ink); background: var(--page); border: 1px solid var(--border); border-radius: .5rem; padding: .45rem .65rem; min-width: 0; }
-select { margin-left: auto; }
-.masthead { padding: clamp(2rem, 5.8vw, 4.7rem) 0 clamp(1.6rem, 4vw, 2.9rem); }
-.eyebrow { color: var(--accent); font-size: .75rem; font-weight: 750; letter-spacing: .17em; text-transform: uppercase; }
-.masthead h1, #entry-title { font-family: Viking, Georgia, serif; line-height: 1.13; overflow-wrap: anywhere; }
-.masthead h1 { font-size: clamp(2.45rem, 6.5vw, 5rem); margin: .4rem 0 .65rem; }
-.masthead > :last-child, .meta, .archive-status { color: var(--muted); }
-.layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(250px, 31%); gap: clamp(1rem, 3vw, 2rem); align-items: start; }
-#entry, .archive { background: var(--panel); border: 1px solid var(--border); border-radius: 1rem; }
-#entry { overflow: clip; box-shadow: 0 15px 60px #0004; }
-.cover { width: 100%; aspect-ratio: 2.7; object-fit: cover; background: var(--raised); }
-.entry-body { padding: clamp(1.1rem, 4vw, 2.45rem); overflow-wrap: anywhere; }
-.entry-body > * + * { margin-top: 1.3rem; }
-.entry-body .eyebrow { margin-top: 0; }
-#entry-title { font-size: clamp(1.55rem, 3.5vw, 2.65rem); margin-top: .3rem; }
-.prose, .highlight p { white-space: pre-line; }
-.meta { font-size: .85rem; }
-.promo, .maintenance { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: .8rem 1.1rem; background: var(--raised); border: 1px solid var(--border); border-left: 3px solid var(--accent); padding: .8rem 1rem; border-radius: .5rem; }
-.promo code { color: var(--accent); font-size: 1.2rem; }
-.promo button, .source { border: 1px solid var(--border); background: var(--page); color: var(--accent); border-radius: .45rem; padding: .35rem .7rem; }
-.source { display: inline-block; }
-.promo button:hover, .source:hover { border-color: var(--accent); }
-.patch-index { display: flex; flex-wrap: wrap; gap: .45rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border); }
-.patch-index a { padding: .2rem .65rem; background: var(--raised); border-radius: 2rem; font-size: .86rem; }
-.patch-section { scroll-margin-top: 1.25rem; }
-.patch-section h3 { font-size: 1.18rem; margin-bottom: .65rem; }
-.patch-section ul { margin: .4rem 0; padding-inline-start: 1.35rem; }
-.patch-section li + li { margin-top: .55rem; }
-.highlights { display: grid; gap: .8rem; }
-.highlight { background: var(--raised); border: 1px solid var(--border); border-radius: .65rem; overflow: hidden; }
-.highlight > div { display: flex; gap: .75rem; align-items: baseline; padding: 1rem; }
-.highlight img { width: 100%; max-height: 320px; aspect-ratio: 2.6; object-fit: cover; }
-.highlight .eyebrow { flex: none; letter-spacing: .04em; }
-details { border-bottom: 1px solid var(--border); padding: .55rem 0; }
-summary { font-weight: 650; }
-.archive { min-width: 0; }
-.archive-search { padding: 0 1rem 1rem; border-bottom: 1px solid var(--border); }
-.archive-title { font-size: 1rem; padding: 1rem 1rem .6rem; }
-.archive-toggle { display: none; }
-#search { width: 100%; }
-#entries { list-style: none; margin: 0; padding: .35rem; max-height: min(58vh, 560px); overflow: auto; }
-#entries a { display: grid; gap: .15rem; color: var(--ink); text-decoration: none; overflow-wrap: anywhere; border: 1px solid transparent; border-radius: .55rem; padding: .65rem .75rem; }
-#entries a:hover, #entries a[aria-current] { background: var(--raised); border-color: var(--border); }
-#entries a[aria-current] { border-inline-start: 3px solid var(--accent); }
-.archive-status { padding: .3rem 1rem .8rem; font-size: .8rem; }
-.ad-slot { margin-top: 2rem; }
-.footer { padding: 2rem 0; font-size: .9rem; }
-.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
-@media (max-width: 740px) {
-  .layout { grid-template-columns: 1fr; }
-  .archive { grid-row: 1; }
-  .archive-title { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
-  .archive-toggle { display: flex; width: 100%; justify-content: space-between; background: transparent; border: 0; color: var(--ink); padding: .65rem 1rem; font-weight: 650; }
-  .archive-toggle[aria-expanded="false"] + #archive-content { display: none; }
-  .archive-toggle[aria-expanded="true"] > :last-child { transform: rotate(180deg); }
-  #entries { max-height: 10.75rem; }
-  .cover { aspect-ratio: 2; }
-}
-@media (max-width: 420px) {
-  .wrap, .top-inner { width: calc(100% - 28px); }
-  .top-inner { flex-wrap: wrap; padding-top: .65rem; gap: .35rem .8rem; }
-  .top nav { order: 3; width: 100%; }
-  .top nav a { min-height: 40px; }
-}
+/* Additions to the existing gold, dark News and Patch Notes layouts. */
+.vr-tabs { display: flex; justify-content: center; flex-wrap: wrap; gap: .6rem; margin-bottom: 1.5rem; }
+.vr-button { display: inline-block; padding: .35rem .7rem; border: 1px solid #d4af3766; border-radius: .4rem; background: #0b101b; color: #ead17a; font-size: .85rem; font-weight: 650; }
+.vr-button:hover, .vr-button[aria-current] { color: #10121a; background: #d4af37; }
+.vr-button:focus-visible, .vr-copy input:focus-visible { outline: 2px solid #d4af37; outline-offset: 3px; }
+.vr-copy { min-width: 0; }
+.vr-copy input { display: block; margin-top: .5rem; width: min(100%, 25rem); padding: .3rem .5rem; border-radius: .3rem; border: 1px solid #d4af3766; background: #0b101b; color: white; }
+.vr-copy input[hidden], .vr-notice[hidden], #gift-board[hidden], #news-grid[hidden] { display: none; }
+.vr-news-share { margin-top: .8rem; }
+#news-grid > article { scroll-margin-top: 5rem; }
+.vr-notice { display: flex; align-items: center; flex-wrap: wrap; justify-content: space-between; gap: .5rem 1rem; margin: .8rem auto; padding: .7rem 1rem; border: 1px solid #d4af3766; border-left: 3px solid #d4af37; border-radius: .5rem; background: #1a2230; }
+.vr-notice strong, .vr-gift a { color: #ead17a; }
+.vr-notice p { margin: 0; }
+.vr-gift-group { margin-bottom: 1rem; padding: 1rem; border-radius: .7rem; }
+.vr-gift-group h2, .vr-gift-group summary { color: white; font-weight: 700; }
+.vr-gift-group summary { cursor: pointer; }
+.vr-gift-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr)); gap: .85rem; margin-top: .65rem; }
+.vr-gift { display: grid; gap: .45rem; padding: .75rem; border-radius: .5rem; overflow-wrap: anywhere; }
+.vr-gift code { color: white; font-weight: 750; font-size: 1.05rem; }
+.vr-gift a { width: fit-content; text-decoration: underline; text-underline-offset: .15em; font-size: .82rem; }
+.vr-muted { color: #b4bac5; font-size: .84rem; }
