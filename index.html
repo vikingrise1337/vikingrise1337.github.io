@@ -204,6 +204,11 @@
 
     <footer class="bg-black/50 border-t border-white/5 py-6 md:py-8 text-center">
         <p class="text-gray-600 text-xs md:text-sm">&copy; 2025 Viking Rise Community Hub.</p>
+        <div id="visit-counter" class="mt-3" hidden>
+            <a href="https://hits.sh/vikingrise1337.github.io/" target="_blank" rel="noopener noreferrer" class="inline-flex rounded focus-visible:outline focus-visible:outline-[#d4af37]">
+                <img id="visit-badge" height="20" alt="" decoding="async" fetchpriority="low" referrerpolicy="no-referrer">
+            </a>
+        </div>
     </footer>
 
     <script>
@@ -461,10 +466,24 @@
             }
         }
 
+        function initVisitCounter(host = location.hostname) {
+            if (host !== 'vikingrise1337.github.io') return;
+            const label = {en:'Page views', de:'Seitenaufrufe', cn:'页面浏览量', ru:'Просмотры'}[curLang];
+            const counter = document.getElementById('visit-counter');
+            const badge = document.getElementById('visit-badge');
+            const url = new URL('https://hits.sh/vikingrise1337.github.io.svg');
+            url.search = new URLSearchParams({label, color:'80652b', labelColor:'182232'});
+            badge.alt = label;
+            badge.addEventListener('load', () => { counter.hidden = false; }, {once:true});
+            badge.addEventListener('error', () => { counter.hidden = true; }, {once:true});
+            badge.src = url.href;
+        }
+
         updateContent();
         initTicker();
         fetchLatestUpdate();
         fetchDiscordStatus();
+        initVisitCounter();
     </script>
 </body>
 </html>
