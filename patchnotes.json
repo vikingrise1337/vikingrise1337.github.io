@@ -1,5 +1,68 @@
 [
   {
+    "id": "update_18_11_2026_478460",
+    "meta": {
+      "created_at": "2026-11-16T06:23:11.267000Z",
+      "start_timestamp": "2026-11-18T06:00:00.000000Z",
+      "display_time": "11/18 06:00 - 06:30 (UTC)",
+      "title_en": "Update 18.11.2026",
+      "title_de": "Update vom 18.11.2026",
+      "title_cn": "更新 18.11.2026",
+      "title_ru": "Обновление 18.11.2026",
+      "image_url": "images/updates/update_18_11_2026_478460_1_ea1c8e707220.jpg",
+      "image_urls": [
+        "images/updates/update_18_11_2026_478460_1_ea1c8e707220.jpg",
+        "images/updates/update_18_11_2026_478460_2_3e81694a34d3.jpg",
+        "images/updates/update_18_11_2026_478460_3_139aac331aca.jpg",
+        "images/updates/update_18_11_2026_478460_4_61e94f6483e5.jpg"
+      ]
+    },
+    "en": {
+      "major": [
+        "The [Thanksgiving Celebration] themed event is coming soon. With bountiful harvests and gratitude by your side, the Autumn Fishing Festival invites you to embark on a journey of gratitude! Event Time: 2026/11/20 00:00 - 2026/11/27 00:00 UTC. Unlock Requirements: Reach Chief Hall Lv 6 and Chapter 14. Chiefs can team up with friends to participate in the [Autumn Fishing Festival]. Capture fish to obtain Fishing Coins, compete for ranking points, and exchange them for items in the Exchange Shop.",
+        "The [Black Friday] limited-time carnival is about to begin. Storewide discounts are coming in hot—miss it and you’ll have to wait another year. Come grab the goodies you want! Event Time: 2026/11/27 00:00 - 2026/11/30 00:00 UTC. Unlock Requirements: Reach Chief Hall Lv 6 and Chapter 14.",
+        "The [Goat Shop] is now live! Thor’s divine goats have brought rare treasures from around the world. Precious resources and limited-time goodies are all available—come see what treasures the goats have delivered today! Event Time: 2026/12/1 00:00 - 2026/12/8 00:00 UTC. Unlock Requirements: Reach Chief Hall Lv 9 and Chapter 19. During the event, you can spend [Goat Seals] to purchase items in the [Goat Shop]. [Goat Seals] will not be removed when the event ends.",
+        "The [Chronicles] feature has been fully upgraded. The initial Kingdom map interface has been refreshed and multiple new features have been added to help new Chiefs get familiar with the Viking world. This feature only applies to new Kingdoms opened after this version update. (1) Added the [Blessing of the Gods] feature, which provides buffs to Chiefs in the Kingdom during specified time slots, including reducing troop training cost, increasing troop training speed, reducing troop healing cost, and increasing troop healing speed. (2) Added the [Road to Glory] feature. While Chronicles is open, follow personal Odyssey quests to collect Glory Medals and gradually unlock rewards. (3) Added the [Building Scramble Ranking] feature. While Chronicles is open, tribes can obtain Occupation Points by occupying important buildings on the Kingdom map. The rankings are finalized periodically, and rewards are issued based on tribe's Occupation Points ranking. (4) Added the [Scout Enemy Intel] feature. While Chronicles is open, you can complete one special Staging Post Quest each day to scout important buildings that are about to unlock on the world map, collect intel, and obtain rewards. (5) Added the [Treasure Map] feature. During the event, completing the special Staging Post Quest [Kill Patrolling Squad] has a chance to grant Treasure Map Shards. After the tribe collects a complete Treasure Map, all members can claim rewards. Tribe Jarls can use the complete Treasure Map to dig up limited-time Chests, and each Tribe member can claim the reward once."
+      ],
+      "new_features": [],
+      "optimizations": [],
+      "fixes": []
+    },
+    "de": {
+      "major": [
+        "Das Themenevent [Thanksgiving Celebration] beginnt bald. Mit reichen Ernten und Dankbarkeit an eurer Seite lädt euch das Autumn Fishing Festival zu einer Reise der Dankbarkeit ein! Event-Zeitraum: 20.11.2026 00:00 - 27.11.2026 00:00 UTC. Freischaltbedingungen: Erreicht Chief Hall St. 6 und Kapitel 14. Chiefs können sich mit Freunden zusammenschließen, um am [Autumn Fishing Festival] teilzunehmen. Fangt Fische, um Fishing Coins zu erhalten, kämpft um Ranglistenpunkte und tauscht sie im Exchange Shop gegen Gegenstände ein.",
+        "Der zeitlich begrenzte [Black Friday]-Karneval steht kurz bevor. Shopweite Rabatte warten auf euch – verpasst es und ihr müsst ein ganzes Jahr warten. Schnappt euch die Belohnungen, die ihr wollt! Event-Zeitraum: 27.11.2026 00:00 - 30.11.2026 00:00 UTC. Freischaltbedingungen: Erreicht Chief Hall St. 6 und Kapitel 14.",
+        "Der [Goat Shop] ist jetzt live! Thors göttliche Ziegen haben seltene Schätze aus aller Welt mitgebracht. Kostbare Ressourcen und zeitlich begrenzte Gegenstände sind verfügbar – schaut vorbei und seht, welche Schätze die Ziegen heute geliefert haben! Event-Zeitraum: 01.12.2026 00:00 - 08.12.2026 00:00 UTC. Freischaltbedingungen: Erreicht Chief Hall St. 9 und Kapitel 19. Während des Events könnt ihr [Goat Seals] ausgeben, um Gegenstände im [Goat Shop] zu kaufen. [Goat Seals] werden nach dem Ende des Events nicht entfernt.",
+        "Das Feature [Chronicles] wurde umfassend aktualisiert. Die anfängliche Kingdom-Kartenoberfläche wurde überarbeitet und mehrere neue Features wurden hinzugefügt, um neuen Chiefs dabei zu helfen, sich mit der Wikingerwelt vertraut zu machen. Dieses Feature gilt nur für neue Kingdoms, die nach diesem Versionsupdate eröffnet werden. (1) Das Feature [Blessing of the Gods] wurde hinzugefügt, das Chiefs im Kingdom während festgelegter Zeitfenster Buffs verleiht, einschließlich der Reduzierung der Truppenausbildungskosten, Erhöhung des Truppenausbildungstempos, Reduzierung der Truppenheilungskosten und Erhöhung des Truppenheilungstempos. (2) Das Feature [Road to Glory] wurde hinzugefügt. Während Chronicles aktiv ist, könnt ihr persönlichen Odyssey-Quests folgen, um Glory Medals zu sammeln und nach und nach Belohnungen freizuschalten. (3) Das Feature [Building Scramble Ranking] wurde hinzugefügt. Während Chronicles aktiv ist, können Stämme Occupation Points erhalten, indem sie wichtige Gebäude auf der Kingdom-Karte besetzen. Die Ranglisten werden regelmäßig abgeschlossen und Belohnungen basierend auf der Occupation Points-Rangliste des Stammes vergeben. (4) Das Feature [Scout Enemy Intel] wurde hinzugefügt. Während Chronicles aktiv ist, könnt ihr täglich eine spezielle Staging Post Quest abschließen, um wichtige Gebäude aufzuklären, die kurz vor der Freischaltung auf der Weltkarte stehen, Infos zu sammeln und Belohnungen zu erhalten. (5) Das Feature [Treasure Map] wurde hinzugefügt. Während des Events besteht beim Abschluss der speziellen Staging Post Quest [Kill Patrolling Squad] die Chance, Treasure Map Shards zu erhalten. Sobald der Stamm eine vollständige Treasure Map gesammelt hat, können alle Mitglieder Belohnungen einfordern. Stammes-Jarls können die vollständige Treasure Map nutzen, um zeitlich begrenzte Chests auszugraben, und jedes Stammesmitglied kann die Belohnung einmal einfordern."
+      ],
+      "new_features": [],
+      "optimizations": [],
+      "fixes": []
+    },
+    "cn": {
+      "major": [
+        "[Thanksgiving Celebration] 主题活动即将开启。伴随丰饶的收获与感恩之心，Autumn Fishing Festival 邀您踏上感恩之旅！活动时间：2026/11/20 00:00 - 2026/11/27 00:00 UTC。解锁条件：Chief Hall 达到 6 级并完成第 14 章。Chiefs 可与好友组队参与 [Autumn Fishing Festival]。捕鱼以获取 Fishing Coins，争夺排名积分，并在 Exchange Shop 中兑换道具。",
+        "[Black Friday] 限时狂欢即将开启。全场优惠火热来袭——错过只能再等一年。快来选购您心仪的好物吧！活动时间：2026/11/27 00:00 - 2026/11/30 00:00 UTC。解锁条件：Chief Hall 达到 6 级并完成第 14 章。",
+        "[Goat Shop] 现已上线！Thor 的神羊带来了来自世界各地的稀世珍宝。珍贵资源与限时好物应有尽有——快来看看今天神羊运送了什么宝物吧！活动时间：2026/12/1 00:00 - 2026/12/8 00:00 UTC。解锁条件：Chief Hall 达到 9 级并完成第 19 章。活动期间，您可以消耗 [Goat Seals] 在 [Goat Shop] 中购买道具。[Goat Seals] 在活动结束后不会被移除。",
+        "[Chronicles] 功能迎来全面升级。初始 Kingdom 地图界面已焕然一新，并增加了多项新功能，帮助新 Chiefs 熟悉 Viking 世界。该功能仅适用于本次版本更新后开放的新 Kingdoms。(1) 新增 [Blessing of the Gods] 功能，在指定时间段内为 Kingdom 中的 Chiefs 提供增益，包括降低部队训练成本、提升部队训练速度、降低部队治疗成本以及提升部队治疗速度。(2) 新增 [Road to Glory] 功能。在 Chronicles 开启期间，跟随个人 Odyssey 任务收集 Glory Medals，逐步解锁奖励。(3) 新增 [Building Scramble Ranking] 功能。在 Chronicles 开启期间，部落可通过占领 Kingdom 地图上的重要建筑来获取 Occupation Points。排行榜将定期结算，并根据部落的 Occupation Points 排名发放奖励。(4) 新增 [Scout Enemy Intel] 功能。在 Chronicles 开启期间，您每天可以完成一项特殊的 Staging Post Quest，侦察大地图上即将解锁的重要建筑、收集情报并获取奖励。(5) 新增 [Treasure Map] 功能。活动期间，完成特殊的 Staging Post Quest [Kill Patrolling Squad] 有概率掉落 Treasure Map Shards。部落集齐一张完整的 Treasure Map 后，所有成员均可领取奖励。Tribe Jarls 可使用完整的 Treasure Map 挖掘限时宝箱，每位部落成员均可领取一次奖励。"
+      ],
+      "new_features": [],
+      "optimizations": [],
+      "fixes": []
+    },
+    "ru": {
+      "major": [
+        "Тематическое событие [Thanksgiving Celebration] скоро начнется. С богатым урожаем и чувством благодарности в сердце Осенний фестиваль рыбалки приглашает вас отправиться в путешествие признательности! Время события: 20/11/2026 00:00 - 27/11/2026 00:00 UTC. Требования для разблокировки: Chief Hall ур. 6 и Chapter 14. Вожди могут объединяться с друзьями для участия в [Autumn Fishing Festival]. Ловите рыбу, чтобы получать Fishing Coins, соревнуйтесь за рейтинговые очки и обменивайте их на предметы в Exchange Shop.",
+        "Ограниченный по времени карнавал [Black Friday] вот-вот начнется. Масштабные скидки по всему магазину уже на подходе — пропустите, и придется ждать еще целый год. Заходите и забирайте желанные товары! Время события: 27/11/2026 00:00 - 30/11/2026 00:00 UTC. Требования для разблокировки: Chief Hall ур. 6 и Chapter 14.",
+        "Магазин [Goat Shop] уже доступен! Божественные козлы Тора принесли редкие сокровища со всего мира. Драгоценные ресурсы и временные товары уже ждут вас — посмотрите, какие сокровища козлы доставили сегодня! Время события: 01/12/2026 00:00 - 08/12/2026 00:00 UTC. Требования для разблокировки: Chief Hall ур. 9 и Chapter 19. Во время события вы можете тратить [Goat Seals], чтобы приобретать предметы в [Goat Shop]. [Goat Seals] не исчезнут после окончания события.",
+        "Функция [Chronicles] была полностью обновлена. Начальный интерфейс карты Kingdom был обновлен, а также добавлено несколько новых функций, которые помогут новым вождям освоиться в мире викингов. Эта функция применяется только к новым Kingdoms, открытым после данного обновления версии. (1) Добавлена функция [Blessing of the Gods], которая дает баффы вождям в Kingdom в определенные промежутки времени, включая снижение стоимости обучения войск, увеличение скорости обучения войск, снижение стоимости лечения войск и увеличение скорости лечения войск. (2) Добавлена функция [Road to Glory]. Пока открыты Chronicles, выполняйте персональные задания Odyssey, чтобы собирать Glory Medals и постепенно открывать награды. (3) Добавлена функция [Building Scramble Ranking]. Пока открыты Chronicles, племена могут получать Occupation Points за захват важных зданий на карте Kingdom. Рейтинг подводится периодически, а награды выдаются в зависимости от места племени в рейтинге Occupation Points. (4) Добавлена функция [Scout Enemy Intel]. Пока открыты Chronicles, вы можете выполнять одно особое Staging Post Quest в день, чтобы разведывать важные здания, которые скоро откроются на карте мира, собирать разведданные и получать награды. (5) Добавлена функция [Treasure Map]. Во время события выполнение особого Staging Post Quest [Kill Patrolling Squad] дает шанс получить осколки Treasure Map Shards. После того как племя соберет полную карту сокровищ, все участники смогут забрать награды. Tribe Jarls могут использовать готовую Treasure Map, чтобы выкапывать временные сундуки, и каждый участник племени может забрать награду один раз."
+      ],
+      "new_features": [],
+      "optimizations": [],
+      "fixes": []
+    }
+  },
+  {
     "id": "update_21_10_2026_109237",
     "meta": {
       "created_at": "2026-10-19T05:10:09.497000Z",
