@@ -1,5 +1,73 @@
 [
   {
+    "id": "update_17_11_2026_070077",
+    "meta": {
+      "created_at": "2026-11-17T08:16:07.463000Z",
+      "start_timestamp": "2026-11-17T08:16:07.463000Z",
+      "display_time": "17. Nov 2026",
+      "title_en": "Update 17.11.2026",
+      "title_de": "Update vom 17.11.2026",
+      "title_cn": "更新 17.11.2026",
+      "title_ru": "Обновление 17.11.2026",
+      "image_url": "images/updates/update_17_11_2026_070077_1_35c030099795.jpg",
+      "image_urls": [
+        "images/updates/update_17_11_2026_070077_1_35c030099795.jpg"
+      ]
+    },
+    "en": {
+      "major": [],
+      "new_features": [],
+      "optimizations": [
+        {
+          "title": "Migration",
+          "items": [
+            "Optimization of migration capacity limits"
+          ]
+        }
+      ],
+      "fixes": []
+    },
+    "de": {
+      "major": [],
+      "new_features": [],
+      "optimizations": [
+        {
+          "title": "Migration",
+          "items": [
+            "Optimierung der Migrationskapazitätsgrenzen"
+          ]
+        }
+      ],
+      "fixes": []
+    },
+    "cn": {
+      "major": [],
+      "new_features": [],
+      "optimizations": [
+        {
+          "title": "移民",
+          "items": [
+            "优化移民容量限制"
+          ]
+        }
+      ],
+      "fixes": []
+    },
+    "ru": {
+      "major": [],
+      "new_features": [],
+      "optimizations": [
+        {
+          "title": "Миграция",
+          "items": [
+            "Оптимизация лимитов вместимости миграции"
+          ]
+        }
+      ],
+      "fixes": []
+    }
+  },
+  {
     "id": "update_16_11_2026_620638",
     "meta": {
       "created_at": "2026-11-16T06:23:31.304000Z",
