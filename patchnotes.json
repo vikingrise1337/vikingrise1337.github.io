@@ -1,5 +1,81 @@
 [
   {
+    "id": "update_24_11_2026_288352",
+    "meta": {
+      "created_at": "2026-11-24T06:58:24.244000Z",
+      "start_timestamp": "2026-11-24T06:58:24.244000Z",
+      "display_time": "24. Nov 2026",
+      "title_en": "Update 24.11.2026",
+      "title_de": "Update vom 24.11.2026",
+      "title_cn": "更新 24.11.2026",
+      "title_ru": "Обновление 24.11.2026",
+      "image_url": "images/updates/update_24_11_2026_288352_1_8d2b4e19c0d1.jpg",
+      "image_urls": [
+        "images/updates/update_24_11_2026_288352_1_8d2b4e19c0d1.jpg"
+      ]
+    },
+    "en": {
+      "major": [],
+      "new_features": [],
+      "optimizations": [],
+      "fixes": [
+        "Fixed an issue where Wins/Losses display was inconsistent before the preparation event ended.",
+        "Fixed the abnormal display of the rules text and reward rankings during the Kingdom Mayhem S3 preparation preview period.",
+        "Fixed an issue where SP Hero Star Level was displayed incorrectly in the Arena.",
+        "Fixed an issue where auto pathfinding could not pass through some city fences.",
+        "Fixed an issue where the mail list displayed abnormally when scrolling after receiving new mail in GVG-type events.",
+        "Fixed an issue where the Arena group promotion ranking display was inconsistent with the actual determination logic.",
+        "Fixed an issue where [Tribe Showdown] abnormally triggered a resource download prompt.",
+        "Fixed some text issues."
+      ]
+    },
+    "de": {
+      "major": [],
+      "new_features": [],
+      "optimizations": [],
+      "fixes": [
+        "Ein Problem wurde behoben, bei dem die Anzeige von Wins/Losses vor dem Ende des Vorbereitungsevents inkonsistent war.",
+        "Die fehlerhafte Anzeige des Regeltexts und der Belohnungsrangliste während des Vorschauzeitraums der Vorbereitung auf Kingdom Mayhem S3 wurde behoben.",
+        "Ein Problem wurde behoben, bei dem das SP Hero Star Level in der Arena falsch angezeigt wurde.",
+        "Ein Problem wurde behoben, bei dem das auto pathfinding einige Stadtzäune nicht passieren konnte.",
+        "Ein Problem wurde behoben, bei dem die Nachrichtenliste nach dem Empfang neuer Post bei GVG-Events beim Scrollen fehlerhaft angezeigt wurde.",
+        "Ein Problem wurde behoben, bei dem die Ranglistenanzeige für den Gruppenaufstieg in der Arena nicht mit der tatsächlichen Ermittlungslogik übereinstimmte.",
+        "Ein Problem wurde behoben, bei dem [Tribe Showdown] fehlerhafterweise eine Aufforderung zum Herunterladen von Ressourcen auslöste.",
+        "Einige Textfehler wurden behoben."
+      ]
+    },
+    "cn": {
+      "major": [],
+      "new_features": [],
+      "optimizations": [],
+      "fixes": [
+        "修复了预备活动结束前 Wins/Losses 显示不一致的问题。",
+        "修复了 Kingdom Mayhem S3 备战预览期间规则文本和奖励排行显示异常的问题。",
+        "修复了 Arena 中 SP Hero Star Level 显示错误的问题。",
+        "修复了自动寻路无法穿过部分城市栅栏的问题。",
+        "修复了 GVG 类活动中收到新邮件后滚动邮件列表显示异常的问题。",
+        "修复了 Arena 小组晋级排名显示与实际判定逻辑不一致的问题。",
+        "修复了 [Tribe Showdown] 异常触发资源下载提示的问题。",
+        "修复了部分文本问题。"
+      ]
+    },
+    "ru": {
+      "major": [],
+      "new_features": [],
+      "optimizations": [],
+      "fixes": [
+        "Исправлена ошибка, из-за которой отображение Wins/Losses было некорректным до завершения подготовительного события.",
+        "Исправлено некорректное отображение текста правил и рейтинга наград в период предпросмотра подготовки к Kingdom Mayhem S3.",
+        "Исправлена ошибка, из-за которой SP Hero Star Level некорректно отображался на Arena.",
+        "Исправлена ошибка, из-за которой автопоиск пути не мог пройти через некоторые городские заборы.",
+        "Исправлена ошибка, из-за которой список писем некорректно отображался при прокрутке после получения новых сообщений в событиях типа GVG.",
+        "Исправлена ошибка, из-за которой отображение рейтинга повышения группы на Arena не соответствовало фактической логике определения.",
+        "Исправлена ошибка, из-за которой в [Tribe Showdown] некорректно появлялся запрос на загрузку ресурсов.",
+        "Исправлены некоторые текстовые ошибки."
+      ]
+    }
+  },
+  {
     "id": "update_18_11_2026_719303",
     "meta": {
       "created_at": "2026-11-24T06:58:02.049000Z",
