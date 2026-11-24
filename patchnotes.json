@@ -1,5 +1,68 @@
 [
   {
+    "id": "update_18_11_2026_719303",
+    "meta": {
+      "created_at": "2026-11-24T06:58:02.049000Z",
+      "start_timestamp": "2026-11-18T06:00:00.000000Z",
+      "display_time": "11/18 06:00 - 06:30 (UTC)",
+      "title_en": "Update 18.11.2026",
+      "title_de": "Update vom 18.11.2026",
+      "title_cn": "更新 18.11.2026",
+      "title_ru": "Обновление 18.11.2026",
+      "image_url": "images/updates/update_18_11_2026_719303_1_0874067cdd29.jpg",
+      "image_urls": [
+        "images/updates/update_18_11_2026_719303_1_0874067cdd29.jpg",
+        "images/updates/update_18_11_2026_719303_2_09a60c76f9fa.jpg",
+        "images/updates/update_18_11_2026_719303_3_0b99158523dd.jpg",
+        "images/updates/update_18_11_2026_719303_4_c8cc480026d1.jpg"
+      ]
+    },
+    "en": {
+      "major": [
+        "The [Thanksgiving Celebration] themed event is coming soon. With bountiful harvests and gratitude by your side, the Autumn Fishing Festival invites you to embark on a journey of gratitude! (Event Time: 2026/11/20 00:00 - 2026/11/27 00:00 UTC. Unlock Requirements: Reach Chief Hall Lv 6 and Chapter 14. Chiefs can team up with friends to participate in the [Autumn Fishing Festival]. Capture fish to obtain Fishing Coins, compete for ranking points, and exchange them for items in the Exchange Shop.)",
+        "The [Black Friday] limited-time carnival is about to begin. Storewide discounts are coming in hot—miss it and you’ll have to wait another year. Come grab the goodies you want! (Event Time: 2026/11/27 00:00 - 2026/11/30 00:00 UTC. Unlock Requirements: Reach Chief Hall Lv 6 and Chapter 14.)",
+        "The [Goat Shop] is now live! Thor’s divine goats have brought rare treasures from around the world. Precious resources and limited-time goodies are all available—come see what treasures the goats have delivered today! (Event Time: 2026/12/1 00:00 - 2026/12/8 00:00 UTC. Unlock Requirements: Reach Chief Hall Lv 9 and Chapter 19. During the event, you can spend [Goat Seals] to purchase items in the [Goat Shop]. [Goat Seals] will not be removed when the event ends.)",
+        "The [Chronicles] feature has been fully upgraded. The initial Kingdom map interface has been refreshed and multiple new features have been added to help new Chiefs get familiar with the Viking world. This feature only applies to new Kingdoms opened after this version update. Includes: Added [Blessing of the Gods] feature; Added [Road to Glory] feature; Added [Building Scramble Ranking] feature; Added [Scout Enemy Intel] feature; Added [Treasure Map] feature."
+      ],
+      "new_features": [],
+      "optimizations": [],
+      "fixes": []
+    },
+    "de": {
+      "major": [
+        "Das Thementevent [Thanksgiving Celebration] beginnt bald. Mit reichhaltigen Ernten und Dankbarkeit an deiner Seite lädt dich das Autumn Fishing Festival ein, dich auf eine Reise der Dankbarkeit zu begeben! (Event-Zeit: 2026/11/20 00:00 - 2026/11/27 00:00 UTC. Freischaltbedingungen: Erreiche Chief Hall Lv 6 und Chapter 14. Chiefs können sich mit Freunden zusammentun, um am [Autumn Fishing Festival] teilzunehmen. Fange Fische, um Fishing Coins zu erhalten, kämpfe um Ranking-Punkte und tausche sie gegen Gegenstände im Exchange Shop ein.)",
+        "Der zeitlich begrenzte [Black Friday]-Karneval steht kurz bevor. Shopweite Rabatte warten auf dich – verpasse es und du musst ein ganzes Jahr warten. Schnapp dir die Belohnungen, die du haben willst! (Event-Zeit: 2026/11/27 00:00 - 2026/11/30 00:00 UTC. Freischaltbedingungen: Erreiche Chief Hall Lv 6 und Chapter 14.)",
+        "Der [Goat Shop] ist jetzt live! Thors göttliche Ziegen haben seltene Schätze aus aller Welt mitgebracht. Kostbare Ressourcen und zeitlich begrenzte Belohnungen stehen bereit – sieh nach, welche Schätze die Ziegen heute geliefert haben! (Event-Zeit: 2026/12/1 00:00 - 2026/12/8 00:00 UTC. Freischaltbedingungen: Erreiche Chief Hall Lv 9 und Chapter 19. Während des Events kannst du [Goat Seals] ausgeben, um Gegenstände im [Goat Shop] zu erwerben. [Goat Seals] werden nach Ende des Events nicht entfernt.)",
+        "Das Feature [Chronicles] wurde umfassend aktualisiert. Die anfängliche Kingdom-Kartenoberfläche wurde überarbeitet und mehrere neue Features wurden hinzugefügt, um neuen Chiefs dabei zu helfen, sich in der Wikingerwelt zurechtzufinden. Dieses Feature gilt nur für neue Kingdoms, die nach diesem Versionsupdate eröffnet werden. Beinhaltet: Feature [Blessing of the Gods] hinzugefügt; Feature [Road to Glory] hinzugefügt; Feature [Building Scramble Ranking] hinzugefügt; Feature [Scout Enemy Intel] hinzugefügt; Feature [Treasure Map] hinzugefügt."
+      ],
+      "new_features": [],
+      "optimizations": [],
+      "fixes": []
+    },
+    "cn": {
+      "major": [
+        "[Thanksgiving Celebration]主题活动即将开启。丰收相伴，感恩同行，Autumn Fishing Festival邀您开启感恩之旅！（活动时间：2026/11/20 00:00 - 2026/11/27 00:00 UTC。解锁条件：Chief Hall达到Lv 6且完成Chapter 14。首领可与好友组队参与[Autumn Fishing Festival]，捕鱼获取Fishing Coins，争夺排名积分，并在Exchange Shop中兑换道具。）",
+        "[Black Friday]限时狂欢即将开启。全场特惠火热来袭——错过再等一年，快来选购您心仪的超值好物吧！（活动时间：2026/11/27 00:00 - 2026/11/30 00:00 UTC。解锁条件：Chief Hall达到Lv 6且完成Chapter 14。）",
+        "[Goat Shop]现已上线！Thor的神羊从世界各地带来了稀世珍宝。珍贵资源与限时好物应有尽有——快来看看神羊今天带来了什么宝藏吧！（活动时间：2026/12/1 00:00 - 2026/12/8 00:00 UTC。解锁条件：Chief Hall达到Lv 9且完成Chapter 19。活动期间，您可消耗[Goat Seals]在[Goat Shop]中购买道具。[Goat Seals]在活动结束后不会被清除。）",
+        "[Chronicles]功能迎来全面升级。初始Kingdom地图界面已焕新，并新增多项功能，助力新首领快速熟悉Viking世界。该功能仅适用于本次版本更新后开启的新Kingdom。包含：新增[Blessing of the Gods]功能；新增[Road to Glory]功能；新增[Building Scramble Ranking]功能；新增[Scout Enemy Intel]功能；新增[Treasure Map]功能。"
+      ],
+      "new_features": [],
+      "optimizations": [],
+      "fixes": []
+    },
+    "ru": {
+      "major": [
+        "Тематическое событие [Thanksgiving Celebration] скоро начнется. С богатым урожаем и чувством благодарности [Autumn Fishing Festival] приглашает вас отправиться в путь признательности! (Время события: 2026/11/20 00:00 - 2026/11/27 00:00 UTC. Требования для разблокировки: достигните Chief Hall Lv 6 и Chapter 14. Chiefs могут объединяться с друзьями для участия в [Autumn Fishing Festival]. Ловите рыбу, чтобы получать Fishing Coins, соревнуйтесь за очки рейтинга и обменивайте их на предметы в Exchange Shop.)",
+        "Временный карнавал [Black Friday] вот-вот начнется. Вас ждут горячие скидки на весь ассортимент — пропустите, и придется ждать еще целый год. Приходите и забирайте желанные награды! (Время события: 2026/11/27 00:00 - 2026/11/30 00:00 UTC. Требования для разблокировки: достигните Chief Hall Lv 6 и Chapter 14.)",
+        "[Goat Shop] уже доступен! Божественные козлы Тора доставили редкие сокровища со всего мира. Ценные ресурсы и временные товары уже в наличии — загляните и узнайте, какие сокровища козлы принесли сегодня! (Время события: 2026/12/1 00:00 - 2026/12/8 00:00 UTC. Требования для разблокировки: достигните Chief Hall Lv 9 и Chapter 19. Во время события вы можете тратить [Goat Seals] для покупки предметов в [Goat Shop]. [Goat Seals] не будут удалены после окончания события.)",
+        "Функция [Chronicles] была полностью обновлена. Начальный интерфейс карты Kingdom был переработан, а также добавлено несколько новых функций, которые помогут новым Chiefs освоиться в мире викингов. Эта функция распространяется только на новые Kingdoms, открытые после данного обновления версии. Включает: добавлена функция [Blessing of the Gods]; добавлена функция [Road to Glory]; добавлена функция [Building Scramble Ranking]; добавлена функция [Scout Enemy Intel]; добавлена функция [Treasure Map]."
+      ],
+      "new_features": [],
+      "optimizations": [],
+      "fixes": []
+    }
+  },
+  {
     "id": "update_17_11_2026_070077",
     "meta": {
       "created_at": "2026-11-17T08:16:07.463000Z",
